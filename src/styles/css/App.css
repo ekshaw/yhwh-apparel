@@ -1,3 +1,5 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 .nav {
   width: 100%;
   display: flex;
@@ -25,6 +27,11 @@
     .nav .nav__logo img {
       height: 50px; }
 
+.home .home-carousel .home-carousel-img {
+  margin-bottom: 10px; }
+  .home .home-carousel .home-carousel-img img {
+    width: 100%; }
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px; }
@@ -41,8 +48,5 @@
 .App-intro {
   font-size: large; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.body {
+  padding: 20px; }

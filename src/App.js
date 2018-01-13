@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './styles/css/App.css';
 import Nav from './components/Nav';
 import Home from './pages/Home';
@@ -14,13 +13,15 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/designs' component={Designs} />
-          <Route exact path='/communtiy_outreach' component={CommunityOutreach} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={Contact} />
-        </Switch>
+        <div className='body'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/designs' component={Designs} />
+            <Route exact path='/communtiy_outreach' component={CommunityOutreach} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/contact' component={Contact} />
+          </Switch>
+        </div>
       </div>
     );
   }
