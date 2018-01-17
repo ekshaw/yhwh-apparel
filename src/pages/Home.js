@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HomeCarousel from '../components/HomeCarousel';
 import HomeProducts from '../components/HomeProducts';
+import HomeInstagramFeed from '../components/HomeInstagramFeed';
 
 
 class Home extends Component {
@@ -9,6 +10,7 @@ class Home extends Component {
       <div className='home'>
         <HomeCarousel />
         <HomeProducts />
+        <HomeInstagramFeed />
       </div>
     );
   }
