@@ -27,26 +27,51 @@
     .nav .nav__logo img {
       height: 50px; }
 
-.home .home-carousel .home-carousel-img {
+.home .home-carousel {
+  width: 100%;
   margin-bottom: 10px; }
-  .home .home-carousel .home-carousel-img img {
-    width: 100%; }
+  .home .home-carousel .home-carousel__slide {
+    padding: 0 10px;
+    display: none; }
+    .home .home-carousel .home-carousel__slide--active {
+      display: block; }
+    .home .home-carousel .home-carousel__slide img {
+      width: 100%; }
+  .home .home-carousel .home-carousel__btns ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center; }
+    .home .home-carousel .home-carousel__btns ul li {
+      display: inline-block;
+      list-style-type: none;
+      width: 6px;
+      height: 6px;
+      margin-right: 15px;
+      border-radius: 50%;
+      background-color: #808080; }
+      .home .home-carousel .home-carousel__btns ul li:hover {
+        background-color: #d3d3d3;
+        cursor: pointer; }
+      .home .home-carousel .home-carousel__btns ul li:last-child {
+        margin-right: 0; }
+    .home .home-carousel .home-carousel__btns ul .home-carousel__btn--active {
+      background-color: #d3d3d3; }
+      .home .home-carousel .home-carousel__btns ul .home-carousel__btn--active:hover {
+        cursor: default; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.home .home-products {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .home .home-products .home-product {
+    width: 33%;
+    padding: 10px; }
+    .home .home-products .home-product img {
+      width: 100%; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
-
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
+* {
+  box-sizing: border-box; }
 
 .body {
   padding: 20px; }
