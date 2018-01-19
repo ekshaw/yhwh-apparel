@@ -10,7 +10,7 @@ class About extends Component {
     return (
       <div className='about'>
         <div className='about-description'>
-          <h3>Mission and Vision</h3>
+          <h2>Mission and Vision</h2>
           {paragraphs.map((paragraph, index) =>
             <p
               key={index}
