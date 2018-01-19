@@ -115,9 +115,19 @@
   justify-content: space-evenly;
   width: 100%; }
   .about .about-description {
-    width: 50%; }
+    width: 50%;
+    padding-right: 15px; }
   .about .about-video {
-    width: 50%; }
+    width: 50%;
+    padding-left: 15px; }
+
+@font-face (Futura, fonts/Futura);
+@font-face {
+  font-family: 'Proxima Nova';
+  src: font-url("fonts/proximanova-regular-webfont.ttf") format("truetype"); }
+
+.App {
+  font-family: 'Proxima Nova', Futura; }
 
 * {
   box-sizing: border-box; }

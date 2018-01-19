@@ -20,7 +20,9 @@ class Nav extends Component {
           {navLinks}
         </div>
         <div className='nav__logo'>
-          <img src={yhwhLogo} alt='' />
+          <a href='/'>
+            <img src={yhwhLogo} alt='' />
+          </a>
         </div>
         <div className='nav__links nav__links--hidden'>
           {navLinks}

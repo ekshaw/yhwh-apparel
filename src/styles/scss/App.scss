@@ -3,8 +3,14 @@
 @import '_about';
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@font-face(Futura, fonts/Futura);
+@font-face {
+  font-family: 'Proxima Nova';
+  src: font-url('fonts/proximanova-regular-webfont.ttf') format('truetype');
+}
 
 .App {
+  font-family: 'Proxima Nova', Futura;
 }
  * {
   box-sizing: border-box;
