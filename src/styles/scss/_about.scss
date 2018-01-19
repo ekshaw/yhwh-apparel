@@ -1,0 +1,14 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .about-description {
+    width: 50%;
+  }
+
+  .about-video {
+    width: 50%;
+  }
+}

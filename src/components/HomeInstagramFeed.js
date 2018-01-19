@@ -5,7 +5,7 @@ class HomeInstagramFeed extends Component {
   render() {
     const instafeedTarget = 'instafeed';
     const instafeedSettings = {
-      limit: '9',
+      limit: '10',
       ref: 'instafeed',
       resolution: 'standard_resolution',
       sortBy: 'most-recent',
