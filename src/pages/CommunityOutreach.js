@@ -10,6 +10,7 @@ class CommunityOutreach extends Component {
            <Missionary
              key={index}
              missionary={missionary}
+             odd={index % 2 === 0}
            />
         )}
       </div>

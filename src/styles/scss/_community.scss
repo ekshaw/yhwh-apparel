@@ -47,5 +47,15 @@
       }
 
     }
+
+    &--odd {
+      .missionary-profile {
+        order: 2;
+      }
+      .missionary-description {
+        order: 1;
+
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Missionary extends Component {
   render() {
     return (
-      <div className='missionary'>
+      <div className={this.props.odd ? 'missionary' : 'missionary missionary--odd'}>
         <div className='missionary-profile'>
           <img src={this.props.missionary.imgSrc} alt=''/>
         </div>

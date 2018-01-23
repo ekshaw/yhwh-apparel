@@ -158,6 +158,10 @@
         color: #a8a8a8; }
         .community .missionary .missionary-description .missionary-info p:last-child {
           text-align: right; }
+  .community .missionary--odd .missionary-profile {
+    order: 2; }
+  .community .missionary--odd .missionary-description {
+    order: 1; }
 
 @font-face (Futura, fonts/Futura);
 @font-face {
