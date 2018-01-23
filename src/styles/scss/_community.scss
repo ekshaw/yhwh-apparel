@@ -4,7 +4,7 @@
   .community-headline-container {
     width: 100%;
     background-color: #a8a8a8;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 60px 0;
 
     .community-headline {
@@ -21,75 +21,82 @@
     }
   }
 
-  .missionary-headline {
-    width: 100%;
-    margin-bottom: 40px;
+  .missionary-body {
+    padding: 0 $body-padding;
 
-    h3 {
-      margin-top: 0;
-    }
-  }
-
-  .missionary {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .missionary-profile {
-      width: 50%;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .missionary-description {
-      padding-left: 20px;
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .missionary-headline {
+      width: 100%;
+      margin-bottom: 60px;
 
       h3 {
         margin-top: 0;
-        margin-bottom: 14px;
+      }
+    }
+
+    .missionary {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
 
-      p {
-        margin-top: 0;
-      }
+      .missionary-profile {
+        width: 50%;
+        padding-right: 25px;
 
-      .missionary-info {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-
-        p {
-          width: 50%;
-          color: #a8a8a8;
-
-          &:last-child {
-            text-align: right;
-          }
+        img {
+          width: 100%;
         }
       }
 
-    }
-
-    &--odd {
-      .missionary-profile {
-        order: 2;
-      }
       .missionary-description {
-        padding-left: 0;
-        padding-right: 20px;
+        padding-left: 25px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        order: 1;
+        h3 {
+          margin-top: 0;
+          margin-bottom: 14px;
+        }
+
+        p {
+          margin-top: 0;
+        }
+
+        .missionary-info {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          p {
+            width: 50%;
+            color: #a8a8a8;
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+
+      }
+
+      &--odd {
+        .missionary-profile {
+          padding-right: 0;
+          padding-left: 25px;
+          order: 2;
+        }
+        .missionary-description {
+          padding-left: 0;
+          padding-right: 25px;
+
+          order: 1;
+        }
       }
     }
   }

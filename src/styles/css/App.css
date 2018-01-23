@@ -63,7 +63,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding: 0 20px; }
   .home .home-products .home-product {
     width: 33%;
     padding: 0 7px; }
@@ -77,6 +78,7 @@
       width: 100%; }
 
 .home .home-instafeed-container {
+  padding: 0 20px;
   text-align: center; }
   .home .home-instafeed-container .home-instafeed__title {
     padding: 50px 0 10px 0;
@@ -110,29 +112,41 @@
           .home .home-instafeed-container .home-instafeed__scroll-container .home-instafeed .home-instafeed__img img:hover {
             opacity: 0.75; }
 
-.about {
+.about .about-body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%; }
-  .about .about-description {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 20px; }
+  .about .about-body .about-description {
     width: 50%;
     padding-right: 20px; }
-    .about .about-description h2 {
+    .about .about-body .about-description h2 {
       margin-top: 0; }
-    .about .about-description p {
+    .about .about-body .about-description p {
       line-height: 1.4;
       font-size: 14px; }
-  .about .about-video {
+  .about .about-body .about-video {
     width: 50%;
     padding-left: 15px; }
+
+.about .about-contact {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #a8a8a8; }
+  .about .about-contact p {
+    font-size: 17px;
+    color: white; }
+    .about .about-contact p a {
+      color: white; }
 
 .community {
   width: 100%; }
   .community .community-headline-container {
     width: 100%;
     background-color: #a8a8a8;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 60px 0; }
     .community .community-headline-container .community-headline {
       text-align: center;
@@ -142,48 +156,53 @@
         color: white;
         font-size: 17px;
         line-height: 1.8; }
-  .community .missionary-headline {
-    width: 100%;
-    margin-bottom: 40px; }
-    .community .missionary-headline h3 {
-      margin-top: 0; }
-  .community .missionary {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px; }
-    .community .missionary:last-child {
-      margin-bottom: 0; }
-    .community .missionary .missionary-profile {
-      width: 50%; }
-      .community .missionary .missionary-profile img {
-        width: 100%; }
-    .community .missionary .missionary-description {
-      padding-left: 20px;
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .community .missionary .missionary-description h3 {
-        margin-top: 0;
-        margin-bottom: 14px; }
-      .community .missionary .missionary-description p {
+  .community .missionary-body {
+    padding: 0 20px; }
+    .community .missionary-body .missionary-headline {
+      width: 100%;
+      margin-bottom: 60px; }
+      .community .missionary-body .missionary-headline h3 {
         margin-top: 0; }
-      .community .missionary .missionary-description .missionary-info {
-        width: 100%;
+    .community .missionary-body .missionary {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 60px; }
+      .community .missionary-body .missionary:last-child {
+        margin-bottom: 0; }
+      .community .missionary-body .missionary .missionary-profile {
+        width: 50%;
+        padding-right: 25px; }
+        .community .missionary-body .missionary .missionary-profile img {
+          width: 100%; }
+      .community .missionary-body .missionary .missionary-description {
+        padding-left: 25px;
+        width: 50%;
         display: flex;
-        flex-direction: row; }
-        .community .missionary .missionary-description .missionary-info p {
-          width: 50%;
-          color: #a8a8a8; }
-          .community .missionary .missionary-description .missionary-info p:last-child {
-            text-align: right; }
-    .community .missionary--odd .missionary-profile {
-      order: 2; }
-    .community .missionary--odd .missionary-description {
-      padding-left: 0;
-      padding-right: 20px;
-      order: 1; }
+        align-items: center;
+        justify-content: center; }
+        .community .missionary-body .missionary .missionary-description h3 {
+          margin-top: 0;
+          margin-bottom: 14px; }
+        .community .missionary-body .missionary .missionary-description p {
+          margin-top: 0; }
+        .community .missionary-body .missionary .missionary-description .missionary-info {
+          width: 100%;
+          display: flex;
+          flex-direction: row; }
+          .community .missionary-body .missionary .missionary-description .missionary-info p {
+            width: 50%;
+            color: #a8a8a8; }
+            .community .missionary-body .missionary .missionary-description .missionary-info p:last-child {
+              text-align: right; }
+      .community .missionary-body .missionary--odd .missionary-profile {
+        padding-right: 0;
+        padding-left: 25px;
+        order: 2; }
+      .community .missionary-body .missionary--odd .missionary-description {
+        padding-left: 0;
+        padding-right: 25px;
+        order: 1; }
 
 @font-face (Futura, fonts/Futura);
 @font-face {
@@ -200,9 +219,11 @@
     margin-top: 0;
     font-size: 14px;
     line-height: 1.4; }
+    .App p:last-child {
+      margin-bottom: 0; }
 
 * {
   box-sizing: border-box; }
 
 .body {
-  padding: 15px 20px; }
+  padding: 15px 0; }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import yhwhLogo from '../yhwh-logo.png';
+import yhwhLogo from '../images/yhwh-logo.png';
 
 class Nav extends Component {
 
@@ -9,9 +9,8 @@ class Nav extends Component {
       <ul>
         <li><NavLink to='/shop'>Shop</NavLink></li>
         <li><NavLink to='/designs'>Designs</NavLink></li>
-        <li><NavLink to='/community_outreach'>Community Outreach</NavLink></li>
+        <li><NavLink to='/community-outreach'>Community Outreach</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
     );
     return (

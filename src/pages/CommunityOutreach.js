@@ -17,17 +17,19 @@ class CommunityOutreach extends Component {
             )}
           </div>
         </div>
-        <div className='missionary-headline'>
-          <h3>{content.missionaryTitle}</h3>
-          <p>{content.missionaryHeadline}</p>
+        <div className='missionary-body'>
+          <div className='missionary-headline'>
+            <h3>{content.missionaryTitle}</h3>
+            <p>{content.missionaryHeadline}</p>
+          </div>
+          {content.missionaries.map((missionary, index) =>
+             <Missionary
+               key={index}
+               missionary={missionary}
+               odd={index % 2 === 0}
+             />
+          )}
         </div>
-        {content.missionaries.map((missionary, index) =>
-           <Missionary
-             key={index}
-             missionary={missionary}
-             odd={index % 2 === 0}
-           />
-        )}
       </div>
     );
   }

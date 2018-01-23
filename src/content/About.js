@@ -5,7 +5,9 @@ const content = {
     'Our vision is to speak truth through our apparel, empowering people to express their identity as children of the Most High King, and to encourage believers to be bold as they carry the name of their Lord, not only on their shirts, but on their hearts. It is also a call to live a life of consistency before our God.',
     'If you would like to start your own YHWH Apparel chapter at your college, please visit here for more info.'
   ],
-  videoId: 'rej9vc7i__4'
+  videoId: 'rej9vc7i__4',
+  email: 'yhwhapparel@gmail.com',
+  emailTagline: 'Contact us at'
 }
 
 export default content;
