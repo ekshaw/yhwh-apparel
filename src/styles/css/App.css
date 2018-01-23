@@ -30,7 +30,7 @@
 
 .home .home-carousel {
   width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 60px; }
   .home .home-carousel .home-carousel__slide {
     display: none; }
     .home .home-carousel .home-carousel__slide--active {
@@ -64,7 +64,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 0 20px; }
+  padding: 0 20px;
+  margin-bottom: 60px; }
   .home .home-products .home-product {
     width: 33%;
     padding: 0 7px; }
@@ -81,7 +82,7 @@
   padding: 0 20px;
   text-align: center; }
   .home .home-instafeed-container .home-instafeed__title {
-    padding: 50px 0 10px 0;
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -90,7 +91,7 @@
     .home .home-instafeed-container .home-instafeed__title span {
       padding: 0 15px; }
     .home .home-instafeed-container .home-instafeed__title div {
-      background-color: #333;
+      background-color: #a8a8a8;
       height: 1px;
       width: 100%; }
   .home .home-instafeed-container .home-instafeed__scroll-container {
