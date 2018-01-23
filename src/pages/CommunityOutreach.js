@@ -6,14 +6,16 @@ class CommunityOutreach extends Component {
   render() {
     return (
       <div className='community'>
-        <div className='community-headline'>
-          {content.headlineParagraphs.map((paragraph, index) =>
-            <p
-              key={index}
-            >
-              {paragraph}
-            </p>
-          )}
+        <div className='community-headline-container'>
+          <div className='community-headline'>
+            {content.headlineParagraphs.map((paragraph, index) =>
+              <p
+                key={index}
+              >
+                {paragraph}
+              </p>
+            )}
+          </div>
         </div>
         <div className='missionary-headline'>
           <h3>{content.missionaryTitle}</h3>

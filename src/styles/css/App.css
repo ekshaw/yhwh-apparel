@@ -129,13 +129,23 @@
 
 .community {
   width: 100%; }
-  .community .community-headline {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 620px; }
-  .community .missionaries-headline {
+  .community .community-headline-container {
+    width: 100%;
+    background-color: #a8a8a8;
+    margin-bottom: 40px;
+    padding: 60px 0; }
+    .community .community-headline-container .community-headline {
+      text-align: center;
+      margin: 0 auto;
+      width: 620px; }
+      .community .community-headline-container .community-headline p {
+        color: white;
+        font-size: 17px;
+        line-height: 1.8; }
+  .community .missionary-headline {
     width: 100%; }
+    .community .missionary-headline h3 {
+      margin-top: 0; }
   .community .missionary {
     width: 100%;
     display: flex;

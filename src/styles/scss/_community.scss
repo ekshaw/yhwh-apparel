@@ -1,15 +1,32 @@
 .community {
   width: 100%;
 
-  .community-headline {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 620px;
+  .community-headline-container {
+    width: 100%;
+    background-color: #a8a8a8;
+    margin-bottom: 40px;
+    padding: 60px 0;
+
+    .community-headline {
+      text-align: center;
+      margin: 0 auto;
+      width: 620px;
+
+      p {
+        color: white;
+        font-size: 17px;
+        line-height: 1.8;
+
+      }
+    }
   }
 
-  .missionaries-headline {
+  .missionary-headline {
     width: 100%;
+
+    h3 {
+      margin-top: 0;
+    }
   }
 
   .missionary {
