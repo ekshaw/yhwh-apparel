@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
-import paragraphs from '../content/AboutParagraphs';
+import content from '../content/About';
 
 class About extends Component {
   render() {
@@ -10,8 +10,8 @@ class About extends Component {
     return (
       <div className='about'>
         <div className='about-description'>
-          <h2>Mission and Vision</h2>
-          {paragraphs.map((paragraph, index) =>
+          <h3>Mission and Vision</h3>
+          {content.paragraphs.map((paragraph, index) =>
             <p
               key={index}
             >
@@ -21,7 +21,7 @@ class About extends Component {
         </div>
         <div className='about-video'>
           <YouTube
-            videoId={'rej9vc7i__4'}
+            videoId={content.videoId}
             opts={opts}
           />
         </div>

@@ -12,6 +12,16 @@
 
 .App {
   font-family: 'Proxima Nova', Futura;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
  * {
   box-sizing: border-box;
