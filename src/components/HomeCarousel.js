@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import iam from '../images/carousel/iam.jpg';
-import iamGroup from '../images/carousel/iam-group.jpg';
-import yumi from '../images/carousel/yumi.jpg';
-
-const slides = [ iam, iamGroup, yumi ];
 
 class HomeCarousel extends Component {
   constructor(props) {
@@ -31,7 +26,7 @@ class HomeCarousel extends Component {
 
   goToNextSlide = () => {
     let index = this.state.activeIndex;
-    index = (index + 1) % slides.length;
+    index = (index + 1) % this.props.slides.length;
     this.goToSlide(index)
     this.setTimer();
   }
@@ -39,7 +34,7 @@ class HomeCarousel extends Component {
   render() {
     return (
       <div className='home-carousel'>
-          {slides.map((slide, index) =>
+          {this.props.slides.map((slide, index) =>
             <div
               className={
                 index === this.state.activeIndex
@@ -53,7 +48,7 @@ class HomeCarousel extends Component {
           )}
           <div className='home-carousel__btns'>
             <ul>
-              {slides.map((slide, index) =>
+              {this.props.slides.map((slide, index) =>
                 <li
                   className={
                     index === this.state.activeIndex
