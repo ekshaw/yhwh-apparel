@@ -1,0 +1,51 @@
+.community {
+  .missionary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .missionary-profile {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .missionary-description {
+      padding: 10px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .missionary-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        p {
+          width: 50%;
+          color: #a8a8a8;
+
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @import url(~slick-carousel/slick/slick.css);
 @import url(~slick-carousel/slick/slick-theme.css);
 .nav {
+  margin-top: 15px;
   width: 100%;
   display: flex;
   justify-content: space-between; }
@@ -125,6 +126,38 @@
   .about .about-video {
     width: 50%;
     padding-left: 15px; }
+
+.community .missionary {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .community .missionary .missionary-profile {
+    width: 50%; }
+    .community .missionary .missionary-profile img {
+      width: 100%; }
+  .community .missionary .missionary-description {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .community .missionary .missionary-description h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 24px; }
+    .community .missionary .missionary-description p {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 1.4; }
+    .community .missionary .missionary-description .missionary-info {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .community .missionary .missionary-description .missionary-info p {
+        width: 50%;
+        color: #a8a8a8; }
+        .community .missionary .missionary-description .missionary-info p:last-child {
+          text-align: right; }
 
 @font-face (Futura, fonts/Futura);
 @font-face {
