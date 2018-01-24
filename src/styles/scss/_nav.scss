@@ -1,3 +1,5 @@
+@import '_shared';
+
 .nav {
   margin-top: 15px;
   width: 100%;
@@ -27,7 +29,7 @@
           color: #333;
 
           &:hover {
-            color: #a8a8a8;
+            color: $general-grey;
           }
         }
       }

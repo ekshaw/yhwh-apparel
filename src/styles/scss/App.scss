@@ -2,8 +2,8 @@
 @import '_home';
 @import '_about';
 @import '_community';
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@import '_footer';
+@import '~font-awesome/css/font-awesome.min.css';
 @font-face(Futura, fonts/Futura);
 @font-face {
   font-family: 'Proxima Nova';
@@ -35,5 +35,6 @@
 
 .body {
   padding: 15px 0;
+  margin-bottom: $body-bottom-margin;
 }
 

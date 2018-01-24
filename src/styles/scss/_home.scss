@@ -84,7 +84,6 @@
   }
 
   .home-instafeed-container {
-    padding: 0 $body-padding;
     text-align: center;
 
     .home-instafeed__title {
@@ -99,13 +98,14 @@
         padding: 0 15px;
       }
       div {
-        background-color: #a8a8a8;
+        background-color: $hr-color;
         height: 1px;
         width: 100%;
       }
     }
 
     .home-instafeed__scroll-container {
+      padding: 0 $body-padding;
       width: 100%;
       overflow-x: scroll;
       overflow-y: hidden;

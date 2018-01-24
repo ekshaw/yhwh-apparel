@@ -1,5 +1,4 @@
-@import url(~slick-carousel/slick/slick.css);
-@import url(~slick-carousel/slick/slick-theme.css);
+@import url(~font-awesome/css/font-awesome.min.css);
 .nav {
   margin-top: 15px;
   width: 100%;
@@ -79,7 +78,6 @@
       width: 100%; }
 
 .home .home-instafeed-container {
-  padding: 0 20px;
   text-align: center; }
   .home .home-instafeed-container .home-instafeed__title {
     margin-bottom: 10px;
@@ -91,10 +89,11 @@
     .home .home-instafeed-container .home-instafeed__title span {
       padding: 0 15px; }
     .home .home-instafeed-container .home-instafeed__title div {
-      background-color: #a8a8a8;
+      background-color: #f7f7f8;
       height: 1px;
       width: 100%; }
   .home .home-instafeed-container .home-instafeed__scroll-container {
+    padding: 0 20px;
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -205,6 +204,39 @@
         padding-right: 25px;
         order: 1; }
 
+.footer {
+  border-top: 1px solid #f7f7f8;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  padding-top: 46px; }
+  .footer .footer__info-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%; }
+    .footer .footer__info-container .footer__info {
+      width: 50%; }
+      .footer .footer__info-container .footer__info .footer__info-text {
+        font-size: 12px; }
+      .footer .footer__info-container .footer__info--right {
+        text-align: right; }
+        .footer .footer__info-container .footer__info--right ul {
+          margin-top: 0; }
+          .footer .footer__info-container .footer__info--right ul li {
+            text-decoration: none;
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15px; }
+            .footer .footer__info-container .footer__info--right ul li:last-child {
+              margin-right: 0; }
+            .footer .footer__info-container .footer__info--right ul li a {
+              color: #333; }
+              .footer .footer__info-container .footer__info--right ul li a:hover {
+                color: #a8a8a8; }
+  .footer .footer__copyright {
+    text-align: center;
+    font-size: 12px; }
+
 @font-face (Futura, fonts/Futura);
 @font-face {
   font-family: 'Proxima Nova';
@@ -227,4 +259,5 @@
   box-sizing: border-box; }
 
 .body {
-  padding: 15px 0; }
+  padding: 15px 0;
+  margin-bottom: 60px; }

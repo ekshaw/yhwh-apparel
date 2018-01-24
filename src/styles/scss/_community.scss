@@ -3,7 +3,7 @@
 
   .community-headline-container {
     width: 100%;
-    background-color: #a8a8a8;
+    background-color: $general-grey;
     margin-bottom: $body-bottom-margin;
     padding: 60px 0;
 
@@ -75,7 +75,7 @@
 
           p {
             width: 50%;
-            color: #a8a8a8;
+            color: $general-grey;
 
             &:last-child {
               text-align: right;

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Designs from './pages/Designs';
 import CommunityOutreach from './pages/CommunityOutreach';
 import About from './pages/About';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path='/about' component={About} />
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }
