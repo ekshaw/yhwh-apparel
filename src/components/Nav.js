@@ -7,7 +7,9 @@ class Nav extends Component {
   render() {
     const navLinks = (
       <ul>
-        <li><NavLink to='/shop'>Shop</NavLink></li>
+        <li>
+          <a href='http://yhwhapparel.storenvy.com/products'>Shop</a>
+        </li>
         <li><NavLink to='/designs'>Designs</NavLink></li>
         <li><NavLink to='/community-outreach'>Community Outreach</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
