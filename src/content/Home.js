@@ -8,7 +8,7 @@ import yumiCarousel from '../images/carousel/yumi.jpg';
 
 const instafeedTarget = 'instafeed';
 
-const content = {
+const home = {
   products: [
     {
       img: yumiProduct,
@@ -39,4 +39,4 @@ const content = {
   }
 }
 
-export default content;
+export default home;
