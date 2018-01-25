@@ -6,12 +6,14 @@ class About extends Component {
     const opts = {
       width: '100%'
     }
+
+    const { paragraphs, videoId, emailTagline, email } = this.props.content;
     return (
       <div className='about'>
         <div className='about-body'>
           <div className='about-description'>
             <h3>Mission and Vision</h3>
-            {this.props.content.paragraphs.map((paragraph, index) =>
+            {paragraphs.map((paragraph, index) =>
               <p key={index}>
                 {paragraph}
               </p>
@@ -19,14 +21,14 @@ class About extends Component {
           </div>
           <div className='about-video'>
             <YouTube
-              videoId={this.props.content.videoId}
+              videoId={videoId}
               opts={opts}
             />
           </div>
         </div>
         <div className='about-contact'>
-          <p>{this.props.content.emailTagline}</p>
-          <p><a href={'mailto:' + this.props.content.email}>{this.props.content.email}</a></p>
+          <p>{emailTagline}</p>
+          <p><a href={'mailto:' + email}>{email}</a></p>
         </div>
       </div>
     );

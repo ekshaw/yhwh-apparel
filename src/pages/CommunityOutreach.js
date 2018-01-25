@@ -3,14 +3,14 @@ import Missionary from '../components/Missionary';
 
 class CommunityOutreach extends Component {
   render() {
+    const { headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries } = this.props.content;
+
     return (
       <div className='community'>
         <div className='community-headline-container'>
           <div className='community-headline'>
-            {this.props.content.headlineParagraphs.map((paragraph, index) =>
-              <p
-                key={index}
-              >
+            {headlineParagraphs.map((paragraph, index) =>
+              <p key={index}>
                 {paragraph}
               </p>
             )}
@@ -18,10 +18,10 @@ class CommunityOutreach extends Component {
         </div>
         <div className='missionary-body'>
           <div className='missionary-headline'>
-            <h3>{this.props.content.missionaryTitle}</h3>
-            <p>{this.props.content.missionaryHeadline}</p>
+            <h3>{missionaryTitle}</h3>
+            <p>{missionaryHeadline}</p>
           </div>
-          {this.props.content.missionaries.map((missionary, index) =>
+          {missionaries.map((missionary, index) =>
              <Missionary
                key={index}
                missionary={missionary}

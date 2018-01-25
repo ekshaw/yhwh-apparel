@@ -6,13 +6,14 @@ import HomeInstagramFeed from '../components/HomeInstagramFeed';
 
 class Home extends Component {
   render() {
+    const { slides, products, instafeedSettings, instafeedTarget } = this.props.content;
     return (
       <div className='home'>
-        <HomeCarousel slides={this.props.content.slides} />
-        <HomeProducts products={this.props.content.products} />
+        <HomeCarousel slides={slides} />
+        <HomeProducts products={products} />
         <HomeInstagramFeed
-          instafeedSettings={this.props.content.instafeedSettings}
-          instafeedTarget={this.props.content.instafeedTarget}
+          instafeedSettings={instafeedSettings}
+          instafeedTarget={instafeedTarget}
         />
       </div>
     );

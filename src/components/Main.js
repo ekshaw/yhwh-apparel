@@ -6,12 +6,10 @@ import Designs from '../pages/Designs';
 import CommunityOutreach from '../pages/CommunityOutreach';
 import About from '../pages/About';
 import Footer from './Footer';
-import content from '../content/Content';
-
-const { home, about, designs, community, footer } = content;
 
 class Main extends Component {
   render () {
+    const { home, about, designs, community, footer } = this.props.content;
     return (
       <div>
         <Nav />
