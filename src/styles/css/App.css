@@ -204,6 +204,26 @@
         padding-right: 25px;
         order: 1; }
 
+.designs .designs-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .designs .designs-row .design {
+    padding: 0 50px;
+    width: 33vw;
+    height: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .designs .designs-row .design:hover {
+      opacity: 0.7; }
+    .designs .designs-row .design img {
+      width: 100%; }
+    .designs .designs-row .design .design-description h3 {
+      margin-top: 0; }
+    .designs .designs-row .design .design-description .design-description__release {
+      color: #a8a8a8; }
+
 .footer {
   border-top: 1px solid #f7f7f8;
   margin-bottom: 15px;
@@ -246,6 +266,7 @@
   font-family: 'Proxima Nova', Futura; }
   .App h3 {
     margin-top: 0;
+    margin-top: 20px;
     font-size: 24px;
     font-weight: 400; }
   .App p {
