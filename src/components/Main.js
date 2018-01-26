@@ -9,10 +9,10 @@ import Footer from './Footer';
 
 class Main extends Component {
   render () {
-    const { home, about, designs, community, footer } = this.props.content;
+    const { logo, home, about, designs, community, footer } = this.props.content;
     return (
       <div>
-        <Nav />
+        <Nav logo={logo} />
         <div className='body'>
           <Switch>
             <Route exact path='/' component={(props) => <Home content={home} />} />
