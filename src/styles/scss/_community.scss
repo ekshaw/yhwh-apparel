@@ -12,6 +12,14 @@
       margin: 0 auto;
       width: 620px;
 
+      @media (max-width: 770px) {
+        width: 80%;
+      }
+
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+
       p {
         color: white;
         font-size: 17px;
@@ -96,6 +104,58 @@
           padding-right: 25px;
 
           order: 1;
+        }
+      }
+
+      @media (max-width: 830px) {
+        display: block;
+
+        .missionary-profile {
+          width: 100%;
+          padding: 0 50px;
+          margin-bottom: 20px;
+
+        }
+
+        .missionary-description {
+          width: 100%;
+          padding: 0 50px;
+        }
+      }
+
+      @media (max-width: 550px) {
+        .missionary-profile {
+          padding: 0 20px;
+        }
+
+        .missionary-description {
+          padding: 0 20px;
+
+          .missionary-info {
+            display: block;
+
+            p {
+              width: 100%;
+              text-align: left;
+
+              &:last-child {
+                text-align: left;
+                margin-bottom: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 450px) {
+        display: block;
+
+        .missionary-profile {
+          padding: 0;
+        }
+
+        .missionary-description {
+          padding: 0;
         }
       }
     }

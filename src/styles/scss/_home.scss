@@ -81,10 +81,8 @@
         width: 100%;
       }
     }
-  }
 
-  @media (max-width: 500px) {
-    .home-products {
+    @media (max-width: 500px) {
       display: block;
 
       .home-product {
@@ -103,6 +101,7 @@
       }
     }
   }
+
 
   .home-instafeed-container {
     text-align: center;

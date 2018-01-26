@@ -76,19 +76,18 @@
       padding-left: 14px; }
     .home .home-products .home-product img {
       width: 100%; }
-
-@media (max-width: 500px) {
-  .home .home-products {
-    display: block; }
-    .home .home-products .home-product {
-      width: 100%;
-      padding: 0 7px;
-      margin-bottom: 7px; }
-      .home .home-products .home-product:first-child {
-        padding: 0 7px; }
-      .home .home-products .home-product:last-child {
+  @media (max-width: 500px) {
+    .home .home-products {
+      display: block; }
+      .home .home-products .home-product {
+        width: 100%;
         padding: 0 7px;
-        margin-bottom: 0; } }
+        margin-bottom: 7px; }
+        .home .home-products .home-product:first-child {
+          padding: 0 7px; }
+        .home .home-products .home-product:last-child {
+          padding: 0 7px;
+          margin-bottom: 0; } }
 
 .home .home-instafeed-container {
   text-align: center; }
@@ -185,6 +184,12 @@
       text-align: center;
       margin: 0 auto;
       width: 620px; }
+      @media (max-width: 770px) {
+        .community .community-headline-container .community-headline {
+          width: 80%; } }
+      @media (max-width: 500px) {
+        .community .community-headline-container .community-headline {
+          width: 90%; } }
       .community .community-headline-container .community-headline p {
         color: white;
         font-size: 17px;
@@ -236,6 +241,36 @@
         padding-left: 0;
         padding-right: 25px;
         order: 1; }
+      @media (max-width: 830px) {
+        .community .missionary-body .missionary {
+          display: block; }
+          .community .missionary-body .missionary .missionary-profile {
+            width: 100%;
+            padding: 0 50px;
+            margin-bottom: 20px; }
+          .community .missionary-body .missionary .missionary-description {
+            width: 100%;
+            padding: 0 50px; } }
+      @media (max-width: 550px) {
+        .community .missionary-body .missionary .missionary-profile {
+          padding: 0 20px; }
+        .community .missionary-body .missionary .missionary-description {
+          padding: 0 20px; }
+          .community .missionary-body .missionary .missionary-description .missionary-info {
+            display: block; }
+            .community .missionary-body .missionary .missionary-description .missionary-info p {
+              width: 100%;
+              text-align: left; }
+              .community .missionary-body .missionary .missionary-description .missionary-info p:last-child {
+                text-align: left;
+                margin-bottom: 14px; } }
+      @media (max-width: 450px) {
+        .community .missionary-body .missionary {
+          display: block; }
+          .community .missionary-body .missionary .missionary-profile {
+            padding: 0; }
+          .community .missionary-body .missionary .missionary-description {
+            padding: 0; } }
 
 .designs .designs-row {
   width: 100%;
