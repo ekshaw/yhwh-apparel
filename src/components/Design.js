@@ -27,8 +27,10 @@ class Design extends Component {
     }
 
     return (
-      <div className='design' onClick={this.toggleDesign}>
-        {body}
+      <div className='design-container'>
+        <div className='design' onClick={this.toggleDesign}>
+          {body}
+        </div>
       </div>
     );
   }

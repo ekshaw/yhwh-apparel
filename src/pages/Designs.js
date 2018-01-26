@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import DesignRow from '../components/DesignRow';
+import Design from '../components/Design';
 
 class Designs extends Component {
   render() {
     return (
       <div className='designs'>
-        {this.props.content.map((designRow, index) =>
-          <DesignRow
-            designRow={designRow}
+        {this.props.content.map((design, index) =>
+          <Design
+            design={design}
             key={index}
           />
         )}
