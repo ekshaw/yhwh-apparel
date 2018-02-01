@@ -1,7 +1,7 @@
 import React from 'react';
 import Missionary from '../components/Missionary';
 
-const CommunityOutreach = ({ content: { headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }}) => {
+const CommunityOutreach = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }) => {
   return (
     <div className='community'>
       <div className='community-headline-container'>

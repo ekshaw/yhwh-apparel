@@ -15,10 +15,10 @@ class Main extends Component {
         <Nav logo={logo} />
         <div className='body'>
           <Switch>
-            <Route exact path='/' component={(props) => <Home content={home} />} />
+            <Route exact path='/' component={(props) => <Home {...home} />} />
             <Route exact path='/designs' component={(props) => <Designs content={designs} />} />
-            <Route exact path='/community-outreach' component={(props) => <CommunityOutreach content={community} />} />
-            <Route exact path='/about' component={(props) => <About content={about} />} />
+            <Route exact path='/community-outreach' component={(props) => <CommunityOutreach {...community} />} />
+            <Route exact path='/about' component={(props) => <About {...about} />} />
           </Switch>
         </div>
         <Footer content={footer} />

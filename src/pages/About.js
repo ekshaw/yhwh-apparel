@@ -1,7 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-const About = ({ content: { paragraphs, videoId, emailTagline, email }}) => {
+const About = ({ paragraphs, videoId, emailTagline, email }) => {
   const opts = {
     width: '100%'
   }

@@ -4,7 +4,7 @@ import HomeProducts from '../components/HomeProducts';
 import HomeInstagramFeed from '../components/HomeInstagramFeed';
 
 
-const Home = ({ content: { slides, products, instafeedSettings, instafeedTarget }}) => {
+const Home = ({ slides, products, instafeedSettings, instafeedTarget }) => {
   return (
     <div className='home'>
       <HomeCarousel slides={slides} />
