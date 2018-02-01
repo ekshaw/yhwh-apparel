@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Design from '../components/Design';
 
-class Designs extends Component {
-  render() {
-    return (
-      <div className='designs'>
-        {this.props.content.map((design, index) =>
-          <Design
-            design={design}
-            key={index}
-          />
-        )}
-      </div>
-    );
-  }
+const Designs = ({ content }) => {
+  return (
+    <div className='designs'>
+      {content.map((design, index) =>
+        <Design
+          design={design}
+          key={index}
+        />
+      )}
+    </div>
+  );
 }
 
 export default Designs;

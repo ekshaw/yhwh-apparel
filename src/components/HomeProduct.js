@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class HomeProduct extends Component {
-  render() {
-    return (
-      <div className='home-product'>
-        <a href={this.props.url}>
-          <img src={this.props.img} alt='' />
-        </a>
-      </div>
-    );
-  }
+const HomeProduct = ({ url, img }) => {
+  return (
+    <div className='home-product'>
+      <a href={url}>
+        <img src={img} alt='' />
+      </a>
+    </div>
+  );
 }
 
 export default HomeProduct;

@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import HomeProduct from './HomeProduct';
 
-class HomeProducts extends Component {
-  render() {
-    return (
-      <div className='home-products'>
-        {this.props.products.map((product, index) =>
-           <HomeProduct
-             key={index}
-             img={product.img}
-             url={product.url}
-           />
-        )}
-      </div>
-    );
-  }
+const HomeProducts = ({ products, }) => {
+  return (
+    <div className='home-products'>
+      {products.map(({ img, url }, index) =>
+         <HomeProduct
+           key={index}
+           img={img}
+           url={url}
+         />
+      )}
+    </div>
+  );
 }
 
 export default HomeProducts;

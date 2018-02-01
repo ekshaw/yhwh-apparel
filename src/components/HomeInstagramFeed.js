@@ -3,6 +3,7 @@ import Instafeed from 'react-instafeed';
 
 class HomeInstagramFeed extends Component {
   render() {
+    const { instafeedTarget, instafeedSettings } = this.props;
     return (
       <div className='home-instafeed-container'>
         <div className='home-instafeed__title'>
@@ -11,8 +12,8 @@ class HomeInstagramFeed extends Component {
           <div />
         </div>
         <div className='home-instafeed__scroll-container'>
-          <div id={this.props.instafeedTarget} className='home-instafeed'>
-            <Instafeed {...this.props.instafeedSettings}/>
+          <div id={instafeedTarget} className='home-instafeed'>
+            <Instafeed {...instafeedSettings}/>
           </div>
         </div>
       </div>
