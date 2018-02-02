@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Nav from './Nav';
-import Home from '../pages/Home';
-import Designs from '../pages/Designs';
-import CommunityOutreach from '../pages/CommunityOutreach';
-import About from '../pages/About';
-import Footer from './Footer';
+
+import NavContainer from '../containers/NavContainer';
+import HomeContainer from '../containers/HomeContainer';
+import DesignsContainer from '../containers/DesignsContainer';
+import CommunityContainer from '../containers/CommunityContainer';
+import AboutContainer from '../containers/AboutContainer';
+import FooterContainer from '../containers/FooterContainer';
 
 class Main extends Component {
   render () {
-    const { logo, home, about, designs, community, footer } = this.props.content;
     return (
       <div>
-        <Nav logo={logo} />
+        <NavContainer />
         <div className='body'>
           <Switch>
-            <Route exact path='/' component={(props) => <Home {...home} />} />
-            <Route exact path='/designs' component={(props) => <Designs content={designs} />} />
-            <Route exact path='/community-outreach' component={(props) => <CommunityOutreach {...community} />} />
-            <Route exact path='/about' component={(props) => <About {...about} />} />
+            <Route exact path='/' component={HomeContainer} />
+            <Route exact path='/designs' component={DesignsContainer} />
+            <Route exact path='/community-outreach' component={CommunityContainer} />
+            <Route exact path='/about' component={AboutContainer} />
           </Switch>
         </div>
-        <Footer content={footer} />
+        <FooterContainer />
       </div>
     );
   }

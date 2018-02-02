@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = ({ content: { paragraphs, accounts }}) => {
+const Footer = ({ paragraphs, accounts }) => {
   return (
     <div className='footer'>
       <div className='footer__info-container'>
