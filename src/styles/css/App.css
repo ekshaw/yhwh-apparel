@@ -376,7 +376,7 @@
   src: font-url("fonts/proximanova-regular-webfont.ttf") format("truetype"); }
 
 .App {
-  font-family: 'Proxima Nova', Futura; }
+  font-family: Helvetica, 'Proxima Nova', Futura; }
   .App h3 {
     margin-top: 0;
     margin-top: 20px;
