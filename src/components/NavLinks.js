@@ -9,7 +9,14 @@ class NavLinks extends Component {
           <a href='http://yhwhapparel.storenvy.com/products'>Shop</a>
         </li>
         <li><NavLink to='/designs'>Designs</NavLink></li>
-        <li><NavLink to='/community-outreach'>Community Outreach</NavLink></li>
+        <li>
+          <div class="dropdown">
+            <a class="dropbtn">Community Outreach</a>
+            <div class="dropdown-content">
+              <NavLink to='/community-outreach'>Missionaries</NavLink>
+            </div>
+          </div>
+        </li>
         <li><NavLink to='/about'>About</NavLink></li>
       </ul>
     );
