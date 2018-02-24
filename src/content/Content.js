@@ -1,7 +1,7 @@
 import about from './About';
 import designs from './Designs';
 import home from './Home';
-import community from './Community';
+import missions from './Missions';
 import footer from './Footer';
 import yhwhLogo from '../images/yhwh-logo.png';
 
@@ -10,7 +10,7 @@ const content = {
   home: home,
   about: about,
   designs: designs,
-  community: community,
+  missions: missions,
   footer: footer
 }
 

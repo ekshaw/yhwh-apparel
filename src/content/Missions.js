@@ -1,6 +1,6 @@
 import React from 'react';
 
-const community = {
+const missions = {
   headlineParagraphs: [
     'In the book of Matthew, Jesus commands us to go and make disciples of all nations. More than simply through the clothing we wear or produce, YHWH Apparel wants to take up this call in action alongside the rest of the Church. And YOU are the Church! As you labor for the Lord, we want to partner with you and support you in the specific mission God has given you. As you are faithful to your part, we also want to be faithful with what God has given us.',
     'Applications to be sponsored are currently closed. Please check back again in the spring!'
@@ -54,4 +54,4 @@ const community = {
   ]
 }
 
-export default community;
+export default missions;

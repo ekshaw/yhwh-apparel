@@ -1,9 +1,9 @@
-import CommunityOutreach from '../pages/CommunityOutreach';
+import Missions from '../pages/Missions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
   return {
-    ...state.community
+    ...state.missions
   };
 }
 
@@ -11,9 +11,9 @@ const mapDispatchToProps = dispatch => {
   return {};
 }
 
-const CommunityContainer = connect(
+const MissionsContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(CommunityOutreach);
+)(Missions);
 
-export default CommunityContainer;
+export default MissionsContainer;
