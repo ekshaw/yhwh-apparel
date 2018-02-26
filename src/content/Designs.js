@@ -2,6 +2,26 @@ import React from 'react';
 
 const designs = [
   {
+    title: 'I Am',
+    release: 'November 2017',
+    description:
+      <div>
+        <p>
+          Know the Lord your God.
+        </p>
+        <p>
+          All throughout Scripture, He reveals Himself. He is Jehovah Nissi, The Lord our Banner, when He gave the Israelites victory over the Amalekites (Exodus 17). He is Jehovah Jireh, The Lord Who Provides, when God provided a ram for sacrifice in place of Isaac (Genesis 22:14). He is YHWH, the Lord our God, who is Presence (Exodus 3:14). He is Jehovah Rohi, The Lord Our Shepherd, as David declares our relationship to God as the sheep to the shepherd (Psalm 23:1). He is Jehovah Rapha, The Lord Who Heals, who preserves the Israelites from the diseases He puts on the Egyptians (Exodus 15:26). He was, He is, and He will be. We believe a God who is constant throughout time, consistent in His nature, and unchanging despite culture.
+        </p>
+        <p>
+          Our faith has been built upon who we are, who we are made to be, and what we are called to do. But at the core of our faith, we find something surprisingly simple, despite all the complexities we have created. Simply, we find a God who is holy, almighty, and worthy of our praises.
+        </p>
+        <p>
+          Let our pursuit be discovering who He is.
+        </p>
+      </div>,
+    imgSrc: require('../images/designs/iam.png')
+  },
+  {
     title: 'Selah',
     release: 'April 2017',
     description:

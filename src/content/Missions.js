@@ -6,7 +6,7 @@ const missions = {
     'Applications to be sponsored are currently closed. Please check back again in the spring!'
   ],
   missionaryTitle: 'Sponsored Missionaries',
-  missionaryHeadline: 'Here are some friends that you’ve supported who have gone or are going somewhere on short term missions in response to this call of Jesus. Join us in praying for these individuals and the people they come across that the love of God would be known.',
+  missionaryHeadline: 'Here are some friends that you’ve supported who have gone or are going somewhere on short term missions in response to this call of Jesus. Join us in praying for these individuals and the people they come across so that the love of God would be made known.',
   missionaries: [
     {
       name: 'David',
