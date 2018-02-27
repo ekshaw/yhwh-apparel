@@ -1,5 +1,5 @@
 import React from 'react';
-import Missionary from '../components/Missionary';
+import CommunityOutreach from '../components/CommunityOutreach';
 
 const Missions = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }) => {
   return (
@@ -19,7 +19,7 @@ const Missions = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, mis
           <p>{missionaryHeadline}</p>
         </div>
         {missionaries.map((missionary, index) =>
-           <Missionary
+           <CommunityOutreach
              key={index}
              missionary={missionary}
              odd={index % 2 === 0}

@@ -14,7 +14,7 @@ class NavLinks extends Component {
             <a class="dropbtn">Community Outreach</a>
             <div class="dropdown-content">
               <NavLink to='/missions'>Missionaries</NavLink>
-              <NavLink to='/organizations'>Organizations</NavLink>
+              {/* <NavLink to='/organizations'>Organizations</NavLink> */}
             </div>
           </div>
         </li>
