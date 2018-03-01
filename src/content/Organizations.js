@@ -3,9 +3,9 @@ import React from 'react';
 const organizations = {
   headlineParagraphs: [
     'In the book of Matthew, Jesus commands us to go and make disciples of all nations. More than simply through the clothing we wear or produce, YHWH Apparel wants to take up this call in action alongside the rest of the Church. And YOU are the Church! As you labor for the Lord, we want to partner with you and support you in the specific mission God has given you. As you are faithful to your part, we also want to be faithful with what God has given us.',
+    'Below are some friends whom you’ve supported and are responding to this to share the gospel of Jesus Christ. Join us in praying for these groups and the people they come across, that the love of God would be known.'
   ],
-  missionaryTitle: 'Sponsored Missionaries',
-  missionaryHeadline: 'Here are some friends whom you’ve supported and are responding to this to share the gospel of Jesus Christ. Join us in praying for these groups and the people they come across, that the love of God would be known.',
+  missionaryTitle: 'Sponsored Organizations',
   missionaries: [
     {
       name: 'Laundry Love',

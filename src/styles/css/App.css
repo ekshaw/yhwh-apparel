@@ -264,6 +264,8 @@
         color: white;
         font-size: 17px;
         line-height: 1.8; }
+      .community .community-headline-container .community-headline h1 {
+        color: white; }
   .community .missionary-body {
     padding: 0 20px; }
     .community .missionary-body .missionary-headline {

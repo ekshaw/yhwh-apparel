@@ -1,11 +1,12 @@
 import React from 'react';
 import CommunityOutreach from '../components/CommunityOutreach';
 
-const Organizations = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }) => {
+const Organizations = ({ headlineParagraphs, missionaryTitle, missionaries }) => {
   return (
     <div className='community'>
       <div className='community-headline-container'>
         <div className='community-headline'>
+          <h1>{missionaryTitle}</h1>
           {headlineParagraphs.map((paragraph, index) =>
             <p key={index}>
               {paragraph}
@@ -14,10 +15,6 @@ const Organizations = ({ headlineParagraphs, missionaryTitle, missionaryHeadline
         </div>
       </div>
       <div className='missionary-body'>
-        <div className='missionary-headline'>
-          <h3>{missionaryTitle}</h3>
-          <p>{missionaryHeadline}</p>
-        </div>
         {missionaries.map((missionary, index) =>
            <CommunityOutreach
              key={index}
