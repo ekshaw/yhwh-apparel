@@ -1,7 +1,7 @@
 import React from 'react';
 import CommunityOutreach from '../components/CommunityOutreach';
 
-const Missions = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }) => {
+const Organizations = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, missionaries }) => {
   return (
     <div className='community'>
       <div className='community-headline-container'>
@@ -30,4 +30,4 @@ const Missions = ({ headlineParagraphs, missionaryTitle, missionaryHeadline, mis
   );
 }
 
-export default Missions;
+export default Organizations;
