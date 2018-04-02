@@ -243,6 +243,18 @@
     .about .about-contact p a {
       color: white; }
 
+.email-subscribe a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #484848;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center; }
+
+.email-subscribe a:hover {
+  background-color: #F5F5F5; }
+
 .community {
   width: 100%; }
   .community .community-headline-container {
