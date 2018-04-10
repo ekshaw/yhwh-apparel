@@ -9,6 +9,35 @@ const missions = {
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
     {
+      name: 'El Amor del Senor',
+      imgSrc: require('../images/community-outreach/eads.jpg'),
+      location: 'San Telmo, Mexico',
+      date: ' March 2, 2018 - March 4, 2018',
+      description:
+        <div>
+          <p>
+            Our main ministry at San Telmo consisted of visiting a Christian rehab center and
+            putting together VBS for the children during the day and an adult service for the families
+            in the evening. Although we weren’t able to personally get to know individuals due to a
+            lack of time and language barriers, it was encouraging to worship together with some of
+            the believers there, knowing that by God’s amazing grace, we find ourselves united as one body
+            through our hope in Jesus Christ. One realization we had was that though these Mexican
+            brothers & sisters may appear “poor” from our proud American lens, they did not seem
+            poor in their hearts, because of the fullness they experienced in Christ. On the flipside, it
+            occurred to us that many of us from the States ought to become more
+            poor (in spirit) before the Lord, despite being more “rich” economically.
+          </p>
+          <p>
+            As we returned back to Berkeley from this short trip, it was easy to simply
+            return to our clean and comfortable lives, forgetting the blessings of that weekend.
+            But we pray that God will help sustain in us an ever-thirsty heart for
+            Him and doing His will. When we find our earthly desires wane in light of who He is and want
+            nothing more than to delight in Him wherever He places us, we know that God will be most glorified and we will be filled with the fullness
+            of His joy.
+          </p>
+        </div>
+    },
+    {
       name: 'David',
       imgSrc: require('../images/community-outreach/david.jpg'),
       location: 'Navajo Reservation, Arizona',
