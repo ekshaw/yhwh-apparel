@@ -12,6 +12,7 @@ const Missions = ({ headlineParagraphs, missionaryTitle, missionaries }) => {
               {paragraph}
             </p>
           )}
+          <p> The application to be sponsored is <a href="https://goo.gl/forms/fPHQcHCPWEUPVPzo2" target="_blank">here</a>!</p>
         </div>
       </div>
       <div className='missionary-body'>

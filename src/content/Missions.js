@@ -4,7 +4,7 @@ const missions = {
   headlineParagraphs: [
     'In the book of Matthew, Jesus commands us to go and make disciples of all nations. More than simply through the clothing we wear or produce, YHWH Apparel wants to take up this call in action alongside the rest of the Church. And YOU are the Church! As you labor for the Lord, we want to partner with you and support you in the specific mission God has given you. As you are faithful to your part, we also want to be faithful with what God has given us.',
     'Below are some friends whom you’ve supported and have gone or are going somewhere on short term missions in response to this call to share the gospel of Jesus Christ. Join us in praying for these individuals and the people they come across, that the love of God would be known.',
-    'Applications to be sponsored are currently closed. Please check back again this April and May!'
+    //'Applications to be sponsored are currently closed. Please check back again this April and May!'
   ],
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
