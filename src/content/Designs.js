@@ -2,6 +2,33 @@ import React from 'react';
 
 const designs = [
   {
+    title: 'Set Apart',
+    release: 'November 2017',
+    description:
+      <div>
+        <p>
+        I AM - SET APART
+        </p>
+        <p>
+         "To be holy means to be S E T // A P A R T, to be completely distinct, to be in a class of one’s own. When God says that He is holy, He means that He is completely set apart from everything else. From the beginning, God created and set apart humanity to bear His image and display His holiness to all of Creation, but we rebelled in sin and we fell short of His glory. (Genesis 1:26-27, Romans 1:25, Romans 3:23)
+        </p>
+        <p>
+        In love and grace, God sent His Son Jesus to live a perfectly righteous life, which He gave up on the Cross to take on the wrath that humanity deserved for falling short of God’s perfect standard of holiness. (1 John 4:9-10) In His death and resurrection, Jesus took away our sin and declared us righteous, so that we would no longer be slaves to sin but children of God. (Colossians 2:13-14, 2 Corinthians 5:21, Romans 8:1-17)
+        </p>
+        <p>
+        Like the Israelites of the Old Testament, Christians are the new holy nation set apart for and by God to demonstrate His own love, righteousness, and holiness to the rest of the world. Obviously, we are not perfect; we are still works in progress and we still carry brokenness.
+        </p>
+        <p>
+          But God is not only faithful to save His people: He is faithful to sanctify, or to make us more holy by shaping us more into the image of His Son. We are being made perfect by the Holy Spirit until the day we -- from every tribe, tongue, and nation -- stand before Him complete: a people for His own possession.
+        </p>
+        <p>
+          You, washed white as snow by the crimson blood of Christ, are <br/>
+          S E T // A P A R T for the holy King. (Isaiah 1:18)"
+        </p>
+      </div>,
+    imgSrc: require('../images/designs/Set Apart.png')
+  },
+  {
     title: 'I Am',
     release: 'November 2017',
     description:
