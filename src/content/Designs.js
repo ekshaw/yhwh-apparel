@@ -3,7 +3,7 @@ import React from 'react';
 const designs = [
   {
     title: 'Set Apart',
-    release: 'November 2017',
+    release: 'May 2018',
     description:
       <div>
         <p>
