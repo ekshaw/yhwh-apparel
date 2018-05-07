@@ -378,11 +378,45 @@
         width: 100%; }
         .designs .design-container .design img:hover {
           opacity: 0.7; }
-      .designs .design-container .design .design-description h3 {
-        margin-top: 0;
-        margin-bottom: 14px; }
-      .designs .design-container .design .design-description .design-description__release {
-        color: #a8a8a8; }
+      .designs .design-container .design .design-description {
+        height: 100%;
+        width: 100%;
+        /* MAGIC HAPPENS HERE */ }
+        .designs .design-container .design .design-description h3 {
+          margin-top: 0;
+          margin-bottom: 14px; }
+        .designs .design-container .design .design-description .description-wrap {
+          height: 75%;
+          width: 100%;
+          position: relative;
+          margin: 2em auto; }
+        .designs .design-container .design .design-description .actual-description {
+          width: 100%;
+          height: 90%;
+          overflow-y: scroll; }
+        .designs .design-container .design .design-description .actual-description::-webkit-scrollbar {
+          width: .4em; }
+        .designs .design-container .design .design-description .actual-description::-webkit-scrollbar,
+        .designs .design-container .design .design-description .sactual-description::-webkit-scrollbar-thumb {
+          overflow: visible;
+          border-radius: 4px; }
+        .designs .design-container .design .design-description .actual-description::-webkit-scrollbar-thumb {
+          background: white; }
+        .designs .design-container .design .design-description .cover-bar {
+          position: absolute;
+          background: #fff;
+          height: 100%;
+          top: 0;
+          right: 0;
+          width: .4em;
+          -webkit-transition: all .5s;
+          opacity: 1;
+          color: white; }
+        .designs .design-container .design .design-description .description-wrap:hover .cover-bar {
+          opacity: 0;
+          -webkit-transition: all .5s; }
+        .designs .design-container .design .design-description .design-description__release {
+          color: #a8a8a8; }
 
 .footer {
   border-top: 1px solid #f7f7f8;

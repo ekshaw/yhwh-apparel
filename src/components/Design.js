@@ -21,7 +21,10 @@ class Design extends Component {
         <div className='design-description'>
           <h3>{this.props.design.title}</h3>
           <p className='design-description__release'>{'Released ' + this.props.design.release}</p>
-          {this.props.design.description}
+          <div className='description-wrap'>
+            <div className='actual-description'>{this.props.design.description}</div> 
+            <div class="cover-bar"></div> 
+          </div>
         </div>
       );
     }
