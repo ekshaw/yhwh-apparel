@@ -4,10 +4,40 @@ const missions = {
   headlineParagraphs: [
     'In the book of Matthew, Jesus commands us to go and make disciples of all nations. More than simply through the clothing we wear or produce, YHWH Apparel wants to take up this call in action alongside the rest of the Church. And YOU are the Church! As you labor for the Lord, we want to partner with you and support you in the specific mission God has given you. As you are faithful to your part, we also want to be faithful with what God has given us.',
     'Below are some friends whom you’ve supported and have gone or are going somewhere on short term missions in response to this call to share the gospel of Jesus Christ. Join us in praying for these individuals and the people they come across, that the love of God would be known.',
-    //'Applications to be sponsored are currently closed. Please check back again this April and May!'
+    'Applications to be sponsored are currently closed. Please check back again in the Spring!'
   ],
+  missionaryApplication: '',//<p> The application to be sponsored is <a href="https://goo.gl/forms/fPHQcHCPWEUPVPzo2" target="_blank">here</a>!</p> ,
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
+    {
+      name: 'Samuel and Jeff',
+      imgSrc: require('../images/community-outreach/samuel_jeff.jpg'),
+      location: 'Manila, Philippines',
+      date: ' May 31, 2018 - June 14, 2018',
+      description:
+        <div>
+          <p>
+            Before leaving for the trip, we prayed to God that He would show me how He can work through His sons and daughters if
+            they are obedient and put full trust in Him. There were many times throughout this trip where we felt like we were not
+            equipped enough to carry out a certain evangelical task (teaching classrooms, jail ministry, drug/rehab center ministry),
+            but God clearly reminded me that He does not call the equipped, but He equips the called. We had countless valuable
+            conversations with the Filipinos and saw many people accept Jesus into their hearts on this trip.
+            It was an amazing experience living at What The Bible Says Church and spending so much time with the members.
+            It was eye opening for us to see how missional the church members are to their hometown and to see how willing they are
+            to preach the gospel to their neighbors.
+          </p>
+          <p>
+            One of our favorite moments on this trip was when we were sharing the gospel on a college campus. We approached 3 students that
+            were waiting for their class to begin. We began going through the gospel track together and exploring different questions
+            that they had about being a believer of Jesus. Unexpectedly, 7 more students joined in our conversation one by one with no
+            effort on our part to gather them. Giving all glory to God, all 10 of these students accepted Jesus after our conversation.
+            God is indeed in every corner of our world, and He has the power to transform the hearts of any human being no matter what
+            race, ethnicity, or gender. This trip to the Philippines has given us a new perspective on God’s vastness and His ability
+            to care for His children, no matter if they are in the Silicon Valley or in a doorless hut in the middle of the rainforest.
+            Praise God!
+          </p>
+        </div>
+    },
     {
       name: 'El Amor del Senor',
       imgSrc: require('../images/community-outreach/eads.jpg'),

@@ -1,7 +1,7 @@
 import React from 'react';
 import CommunityOutreach from '../components/CommunityOutreach';
 
-const Missions = ({ headlineParagraphs, missionaryTitle, missionaries }) => {
+const Missions = ({ headlineParagraphs, missionaryApplication, missionaryTitle, missionaries }) => {
   return (
     <div className='community'>
       <div className='community-headline-container'>
@@ -12,7 +12,7 @@ const Missions = ({ headlineParagraphs, missionaryTitle, missionaries }) => {
               {paragraph}
             </p>
           )}
-          <p> The application to be sponsored is <a href="https://goo.gl/forms/fPHQcHCPWEUPVPzo2" target="_blank">here</a>!</p>
+          {missionaryApplication}
         </div>
       </div>
       <div className='missionary-body'>
