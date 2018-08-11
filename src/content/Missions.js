@@ -10,7 +10,7 @@ const missions = {
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
     {
-      name: 'Samuel and Jeff',
+      name: 'Epic Philippines Vision Team',
       imgSrc: require('../images/community-outreach/samuel_jeff.jpg'),
       location: 'Manila, Philippines',
       date: ' May 31, 2018 - June 14, 2018',
