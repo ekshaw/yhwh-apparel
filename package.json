@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.6.1",
+    "event-stream": "^4.0.1",
     "font-awesome": "^4.7.0",
     "hoek": "^5.0.4",
     "lodash": "^4.17.10",
