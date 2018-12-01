@@ -2,6 +2,29 @@ import React from 'react';
 
 const designs = [
   {
+    title: 'Found by YHWH',
+    release: 'November 2018',
+    description:
+      <div>
+        <p>
+        Found by YHWH
+        </p>
+        <p>
+        In Luke 15, Jesus tells three parables to illustrate God’s heart for the lost. The first is of a shepherd who seeks and finds a lost sheep in the open field. In the second, a woman finds a lost coin in her home. And in the final, most dramatic parable, a father comes running to embrace his lost son. 
+        </p>
+        <p>
+        According to the prophet Isaiah, “all we like sheep have gone astray; we have turned—every one—to his own way” (Isaiah 53:6). The psalmist declares that “there is none who does good, not even one” (Psalm 14:3). And the apostle Paul warns that “all have sinned and fall short of the glory of God” (Romans 3:23). We are lost not because God has misplaced us, but because we each, by the sin of our hearts, have turned away from Him to gratify ourselves. Like the prodigal son of Jesus’ parable, we seek to define good for ourselves and so squander the life we are given.
+        </p>
+        <p>
+        But Jesus “came to seek and to save the lost” (Luke 19:10). We are fallen creatures with no innate hope of restoring ourselves into the Father’s household; the best we can aim for in our own strength—like the prodigal son—is to be a slave (Luke 15:19). But God, the merciful Father, sent His Son Jesus to humbly take on our weak frame (Philippians 2). And being wholly without sin, Jesus offered Himself as a sacrifice on the cross to take the punishment we deserved for turning away from the Father. On the third day, He rose again and ascended into heaven (Luke 24).
+        </p>
+        <p>
+        When we have faith in the finished work of Jesus, the Good Shepherd who laid His life down for His sheep (John 10:1-18), we are set free from the bondage of sin and adopted as sons and daughters by God the Father (Galatians 4). And so He restores us from our lostness by giving us a new name, a new hope, and a new life that is secure in His steadfast love. By faith alone in Christ alone, we are <b>found by YHWH.</b>
+        </p>
+      </div>,
+    imgSrc: require('../images/designs/found.png')
+  },
+  {
     title: 'Set Apart',
     release: 'May 2018',
     description:
