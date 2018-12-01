@@ -2,7 +2,8 @@
   "name": "yhwh-frontend",
   "version": "0.1.0",
   "engines": {
-    "node": "10.11.0"
+    "node": "10.11.0",
+    "npm": "6.4.1"
   },
   "private": true,
   "dependencies": {
@@ -45,5 +46,11 @@
   "bugs": {
     "url": "https://github.com/yhwhapparel/yhwh-frontend/issues"
   },
-  "homepage": "https://github.com/yhwhapparel/yhwh-frontend#readme"
+  "homepage": "https://github.com/yhwhapparel/yhwh-frontend#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
