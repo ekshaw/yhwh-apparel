@@ -13,7 +13,7 @@ class HomeInstagramFeed extends Component {
         </div>
         <div className='home-instafeed__scroll-container'>
           <div id={instafeedTarget} className='home-instafeed'>
-            <Instafeed {...instafeedSettings}/>
+            <Instafeed {...instafeedSettings} />
           </div>
         </div>
       </div>

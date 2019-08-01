@@ -1,9 +1,9 @@
-import Home from '../pages/Home';
+import Newsletter from '../pages/Newsletter';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
   return {
-    ...state.home
+    ...state.newsletter
   };
 };
 
@@ -11,9 +11,9 @@ const mapDispatchToProps = dispatch => {
   return {};
 };
 
-const HomeContainer = connect(
+const NewsletterContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(Newsletter);
 
-export default HomeContainer;
+export default NewsletterContainer;

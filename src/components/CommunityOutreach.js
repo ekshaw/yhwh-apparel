@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Missionary = ({ odd, missionary: { imgSrc, name, location, date, description }}) => {
+const Missionary = ({
+  odd,
+  missionary: { imgSrc, name, location, date, description }
+}) => {
   return (
     <div className={odd ? 'missionary' : 'missionary missionary--odd'}>
       <div className='missionary-profile'>
-        <img src={imgSrc} alt=''/>
+        <img src={imgSrc} alt='' />
       </div>
       <div className='missionary-description'>
         <div>
@@ -18,6 +21,6 @@ const Missionary = ({ odd, missionary: { imgSrc, name, location, date, descripti
       </div>
     </div>
   );
-}
+};
 
 export default Missionary;

@@ -4,8 +4,8 @@ import MobileNav from './MobileNav';
 
 const Nav = ({ logo }) => {
   return (
-    <div className="nav-container">
-      <div className="nav">
+    <div className='nav-container'>
+      <div className='nav'>
         <div className='nav__links'>
           <NavLinks />
         </div>
@@ -22,6 +22,6 @@ const Nav = ({ logo }) => {
       <MobileNav logo={logo} />
     </div>
   );
-}
+};
 
 export default Nav;

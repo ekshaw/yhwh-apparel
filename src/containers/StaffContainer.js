@@ -1,9 +1,9 @@
-import Home from '../pages/Home';
+import Staff from '../pages/Staff';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
   return {
-    ...state.home
+    ...state.staff
   };
 };
 
@@ -11,9 +11,9 @@ const mapDispatchToProps = dispatch => {
   return {};
 };
 
-const HomeContainer = connect(
+const StaffContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(Staff);
 
-export default HomeContainer;
+export default StaffContainer;

@@ -7,10 +7,12 @@ import DesignsContainer from '../containers/DesignsContainer';
 import MissionsContainer from '../containers/MissionsContainer';
 import OrganizationsContainer from '../containers/OrganizationsContainer';
 import AboutContainer from '../containers/AboutContainer';
+import NewsletterContainer from '../containers/NewsletterContainer';
+import StaffContainer from '../containers/StaffContainer';
 import FooterContainer from '../containers/FooterContainer';
 
 class Main extends Component {
-  render () {
+  render() {
     return (
       <div>
         <NavContainer />
@@ -19,8 +21,14 @@ class Main extends Component {
             <Route exact path='/' component={HomeContainer} />
             <Route exact path='/designs' component={DesignsContainer} />
             <Route exact path='/missions' component={MissionsContainer} />
-            <Route exact path='/organizations' component={OrganizationsContainer} />
+            <Route
+              exact
+              path='/organizations'
+              component={OrganizationsContainer}
+            />
             <Route exact path='/about' component={AboutContainer} />
+            <Route exact path='/newsletter' component={NewsletterContainer} />
+            <Route exact path='/staff' component={StaffContainer} />
           </Switch>
         </div>
         <FooterContainer />

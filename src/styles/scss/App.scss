@@ -1,11 +1,13 @@
 @import '_nav';
 @import '_home';
 @import '_about';
+@import '_newsletter';
+@import '_staff';
 @import '_community';
 @import '_designs';
 @import '_footer';
 @import '~font-awesome/css/font-awesome.min.css';
-@font-face(Futura, fonts/Futura);
+// @font-face(Futura, fonts/Futura);
 @font-face {
   font-family: 'Proxima Nova';
   src: font-url('fonts/proximanova-regular-webfont.ttf') format('truetype');
@@ -31,12 +33,11 @@
     }
   }
 }
- * {
+* {
   box-sizing: border-box;
- }
+}
 
 .body {
   padding: 15px 0;
   margin-bottom: $body-bottom-margin;
 }
-

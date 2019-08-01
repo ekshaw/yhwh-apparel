@@ -42,7 +42,7 @@
           margin-top: 0;
           margin-bottom: 14px;
         }
-        
+
         height: 100%;
         width: 100%;
 
@@ -58,31 +58,31 @@
           overflow-y: scroll;
         }
         .actual-description::-webkit-scrollbar {
-          width: .4em; 
+          width: 0.4em;
         }
         .actual-description::-webkit-scrollbar,
         .sactual-description::-webkit-scrollbar-thumb {
-          overflow:visible;
+          overflow: visible;
           border-radius: 4px;
         }
         .actual-description::-webkit-scrollbar-thumb {
-          background: white; 
+          background: white;
         }
         .cover-bar {
           position: absolute;
-          background: #fff;;
-          height: 100%;  
+          background: #fff;
+          height: 100%;
           top: 0;
           right: 0;
-          width: .4em;
-          -webkit-transition: all .5s;
+          width: 0.4em;
+          -webkit-transition: all 0.5s;
           opacity: 1;
-          color: white
+          color: white;
         }
         /* MAGIC HAPPENS HERE */
         .description-wrap:hover .cover-bar {
-           opacity: 0;
-          -webkit-transition: all .5s;
+          opacity: 0;
+          -webkit-transition: all 0.5s;
         }
 
         .design-description__release {

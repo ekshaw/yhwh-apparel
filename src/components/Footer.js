@@ -26,7 +26,7 @@ const Footer = ({ paragraphs, accounts }) => {
           </ul>
         </div>
       </div>
-      <p className='footer__copyright'>Berkeley, CA &copy; YHWH 2018</p>
+      <p className='footer__copyright'>Berkeley, CA &copy; YHWH 2019</p>
     </div>
   );
 }

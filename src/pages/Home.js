@@ -3,7 +3,6 @@ import HomeCarousel from '../components/HomeCarousel';
 import HomeProducts from '../components/HomeProducts';
 import HomeInstagramFeed from '../components/HomeInstagramFeed';
 
-
 const Home = ({ slides, products, instafeedSettings, instafeedTarget }) => {
   return (
     <div className='home'>
@@ -15,6 +14,6 @@ const Home = ({ slides, products, instafeedSettings, instafeedTarget }) => {
       />
     </div>
   );
-}
+};
 
 export default Home;

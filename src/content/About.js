@@ -8,6 +8,6 @@ const about = {
   videoId: 'rej9vc7i__4',
   email: 'yhwhapparel@gmail.com',
   emailTagline: 'Contact us at'
-}
+};
 
 export default about;

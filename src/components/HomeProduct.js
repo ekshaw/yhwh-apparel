@@ -8,6 +8,6 @@ const HomeProduct = ({ url, img }) => {
       </a>
     </div>
   );
-}
+};
 
 export default HomeProduct;

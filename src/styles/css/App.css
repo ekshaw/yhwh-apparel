@@ -11,7 +11,8 @@
       /* Dropdown Content (Hidden by Default) */
       /* Links inside the dropdown */
       /* Show the dropdown menu on hover */
-      /* Change the background color of the dropdown button when the dropdown content is shown */ }
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      /* Show the dropdown menu on hover */ }
       .nav-container .nav .nav__links--hidden {
         visibility: hidden; }
       .nav-container .nav .nav__links ul {
@@ -38,16 +39,19 @@
         background-color: white;
         /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
         z-index: 1;
-        width: 100%; }
+        width: 120px; }
       .nav-container .nav .nav__links .dropdown-content a {
         color: black;
-        padding: 6% 9%;
+        padding: 12px 8px;
         text-decoration: none;
         display: block; }
       .nav-container .nav .nav__links .dropdown:hover .dropdown-content {
         display: block; }
       .nav-container .nav .nav__links .dropdown:hover .dropbtn {
         background-color: white; }
+      .nav-container .nav .nav__links .dropdown:hover .dropdown-content .navlink:hover {
+        display: block;
+        color: #a8a8a8; }
   .nav-container .nav__logo {
     display: flex;
     align-items: center;
@@ -219,10 +223,10 @@
   .about .about-body .about-description {
     width: 50%;
     padding-right: 20px; }
-    .about .about-body .about-description h2 {
+    .about .about-body .about-description h3 {
       margin-top: 0; }
     .about .about-body .about-description p {
-      line-height: 1.4;
+      line-height: 1.5;
       font-size: 14px; }
   .about .about-body .about-video {
     width: 50%;
@@ -248,7 +252,59 @@
   text-align: center; }
 
 .email-subscribe a:hover {
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5; }
+
+.newsletter .newsletter-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 20px; }
+  .newsletter .newsletter-body .newsletter-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 100px; }
+    .newsletter .newsletter-body .newsletter-description .newsletter-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 28px; }
+    .newsletter .newsletter-body .newsletter-description p {
+      line-height: 1.5;
+      font-size: 16px;
+      margin: 20px 0px;
+      text-align: center; }
+
+.email-subscribe a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #484848;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center; }
+
+.email-subscribe a:hover {
+  background-color: #f5f5f5; }
+
+.staff .staff-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 20px; }
+  .staff .staff-body .staff-description {
+    width: 50%;
+    padding-right: 20px; }
+    .staff .staff-body .staff-description .staff-title {
+      margin-top: 0;
+      font-size: 24px; }
+    .staff .staff-body .staff-description p {
+      line-height: 1.5;
+      font-size: 14px; }
 
 .community {
   width: 100%; }
@@ -395,7 +451,7 @@
           height: 90%;
           overflow-y: scroll; }
         .designs .design-container .design .design-description .actual-description::-webkit-scrollbar {
-          width: .4em; }
+          width: 0.4em; }
         .designs .design-container .design .design-description .actual-description::-webkit-scrollbar,
         .designs .design-container .design .design-description .sactual-description::-webkit-scrollbar-thumb {
           overflow: visible;
@@ -408,13 +464,13 @@
           height: 100%;
           top: 0;
           right: 0;
-          width: .4em;
-          -webkit-transition: all .5s;
+          width: 0.4em;
+          -webkit-transition: all 0.5s;
           opacity: 1;
           color: white; }
         .designs .design-container .design .design-description .description-wrap:hover .cover-bar {
           opacity: 0;
-          -webkit-transition: all .5s; }
+          -webkit-transition: all 0.5s; }
         .designs .design-container .design .design-description .design-description__release {
           color: #a8a8a8; }
 
@@ -451,7 +507,6 @@
     text-align: center;
     font-size: 12px; }
 
-@font-face (Futura, fonts/Futura);
 @font-face {
   font-family: 'Proxima Nova';
   src: font-url("fonts/proximanova-regular-webfont.ttf") format("truetype"); }

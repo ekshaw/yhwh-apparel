@@ -1,19 +1,19 @@
 import Nav from '../components/Nav';
 import { connect } from 'react-redux';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     logo: state.logo
   };
-}
+};
 
 const mapDispatchToProps = dispatch => {
   return {};
-}
+};
 
 const NavContainer = connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(Nav);
 
 export default NavContainer;

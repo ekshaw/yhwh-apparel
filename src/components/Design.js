@@ -5,25 +5,29 @@ class Design extends Component {
     super(props);
     this.state = {
       showDesign: true
-    }
+    };
   }
 
   toggleDesign = () => {
-    this.setState({ showDesign: !this.state.showDesign })
-  }
+    this.setState({ showDesign: !this.state.showDesign });
+  };
 
   render() {
     let body = null;
     if (this.state.showDesign) {
-      body = <img src={this.props.design.imgSrc} alt=''/>;
+      body = <img src={this.props.design.imgSrc} alt='' />;
     } else {
       body = (
         <div className='design-description'>
           <h3>{this.props.design.title}</h3>
-          <p className='design-description__release'>{'Released ' + this.props.design.release}</p>
+          <p className='design-description__release'>
+            {'Released ' + this.props.design.release}
+          </p>
           <div className='description-wrap'>
-            <div className='actual-description'>{this.props.design.description}</div> 
-            <div class="cover-bar"></div> 
+            <div className='actual-description'>
+              {this.props.design.description}
+            </div>
+            <div class='cover-bar' />
           </div>
         </div>
       );

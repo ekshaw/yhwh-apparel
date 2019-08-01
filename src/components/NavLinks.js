@@ -6,19 +6,44 @@ class NavLinks extends Component {
     return (
       <ul>
         <li>
-          <a href='http://yhwhapparel.storenvy.com/products'>Shop</a>
+          <a class='navlink' href='http://yhwhapparel.storenvy.com/products'>
+            Shop
+          </a>
         </li>
-        <li><NavLink to='/designs'>Designs</NavLink></li>
         <li>
-          <div class="dropdown">
-            <a class="dropbtn">Community Outreach</a>
-            <div class="dropdown-content">
-              <NavLink to='/missions'>Missionaries</NavLink>
-              <NavLink to='/organizations'>Organizations</NavLink>
+          <NavLink class='navlink' to='/designs'>
+            Designs
+          </NavLink>
+        </li>
+        <li>
+          <div class='dropdown'>
+            <a class='dropbtn'>Community Outreach</a>
+            <div class='dropdown-content'>
+              <NavLink class='navlink' to='/missions'>
+                Missionaries
+              </NavLink>
+              <NavLink class='navlink' to='/organizations'>
+                Organizations
+              </NavLink>
             </div>
           </div>
         </li>
-        <li><NavLink to='/about'>About</NavLink></li>
+        <li>
+          <div class='dropdown'>
+            <a class='dropbtn'>About Us</a>
+            <div class='dropdown-content'>
+              <NavLink class='navlink' to='/about'>
+                Mission & Vision
+              </NavLink>
+              <NavLink class='navlink' to='/newsletter'>
+                Newsletter
+              </NavLink>
+              <NavLink class='navlink' to='/staff'>
+                Staff
+              </NavLink>
+            </div>
+          </div>
+        </li>
       </ul>
     );
   }
