@@ -2,6 +2,7 @@ import Staff from '../pages/Staff';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
+  console.log(state.staff);
   return {
     ...state.staff
   };
