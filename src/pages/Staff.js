@@ -9,24 +9,24 @@ const Staff = ({ members, staffTitle, headlineParagraphs }) => {
         className='staff-headline-container'
         style={{ backgroundImage: "url('../images/staff/peter_thompson.jpg')" }}
       >
-        <div className='staff-headline'>
+        <p className='staff-headline'>
           <h1>{staffTitle}</h1>
           {headlineParagraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <p class='recruiting-form'>
-            <a href='http://bit.ly/YHWH2019' target='_blank'>
-              {' '}
-              Apply Here!{' '}
-            </a>
-          </p>
-          <p class='roles-sheet'>
-            <a href='http://bit.ly/YHWHTeams' target='_blank'>
-              {' '}
-              Learn about the various roles!{' '}
-            </a>
-          </p>
-        </div>
+          <div className='staff-button-container'>
+            <p className='recruiting-form'>
+              <a href='http://bit.ly/YHWH2019' target='_blank'>
+                Apply Here!
+              </a>
+            </p>
+            <p className='roles-sheet'>
+              <a href='http://bit.ly/YHWHTeams' target='_blank'>
+                Learn about the various roles!
+              </a>
+            </p>
+          </div>
+        </p>
       </div>
       <div className='member-body'>
         {members.map((member, index) => (

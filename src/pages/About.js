@@ -14,16 +14,13 @@ const About = ({ paragraphs, videoId, emailTagline, email }) => {
           {paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
+          <p>
+            {emailTagline} <a href={'mailto:' + email}>{email}</a>
+          </p>
         </div>
         <div className='about-video'>
           <YouTube videoId={videoId} opts={opts} />
         </div>
-      </div>
-      <div className='about-contact'>
-        <p>{emailTagline}</p>
-        <p>
-          <a href={'mailto:' + email}>{email}</a>
-        </p>
       </div>
     </div>
   );

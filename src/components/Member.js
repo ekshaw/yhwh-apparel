@@ -2,7 +2,7 @@ import React from 'react';
 
 const Member = ({
   odd,
-  member: { imgSrc, name, role, description, joinDate }
+  member: { imgSrc, name, role, description, fellowship }
 }) => {
   return (
     <div className={odd ? 'member' : 'member member--odd'}>
@@ -11,10 +11,10 @@ const Member = ({
       </div>
       <div className='member-description'>
         <div>
-          <h3>{name}</h3>
+          <p className='member-name'>{name}</p>
           <div className='member-info'>
             <p>{role}</p>
-            <p>{joinDate}</p>
+            <p>{fellowship}</p>
           </div>
           {description}
         </div>

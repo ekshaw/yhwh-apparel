@@ -2,9 +2,13 @@ import yumiProduct from '../images/home-products/yumi.jpg';
 import selah from '../images/home-products/selah.jpg';
 import ryan from '../images/home-products/ryan.jpg';
 
-import iam from '../images/carousel/iam.jpg';
-import iamGroup from '../images/carousel/iam-group.jpg';
+import iAm from '../images/carousel/iam.jpg';
+import iAmGroup from '../images/carousel/iam-group.jpg';
 import yumiCarousel from '../images/carousel/yumi.jpg';
+import setApart from '../images/carousel/set-apart.jpg';
+import setApartGroup from '../images/carousel/set-apart-group.jpg';
+import waterBottle from '../images/carousel/water-bottle.jpg';
+import adonaiGroup from '../images/carousel/adonai-group.jpg';
 
 const instafeedTarget = 'instafeed';
 
@@ -25,7 +29,15 @@ const home = {
         'http://yhwhapparel.storenvy.com/products/14971326-classic-sweatshirt'
     }
   ],
-  slides: [iam, iamGroup, yumiCarousel],
+  slides: [
+    adonaiGroup,
+    iAm,
+    setApartGroup,
+    iAmGroup,
+    setApart,
+    yumiCarousel,
+    waterBottle
+  ],
   instafeedTarget: instafeedTarget,
   instafeedSettings: {
     limit: '10',

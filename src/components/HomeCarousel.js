@@ -42,6 +42,7 @@ class HomeCarousel extends Component {
                 : 'home-carousel__slide'
             }
             key={index}
+            style={{ zIndex: `${-1 * index}` }}
           >
             <img src={slide} alt='' />
           </div>
