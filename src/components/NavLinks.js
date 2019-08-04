@@ -6,7 +6,11 @@ class NavLinks extends Component {
     return (
       <ul>
         <li>
-          <a class='navlink' href='http://yhwhapparel.storenvy.com/products'>
+          <a
+            class='navlink'
+            href='http://yhwhapparel.storenvy.com/products'
+            target='_blank'
+          >
             Shop
           </a>
         </li>

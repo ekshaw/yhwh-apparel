@@ -158,6 +158,21 @@ $mobile-nav-break: 785px;
       }
     }
 
+    .navlink {
+      display: block;
+      transition: 0.5s;
+    }
+
+    /* Show the dropdown menu on hover */
+    .navlink:hover {
+      display: block;
+      opacity: 0.3;
+    }
+
+    .dropbtn {
+      display: none;
+    }
+
     ul {
       margin-top: 15px;
       padding-left: 25px;

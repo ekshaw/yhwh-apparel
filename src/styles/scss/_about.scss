@@ -1,4 +1,5 @@
 @import '_shared';
+$mobile-nav-break: 785px;
 
 .about {
   .about-body {
@@ -31,6 +32,34 @@
 
     a {
       color: black;
+    }
+  }
+
+  @media (max-width: $mobile-nav-break) {
+    .about-body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about-description {
+        width: 100%;
+
+        h3 {
+          margin-top: 0;
+        }
+
+        p {
+          line-height: 1.45;
+          font-size: 14px;
+        }
+      }
+
+      .about-video {
+        width: 100%;
+        padding-top: 15px;
+      }
     }
   }
 }

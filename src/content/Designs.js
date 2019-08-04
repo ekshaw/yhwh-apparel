@@ -2,6 +2,56 @@ import React from 'react';
 
 const designs = [
   {
+    title: 'Adonai',
+    release: 'May 2019',
+    description: (
+      <div>
+        <p>Adonai</p>
+        <p>
+          “O LORD, our Lord, how majestic is Your name in all the earth! You
+          have set Your glory above the heavens.” Psalm 8:1
+        </p>
+        <p>
+          Adonai is the Hebrew word for “Lord,” a title that expresses God’s
+          supreme sovereignty and absolute power. Psalm 8:1 thus reads,{' '}
+          <b>“O YHWH, our Adonai,”</b> our Almighty King.
+        </p>
+        <p>
+          In Isaiah 6, Isaiah gets transported to the heavenly throne room of
+          God, where he sees the Lord “high and lifted up,” surrounded by
+          seraphim—angels ablaze from flying so close to the blinding radiance
+          of God’s glory. In Revelation 4, John sees a rainbow around the
+          throne, with twenty-four celestial elders bowing down and casting
+          their crowns at the feet of the Lord. John looks and sees four strange
+          “living creatures,” each celebrating the might and authority of God,
+          and all the hosts of heaven worshiping in an endless chorus.
+        </p>
+        <p>Who is this Lord, this glorious King of Majesty?</p>
+        <p>
+          Philippians 2 tells us: “Jesus humbled Himself by becoming obedient to
+          the point of death, even death on a cross. Therefore God has highly
+          exalted Him and bestowed on Him the name that is above every name, so
+          that at the name of Jesus every knee should bow, in heaven and on
+          earth and under the earth, and every tongue confess that Jesus Christ
+          is Lord, to the glory of God the Father.”
+        </p>
+        <p>
+          What is the name above every name? <br />
+          <b>Adonai — Lord Jesus.</b>
+        </p>
+        <p>
+          Jesus was triumphant over sin and death when He rose again. He is Lord
+          over the heavens and the earth, the promised King who reigns forever.
+          When we are afraid, confused, or downtrodden, we fix our eyes on the
+          One seated on the throne, who is in total control, and whose love
+          never fails.
+        </p>
+        <p>Jesus Christ is Lord. To God be the glory!</p>
+      </div>
+    ),
+    imgSrc: require('../images/designs/adonai.png')
+  },
+  {
     title: 'Found by YHWH',
     release: 'November 2018',
     description: (
@@ -87,8 +137,8 @@ const designs = [
           a people for His own possession.
         </p>
         <p>
-          You, washed white as snow by the crimson blood of Christ, are <br />S
-          E T // A P A R T for the holy King. (Isaiah 1:18)
+          You, washed white as snow by the crimson blood of Christ, are S E T //
+          A P A R T for the holy King. (Isaiah 1:18)
         </p>
       </div>
     ),
