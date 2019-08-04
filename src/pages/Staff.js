@@ -16,18 +16,12 @@ const Staff = ({ members, staffTitle, headlineParagraphs }) => {
           ))}
           <div className='staff-button-container'>
             <p className='recruiting-form'>
-              <a
-                href='http://bit.ly/YHWH2019'
-                // target='_blank'
-              >
+              <a href='http://bit.ly/YHWH2019' target='_blank'>
                 Apply Here!
               </a>
             </p>
             <p className='roles-sheet'>
-              <a
-                href='http://bit.ly/YHWHTeams'
-                // target='_blank'
-              >
+              <a href='http://bit.ly/YHWHTeams' target='_blank'>
                 Learn about the various roles!
               </a>
             </p>

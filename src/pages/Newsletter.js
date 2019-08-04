@@ -17,7 +17,7 @@ const Newsletter = () => {
               <a
                 className='email-subscribe'
                 href='https://yhwhapparel.us17.list-manage.com/subscribe/post?u=3b2e4256bbd2842c224d4af58&amp;id=8889cc916c'
-                // target='_blank'
+                target='_blank'
               >
                 Subscribe
               </a>

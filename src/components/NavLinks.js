@@ -9,7 +9,7 @@ class NavLinks extends Component {
           <a
             class='navlink'
             href='http://yhwhapparel.storenvy.com/products'
-            // target='_blank'
+            target='_blank'
           >
             Shop
           </a>
