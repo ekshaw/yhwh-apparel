@@ -55,7 +55,7 @@ const staff = {
             "Hello! I'm a senior in Presence and I've been a part of YHWH's
             operations team since Fall '17. I learn something new every semester
             working with YHWH and I'm really excited to see how the team will
-            grow in the coming semesters! 🙂"
+            grow in the coming semesters!"
           </p>
         </div>
       )

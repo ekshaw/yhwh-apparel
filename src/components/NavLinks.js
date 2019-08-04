@@ -9,7 +9,7 @@ class NavLinks extends Component {
           <a
             class='navlink'
             href='http://yhwhapparel.storenvy.com/products'
-            target='_blank'
+            // target='_blank'
           >
             Shop
           </a>
@@ -21,7 +21,7 @@ class NavLinks extends Component {
         </li>
         <li>
           <div class='dropdown'>
-            <a class='dropbtn'>Community Outreach</a>
+            <p class='dropbtn'>Community Outreach</p>
             <div class='dropdown-content'>
               <NavLink class='navlink' to='/missions'>
                 Missionaries
@@ -34,7 +34,7 @@ class NavLinks extends Component {
         </li>
         <li>
           <div class='dropdown'>
-            <a class='dropbtn'>About Us</a>
+            <p class='dropbtn'>About Us</p>
             <div class='dropdown-content'>
               <NavLink class='navlink' to='/about'>
                 Mission & Vision
