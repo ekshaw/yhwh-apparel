@@ -92,7 +92,7 @@ const designs = [
         </p>
       </div>
     ),
-    imgSrc: require('../images/designs/Set Apart.png')
+    imgSrc: require('../images/designs/set-apart.png')
   },
   {
     title: 'I Am',

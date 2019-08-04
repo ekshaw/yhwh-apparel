@@ -7,7 +7,7 @@ import iAmGroup from '../images/carousel/iam-group.jpg';
 import yumiCarousel from '../images/carousel/yumi.jpg';
 import setApart from '../images/carousel/set-apart.jpg';
 import setApartGroup from '../images/carousel/set-apart-group.jpg';
-import waterBottle from '../images/carousel/water-bottle.jpg';
+import sticker from '../images/carousel/sticker.jpg';
 import adonaiGroup from '../images/carousel/adonai-group.jpg';
 
 const instafeedTarget = 'instafeed';
@@ -36,7 +36,7 @@ const home = {
     iAmGroup,
     setApart,
     yumiCarousel,
-    waterBottle
+    sticker
   ],
   instafeedTarget: instafeedTarget,
   instafeedSettings: {
