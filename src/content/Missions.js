@@ -10,10 +10,74 @@ const missions = {
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
     {
+      name: 'LivingWater Japan Mission Team (Zishan Huang)',
+      imgSrc: require('../images/community-outreach/japan.jpg'),
+      location: 'City, Japan',
+      date: 'Date',
+      description: (
+        <div>
+          <p>
+            "To be completely honest, when I first signed on to be a part of the
+            Japan Missions Team, it was a super last minute, spur of the moment
+            decision. I had never been on a missions trip nor been to Japan, but
+            after overhearing Cindy video chatting with Hannah and later
+            learning about the details, my heart's immediate reaction was "YES,
+            that sounds amazing!"
+          </p>
+          <p>
+            But I had never been on a missions trip before, and the rest of the
+            group (minus Cindy and me) were all either upperclassmen or
+            post-graduate students, so going in, I was extremely intimidated.
+            Cindy couldn't make our first meeting due to previous arrangements,
+            so I had to nervously go into the meeting with these older,
+            seemingly very spiritually-mature guys-- all of whom were then
+            strangers-- and try to not be absolutely terrified and scared away.
+            Fortunately, everyone was incredibly friendly, and though I
+            definitely felt doubt regarding "whether or not I belonged here on
+            this team", I also felt a wave of inspiration and admiration for
+            those sitting around me. I still consider myself to be pretty young
+            in my faith journey, with so much to learn, but rather than letting
+            myself be scared away, I have learned to take this as an opportunity
+            to grow and learn from these individuals, all of whom had such rich
+            wells of knowledge and spirituality flowing from them.
+          </p>
+          <p>
+            This was a feeling that I continued to grapple with throughout the
+            entirety of the trip, and as such, my experience in Japan can best
+            be encapsulated as an experience of inspiration and learning. As a
+            bit of a wallflower, I tend to do a little more observing, so I was
+            constantly finding inspiration in little things those around me said
+            or did. I loved discovering everyone's little quirks, hearing
+            various insights during debriefs, learning fun Bible trivia from
+            games we played on the bus rides, and just hearing everyone's
+            testimonies. I was inspired by the fiery passions of the Christians
+            living in Japan, especially after learning about the long history of
+            persecutions Japanese Christians endured for their faith. I was
+            inspired by the multi-language worship we sang, experiencing
+            firsthand how Christ's love for us exceeds all boundaries and
+            languages. I was inspired by the willingness of the kids to open up
+            and participate in all of our activities and dances with such
+            childlike wonder.
+          </p>
+          <p>
+            Though I felt massively unprepared and unworthy going into this
+            trip, I came out feeling filled with God's spirit and a burning
+            desire to continue to serve. I was reminded of my own limitations
+            and weaknesses, but I was also reminded that "God doesn't call the
+            qualified but rather qualifies the called". There was no way that I
+            was ready to push through on this trip alone, but it is only by
+            God's grace and His strength that I was able to walk away not
+            discouraged and drained but fulfilled and proud of the seeds we have
+            planted in the beautiful people of Japan."
+          </p>
+        </div>
+      )
+    },
+    {
       name: 'Epic Philippines Vision Team',
       imgSrc: require('../images/community-outreach/samuel_jeff.jpg'),
       location: 'Manila, Philippines',
-      date: ' May 31, 2018 - June 14, 2018',
+      date: 'May 31, 2018 - June 14, 2018',
       description: (
         <div>
           <p>
@@ -54,7 +118,7 @@ const missions = {
       name: 'El Amor del Senor',
       imgSrc: require('../images/community-outreach/eads.jpg'),
       location: 'San Telmo, Mexico',
-      date: ' March 2, 2018 - March 4, 2018',
+      date: 'March 2, 2018 - March 4, 2018',
       description: (
         <div>
           <p>
