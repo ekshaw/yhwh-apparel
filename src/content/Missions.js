@@ -10,10 +10,10 @@ const missions = {
   missionaryTitle: 'Sponsored Missionaries',
   missionaries: [
     {
-      name: 'LivingWater Japan Mission Team (Zishan Huang)',
+      name: 'LivingWater Japan Missions Team',
       imgSrc: require('../images/community-outreach/japan.jpg'),
-      location: 'City, Japan',
-      date: 'Date',
+      location: 'Yokkaichi and Kanazawa, Japan',
+      date: 'July 22, 2019 - August 6, 2019',
       description: (
         <div>
           <p>
@@ -68,7 +68,7 @@ const missions = {
             was ready to push through on this trip alone, but it is only by
             God's grace and His strength that I was able to walk away not
             discouraged and drained but fulfilled and proud of the seeds we have
-            planted in the beautiful people of Japan."
+            planted in the beautiful people of Japan." - Zishan Huang
           </p>
         </div>
       )
