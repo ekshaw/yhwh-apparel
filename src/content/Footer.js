@@ -1,6 +1,6 @@
 const content = {
   paragraphs: [
-    'Every design has been prayed upon, biblically inspired, and personally experienced. 100% of our profits will go towards charity and missionary trips.',
+    'Every design has been prayed upon, biblically inspired, and personally experienced.',
     'All for His Glory.'
   ],
   accounts: [
