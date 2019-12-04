@@ -110,19 +110,25 @@ const staff = {
     //     </div>
     //   )
     // },
-    // {
-    //   name: 'Sooyoung Park',
-    //   role: 'Marketing',
-    //   imgSrc: require('../images/staff/tai-in_chung.jpg'),
-    //   fellowship: 'Livingwater Presence',
-    //   description: (
-    //     <div>
-    //       <p>
-    //         ""
-    //       </p>
-    //     </div>
-    //   )
-    // },
+    {
+      name: 'Sooyoung Park',
+      role: 'Marketing',
+      imgSrc: require('../images/staff/sooyoung.jpg'),
+      fellowship: 'Livingwater Presence',
+      description: (
+        <div>
+          <p>
+            "I've been in YHWH since the beginning of my sophomore year. Through
+            praying and sharing life with one another, it's been amazing not only
+            hearing about how God has been working through each and every one of our
+            lives, but also witnessing my personal growth in my faith. It's been such
+            a blessing to be a part of a team that just loves God so wholeheartedly.
+            Outside of YHWH and classes, I enjoy bullet journaling, playing basketball
+            and piano, and going on food adventures!"
+          </p>
+        </div>
+      )
+    },
     {
       name: 'Matt Flores',
       role: 'Operations / Web',
