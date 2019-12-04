@@ -9,6 +9,9 @@ import setApart from '../images/carousel/set-apart.jpg';
 import setApartGroup from '../images/carousel/set-apart-group.jpg';
 import sticker from '../images/carousel/sticker.jpg';
 import adonaiGroup from '../images/carousel/adonai-group.jpg';
+import whalePin from '../images/carousel/whale-pin.jpg';
+
+
 
 const instafeedTarget = 'instafeed';
 
@@ -36,7 +39,8 @@ const home = {
     iAmGroup,
     setApart,
     yumiCarousel,
-    sticker
+    sticker,
+    whalePin
   ],
   instafeedTarget: instafeedTarget,
   instafeedSettings: {
