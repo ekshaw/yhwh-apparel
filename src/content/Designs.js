@@ -2,6 +2,44 @@ import React from 'react';
 
 const designs = [
   {
+    title: 'Run With Endurance',
+    release: 'December 2019',
+    description: (
+      <div>
+        <p>Run With Endurance</p>
+        <p>
+          “Therefore, since we are surrounded by such a great cloud of witnesses, let us
+          throw off everything that hinders and the sin that so easily entangles. And let
+          us run with perseverance the race marked out for us, fixing our eyes on Jesus,
+          the pioneer and perfecter of faith. For the joy set before him he endured the cross,
+          scorning its shame, and sat down at the right hand of the throne of God. Consider 
+          him who endured such opposition from sinners, so that you will not grow weary and
+          lose heart.” Hebrews 12:1-3
+        </p>
+        <p>
+          Jesus endured verbal and physical mockery and hatred during his life on
+          earth. He was ultimately given a criminal death sentence, and was crucified
+          on a cross. Jesus endured it all for our sake. He saw joy in his sufferings
+          because his death was the means to sanctify us and justify our eternal salvation.
+          Jesus’ crucifixion tore the veil between us and God, paid for all our sins, and
+          made a way for us to be reunited with our Heavenly Father.
+        </p>
+        <p>
+          As Christians, we look forward to the finish line of our race: to be with our
+          Father in Heaven. God knows this journey isn’t easy; the burdens and sins of
+          this world are heavy. That is where Jesus becomes our living hope. We are promised
+          that Jesus is the “founder and perfecter of our faith” (v2) and that He endured
+          the cross so that we would “not grow weary or fainthearted” (v3). He is our strength
+          when we are tired from carrying life’s burdens and fighting sin’s temptations.
+          This is our expectation as we tread through the mountains and valleys of life.
+        </p>
+        <p>So, brothers and sisters, be encouraged by the everlasting promise and presence of our
+        Heavenly Father and Lord. Let’s run this race with endurance.</p>
+      </div>
+    ),
+    imgSrc: require('../images/designs/endure.jpg')
+  },
+  {
     title: 'Adonai',
     release: 'May 2019',
     description: (
