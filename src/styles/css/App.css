@@ -560,9 +560,10 @@
       .designs .design-container .design:hover {
         cursor: pointer; }
       .designs .design-container .design img {
-        width: 100%; }
+        width: 100%;
+        transition: 0.5s; }
         .designs .design-container .design img:hover {
-          opacity: 0.7; }
+          opacity: 0.5; }
       .designs .design-container .design .design-description {
         height: 100%;
         width: 100%;
