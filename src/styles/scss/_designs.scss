@@ -25,17 +25,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 0.5s;
 
       &:hover {
         cursor: pointer;
+        opacity: 0.5;
       }
 
       img {
         width: 100%;
-        transition: 0.5s;
-        &:hover {
-          opacity: 0.5;
-        }
+        // &:hover {
+        // }
       }
 
       .design-description {

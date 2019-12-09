@@ -556,14 +556,13 @@
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: 0.5s; }
       .designs .design-container .design:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        opacity: 0.5; }
       .designs .design-container .design img {
-        width: 100%;
-        transition: 0.5s; }
-        .designs .design-container .design img:hover {
-          opacity: 0.5; }
+        width: 100%; }
       .designs .design-container .design .design-description {
         height: 100%;
         width: 100%;
