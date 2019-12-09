@@ -2,16 +2,13 @@ import yumiProduct from '../images/home-products/yumi.jpg';
 import selah from '../images/home-products/selah.jpg';
 import ryan from '../images/home-products/ryan.jpg';
 
-import iAm from '../images/carousel/iam.jpg';
 import iAmGroup from '../images/carousel/iam-group.jpg';
-import yumiCarousel from '../images/carousel/yumi.jpg';
-import setApart from '../images/carousel/set-apart.jpg';
 import setApartGroup from '../images/carousel/set-apart-group.jpg';
 import sticker from '../images/carousel/sticker.jpg';
 import adonaiGroup from '../images/carousel/adonai-group.jpg';
 import whalePin from '../images/carousel/whale-pin.jpg';
-
-
+import foundGroup from '../images/carousel/found-group.jpg';
+import enduranceGroup from '../images/carousel/endurance-group.jpg';
 
 const instafeedTarget = 'instafeed';
 
@@ -33,12 +30,11 @@ const home = {
     }
   ],
   slides: [
+    enduranceGroup,
     adonaiGroup,
-    iAm,
     setApartGroup,
+    foundGroup,
     iAmGroup,
-    setApart,
-    yumiCarousel,
     sticker,
     whalePin
   ],
