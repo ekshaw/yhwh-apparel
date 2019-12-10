@@ -9,7 +9,6 @@
   "dependencies": {
     "ajv": "^6.6.1",
     "font-awesome": "^4.7.0",
-    "fsevents": "^1.2.9",
     "hoek": "^5.0.4",
     "lodash": "^4.17.15",
     "merge": "^1.2.1",
@@ -24,6 +23,9 @@
     "react-scripts": "^2.1.1",
     "react-youtube": "^7.6.0",
     "redux": "^3.7.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/scss -o src/styles/css",
