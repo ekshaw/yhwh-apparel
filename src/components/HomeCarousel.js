@@ -15,7 +15,7 @@ class HomeCarousel extends Component {
   setTimer() {
     this.timer = setTimeout(() => {
       this.goToNextSlide();
-    }, 4000);
+    }, 5000);
   }
 
   goToSlide = index => {
