@@ -16,7 +16,7 @@ const Staff = ({ members, staffTitle, headlineParagraphs }) => {
           ))}
           <div className='staff-button-container'>
             <p className='recruiting-form'>
-              <a href='http://bit.ly/YHWH2019' target='_blank'>
+              <a href='https://forms.gle/aZtbDuJmrGT4pNzc9' target='_blank'>
                 Apply Here!
               </a>
             </p>
