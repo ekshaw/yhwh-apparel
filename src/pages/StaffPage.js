@@ -34,10 +34,11 @@ const StaffPage = props => {
             <h3>
               "Hi! My name is Nicole Lee and I am currently a junior majoring in
               Media Studies. I am a part of Reformed University Fellowship (RUF)
-              at Cal. I have been in YHWH for 2 years now and love that I am
-              able to share my faith and do meaningful work alongside some
-              really cool people. In my free time I enjoy cooking, writing, and
-              binge watching shows from my childhood!."
+              at Cal and have been in YHWH since the fall semester of my
+              sophomore year. I love that YHWH allows me to share my faith in a
+              unique way and do meaningful work alongside some really cool
+              people. In my free time I enjoy cooking, writing, and playing
+              volleyball!"
             </h3>
           </div>
         </div>
@@ -131,13 +132,14 @@ const StaffPage = props => {
               </div>
               <div className='design1-bio'>
                 <h3>
-                  "Hi I'm Aaron and I'm a freshman at Berkeley. I joined YHWH
-                  this semester because I wanted to be part of a creative outlet
-                  for a higher purpose. As a member of the Design team, being in
-                  YHWH has encouraged me to think about my faith abstractly and
-                  artistically, and to translate that into biblical,
-                  God-breathed visuals. Besides design, I like film photography,
-                  hanging out with friends, reading the news, and exercising!"
+                  "Hi I'm Aaron and I'm a freshman at Berkeley, intending to
+                  study business administration and cognitive science. I joined
+                  YHWH in Fall 2019 because I wanted to be part of a creative
+                  outlet for a higher purpose. As a member of the Design team,
+                  being in YHWH has encouraged me to think about my faith
+                  abstractly and artistically, and to translate that into
+                  biblical, God-breathed visuals. In my free time, I like
+                  shooting film and thrifting."
                 </h3>
               </div>
             </div>
@@ -152,11 +154,12 @@ const StaffPage = props => {
               </div>
               <div className='design2-bio'>
                 <h3>
-                  "What's up! I'm Emily and I'm a sophomore at Cal. This is my
-                  first semester in YHWH and I feel so blessed to be able work
-                  and grow alongside an amazing team to create designs and
-                  clothing that spark conversations about God. In my free time,
-                  I love hiking, swimming, cooking, and drinking boba."
+                  "I'm Emily and I'm a sophomore at Cal. I joined YHWH in Fall
+                  2019 and it has really shown me how my passions for design can
+                  be used to glorify God. I feel so blessed to be able work and
+                  grow alongside an amazing team to create designs and clothing
+                  that spark conversations about God. In my free time, I love
+                  hiking, swimming, cooking, and drinking boba."
                 </h3>
               </div>
             </div>
@@ -171,28 +174,11 @@ const StaffPage = props => {
               </div>
               <div className='design3-bio'>
                 <h3>
-                  "I have long been a fan of YHWH’s cozy apparel and liked how
-                  boldly “Christian” the clothes were. I never pictured myself
-                  joining until I saw a pretty set of photos get posted on
-                  YHWH’s Instagram. I recognized a non-Christian friend of mine
-                  modeling the Adonai sweater, and my jaw dropped. Seeing my
-                  friend in that photo made me remember our greater goal as
-                  Christians to spread God’s Kingdom..."
-                  {/* I was reminded how
-                  clothing can send a message and start conversations. Not only
-                  that, but the aesthetics of the photo triggered my old love of
-                  taking photos. I was eager to channel my passion for
-                  photography into something productive and God glorifying. By
-                  default, I was put on the design team. I am a bit clueless
-                  when it comes to graphic design, and did not think I would be
-                  helping too much in designing our products. But God has shown
-                  me countless times how He uses weak people to make great
-                  things happen. My time at YHWH has already been such a
-                  blessing. There is so much symbolism and meaning that goes
-                  into our designs from the color of the fabric or why something
-                  might be embroidered. Each piece of clothing has so much
-                  thought put into it, and I am so proud to be part of such a
-                  hard-working team!" */}
+                  "Hello, I’m Angela! I’m currently a junior at Cal studying
+                  Nutritional Science. I joined YHWH in the fall semester of my
+                  junior year after having long been a fan of YHWH’s cozy
+                  apparel and bold statements of the gospel. In my free time I
+                  love to bake, take photos, and dance."
                 </h3>
               </div>
             </div>
@@ -213,8 +199,8 @@ const StaffPage = props => {
           </div>
           <div className='ops1-bio'>
             <h3>
-              "Hi, I'm Matt and I'm a sophomore at Cal studying Cognitive
-              Science. This is my first semester in YHWH and its been such a
+              "Hi, I’m Matt and I’m a sophomore at Cal studying Cognitive
+              Science. I joined YHWH in Fall 2019 and it has been such a
               blessing and privilege to be apart of a team so dedicated to
               making a product that glorifies God. This team has showed me how I
               can use my skills and passions (in logistics, communication, and
