@@ -1,0 +1,75 @@
+.design-scroll-container {
+  width: 100vw;
+  height: 42.9vw;
+  background-color: #d3cec7;
+  display: flex;
+  flex-direction: row;
+  padding: 13vw 0 5vw;
+  justify-content: space-around;
+}
+
+.scroll-item {
+  width: 78%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrow-btn {
+  width: 2.7vw;
+  margin: 0 3vw;
+  /* box-shadow: ; */
+}
+
+.left-arrow-box,
+.right-arrow-box {
+  position: absolute;
+  width: 2.7vw;
+  height: 42.9vw;
+  background-color: #fefefe;
+  opacity: 0.1;
+}
+
+.arrow-btn:hover {
+  cursor: pointer;
+}
+
+.arrow-btn > img {
+  width: 40%;
+  position: relative;
+  height: 5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-description-container {
+  position: relative;
+  width: 42%;
+}
+
+.scroll-caption {
+  width: 100%;
+}
+
+.scroll-description {
+  width: 100%;
+}
+
+.shop-now-btn {
+  position: absolute;
+  bottom: 0vw;
+  border: solid;
+  border-width: thin;
+  width: 10vw;
+  padding: 0.2vw 0.5vw;
+  text-align: center;
+}
+.shop-now-btn > a > * {
+  letter-spacing: 2px;
+  font-size: 1.1vw;
+}
+
+.scroll-image {
+  width: 55%;
+}
