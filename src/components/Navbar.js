@@ -31,7 +31,7 @@ const Navbar = props => {
             {/* <Link to='/shop'>
               <div className='navlink'>SHOP</div>
             </Link> */}
-            <a href='https://yhwhapparel.storenvy.com'>
+            <a href='https://yhwhapparel.storenvy.com/products'>
               <div className='navlink'>SHOP</div>
             </a>
           </li>

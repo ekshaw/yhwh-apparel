@@ -21,7 +21,7 @@ const HomePage = props => {
             </h3>
           </div>
           <div className='shop-btn'>
-            <a href='https://yhwhapparel.storenvy.com'>
+            <a href='https://yhwhapparel.storenvy.com/products'>
               <h4>SHOP NOW</h4>
             </a>
           </div>
