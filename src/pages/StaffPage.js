@@ -260,7 +260,7 @@ const StaffPage = props => {
               <h4>FOLLOW AND LIKE US ON FACEBOOK</h4>
             </div>
             <div className='connect-fb-caption'>
-              <h3>Get notified about Yhwh's events and campus sales.</h3>
+              <h3>Get notified about our events and campus sales.</h3>
             </div>
           </div>
         </div>
@@ -293,13 +293,10 @@ const StaffPage = props => {
           </div>
           <div className='connect-medium-caption-container'>
             <div className='connect-medium-title'>
-              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <h4>FOLLOW US ON MEDIUM</h4>
             </div>
             <div className='connect-medium-caption'>
-              <h3>
-                Keep up with our company and the journey we are going through
-                with monthly newsletters.
-              </h3>
+              <h3>Keep up with our company and follow us on our journey.</h3>
             </div>
           </div>
         </div>
