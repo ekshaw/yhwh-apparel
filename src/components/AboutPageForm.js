@@ -55,7 +55,7 @@ class AboutForm extends Component {
             <div
               className={
                 'form-tab ' +
-                (this.state.form_active_tab == 'subscribe' ? 'active' : '')
+                (this.state.form_active_tab === 'subscribe' ? 'active' : '')
               }
               id='subscribe-tab'
               onClick={this.onSubscribeTabClick}
@@ -65,7 +65,7 @@ class AboutForm extends Component {
             <div
               className={
                 'form-tab ' +
-                (this.state.form_active_tab == 'contact' ? 'active' : '')
+                (this.state.form_active_tab === 'contact' ? 'active' : '')
               }
               id='contact-tab'
               onClick={this.onContactTabClick}
@@ -78,7 +78,7 @@ class AboutForm extends Component {
               <div className='form-title'>
                 <h1>&nbsp;{this.state.form_title}</h1>
               </div>
-              {this.state.form_active_tab == 'contact' ? (
+              {this.state.form_active_tab === 'contact' ? (
                 <ContactForm />
               ) : (
                 <SubscribeForm />

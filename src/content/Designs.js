@@ -101,9 +101,9 @@ const Designs = [
       <div>
         <h3>
           In Luke 15, Jesus tells three parables to illustrate God’s heart for
-          the lost. The first is of a shepherd who seeks and finds a lost sheep
-          in the open field, the second about a woman finding a lost coin, and
-          the final about a father running to embrace his lost son.
+          the lost. A shepherd who seeks and finds a lost sheep in the open
+          field, a woman finding a lost coin, and a father running to embrace
+          his lost son.
         </h3>
         <h3>
           According to Isaiah, “we all, like sheep, have gone astray; we have
@@ -232,8 +232,7 @@ const Designs = [
     release: 'April 2017',
     description: (
       <div>
-        <h3>To seek.</h3>
-        <h3>Is to search after.</h3>
+        <h3>To seek. Is to search after.</h3>
         <h3>
           When the waves seem to be rising faster. When our heart seems tossed
           around. When we feel like we keep hitting the same wall over and over
@@ -257,26 +256,26 @@ const Designs = [
       <div>
         <h3>
           We say we’re athletes, artists, students. We identify ourselves by
-          personality type, and pride ourselves in being perceived as polite,
+          personality type and pride ourselves in being perceived as polite,
           good looking, or well-liked. We tell the world we go to this college,
           or we’re dating that person; We say, “Look at where I've been. Look at
           what I've done, and who I’ll surely become. This is who I am.”
         </h3>
         <h3>But at the core of it all, who are we really?</h3>
-        <h3>
-          When we grow up, and find ourselves without the comfort of our
-          parents. When our brains can no longer function at the same level of
+        {/* <h3>
+          When we grow up and find ourselves without the comfort of our parents.
+          When our brains can no longer function at the same level of
           creativity, when the things that once excited us begin to dull. When
           suddenly our personality or friends or circumstances are no longer the
           same as they once were.
-        </h3>
+        </h3> */}
         {/* <h3>
           When there is nothing left of ourselves that we can say or boast of.
-        </h3>
+        </h3> */}
         <h3>
           Know what you are. Know who you are. Know Whose you are. You are
-          defined by the Maker. 
-        </h3>*/}
+          defined by the Maker.
+        </h3>
       </div>
     ),
     imgSrc: require('../images/designs/identity.jpg')
@@ -345,11 +344,8 @@ const Designs = [
         <h3>
           Don't simply wear this name on your chest. Take up your identity as a
           child of God. Wear it on your heart. Convey it in your words and
-          actions.
-        </h3>
-        <h3>
-          You are wearing the name of the Most High King. What will you say?
-          What will you do?
+          actions. You are wearing the name of the Most High King. What will you
+          say? What will you do?
         </h3>
       </div>
     ),
