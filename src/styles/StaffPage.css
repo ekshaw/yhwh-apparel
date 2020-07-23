@@ -363,3 +363,6 @@
   opacity: 0.2;
   margin-right: 2vw;
 }
+
+@media (max-width: 480px) {
+}
