@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import '../styles/MobileNav.css';
+import { Link } from 'react-router-dom';
 
 class MobileNav extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ toggle between hiding and showing the dropdown content */
       <div>
         <div
           onClick={this.click}
-          className='hamburger-icon'
+          className={'hamburger-icon' + (this.state.hide_menu ? '' : ' fixed')}
         >
           <img src={require('../images/hamburger_menu.svg')} id='hamburger-icon'></img>
         </div>
@@ -62,11 +63,31 @@ toggle between hiding and showing the dropdown content */
         >
           <div className='menu-items-holder'>
             <div id='myDropdown' className='menubar-text'>
-              <p>ABOUT YHWH</p>
-              <p>OUR TEAM</p>
-              <p>DESIGNS</p>
-              <p>SHOP</p>
-              <p>PARTNERSHIPS</p>
+              <li>
+                <Link to='/about' className='menubar-text'>
+                  ABOUT YHWH
+                </Link>
+              </li>
+              <li>
+                <Link to='/staff' className='menubar-text'>
+                  OUR TEAM
+                </Link>
+              </li>
+              <li>
+                <Link to='/designs' className='menubar-text'>
+                  DESIGNS
+                </Link>
+              </li>
+              <li>
+                <Link to='/shop' className='menubar-text'>
+                  SHOP
+                </Link>
+              </li>
+              <li>
+                <Link to='/partnerships' className='menubar-text'>
+                  PARTNERSHIPS
+                </Link>
+              </li>
             </div>
           </div>
         </div>
