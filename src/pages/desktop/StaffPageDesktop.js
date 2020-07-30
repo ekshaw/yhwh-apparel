@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import '../../styles/StaffPage.css';
+import '../../styles/desktop/StaffPageDesktop.css';
 
 const StaffPageDesktop = props => {
   return (

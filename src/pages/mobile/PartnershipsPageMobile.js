@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import '../../styles/PartnershipsPage.css';
+import '../../styles/mobile/PartnershipsPageMobile.css';
 
 const PartnershipsPageMobile = props => {
   return (

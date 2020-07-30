@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import InstagramFeed from '../../components/InstagramFeed';
-import '../../styles/HomePage.css';
+import '../../styles/desktop/HomePageDesktop.css';
 
 const HomePageDesktop = props => {
   return (

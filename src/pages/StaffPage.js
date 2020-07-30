@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/StaffPage.css';
 import StaffPageDesktop from './desktop/StaffPageDesktop';
 import StaffPageMobile from './mobile/StaffPageMobile';
 import { useMediaQuery } from 'react-responsive';

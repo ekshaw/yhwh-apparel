@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/PartnershipsPage.css';
 import PartnershipsPageDesktop from './desktop/PartnershipsPageDesktop';
 import PartnershipsPageMobile from './mobile/PartnershipsPageMobile';
 import { useMediaQuery } from 'react-responsive';

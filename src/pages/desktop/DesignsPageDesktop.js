@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import '../../styles/DesignsPage.css';
+import '../../styles/desktop/DesignsPageDesktop.css';
 import DesignCarousel from '../../components/DesignCarousel';
 
 const DesignsPageDesktop = props => {

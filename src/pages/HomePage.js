@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/HomePage.css';
 import HomePageDesktop from './desktop/HomePageDesktop';
 import HomePageMobile from './mobile/HomePageMobile';
 import { useMediaQuery } from 'react-responsive';

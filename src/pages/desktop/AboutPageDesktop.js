@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Footer from '../../components/Footer';
-import '../../styles/AboutPage.css';
+import '../../styles/desktop/AboutPageDesktop.css';
 import AboutPageForm from '../../components/AboutPageForm';
 import AboutVideo from '../../components/AboutVideo';
 

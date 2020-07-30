@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/AboutPage.css';
 import AboutPageDesktop from './desktop/AboutPageDesktop';
 import AboutPageMobile from './mobile/AboutPageMobile';
 import { useMediaQuery } from 'react-responsive';

@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import '../../styles/StaffPage.css';
+import '../../styles/mobile/StaffPageMobile.css';
 
 const StaffPageMobile = props => {
   return (
