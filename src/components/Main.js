@@ -4,7 +4,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import '../styles/Main.css';
 
-import Navbar from './/Navbar';
+import Navbar from './Navbar';
+import MobileNav from './MobileNav';
 
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
@@ -17,6 +18,7 @@ const Main = ({ location }) => {
   return (
     <Fragment>
       <Navbar />
+      <MobileNav />
       <TransitionGroup className='transition-group'>
         <CSSTransition
           key={location.key}
