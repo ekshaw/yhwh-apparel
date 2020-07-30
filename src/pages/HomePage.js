@@ -2,9 +2,8 @@ import React from 'react';
 import Footer from '../components/Footer';
 import InstagramFeed from '../components/InstagramFeed';
 import '../styles/HomePage.css';
-import MobileFooter from '../components/MobileFooter';
 
-const HomePage = (props) => {
+const HomePage = props => {
   return (
     <div className='main-container'>
       <div className='top-container'>
@@ -83,7 +82,6 @@ const HomePage = (props) => {
         <InstagramFeed />
       </div>
       <Footer color='#d3cec7' />
-      <MobileFooter color='#d3cec7' />
     </div>
   );
 };

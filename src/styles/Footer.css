@@ -55,9 +55,3 @@ img {
 .bottom-border > img {
   height: 100%;
 }
-
-@media (max-width: 768px) {
-  .footer-container {
-    display: none;
-  }
-}

@@ -2,7 +2,6 @@
   position: absolute;
   background-color: #eae7e1;
   width: 100vw;
-  overflow-x: hidden;
 }
 
 .staff-top-container {
@@ -297,7 +296,7 @@
   top: 50vw;
 }
 
-/* .connect-container {
+.connect-container {
   position: relative;
   width: 100vw;
   display: flex;
@@ -363,4 +362,4 @@
   height: 6vw;
   opacity: 0.2;
   margin-right: 2vw;
-} */
+}
