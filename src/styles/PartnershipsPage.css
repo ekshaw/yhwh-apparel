@@ -1,6 +1,7 @@
 .partnerships-main-container {
   position: absolute;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .partnerships-container {

@@ -2,8 +2,9 @@ import React from 'react';
 import Footer from '../components/Footer';
 import '../styles/DesignsPage.css';
 import DesignCarousel from '../components/DesignCarousel';
+import MobileFooter from '../components/MobileFooter';
 
-const DesignsPage = props => {
+const DesignsPage = (props) => {
   return (
     <div className='design-main-container'>
       <div className='design-top-container'>
@@ -104,6 +105,7 @@ const DesignsPage = props => {
       </div>
       <DesignCarousel />
       <Footer color='#d3cec7' />
+      <MobileFooter color='#d3cec7' />
     </div>
   );
 };
