@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/Footer.css';
 
-const Footer = props => {
+const Footer = (props) => {
   const style = {
-    backgroundColor: '' + props.color + ''
+    backgroundColor: '' + props.color + '',
   };
 
   return (
