@@ -1,0 +1,148 @@
+.connect-container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vw;
+  padding-top: 6vw;
+}
+
+.connect-container > * {
+  width: 60vw;
+}
+
+.connect-with-us {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.connect-fb,
+.connect-ig,
+.connect-medium {
+  position: relative;
+  width: 45vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: row;
+  left: 1vw;
+}
+
+.connect-fb-title,
+.connect-ig-title,
+.connect-medium-title {
+  height: 3vw;
+}
+
+.connect-fb-caption-container,
+.connect-ig-caption-container,
+.connect-medium-caption-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 36vw;
+  height: 6vw;
+}
+
+.connect-fb-caption,
+.connect-ig-caption,
+.connect-medium-caption {
+  height: 3vw;
+}
+
+.connect-fb-caption > h3,
+.connect-ig-caption > h3,
+.connect-medium-caption > h3 {
+  height: 3vw;
+  margin: 0;
+}
+
+.connect-fb-icon,
+.connect-ig-icon,
+.connect-medium-icon {
+  width: 6vw;
+  height: 6vw;
+  opacity: 0.2;
+  margin-right: 2vw;
+}
+
+.mobile-footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.mobile-footer-social-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  /* padding: 1vw; */
+  /* margin-right: 1.5vw; */
+  z-index: 2;
+}
+
+.mobile-footer-blurb {
+  width: 30vw;
+  position: relative;
+  padding-bottom: 2vw;
+  padding-left: 3vw;
+  line-height: 1rem;
+}
+
+.mobile-yhwh-berkeley {
+  /* width: vw; */
+  height: 1vw;
+  position: absolute;
+  right: 3vw;
+  bottom: 2vw;
+}
+
+a {
+  width: 100%;
+  height: 2.2vw;
+}
+
+img {
+  width: 100%;
+}
+
+.mobile-bottom-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 35vw;
+  height: 13.414vw;
+  z-index: 1;
+}
+
+.mobile-bottom-border > img {
+  height: 100%;
+}
+
+.mobile-social-icons-container {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  /* height: 10vw; */
+  justify-content: space-around;
+  padding-bottom: 6vw;
+}
+
+.mobile-icon {
+  width: 7vw;
+  opacity: 0.2;
+}
+
+@media (min-width: 769px) {
+  .connect-container {
+    display: none;
+  }
+  .mobile-footer-container {
+    display: none;
+  }
+}

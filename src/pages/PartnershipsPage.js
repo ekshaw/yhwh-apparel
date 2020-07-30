@@ -1,8 +1,9 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import '../styles/PartnershipsPage.css';
+import MobileFooter from '../components/MobileFooter';
 
-const PartnershipsPage = props => {
+const PartnershipsPage = (props) => {
   return (
     <div className='partnerships-main-container'>
       <div className='partnerships-container'>
@@ -266,6 +267,7 @@ const PartnershipsPage = props => {
         </div>
       </div>
       <Footer color='#eae7e1' />
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };
