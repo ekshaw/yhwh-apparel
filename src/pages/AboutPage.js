@@ -3,13 +3,12 @@ import Footer from '../components/Footer';
 import '../styles/AboutPage.css';
 import AboutPageForm from '../components/AboutPageForm';
 import AboutVideo from '../components/AboutVideo';
-import MobileFooter from '../components/MobileFooter';
 
 class AboutPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      video_hidden: true,
+      video_hidden: true
     };
   }
 
@@ -113,7 +112,6 @@ class AboutPage extends Component {
         </div>
         <AboutPageForm />
         <Footer color='#eae7e1' />
-        <MobileFooter color='#eae7e1' />
       </div>
     );
   }

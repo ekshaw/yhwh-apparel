@@ -1,9 +1,8 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import '../styles/StaffPage.css';
-import MobileFooter from '../components/MobileFooter';
 
-const StaffPage = (props) => {
+const StaffPage = props => {
   return (
     <div className='staff-main-container'>
       <div className='staff-top-container'>
@@ -243,7 +242,7 @@ const StaffPage = (props) => {
           </div>
         </div>
       </div>
-      {/* <div className='connect-container'>
+      <div className='connect-container'>
         <div className='connect-with-us'>
           <h1>Connect with Us.</h1>
         </div>
@@ -301,9 +300,8 @@ const StaffPage = (props) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <Footer color='#eae7e1' />
-      <MobileFooter color='#eae7e1' />
     </div>
   );
 };
