@@ -64,7 +64,7 @@ const HomePageMobile = props => {
             </div>
             <div className='mobile-subscription-btn'>
               <a href='/about/#subscribe-tab'>
-                <h6>SUBSCRIBE</h6>
+                <h6 className="mobile-subscribe-text">SUBSCRIBE</h6>
               </a>
             </div>
           </div>

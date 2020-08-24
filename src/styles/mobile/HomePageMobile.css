@@ -3,7 +3,7 @@
     height: 100%;
   }
 .mobile-main-container h1 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .mobile-main-container h3 {
@@ -36,6 +36,7 @@
     position: relative;
     width: 304px;
     margin-top: 24px;
+    margin-left: 20px;
     margin-bottom: 8px;
     justify-content: center;
   } 
@@ -115,7 +116,6 @@
     border: solid;
     border-width: thin;
     width: 112px;
-    letter-spacing: 1px;
     padding: 2px 4px;
     text-align: center;
     margin-left: 24px;
@@ -140,7 +140,7 @@
   #subscription-caption {
     position: relative;
     margin-top: 20px;
-    margin-left: 16px;
+    margin-left: 30px;
     width: 100%;
     z-index: 1;
   }
@@ -169,9 +169,10 @@
     top: 24px;
     border: solid;
     border-width: thin;
-    width: 116px;
+    width: 110px;
+    padding: 5px;
     min-width: 48px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     z-index: 100;
   }
