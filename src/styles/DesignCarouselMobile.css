@@ -1,0 +1,10 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  margin: 40px auto;
+  margin: auto;
+  padding: 0px 40px 40px 40px;
+}

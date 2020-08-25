@@ -1,0 +1,105 @@
+.mobile-design-main-container {
+  background-color: #eae7e1;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.mobile-design-caption-container {
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  left: 20px;
+}
+
+.mobile-design-main-container h1 {
+  font-size: 20px;
+}
+
+.mobile-design-caption > h5 {
+  font-size: 40px;
+  font-family: 'meno-banner', serif;
+}
+
+.mobile-design-caption {
+  width: 60%;
+  position: relative;
+  left: 24px;
+  top: 24vh;
+  color: #fefefe;
+}
+
+.mobile-design-caption > * {
+  margin-bottom: 4vw;
+}
+
+.mobile-design-image-container {
+  width: 100%;
+}
+
+.mobile-design-image-container > img {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.mobile-design-process-container {
+  width: 100%;
+  background-color: #d3cec7;
+  position: relative;
+  bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32vw;
+}
+
+.mobile-design-process-caption-container {
+  position: relative;
+  top: 10vw;
+  left: 20vw;
+}
+
+.mobile-design-process-description-container {
+  width: 60vw;
+  position: relative;
+  top: 16vw;
+  left: 20vw;
+  padding-top: 4vw;
+}
+
+.mobile-design-process-description-title > h3 {
+  margin-top: 0.5vw;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mobile-design-process-description-title > h4 {
+  margin-top: 0.5vw;
+  font-size: 10px;
+  line-height: 300%;
+}
+
+.mobile-prayer-container,
+.mobile-word-container,
+.mobile-design-container,
+.mobile-release-container {
+  padding-top: 12px;
+  border-top: 0.1vw solid #707070;
+}
+
+.mobile-release-container {
+  margin-bottom: 1vw;
+}
+
+.mobile-learn-more-btn {
+  border: solid;
+  border-width: thin;
+  width: 55vw;
+  letter-spacing: 2px;
+  padding: 0.2vw 1.2vw;
+  text-align: center;
+  margin-bottom: 0.7vw;
+}
+
+.mobile-learn-more-btn:hover {
+  cursor: pointer;
+}
