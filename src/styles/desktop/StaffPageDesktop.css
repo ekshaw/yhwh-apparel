@@ -297,7 +297,7 @@
   top: 50vw;
 }
 
-/* .connect-container {
+.connect-container {
   position: relative;
   width: 100vw;
   display: flex;
@@ -363,4 +363,4 @@
   height: 6vw;
   opacity: 0.2;
   margin-right: 2vw;
-} */
+}
