@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Designs from '../content/Designs';
-import DesignCard from '../content/DesignCard';
+import DesignCard from './DesignCard';
 import '../styles/DesignCarouselMobile.css';
 
 class DesignCarouselMobile extends Component {
@@ -19,7 +19,7 @@ class DesignCarouselMobile extends Component {
 
   render() {
     return (
-      <div className='scrolling-wrapper'>
+      <div className='design-scrolling-wrapper'>
         {Object.keys(this.state.cards).map(key => (
           <DesignCard key={key} index={key} details={this.state.cards[key]} />
         ))}

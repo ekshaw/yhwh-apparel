@@ -92,7 +92,15 @@ const Designs = [
     release: 'November 2018',
     description: (
       <div>
-        In Luke 15, Jesus tells three parables to illustrate God’s heart for the lost. A shepherd
+        In Luke 15, Jesus tells three parables to illustrate God's heart for the lost. A shepherd
+        who seeks and finds a lost sheep in the open field, a woman finding a lost coin, and a
+        father running to embrace his lost son.
+        <br />
+        <br />
+        When we have faith in the finished work of Jesus, He restores us from our lostness by giving
+        us a new name, a new hope, and a new life that is secure in His steadfast love. By faith
+        alone in Christ alone, we are <b>found by YHWH.</b>
+        {/* In Luke 15, Jesus tells three parables to illustrate God’s heart for the lost. A shepherd
         who seeks and finds a lost sheep in the open field, a woman finding a lost coin, and a
         father running to embrace his lost son.
         <br />
@@ -102,7 +110,7 @@ const Designs = [
         14:3). The apostle Paul warns that “all have sinned and fall short of the glory of God”
         (Romans 3:23). We are lost because we, by the sin of our hearts, have turned away from Him.
         Like the prodigal son of Jesus’ parable, we seek to define good for ourselves and so
-        squander the life we are given.
+        squander the life we are given. */}
         {/* <h3>
           But Jesus “came to seek and to save the lost” (Luke 19:10). We are
           fallen creatures with no innate hope of restoring ourselves into the
@@ -174,6 +182,12 @@ const Designs = [
     description: (
       <div>
         Know the Lord your God. All throughout Scripture, He reveals Himself. He is Jehovah Nissi,
+        The Lord our Banner (Exodus 17). He is Jehovah Jireh, The Lord Who Provides (Genesis 22:14).
+        He is YHWH, the Lord our God (Exodus 3:14). He is Jehovah Rapha, The Lord Who Heals (Exodus
+        15:26). He is Jehovah Rohi, The Lord Our Shepherd (Psalm 23:1). He was, He is, and He will
+        be. God who is constant throughout time, consistent in His nature, and unchanging despite
+        culture.
+        {/* Know the Lord your God. All throughout Scripture, He reveals Himself. He is Jehovah Nissi,
         The Lord our Banner, when He gave the Israelites victory over the Amalekites (Exodus 17). He
         is Jehovah Jireh, The Lord Who Provides, when God provided a ram for sacrifice in place of
         Isaac (Genesis 22:14). He is YHWH, the Lord our God, who is Presence (Exodus 3:14). He is
@@ -181,7 +195,7 @@ const Designs = [
         a shepherd (Psalm 23:1). He is Jehovah Rapha, The Lord Who Heals, who preserves the
         Israelites from the diseases put on the Egyptians (Exodus 15:26). He was, He is, and He will
         be. God who is constant throughout time, consistent in His nature, and unchanging despite
-        culture.
+        culture. */}
         {/* <h3>
           Our faith has been built upon who we are, who we are made to be, and
           what we are called to do in Christ. But at the core of our faith, we
@@ -214,15 +228,10 @@ const Designs = [
         To seek. Is to search after.
         <br />
         <br />
-        When the waves seem to be rising faster. When our heart seems tossed around. When we feel
-        like we keep hitting the same wall over and over again. When there’s no improvement. In him.
-        In her. In us. It leaves us tired and weary, beaten down.
-        <br />
-        <br />
-        But in times like this, we MUST remind ourselves of His promises. Even if our mind can
-        recite it, our heart may not truly believe it. But by praying and declaring His promises for
-        us, we are speaking TRUTH over ourselves, so that darkness and hopelessness will not
-        overcome us.
+        In times when we feel tired, weary, beaten down, and so much more, we MUST remind ourselves
+        of His promises. Even if our minds can recite it, our hearts may not truly believe it. But
+        by praying and declaring His promises for us, we are speaking TRUTH over ourselves, so that
+        darkness and hopelessness will not overcome us.
       </div>
     ),
     imgSrc: require('../images/designs/seek.jpg')
@@ -238,7 +247,8 @@ const Designs = [
         at what I've done, and who I’ll surely become. This is who I am.”
         <br />
         <br />
-        But at the core of it all, who are we really?
+        But at the core of it all, who are we really? Know what you are. Know who you are. Know
+        Whose you are. You are defined by the Maker.
         {/* <h3>
           When we grow up and find ourselves without the comfort of our parents.
           When our brains can no longer function at the same level of
@@ -249,9 +259,6 @@ const Designs = [
         {/* <h3>
           When there is nothing left of ourselves that we can say or boast of.
         </h3> */}
-        <br />
-        <br />
-        Know what you are. Know who you are. Know Whose you are. You are defined by the Maker.
       </div>
     ),
     imgSrc: require('../images/designs/identity.jpg')
@@ -302,7 +309,14 @@ const Designs = [
     release: 'October 2015',
     description: (
       <div>
-        For our first product, we wanted to establish our hope for YHWH Apparel: to proclaim the
+        Yahweh, the Hebrew name of God, translates to "I am who I am" (Exodus 3:14). We proclaim His
+        holy name because He first beckoned us and He calls us His children.
+        <br />
+        <br />
+        Don't simply wear this name on your chest. Take up your identity as a child of God. Wear it
+        on your heart. Convey it in your words and actions. You are wearing the name of the Most
+        High King. What will you say? What will you do?
+        {/* For our first product, we wanted to establish our hope for YHWH Apparel: to proclaim the
         name of God. From beginning to the end, this is about our God. He is more than enough.
         <br />
         <br />
@@ -312,7 +326,7 @@ const Designs = [
         <br />
         Don't simply wear this name on your chest. Take up your identity as a child of God. Wear it
         on your heart. Convey it in your words and actions. You are wearing the name of the Most
-        High King. What will you say? What will you do?
+        High King. What will you say? What will you do? */}
       </div>
     ),
     imgSrc: require('../images/designs/classic.jpg')

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/DesignCard.css';
 
-class Button extends Component {
+class ShopButton extends Component {
   render() {
     return (
       <button className='mobile-shop-now-btn'>
@@ -13,19 +13,18 @@ class Button extends Component {
   }
 }
 
-class CardContent extends Component {
+class DesignCardContent extends Component {
   render() {
-    const { image, title } = this.props;
     return (
       <div className='mobile-scroll-item'>
-        <h1 className='.mobile-scroll-caption'>{title}</h1>
-        <h2 className='mobile-scroll-release'>{this.props.release}</h2>
+        <h2 className='.mobile-scroll-caption'>{this.props.title}</h2>
+        <h3 className='mobile-scroll-release'>{this.props.release}</h3>
 
-        <img className='mobile-scroll-image' src={image} />
+        <img className='mobile-scroll-image' src={this.props.image} />
         <div className='mobile-scroll-description'>
           <h3>{this.props.text}</h3>
         </div>
-        <Button />
+        <ShopButton />
       </div>
     );
   }
@@ -35,7 +34,7 @@ class DesignCard extends Component {
   render() {
     return (
       <article className='mobile-scroll-item-container'>
-        <CardContent
+        <DesignCardContent
           title={this.props.details.title}
           image={this.props.details.imgSrc}
           release={this.props.details.release}

@@ -1,5 +1,5 @@
 .mobile-design-main-container {
-  background-color: #eae7e1;
+  background-color: #fefefe;
   overflow-x: hidden;
   width: 100%;
 }
@@ -74,7 +74,7 @@
 
 .mobile-design-process-description-title > h4 {
   margin-top: 0.5vw;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 300%;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .mobile-release-container {
-  margin-bottom: 1vw;
+  margin-bottom: 32px;
 }
 
 .mobile-learn-more-btn {
@@ -95,11 +95,15 @@
   border-width: thin;
   width: 55vw;
   letter-spacing: 2px;
-  padding: 0.2vw 1.2vw;
+  padding: 4px 4px;
   text-align: center;
-  margin-bottom: 0.7vw;
+  margin-bottom: 4px;
 }
 
+.mobile-learn-more-btn > a > * {
+  letter-spacing: 2px;
+  font-size: 8px;
+}
 .mobile-learn-more-btn:hover {
   cursor: pointer;
 }
