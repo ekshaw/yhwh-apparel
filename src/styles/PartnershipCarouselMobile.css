@@ -1,0 +1,8 @@
+.partnership-scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  padding: 0px 0px 28px 0px;
+}
