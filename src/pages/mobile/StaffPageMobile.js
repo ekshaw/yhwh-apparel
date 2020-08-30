@@ -8,7 +8,7 @@ const StaffPageMobile = props => {
       <div className='mobile-staff-top-container'>
         <div className='mobile-staff-caption-container'>
           <div className='mobile-staff-caption'>
-            <h1>Meet The Team.</h1>
+            <h1>Meet the Team.</h1>
           </div>
         </div>
         <div className='mobile-staff-description'>
@@ -24,30 +24,30 @@ const StaffPageMobile = props => {
       </div>
       <div className="mobile-staff-container">
         <div className="mobile-staff-container-caption">
-          <h1>Our Team Members</h1>
+          <h1>Our Members.</h1>
         </div>
         <div className="mobile-row">
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/nicole.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Nicole Lee</h1>
+              <h1>Nicole <br /> Lee</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/peter.jpg')} />
             <div className='mobile-staff-name'>
               <h1>Peter Thompson</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/rachel.jpg')} />
             <div className='mobile-staff-name'>
@@ -56,67 +56,67 @@ const StaffPageMobile = props => {
           </div>
         </div>
         <div className="mobile-row">
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/sooyoung.jpg')} />
             <div className='mobile-staff-name'>
               <h1>Sooyoung Park</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/kristen.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Kristen Yee</h1>
+              <h1>Kristen <br />Yee</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/matt.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Matt Flores</h1>
+              <h1>Matt <br />Flores</h1>
             </div>
           </div>
         </div>
         <div className="mobile-row">
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/aaron.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Aaron Wu</h1>
+              <h1>Aaron <br />Wu</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/emily.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Emily Shaw</h1>
+              <h1>Emily <br />Shaw</h1>
             </div>
           </div>
-          <div className='mobile-staff-read'>
+          {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
-          </div>
+          </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/angela.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Angela Ea</h1>
+              <h1>Angela <br />Ea</h1>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="mobile-staff-more">
+      {/* <div className="mobile-staff-more">
         <div className="mobile-staff-overlay-holder">
           <div className="mobile-staff-overlay-x">
             <img src={require('../../images/x_button.png')} />
@@ -330,7 +330,7 @@ const StaffPageMobile = props => {
                   love to bake, take photos, and dance."</h3>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer color='#eae7e1' />
     </div>
   );
