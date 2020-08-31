@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import '../../styles/mobile/StaffPageMobile.css';
 
-const StaffPageMobile = props => {
+const StaffPageMobile = (props) => {
   return (
     <div className='mobile-staff-main-container'>
       <div className='mobile-staff-top-container'>

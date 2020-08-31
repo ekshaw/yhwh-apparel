@@ -87,3 +87,18 @@ section.route-section {
   top: 0;
   left: 0;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 12px;
+    line-height: 200%;
+  }
+}

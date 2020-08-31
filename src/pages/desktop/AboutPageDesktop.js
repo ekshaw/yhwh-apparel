@@ -8,12 +8,11 @@ class AboutPageDesktop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      video_hidden: true
+      video_hidden: true,
     };
   }
 
   onVideoButtonClick = () => {
-    console.log('huh');
     this.setState({ video_hidden: !this.state.video_hidden });
   };
 

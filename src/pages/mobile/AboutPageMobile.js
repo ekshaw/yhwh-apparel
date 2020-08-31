@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
-import Footer from '../../components/Footer';
+import MobileFooter2 from '../../components/MobileFooter2';
 import '../../styles/mobile/AboutPageMobile.css';
 import AboutPageForm from '../../components/AboutPageForm';
 import AboutVideo from '../../components/AboutVideo';
+import MobileFooter from '../../components/MobileFooter';
 
 class AboutPageMobile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      video_hidden: true
+      video_hidden: true,
     };
   }
 
   onVideoButtonClick = () => {
-    console.log('huh');
     this.setState({ video_hidden: !this.state.video_hidden });
   };
 
   render() {
     return (
-      <div className='main-container'>
+      <div className='mobile-main-container'>
         <AboutVideo
           hidden={this.state.video_hidden}
           hideVideo={this.onVideoButtonClick}
         />
-        <div className='about-container'>
-          <div className='about-caption-container'>
-            <div className='about-caption'>
+        <div className='mobile-about-container'>
+          <div className='mobile-about-caption-container'>
+            <div className='mobile-about-caption'>
               <h1>About Us.</h1>
             </div>
-            <div className='about-description'>
+            <div className='mobile-about-description'>
               <h3>
                 YHWH Apparel was created out of a love made known, a need that
                 was seen, and a call that was heard. (Psalm 107) <br />
@@ -39,36 +39,20 @@ class AboutPageMobile extends Component {
                 spoken.
               </h3>
             </div>
-            <div className='video-btn' onClick={this.onVideoButtonClick}>
+            <div className='mobile-video-btn' onClick={this.onVideoButtonClick}>
               <h4>PLAY VIDEO</h4>
             </div>
           </div>
-          <div className='about-image-container'>
-            <div className='about-image1-container'>
-              <img src={require('../../images/about/IMG_2768.jpg')}></img>
-            </div>
-            <div className='about-blank-image-box'></div>
+          <div className='mobile-about-image-container'>
+            <img src={require('../../images/about/IMG_2768.jpg')}></img>
           </div>
         </div>
-        <div className='vision-mission-container'>
-          <div className='vision-mission-blank-image1-box'></div>
-          <div className='vision-mission-blank-image2-box'></div>
-          <div className='vision-mission-image1-container'>
-            <img src={require('../../images/about/IMG_7935.jpg')}></img>
-          </div>
-          <div className='vision-mission-image2-container'>
-            <img src={require('../../images/about/IMG_8066.jpg')}></img>
-          </div>
-          <div className='vision-mission-image3-container'>
-            <img
-              src={require('../../images/about/yhwh-sweatshirt-1-25.jpg')}
-            ></img>
-          </div>
-          <div className='vision-container'>
-            <div className='vision-caption'>
-              <h1>Our Vision.</h1>
+        <div className='mobile-vision-mission-container'>
+          <div className='mobile-vision-container'>
+            <div className='mobile-vision-caption'>
+              <h2>Our Vision.</h2>
             </div>
-            <div className='vision-description'>
+            <div className='mobile-vision-description'>
               <h3>
                 Our vision is a world in which people know and honor God for who
                 He says He is. (Isaiah 45:18-25) <br />
@@ -79,18 +63,11 @@ class AboutPageMobile extends Component {
               </h3>
             </div>
           </div>
-          <div className='quote'>
-            <h1>
-              "Boldly carry
-              <br /> &nbsp; the name
-              <br /> &nbsp; of the Lord."
-            </h1>
-          </div>
-          <div className='mission-container'>
-            <div className='mission-caption'>
-              <h1>Our Mission.</h1>
+          <div className='mobile-mission-container'>
+            <div className='mobile-mission-caption'>
+              <h2>Our Mission.</h2>
             </div>
-            <div className='mission-description'>
+            <div className='mobile-mission-description'>
               <h3>
                 Our mission is the Great Commission, which we received from our
                 Lord Jesus Christ to make disciples of all nations. (Matthew
@@ -110,8 +87,19 @@ class AboutPageMobile extends Component {
             </div>
           </div>
         </div>
+        <div className='mobile-vision-mission-image2-container'>
+          <img src={require('../../images/about/IMG_8066.jpg')}></img>
+          <div className='mobile-quote'>
+            <h2>
+              "Boldly carry
+              <br /> &nbsp; the name
+              <br /> &nbsp; of the Lord."
+            </h2>
+          </div>
+        </div>
         <AboutPageForm />
-        <Footer color='#eae7e1' />
+        <MobileFooter2 color='#eae7e1' />
+        {/* <MobileFooter color='#eae7e1' /> */}
       </div>
     );
   }
