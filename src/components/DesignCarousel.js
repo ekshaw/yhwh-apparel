@@ -14,19 +14,13 @@ class DesignCarousel extends Component {
 
   onLeftArrowClick = () => {
     this.setState({
-      slideNum:
-        this.state.slideNum - 1 < 0
-          ? this.state.numDesigns - 1
-          : this.state.slideNum - 1
+      slideNum: this.state.slideNum - 1 < 0 ? this.state.numDesigns - 1 : this.state.slideNum - 1
     });
   };
 
   onRightArrowClick = () => {
     this.setState({
-      slideNum:
-        this.state.slideNum + 1 >= this.state.numDesigns
-          ? 0
-          : this.state.slideNum + 1
+      slideNum: this.state.slideNum + 1 >= this.state.numDesigns ? 0 : this.state.slideNum + 1
     });
   };
 
@@ -43,7 +37,7 @@ class DesignCarousel extends Component {
               <h1>{this.state.designs[this.state.slideNum].title}</h1>
             </div>
             <div className='scroll-description'>
-              {this.state.designs[this.state.slideNum].description}
+              <h3>{this.state.designs[this.state.slideNum].description}</h3>
             </div>
             <div className='shop-now-btn'>
               <a href='https://yhwhapparel.storenvy.com/products'>
