@@ -1,12 +1,12 @@
 .connect-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2vw;
-  padding-top: 6vw;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .connect-container > * {
@@ -22,17 +22,25 @@
 .connect-ig,
 .connect-medium {
   position: relative;
-  width: 45vw;
+  width: 60%;
   height: 10vw;
   display: flex;
   flex-direction: row;
   left: 1vw;
+  margin: 8px 0;
 }
 
 .connect-fb-title,
 .connect-ig-title,
 .connect-medium-title {
   height: 3vw;
+  width: 180px;
+}
+
+.connect-fb-title h4,
+.connect-ig-title h4,
+.connect-medium-title h4 {
+  font-size: 8px;
 }
 
 .connect-fb-caption-container,
@@ -51,20 +59,21 @@
   height: 3vw;
 }
 
-.connect-fb-caption > h3,
-.connect-ig-caption > h3,
-.connect-medium-caption > h3 {
+.connect-fb-caption h5,
+.connect-ig-caption h5,
+.connect-medium-caption h5 {
+  width: 180px;
   height: 3vw;
   margin: 0;
+  font-size: 8px;
 }
 
 .connect-fb-icon,
 .connect-ig-icon,
 .connect-medium-icon {
-  width: 6vw;
-  height: 6vw;
+  width: 36px;
   opacity: 0.2;
-  margin-right: 2vw;
+  margin: 0px 12px;
 }
 
 .mobile-footer-container {
@@ -80,25 +89,29 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  /* padding: 1vw; */
-  /* margin-right: 1.5vw; */
   z-index: 2;
 }
 
 .mobile-footer-blurb {
-  width: 30vw;
+  width: 50%;
   position: relative;
   padding-bottom: 2vw;
   padding-left: 3vw;
   line-height: 1rem;
 }
 
+.mobile-footer-blurb h5 {
+  font-size: 8px;
+}
+
 .mobile-yhwh-berkeley {
-  /* width: vw; */
-  height: 1vw;
   position: absolute;
-  right: 3vw;
-  bottom: 2vw;
+  right: 12px;
+  bottom: 12px;
+}
+
+.mobile-yhwh-berkeley h5 {
+  font-size: 8px;
 }
 
 a {
@@ -114,13 +127,12 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 35vw;
-  height: 13.414vw;
+  width: 65%;
   z-index: 1;
 }
 
 .mobile-bottom-border > img {
-  height: 100%;
+  display: block;
 }
 
 .mobile-social-icons-container {
@@ -128,13 +140,12 @@ img {
   width: 60%;
   display: flex;
   flex-direction: row;
-  /* height: 10vw; */
   justify-content: space-around;
   padding-bottom: 6vw;
 }
 
 .mobile-icon {
-  width: 7vw;
+  width: 36px;
   opacity: 0.2;
 }
 

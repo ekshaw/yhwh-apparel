@@ -106,3 +106,57 @@ input:focus {
 /* #message-input {
   height: 6vw;
 } */
+
+@media (max-width: 480px) {
+  .about-form h4 {
+    font-size: 8px;
+  }
+
+  .about-form {
+    margin-top: 60px;
+  }
+
+  .form {
+    width: 92%;
+    height: 28vh;
+    flex-direction: column;
+  }
+
+  .form-tab-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    transform: rotate(0deg);
+    z-index: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
+  }
+
+  .form-tab {
+    height: 48px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    /* padding-top: 1vw; */
+    border-radius: 16px;
+    /* transition: 0.5s ease-in-out; */
+  }
+
+  .form-tab > * {
+    position: relative;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .form-title > * {
+    font-size: 20px;
+  }
+
+  .form-submit-btn {
+    width: 52px;
+  }
+}

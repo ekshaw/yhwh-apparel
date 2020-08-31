@@ -24,7 +24,7 @@ const MobileFooter = (props) => {
               <h4>FOLLOW AND LIKE US ON FACEBOOK</h4>
             </div>
             <div className='connect-fb-caption'>
-              <h3>Get notified about our events and campus sales.</h3>
+              <h5>Get notified about our events and campus sales.</h5>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ const MobileFooter = (props) => {
               <h4>FOLLOW US ON INSTAGRAM</h4>
             </div>
             <div className='connect-ig-caption'>
-              <h3>Stay updated on latest drops.</h3>
+              <h5>Stay updated on latest drops.</h5>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ const MobileFooter = (props) => {
               <h4>FOLLOW US ON MEDIUM</h4>
             </div>
             <div className='connect-medium-caption'>
-              <h3>Keep up with our company and follow us on our journey.</h3>
+              <h5>Keep up with our company and follow us on our journey.</h5>
             </div>
           </div>
         </div>

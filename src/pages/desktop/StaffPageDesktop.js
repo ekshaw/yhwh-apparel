@@ -2,13 +2,13 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import '../../styles/desktop/StaffPageDesktop.css';
 
-const StaffPageDesktop = props => {
+const StaffPageDesktop = (props) => {
   return (
     <div className='staff-main-container'>
       <div className='staff-top-container'>
         <div className='staff-caption-container'>
           <div className='staff-caption'>
-            <h1>Meet The Team.</h1>
+            <h1>Meet the Team.</h1>
           </div>
         </div>
         <div className='staff-description'>
