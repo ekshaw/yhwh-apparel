@@ -13,12 +13,29 @@ import StaffPage from '../pages/StaffPage';
 import DesignsPage from '../pages/DesignsPage';
 import ShopPage from '../pages/ShopPage';
 import PartnershipsPage from '../pages/PartnershipsPage';
+import { useMediaQuery } from 'react-responsive';
 
 const Main = ({ location }) => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 480px)',
+  });
+  const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
+
   return (
     <Fragment>
-      <Navbar />
-      <MobileNav />
+      {isDesktopOrLaptop && (
+        <>
+          <Navbar />
+        </>
+      )}
+
+      {isMobile && (
+        <>
+          <MobileNav />
+        </>
+      )}
+      {/* <Navbar />
+      <MobileNav /> */}
       <TransitionGroup className='transition-group'>
         <CSSTransition
           key={location.key}

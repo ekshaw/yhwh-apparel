@@ -152,10 +152,6 @@ input:focus {
     transform: translateX(-50%);
   }
 
-  .form-title > * {
-    font-size: 20px;
-  }
-
   .form-submit-btn {
     width: 52px;
   }

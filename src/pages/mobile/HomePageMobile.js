@@ -1,9 +1,10 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import InstagramFeed from '../../components/InstagramFeed';
 import '../../styles/mobile/HomePageMobile.css';
+import MobileFooter from '../../components/MobileFooter';
+import MobileFooter2 from '../../components/MobileFooter2';
 
-const HomePageMobile = props => {
+const HomePageMobile = (props) => {
   return (
     <div className='mobile-main-container'>
       <div className='mobile-top-container'>
@@ -64,7 +65,7 @@ const HomePageMobile = props => {
             </div>
             <div className='mobile-subscription-btn'>
               <a href='/about/#subscribe-tab'>
-                <h6 className="mobile-subscribe-text">SUBSCRIBE</h6>
+                <h6 className='mobile-subscribe-text'>SUBSCRIBE</h6>
               </a>
             </div>
           </div>
@@ -83,9 +84,10 @@ const HomePageMobile = props => {
             ></img>
           </div>
         </div>
-        <InstagramFeed />
+        {/* <InstagramFeed /> */}
       </div>
-      <Footer color='#d3cec7' />
+      {/* <MobileFooter2 color='#eae7e1' /> */}
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };
