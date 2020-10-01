@@ -1,0 +1,81 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 10%;
+    background-color: white;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    z-index: 100;
+}
+.top-captions {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    padding-left: 4%;
+    padding-top: 10%;
+    z-index: 1;
+}
+.shop-title {
+    padding-bottom: 32px;
+    z-index: 100;
+}
+.shop-caption {
+    padding-bottom: 52px;
+    z-index: 1;
+}
+.top-image {
+    width: 60%;
+    z-index: 100;
+}
+.shop-btn {
+    border: solid;
+    border-width: thin;
+    width: 9.5vw;
+    letter-spacing: 0.15vw;
+    padding: 0.15vw 1.2vw;
+    text-align: center;
+    z-index: 100;
+}
+.shopcard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 20%;
+    padding-top: 18%;
+    z-index: 100;
+}
+.shopcard-row-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+.shopcard-row-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blank-image-box-one {
+    background-color: #EAE7E1;
+    width: 80vw;
+    height: 45vw;
+    position: absolute;
+    z-index: 0;
+    top: 6vw;
+}
+.blank-image-box-two {
+    background-color: #D3CEC7;
+    width: 100vw;
+    height: 85vw;
+    position: absolute;
+    z-index: 0;
+    top: 60vw;
+    left: 12vw;
+}

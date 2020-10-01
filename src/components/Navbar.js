@@ -28,12 +28,12 @@ const Navbar = props => {
             </Link>
           </li>
           <li>
-            {/* <Link to='/shop'>
+            <Link to='/shop'>
               <div className='navlink'>SHOP</div>
-            </Link> */}
-            <a href='https://yhwhapparel.storenvy.com/products'>
+            </Link>
+            {/* <a href='https://yhwhapparel.storenvy.com/products'>
               <div className='navlink'>SHOP</div>
-            </a>
+            </a> */}
           </li>
           <li>
             <Link to='/partnerships'>

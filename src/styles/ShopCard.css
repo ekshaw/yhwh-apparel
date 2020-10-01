@@ -1,0 +1,16 @@
+.product-container {
+    width: 28%;
+}
+.product-image {
+    width: 80%;
+}
+.product-text {
+
+}
+.product-name {
+    font-size: 30px;
+}
+.product-cost {
+    font-size: 20px;
+    margin: 4px;
+}
