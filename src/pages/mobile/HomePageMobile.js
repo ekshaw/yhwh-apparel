@@ -83,7 +83,7 @@ const HomePageMobile = props => {
             ></img>
           </div>
         </div>
-        <InstagramFeed />
+        {/* <InstagramFeed /> */}
       </div>
       <Footer color='#d3cec7' />
     </div>
