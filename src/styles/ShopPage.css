@@ -51,16 +51,11 @@
     padding-top: 18%;
     z-index: 100;
 }
-.shopcard-row-one {
+.shopcard-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 3%;
-}
-.shopcard-row-two {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .blank-image-box-one {
     background-color: #EAE7E1;
@@ -73,7 +68,7 @@
 .blank-image-box-two {
     background-color: #D3CEC7;
     width: 100vw;
-    height: 85vw;
+    height: 60vw;
     position: absolute;
     z-index: 0;
     top: 60vw;
