@@ -13,6 +13,7 @@ import DesignsPage from '../pages/DesignsPage';
 import ShopPage from '../pages/ShopPage';
 import PartnershipsPage from '../pages/PartnershipsPage';
 import ProductPage from '../pages/ProductPage';
+import CheckoutPage from '../pages/CheckoutPage';
 
 const Main = ({ location }) => {
   return (
@@ -33,6 +34,7 @@ const Main = ({ location }) => {
               <Route path='/shop' component={ShopPage} />
               <Route path='/partnerships' component={PartnershipsPage} />
               <Route path='/product' component={ProductPage} />
+              <Route path='/checkout' component={CheckoutPage} />
             </Switch>
           </section>
         </CSSTransition>
