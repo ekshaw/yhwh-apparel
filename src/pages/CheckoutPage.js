@@ -216,21 +216,68 @@ const CheckoutPage = (props) => {
             </div>
           </div>
         </div>
-        <div className='checkout-payment-info-container'>
-          <div className='checkout-payment-info'></div>
-          <div className='checkout-order-summary'>
-            <div className='checkout-order-summary-title'>
-              <h2>Cart Total</h2>
+        <div className='checkout-payment-order-summary-container'>
+          <div className='checkout-payment-info-container'>
+            <div className='checkout-payment-info-title'>
+              <h3>PAYMENT METHOD</h3>
             </div>
-            <div className='checkout-order-summary-subtotal'>
-              <h4>SUBTOTAL:</h4>
-              <h3>$100.00</h3>
-              <h5>Shipping and tax calculated at checkout.</h5>
+            <div className='checkout-payment-info-form'>
+              <div className='checkout-payment-info'>
+                <div className='payment-first-name'>
+                  <h3>FIRST NAME:</h3>
+                  <input />
+                </div>
+                <div className='payment-last-name'>
+                  <h3>LAST NAME:</h3>
+                  <input />
+                </div>
+                <div className='payment-card-number'>
+                  <h3>CARD NUMBER:</h3>
+                  <input />
+                </div>
+                <div className='payment-exp-cvv-container'>
+                  <div className='payment-exp-date'>
+                    <h3>EXPIRATION DATE:</h3>
+                    <input />
+                  </div>
+                  <div className='payment-cvv'>
+                    <h3>CVV:</h3>
+                    <input />
+                  </div>
+                </div>
+                <div className='checkout-complete-purchase-button'>
+                  <h4>COMPLETE PURCHASE</h4>
+                </div>
+              </div>
+              <div className='checkout-payment-info'>
+              <div className='checkout-order-summary'>
+                <div className='checkout-order-summary-title'>
+                  <h2>Your Order</h2>
+                </div>
+                <div className='checkout-order-summary-discount-code-container'>
+                  <div className='checkout-order-summary-discount-code-title'>
+                    <h4>DISCOUNT CODE:</h4>
+                  </div>
+                  <div className='checkout-order-summary-discount-code'>
+                    <input />
+                    <div className='checkout-order-discount-code-add-button'>
+                      <h4>ADD</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className='checkout-order-summary-details'>
+                  <div className='checkout-order-summary-detail' id='order-val'><h4>ORDER VALUE</h4><h4>$76.00</h4></div>
+                  <div className='checkout-order-summary-detail' id='shipping'><h4>SHIPPING</h4><h4>$5.00</h4></div>
+                  <div className='checkout-order-summary-detail' id='tax'><h4>TAX</h4><h4>$7.00</h4></div>
+                </div>
+                <div className='checkout-order-summary-total'>
+                  <h4><b>TOTAL:</b></h4>
+                  <h3>$88.00</h3>
+                </div>
+              </div>
+              </div>
             </div>
-            <div className='checkout-order-summary-button'>
-              <h4>PROCEED TO CHECKOUT</h4>
-            </div>
-          </div>
+              </div>
         </div>
       </div>
       <Footer color='#eae7e1' />
