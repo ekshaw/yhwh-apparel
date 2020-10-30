@@ -67,6 +67,18 @@ const Missionaries = [
         experience the love of Christ.
       </div>
     ),
+    mobileDescription:(
+      <div>
+        Isabella and Johannah will be sharing the gospel to Syrian refugees and native university
+        students around the Athens area and partnering together with a local church to build
+        an integration house that houses refugee families during transition periods.
+        <br /> <br />
+        Johannah: I want to go because I have grown to see the reality that life is short and
+        eternity is long, and the only worthy investment I can make is in people and their
+        eternities. I want to share the treasure of the gospel with people in Greece, I want them to
+        experience the love of Christ.
+      </div>
+    ),
     imgSrc: require('../images/partnerships/isabella_johannah1.jpg')
   },
   {
@@ -85,6 +97,16 @@ const Missionaries = [
         <br />
         Please pray that students in Ireland can be exposed to the truth about God through the
         support of local ministries, as well as Cru.
+      </div>
+    ),
+    mobileDescription:(
+      <div>
+        In Ireland, we will be planning outreach strategies with local missionaries and going out to
+        various campuses to share the gospel with fellow college students. I am so passionate about
+        the hearts of the Irish students because of an unfortunate trend in society where a lot of
+        students know facts about Christianity, but have been let down by the church or have false
+        ideas of who God is. This story parallels my great grandmother's story, and I saw God redeem
+        her life, so I cannot wait to see what God will do in Ireland!
       </div>
     ),
     imgSrc: require('../images/partnerships/briana.jpg')

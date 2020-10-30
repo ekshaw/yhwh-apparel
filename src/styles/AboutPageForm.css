@@ -118,7 +118,7 @@ input:focus {
 
   .form {
     width: 92%;
-    height: 28vh;
+    height: 36vh;
     flex-direction: column;
   }
 
@@ -150,10 +150,6 @@ input:focus {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .form-title > * {
-    font-size: 20px;
   }
 
   .form-submit-btn {

@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import '../../styles/mobile/StaffPageMobile.css';
+import MobileFooter from '../../components/MobileFooter';
+import MobileFooter2 from '../../components/MobileFooter2';
 
 const StaffPageMobile = (props) => {
   return (
@@ -22,18 +23,20 @@ const StaffPageMobile = (props) => {
           </h3>
         </div>
       </div>
-      <div className="mobile-staff-container">
-        <div className="mobile-staff-container-caption">
+      <div className='mobile-staff-container'>
+        <div className='mobile-staff-container-caption'>
           <h1>Our Members.</h1>
         </div>
-        <div className="mobile-row">
+        <div className='mobile-row'>
           {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
           </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/nicole.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Nicole <br /> Lee</h1>
+              <h1>
+                Nicole <br /> Lee
+              </h1>
             </div>
           </div>
           {/* <div className='mobile-staff-read'>
@@ -55,7 +58,7 @@ const StaffPageMobile = (props) => {
             </div>
           </div>
         </div>
-        <div className="mobile-row">
+        <div className='mobile-row'>
           {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
           </div> */}
@@ -71,7 +74,10 @@ const StaffPageMobile = (props) => {
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/kristen.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Kristen <br />Yee</h1>
+              <h1>
+                Kristen <br />
+                Yee
+              </h1>
             </div>
           </div>
           {/* <div className='mobile-staff-read'>
@@ -80,18 +86,24 @@ const StaffPageMobile = (props) => {
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/matt.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Matt <br />Flores</h1>
+              <h1>
+                Matt <br />
+                Flores
+              </h1>
             </div>
           </div>
         </div>
-        <div className="mobile-row">
+        <div className='mobile-row'>
           {/* <div className='mobile-staff-read'>
             <h3>READ MORE</h3>
           </div> */}
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/aaron.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Aaron <br />Wu</h1>
+              <h1>
+                Aaron <br />
+                Wu
+              </h1>
             </div>
           </div>
           {/* <div className='mobile-staff-read'>
@@ -100,7 +112,10 @@ const StaffPageMobile = (props) => {
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/emily.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Emily <br />Shaw</h1>
+              <h1>
+                Emily <br />
+                Shaw
+              </h1>
             </div>
           </div>
           {/* <div className='mobile-staff-read'>
@@ -109,13 +124,14 @@ const StaffPageMobile = (props) => {
           <div className='mobile-staff-image'>
             <img src={require('../../images/staff/angela.jpg')} />
             <div className='mobile-staff-name'>
-              <h1>Angela <br />Ea</h1>
+              <h1>
+                Angela <br />
+                Ea
+              </h1>
             </div>
           </div>
         </div>
       </div>
-
-
       {/* <div className="mobile-staff-more">
         <div className="mobile-staff-overlay-holder">
           <div className="mobile-staff-overlay-x">
@@ -331,7 +347,8 @@ const StaffPageMobile = (props) => {
           </div>
         </div>
       </div> */}
-      <Footer color='#eae7e1' />
+      <MobileFooter2 color='#eae7e1' />
+      {/* <MobileFooter color='#eae7e1' /> */}
     </div>
   );
 };

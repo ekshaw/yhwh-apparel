@@ -1,9 +1,10 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import '../../styles/mobile/DesignsPageMobile.css';
 import DesignCarouselMobile from '../../components/DesignCarouselMobile';
+import MobileFooter from '../../components/MobileFooter';
+import MobileFooter2 from '../../components/MobileFooter2';
 
-const DesignsPageMobile = props => {
+const DesignsPageMobile = (props) => {
   return (
     <div className='mobile-design-main-container'>
       <div className='mobile-design-top-container'>
@@ -42,10 +43,11 @@ const DesignsPageMobile = props => {
             <div className='mobile-design-process-description-title mobile-prayer-description'>
               <h4>PRAYER</h4>
               <h3>
-                Every YHWH Apparel design starts with prayer. As a team, we pray for guidance on
-                what attribute of God or aspect of the Gospel to showcase next. We spend time
-                meditating on Scripture and reflecting on our past experiences, sharing testimonies
-                and insights until we converge on a theme.
+                Every YHWH Apparel design starts with prayer. As a team, we pray
+                for guidance on what attribute of God or aspect of the Gospel to
+                showcase next. We spend time meditating on Scripture and
+                reflecting on our past experiences, sharing testimonies and
+                insights until we converge on a theme.
               </h3>
             </div>
           </div>
@@ -53,10 +55,11 @@ const DesignsPageMobile = props => {
             <div className='mobile-design-process-description-title  mobile-word-description'>
               <h4>WORD</h4>
               <h3>
-                Once we have a theme, we study relevant passages from the Bible to gain a more
-                in-depth understanding of what God Himself says about the theme. We pay special
-                attention to how each passage connects to the Gospel of Jesus while simultaneously
-                revealing the character, will, and worthiness of God.
+                Once we have a theme, we study relevant passages from the Bible
+                to gain a more in-depth understanding of what God Himself says
+                about the theme. We pay special attention to how each passage
+                connects to the Gospel of Jesus while simultaneously revealing
+                the character, will, and worthiness of God.
               </h3>
             </div>
           </div>
@@ -64,9 +67,10 @@ const DesignsPageMobile = props => {
             <div className='mobile-design-process-description-title mobile-design-description'>
               <h4>DESIGN</h4>
               <h3>
-                We iterate multiple drafts and concepts until we finalize a design that most clearly
-                and beautifully communicates the theme. We carefully consider each aspect of the
-                design, from color to material to artistic style, all in service of cohesively
+                We iterate multiple drafts and concepts until we finalize a
+                design that most clearly and beautifully communicates the theme.
+                We carefully consider each aspect of the design, from color to
+                material to artistic style, all in service of cohesively
                 showcasing God’s own beauty.
               </h3>
             </div>
@@ -75,11 +79,13 @@ const DesignsPageMobile = props => {
             <div className='mobile-design-process-description-title mobile-release-description'>
               <h4>RELEASE</h4>
               <h3>
-                We often release new products at Christian events to help fund other ministries and
-                advance their missions. All our profits online and on-campus go directly to
-                individual Christian missionaries as well as to local and global ministry
+                We often release new products at Christian events to help fund
+                other ministries and advance their missions. All our profits
+                online and on-campus go directly to individual Christian
+                missionaries as well as to local and global ministry
                 organizations. <br /> <br />
-                Learn more about our missionary partnerships on our Partnerships page.
+                Learn more about our missionary partnerships on our Partnerships
+                page.
               </h3>
             </div>
           </div>
@@ -91,7 +97,8 @@ const DesignsPageMobile = props => {
         </div>
       </div>
       <DesignCarouselMobile />
-      <Footer color='#d3cec7' />
+      <MobileFooter2 color='#d3cec7' />
+      {/* <MobileFooter color='#d3cec7' /> */}
     </div>
   );
 };

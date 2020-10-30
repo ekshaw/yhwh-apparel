@@ -1,10 +1,10 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import '../../styles/mobile/PartnershipsPageMobile.css';
 import PartnershipTabs from '../../components/PartnershipTabs';
-import PartnershipCarouselMobile from '../../components/PartnershipCarouselMobile';
+import MobileFooter from '../../components/MobileFooter';
+import MobileFooter2 from '../../components/MobileFooter2';
 
-const PartnershipsPageMobile = props => {
+const PartnershipsPageMobile = (props) => {
   return (
     <div className='mobile-partnerships-main-container'>
       <div className='mobile-partnerships-container'>
@@ -14,8 +14,9 @@ const PartnershipsPageMobile = props => {
           </div>
           <div className='mobile-partnerships-description'>
             <h3>
-              More than simply producing Christian clothing, YHWH Apparel actively partners with the
-              rest of the Church to carry out this Great Commission.
+              More than simply producing Christian clothing, YHWH Apparel
+              actively partners with the rest of the Church to carry out this
+              Great Commission.
             </h3>
           </div>
         </div>
@@ -36,8 +37,10 @@ const PartnershipsPageMobile = props => {
               If you... <br />
               1. Have questions about God, Christianity, or our company,
               <br />
-              2. Would like to receive financial support for your mission, or <br />
-              3. Would like to start your own YHWH Apparel chapter on your campus
+              2. Would like to receive financial support for your mission, or{' '}
+              <br />
+              3. Would like to start your own YHWH Apparel chapter on your
+              campus
               <br />
             </h3>
           </div>
@@ -48,7 +51,8 @@ const PartnershipsPageMobile = props => {
           </div>
         </div>
       </div>
-      <Footer color='#eae7e1' />
+      <MobileFooter2 color='#eae7e1' />
+      {/* <MobileFooter color='#eae7e1' /> */}
     </div>
   );
 };

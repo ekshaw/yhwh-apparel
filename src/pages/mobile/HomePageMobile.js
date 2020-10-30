@@ -1,20 +1,21 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import InstagramFeed from '../../components/InstagramFeed';
 import '../../styles/mobile/HomePageMobile.css';
+import MobileFooter from '../../components/MobileFooter';
+import MobileFooter2 from '../../components/MobileFooter2';
 
-const HomePageMobile = props => {
+const HomePageMobile = (props) => {
   return (
     <div className='mobile-main-container'>
       <div className='mobile-top-container'>
         <div className='mobile-caption-container'>
-          <div className='mobile-caption' id='main-caption'>
+          <div className='mobile-caption' id='mobile-main-caption'>
             <h1>
               A love made known. <br />
               A need that was seen. <br />A call that was heard.
             </h1>
           </div>
-          <div className='mobile-description' id='company-description'>
+          <div className='mobile-description' id='mobile-company-description'>
             <h3>
               YHWH Apparel is a Christian apparel company based in Berkeley,
               California.
@@ -36,14 +37,14 @@ const HomePageMobile = props => {
                 // src={require('../images/sample4.png')}
                 src={require('../../images/home/IMG_7991.jpg')}
                 alt='Home page pic 1'
-                id='main-image1'
+                id='mobile-main-image1'
               />
             </div>
             <div className='mobile-main-image2-container'>
               <img
                 src={require('../../images/home/IMG_2704.jpg')}
                 alt='Home page pic 2'
-                id='main-image2'
+                id='mobile-main-image2'
               />
             </div>
           </div>
@@ -51,11 +52,11 @@ const HomePageMobile = props => {
       </div>
       <div className='mobile-bottom-container'>
         <div className='mobile-subscription-container'>
-          <div className='mobile-caption' id='subscription-caption'>
+          <div className='mobile-caption' id='mobile-subscription-caption'>
             <h1>New drops every semester.</h1>
           </div>
           <div className='mobile-description-container'>
-            <div className='mobile-description' id='subscription-description'>
+            <div className='mobile-description' id='mobile-subscription-description'>
               <h3>
                 Stay up to date on our latest products, sales, and partnerships!
                 Follow our journey to make the name and character of God known
@@ -64,7 +65,7 @@ const HomePageMobile = props => {
             </div>
             <div className='mobile-subscription-btn'>
               <a href='/about/#subscribe-tab'>
-                <h6 className="mobile-subscribe-text">SUBSCRIBE</h6>
+                <h6 className='mobile-subscribe-text'>SUBSCRIBE</h6>
               </a>
             </div>
           </div>
@@ -83,9 +84,10 @@ const HomePageMobile = props => {
             ></img>
           </div>
         </div>
-        <InstagramFeed />
+        {/* <InstagramFeed /> */}
       </div>
-      <Footer color='#d3cec7' />
+      <MobileFooter2 color='#eae7e1' />
+      {/* <MobileFooter color='#eae7e1' /> */}
     </div>
   );
 };

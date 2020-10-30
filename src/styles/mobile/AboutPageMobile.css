@@ -1,4 +1,4 @@
-.mobile-main-container {
+.mobile-about-main-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,12 @@
   background-color: #eae7e1;
 }
 
-.mobile-main-container h3 {
+.mobile-about-main-container h1 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.mobile-about-main-container h3 {
   font-size: 12px;
   line-height: 1.5;
 }
@@ -16,20 +21,20 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .mobile-about-caption-container {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .mobile-about-caption-container > * {
-  width: 27%;
   position: relative;
-  left: 6%;
 }
 
 .mobile-about-caption {
@@ -52,7 +57,7 @@
 }
 
 .mobile-video-btn > * {
-  font-size: 8px;
+  font-size: 12px;
   margin: 4px 0;
 }
 
@@ -63,18 +68,14 @@
 .mobile-about-image-container {
   position: absolute;
   right: 0;
-  /* bottom: 24px; */
   top: 90%;
   width: 50%;
-  /* height: 100%; */
 }
 
 .mobile-about-image-container > img {
   position: absolute;
   right: 0;
-  /* top: 16px; */
   bottom: 0;
-  /* width: min(100px, 80%); */
   width: 80%;
 }
 
@@ -123,6 +124,16 @@
 
 .mobile-quote {
   position: absolute;
-  left: 2%;
+  left: 4%;
   bottom: 4%;
+}
+
+.mobile-quote h2 {
+  font-size: 6vw;
+}
+
+@media (max-width: 480px) {
+  .form-title h1 {
+    font-size: 6vw;
+  }
 }

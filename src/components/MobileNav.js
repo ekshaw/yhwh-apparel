@@ -31,6 +31,15 @@ toggle between hiding and showing the dropdown content */
   render() {
     return (
       <div>
+        <div className='mobile-logo'>
+          <Link to='/'>
+            <img
+              src={require('../images/logo.png')}
+              alt='Logo'
+              id='logo-image'
+            />
+          </Link>
+        </div>
         <div
           onClick={this.click}
           className={'hamburger-icon' + (this.state.hide_menu ? '' : ' fixed')}
@@ -60,9 +69,12 @@ toggle between hiding and showing the dropdown content */
               <Link to='/designs' className='menubar-text'>
                 <h4>DESIGNS</h4>
               </Link>
-              <Link to='/shop' className='menubar-text'>
+              {/* <Link to='/shop' className='menubar-text'>
                 <h4>SHOP</h4>
-              </Link>
+              </Link> */}
+              <a href='https://yhwhapparel.storenvy.com/products' className='menubar-text'>
+                <h4 className='mobile-navlink'>SHOP</h4>
+              </a>
               <Link to='/partnerships' className='menubar-text'>
                 <h4>PARTNERSHIPS</h4>
               </Link>

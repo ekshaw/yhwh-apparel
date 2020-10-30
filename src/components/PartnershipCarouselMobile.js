@@ -1,20 +1,30 @@
 import React, { Component } from 'react';
 import Missionaries from '../content/Missionaries';
+import Organizations from '../content/Organizations'
 import PartnershipCard from './PartnershipCard';
 import '../styles/PartnershipCarouselMobile.css';
 
 class PartnershipCarouselMobile extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
 
     this.state = {
-      cards: {}
+      cards: this.props.tab === 'organizations' ? Organizations : Missionaries 
     };
+    console.log(this.state.cards)
   }
+
   componentWillMount() {
-    this.setState({
-      cards: Missionaries
-    });
+    // if (this.props.tab === 'organizations') {
+    //   this.setState({
+    //     cards: Organizations
+    //   });
+    // } else {
+    //   this.setState({
+    //     cards: Missionaries
+    //   });
+    // }
+    
   }
 
   render() {
