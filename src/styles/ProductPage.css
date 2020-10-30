@@ -1,0 +1,113 @@
+.product-main-container {
+  width: 100%;
+  background-color: #d3cec7;
+  height: 100vh;
+}
+
+.product-main-container h1 {
+  font-size: 5vh;
+}
+
+.product-main-container h4 {
+  font-size: 2.5vh;
+}
+.product-main-container h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.product-main-container h2 {
+  font-size: 3vh;
+}
+
+.product-container {
+  background-color: #d3cec7;
+  display: flex;
+  flex-direction: row;
+  padding-top: 4vw;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.product-item {
+  width: 88%;
+  padding: 8vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-description-container {
+  position: relative;
+  width: 80%;
+  padding-right: 2vw;
+}
+
+.product-caption {
+  width: 100%;
+}
+
+.product-description {
+  width: 92%;
+  overflow: hidden;
+  height: 42vh;
+}
+
+.product-description-wrapper {
+  column-width: 80vw;
+  max-height: 42vh;
+}
+
+.read-more-btn {
+  width: fit-content;
+  color: #eae7e1;
+  margin: 0;
+}
+
+.read-more-btn:hover {
+  cursor: pointer;
+  color: #fefefe;
+  margin: 0;
+  padding: 0;
+}
+
+.add-to-cart-btn {
+  background-color: #eae7e1;
+  width: fit-content;
+  padding: 0.4vw 4vw;
+  text-align: center;
+}
+.add-to-cart-btn > a > * {
+  letter-spacing: 1vh;
+  font-size: 2.2vh;
+}
+
+.size-btn {
+  width: 200px;
+  padding: 1vw 0.5vw;
+  text-align: center;
+}
+
+.product-image-container {
+  position: relative;
+  bottom: 1vw;
+  width: 20vw;
+  padding-right: 32px;
+}
+
+.product-bible-verse {
+  position: relative;
+  bottom: 2vw;
+  float: right;
+  font-size: 0.8vw;
+  letter-spacing: 4px;
+}
+
+.product-information {
+  margin-top: 6vw;
+  position: relative;
+  bottom: 5vw;
+}
