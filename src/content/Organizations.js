@@ -3,7 +3,7 @@ import React from 'react';
 const Organizations = [
   {
     title: 'Laundry Love',
-    location: 'BING WONG WASH CENTER, BERKELEY, CALIFORNIA',
+    location: 'BERKELEY, CALIFORNIA',
     date: '',
     description: (
       <div>

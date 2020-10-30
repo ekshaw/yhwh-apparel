@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/PartnershipTabs.css';
 import PartnershipCarouselMobile from './PartnershipCarouselMobile';
-import Missionaries from '../content/Missionaries';
-import Organizations from '../content/Organizations';
+import Organizations from '../content/Organizations'
+import PartnershipCard from '../components/PartnershipCard'
 
 class PartnershipsTabs extends Component {
   constructor(props) {
@@ -22,11 +22,13 @@ class PartnershipsTabs extends Component {
           would result in salvation and worship wherever they go!
         </h3>
       ),
-      form_active_tab: 'missionaries'
+      form_active_tab: 'missionaries',
+      missionaries_carousel: <PartnershipCarouselMobile tab='missionaries' />,
+      organizations_carousel: <PartnershipCarouselMobile tab='organizations' />
     };
   }
 
-  onSubscribeTabClick = () => {
+  onMissionariesTabClick = () => {
     if (this.state.form_active_tab !== 'missionaries') {
       this.setState({
         form_summary: (
@@ -36,38 +38,39 @@ class PartnershipsTabs extends Component {
             with what God has given us.
             <br />
             <br />
-            <br />
             Here are some friends whom we have supported who have gone or are going on short-term
             missions to share the Gospel of Jesus Christ. Join us in praying for these individuals
             and the people they come across, that their obedience to and partnership with the Holy
             Spirit would result in salvation and worship wherever they go!
           </h3>
         ),
-        form_active_tab: 'missionaries'
+        form_active_tab: 'missionaries',
+        // carousel: <PartnershipCarouselMobile tab='missionaries' />
       });
     }
   };
 
-  onContactTabClick = () => {
+  onOrganizationsTabClick = () => {
     if (this.state.form_active_tab !== 'organizations') {
       this.setState({
         form_summary: (
           <h3>
-            wowzers
+            We love supporting organizations, whether local or global, big or small, as they support 
+            the community. Using our talents, time, money, and other resources, we want to show God's 
+            love and enable other organizations to do the same and keep up their efforts.
             <br />
             <br />
-            <br />
-            wowzers
-            <br />
-            <br />
-            <br />
-            wowzers
+            To date, we've only partnered with one organization but are always open to supporting more!
+            If you are a part of an outreach organization, please contact us. We'd love to talk and get to 
+            know you.
           </h3>
         ),
-        form_active_tab: 'organizations'
+        form_active_tab: 'organizations',
+        // carousel: <PartnershipCarouselMobile tab='organizations' />
       });
     }
   };
+
 
   render() {
     return (
@@ -79,7 +82,7 @@ class PartnershipsTabs extends Component {
               (this.state.form_active_tab === 'missionaries' ? 'partnerships-active' : '')
             }
             id='missionaries-tab'
-            onClick={this.onSubscribeTabClick}>
+            onClick={this.onMissionariesTabClick}>
             <h4>MISSIONARIES</h4>
           </div>
           <div
@@ -88,17 +91,22 @@ class PartnershipsTabs extends Component {
               (this.state.form_active_tab === 'organizations' ? 'partnerships-active' : '')
             }
             id='organizations-tab'
-            onClick={this.onContactTabClick}>
+            onClick={this.onOrganizationsTabClick}>
             <h4>ORGANIZATIONS</h4>
           </div>
         </div>
-        <div className='partnerships-container'>
-          <div className='partnerships-content-container'>
+        <div className='partnerships-carousel-container'>
+          <div className='partnerships-carousel-content-container'>
             <div className='partnerships-summary'>{this.state.form_summary}</div>
             {this.state.form_active_tab === 'organizations' ? (
-              <PartnershipCarouselMobile />
+              // this.state.organizations_carousel
+              <div className='organization-carousel-container'>
+                {Object.keys(Organizations).map(key => (
+                <PartnershipCard key={key} index={key} details={Organizations[key]} />
+                ))}
+              </div>
             ) : (
-              <PartnershipCarouselMobile />
+              this.state.missionaries_carousel
             )}
           </div>
         </div>

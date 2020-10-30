@@ -132,6 +132,8 @@
   font-size: 6vw;
 }
 
-/* .form-title h1 {
-  font-size: 6vw;
-} */
+@media (max-width: 480px) {
+  .form-title h1 {
+    font-size: 6vw;
+  }
+}

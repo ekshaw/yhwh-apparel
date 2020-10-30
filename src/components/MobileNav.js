@@ -72,8 +72,8 @@ toggle between hiding and showing the dropdown content */
               {/* <Link to='/shop' className='menubar-text'>
                 <h4>SHOP</h4>
               </Link> */}
-              <a href='https://yhwhapparel.storenvy.com/products'>
-                <div className='navlink'>SHOP</div>
+              <a href='https://yhwhapparel.storenvy.com/products' className='menubar-text'>
+                <h4 className='mobile-navlink'>SHOP</h4>
               </a>
               <Link to='/partnerships' className='menubar-text'>
                 <h4>PARTNERSHIPS</h4>

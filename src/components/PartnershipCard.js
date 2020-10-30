@@ -27,7 +27,7 @@ class PartnershipCard extends Component {
           image={this.props.details.imgSrc}
           date={this.props.details.date}
           location={this.props.details.location}
-          text={this.props.details.description}
+          text={this.props.details.mobileDescription ? this.props.details.mobileDescription : this.props.details.description}
         />
       </article>
     );
