@@ -45,7 +45,6 @@ class PartnershipsTabs extends Component {
           </h3>
         ),
         form_active_tab: 'missionaries',
-        // carousel: <PartnershipCarouselMobile tab='missionaries' />
       });
     }
   };
@@ -66,7 +65,6 @@ class PartnershipsTabs extends Component {
           </h3>
         ),
         form_active_tab: 'organizations',
-        // carousel: <PartnershipCarouselMobile tab='organizations' />
       });
     }
   };

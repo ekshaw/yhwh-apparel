@@ -22,6 +22,7 @@
   flex-direction: column;
   position: relative;
   padding-top: 80px;
+  padding-bottom: 12px;
 }
 
 .mobile-about-caption-container {
