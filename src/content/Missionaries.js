@@ -79,7 +79,7 @@ const Missionaries = [
         experience the love of Christ.
       </div>
     ),
-    imgSrc: require('../images/partnerships/isabella_johannah1.jpg')
+    imgSrc: require('../images/partnerships/jo_isabella.jpg')
   },
   {
     title: 'Briana',
