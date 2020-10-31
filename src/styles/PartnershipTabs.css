@@ -1,18 +1,8 @@
-.partnerships-main-container {
-  /* position: relative;
-  margin-bottom: 3vw; */
-  /* height: 2400px; */
-}
-
 .partnerships {
   position: relative;
   margin: 0;
   padding: 0;
-  /* left: 50vw; */
-  /* transform: translateX(-50%); */
   height: 1000px;
-  /* display: flex; */
-  /* flex-direction: row; */
 }
 
 .partnerships-tab-container {
@@ -52,10 +42,6 @@
 .partnerships-active {
   border-bottom-width: 0.1px;
   border-bottom-style: solid;
-  /* text-decoration-line: underline;
-  text-underline-position: under; */
-  /* text-decoration: underline;
-  text-underline-offset: 0.5em; */
 }
 
 .partnerships-tab > h4 {

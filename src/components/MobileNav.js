@@ -45,10 +45,6 @@ toggle between hiding and showing the dropdown content */
           className={'hamburger-icon' + (this.state.hide_menu ? '' : ' fixed')}
           id='menu-toggle'
         >
-          {/* <img
-            src={require('../images/hamburger_menu.svg')}
-            id='hamburger-icon'
-          ></img> */}
           <input type="checkbox" checked={!this.state.hide_menu} />
           <span></span>
           <span></span>

@@ -11,7 +11,6 @@ class PartnershipCarouselMobile extends Component {
     this.state = {
       cards: this.props.tab === 'organizations' ? Organizations : Missionaries 
     };
-    console.log(this.state.cards)
   }
 
   componentWillMount() {

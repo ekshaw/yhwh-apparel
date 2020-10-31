@@ -9,7 +9,6 @@ const MobileFooter2 = (props) => {
   return (
     <Fragment>
       <div className='connect-container' style={style}>
-        {/* <div className='connect-with-us'><h1>Connect with Us.</h1></div> */}
         <div className='mobile-social-icons-container'>
           <div className='mobile-icon' id='facebook-icon'>
             <a href='https://www.facebook.com/yhwhapparel'>

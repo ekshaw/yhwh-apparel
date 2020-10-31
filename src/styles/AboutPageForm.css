@@ -31,11 +31,9 @@
   position: relative;
   padding-top: 1vw;
   border-radius: 3.5vw;
-  /* transition: 0.5s ease-in-out; */
 }
 
 .active {
-  /* transition: 0.5s ease-in-out; */
   background-color: #fefefe;
 }
 
@@ -103,10 +101,6 @@ input:focus {
   outline: none;
 }
 
-/* #message-input {
-  height: 6vw;
-} */
-
 @media (max-width: 480px) {
   .about-form h4 {
     font-size: 8px;
@@ -140,9 +134,7 @@ input:focus {
     width: 50%;
     text-align: center;
     position: relative;
-    /* padding-top: 1vw; */
     border-radius: 16px;
-    /* transition: 0.5s ease-in-out; */
   }
 
   .form-tab > * {

@@ -25,7 +25,6 @@
 .video-container {
   position: fixed;
   width: 75vw;
-  /* height: 80vh; */
   left: 50%;
   top: 50vh;
   z-index: 250;

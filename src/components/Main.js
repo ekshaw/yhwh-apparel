@@ -34,8 +34,6 @@ const Main = ({ location }) => {
           <MobileNav />
         </>
       )}
-      {/* <Navbar />
-      <MobileNav /> */}
       <TransitionGroup className='transition-group'>
         <CSSTransition
           key={location.key}

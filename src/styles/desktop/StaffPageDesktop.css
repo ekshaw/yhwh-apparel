@@ -7,7 +7,6 @@
 
 .staff-top-container {
   position: relative;
-  /* background-color: #d3cec7; */
   width: 100vw;
   height: 49vw;
   display: flex;
@@ -16,7 +15,6 @@
 
 .staff-top-container > * {
   position: relative;
-  /* left: 50%; */
   top: 50%;
   transform: translateY(-50%);
 }
