@@ -2,6 +2,32 @@ import React from 'react';
 import '../../styles/mobile/StaffPageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
 import MobileFooter2 from '../../components/MobileFooter2';
+import Staff from '../../content/Staff';
+
+const staffArray = []
+for (var i = 0; i < Staff.length; i++) {
+  for (var j = 0; j < Staff[i].members.length; j++) {
+    const staffName = Staff[i].members[j].name.split(' ');
+    const staffCard = (<div className='mobile-staff-image'>
+      <img src={Staff[i].members[j].imgSrc} />
+      <div className='mobile-staff-name'>
+        <h1>
+          {staffName[0]} <br /> {staffName[1]}
+        </h1>
+      </div>
+    </div>)
+    staffArray.push(staffCard);
+  }
+}
+
+const staffRows = []
+for (var i = 0; i < Math.ceil(staffArray.length / 3); i++) {
+  staffRows.push(<div className="mobile-staff-row">
+    {(3 * i < staffArray.length) ? (staffArray[3 * i]) : null}
+    {(3 * i + 1 < staffArray.length) ? (staffArray[3 * i + 1]) : null}
+    {(3 * i + 2 < staffArray.length) ? (staffArray[3 * i + 2]) : null}
+  </div>)
+}
 
 const StaffPageMobile = (props) => {
   return (
@@ -27,83 +53,7 @@ const StaffPageMobile = (props) => {
         <div className='mobile-staff-container-caption'>
           <h1>Our Members.</h1>
         </div>
-        <div className='mobile-row'>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/nicole.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Nicole <br /> Lee
-              </h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/peter.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>Peter Thompson</h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/rachel.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>Rachel Miller</h1>
-            </div>
-          </div>
-        </div>
-        <div className='mobile-row'>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/sooyoung.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>Sooyoung Park</h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/kristen.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Kristen <br />
-                Yee
-              </h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/matt.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Matt <br />
-                Flores
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className='mobile-row'>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/aaron.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Aaron <br />
-                Wu
-              </h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/emily.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Emily <br />
-                Shaw
-              </h1>
-            </div>
-          </div>
-          <div className='mobile-staff-image'>
-            <img src={require('../../images/staff/angela.jpg')} />
-            <div className='mobile-staff-name'>
-              <h1>
-                Angela <br />
-                Ea
-              </h1>
-            </div>
-          </div>
-        </div>
+        {staffRows}
       </div>
       <MobileFooter2 color='#eae7e1' />
       {/* <MobileFooter color='#eae7e1' /> */}

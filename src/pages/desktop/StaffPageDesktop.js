@@ -43,7 +43,7 @@ const StaffPageDesktop = (props) => {
           </div>
         </div>
         <div className='ceo-image'>
-          <img src={require('../../images/staff/nicole.jpg')} />
+          <img src={require('../../images/staff/desktop-staff/nicole.png')} />
         </div>
         <div className='ceo-blank-image-box'></div>
       </div>
@@ -68,7 +68,7 @@ const StaffPageDesktop = (props) => {
           </div>
         </div>
         <div className='vp-image'>
-          <img src={require('../../images/staff/peter.jpg')} />
+          <img src={require('../../images/staff/desktop-staff/peter.png')} />
         </div>
         <div className='vp-blank-image-box'></div>
       </div>
@@ -93,12 +93,12 @@ const StaffPageDesktop = (props) => {
             </h3>
           </div>
           <div className='marketing1-image'>
-            <img src={require('../../images/staff/sooyoung.jpg')} />
+            <img src={require('../../images/staff/desktop-staff/sooyoung.png')} />
           </div>
         </div>
         <div className='marketing2-profile'>
           <div className='marketing2-image'>
-            <img src={require('../../images/staff/kristen.jpg')} />
+            <img src={require('../../images/staff/desktop-staff/kristen.png')} />
           </div>
           <div className='marketing2-name'>
             <h2>Kristen Yee</h2>
@@ -125,7 +125,7 @@ const StaffPageDesktop = (props) => {
           <div className='design1'>
             <div className='design1-profile'>
               <div className='design1-image'>
-                <img src={require('../../images/staff/aaron.jpg')} />
+                <img src={require('../../images/staff/desktop-staff/aaron.png')} />
               </div>
               <div className='design1-name'>
                 <h2>Aaron Wu</h2>
@@ -147,7 +147,7 @@ const StaffPageDesktop = (props) => {
           <div className='design2'>
             <div className='design2-profile'>
               <div className='design2-image'>
-                <img src={require('../../images/staff/emily.jpg')} />
+                <img src={require('../../images/staff/desktop-staff/emily.png')} />
               </div>
               <div className='design2-name'>
                 <h2>Emily Shaw</h2>
@@ -167,7 +167,7 @@ const StaffPageDesktop = (props) => {
           <div className='design3'>
             <div className='design3-profile'>
               <div className='design3-image'>
-                <img src={require('../../images/staff/angela.jpg')} />
+                <img src={require('../../images/staff/desktop-staff/angela.png')} />
               </div>
               <div className='design3-name'>
                 <h2>Angela Ea</h2>
@@ -214,13 +214,13 @@ const StaffPageDesktop = (props) => {
             </h3>
           </div>
           <div className='ops1-image'>
-            <img src={require('../../images/staff/matt.jpg')} />
+            <img src={require('../../images/staff/desktop-staff/matt.png')} />
           </div>
           <div className='ops-blank-image-box' />
         </div>
         <div className='comm1-profile'>
           <div className='comm1-image'>
-            <img src={require('../../images/staff/rachel.jpg')} />
+            <img src={require('../../images/staff/desktop-staff/rachel.png')} />
           </div>
           <div className='comm1-name'>
             <h2>Rachel Miller</h2>
