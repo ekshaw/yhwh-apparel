@@ -18,7 +18,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/nicole.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/nicole.jpg')
       },
       {
         name: 'Peter Thompson',
@@ -34,7 +35,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/peter.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/peter.jpg')
       }
     ]
   },
@@ -55,7 +57,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/kristen.jpg')
       },
       {
         name: 'Sooyoung Park',
@@ -72,7 +75,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/sooyoung.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/sooyoung.jpg')
       },
       {
         name: 'Daniel Lee',
@@ -88,7 +92,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/daniel.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/daniel.jpg')
       }
     ]
   },
@@ -109,7 +114,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/emily.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/emily.jpg')
       },
       {
         name: 'Matt Flores',
@@ -129,7 +135,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/matt.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/matt.jpg')
       }
     ]
   },
@@ -148,7 +155,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/aaron.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/aaron.jpg')
       },
       {
         name: 'Angela Ea',
@@ -164,7 +172,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/angela.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/angela.jpg')
       },
       {
         name: 'Christine Oh',
@@ -182,7 +191,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/christine.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/christine.jpg')
       },
       {
         name: 'Kylie Ren',
@@ -199,7 +209,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/kylie.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/kylie.jpg')
       }
     ]
   },
@@ -220,7 +231,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/rachel.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/rachel.jpg')
       },
       {
         name: 'Megan Lui',
@@ -236,7 +248,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrc: require('../images/staff/nicole.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/megan.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/megan.jpg')
       }
     ]
   }

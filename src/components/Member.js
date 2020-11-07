@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Member.css';
 
-const Member = ({ odd, member: { imgSrc, name, role, description } }) => {
+const Member = ({ odd, member: { imgSrcDesktop, name, role, description } }) => {
   return (
     <div className='member-main-container'>
       <div className={'member-' + (odd == 1 ? 'odd' : 'even')}>
         <div className='member-image'>
-          <img src={imgSrc} alt='' />
+          <img src={imgSrcDesktop} alt='' />
         </div>
         <div className='member-description-container'>
           <div>
