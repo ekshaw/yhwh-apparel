@@ -9,7 +9,7 @@ for (var i = 0; i < Staff.length; i++) {
   for (var j = 0; j < Staff[i].members.length; j++) {
     const staffName = Staff[i].members[j].name.split(' ');
     const staffCard = (<div className='mobile-staff-image'>
-      <img src={Staff[i].members[j].imgSrc} />
+      <img src={Staff[i].members[j].imgSrcMobile} />
       <div className='mobile-staff-name'>
         <h1>
           {staffName[0]} <br /> {staffName[1]}

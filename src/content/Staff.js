@@ -215,7 +215,7 @@ const Staff = [
     ]
   },
   {
-    team: 'Community Outreach',
+    team: 'Business Operations',
     members: [
       {
         name: 'Rachel Miller',

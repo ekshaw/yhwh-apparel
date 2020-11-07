@@ -97,7 +97,7 @@ const DesignsPageMobile = (props) => {
         </div>
       </div>
       <DesignCarouselMobile />
-      <MobileFooter2 color='#d3cec7' />
+      <MobileFooter2 color='#eae7e1' />
       {/* <MobileFooter color='#d3cec7' /> */}
     </div>
   );

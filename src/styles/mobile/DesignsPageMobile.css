@@ -1,5 +1,5 @@
 .mobile-design-main-container {
-  background-color: #fefefe;
+  background-color: #d3cec7;
   overflow-x: hidden;
   width: 100%;
 }
@@ -44,7 +44,7 @@
 
 .mobile-design-process-container {
   width: 100%;
-  background-color: #d3cec7;
+  background-color: #eae7e1;
   position: relative;
   bottom: 1vw;
   display: flex;
