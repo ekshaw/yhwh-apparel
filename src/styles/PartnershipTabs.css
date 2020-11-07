@@ -10,11 +10,12 @@
   flex-direction: row;
   justify-content: space-around;
   width: 72%;
+  height: 40px;
   z-index: 99;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;
+  margin-top: 40px;
 }
 
 .partnerships-tab-container h4 {
@@ -26,11 +27,13 @@
 #missionaries-tab {
   position: absolute;
   left: 0;
+  width: 40%;
 }
 
 #organizations-tab {
   position: absolute;
   right: 0;
+  width: 44%;
 }
 
 .partnerships-tab {
@@ -72,10 +75,18 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 0px 40px 0px;
+  padding: 00px 0px 40px 0px;
   background-color: #d3cec7;
 }
 
 .partnerships-summary {
+  position: absolute;
+  top: 20px;
   width: 75%;
+  height: 200px;
+}
+
+.organization-carousel-container {
+  position: absolute;
+  top: 28%;
 }

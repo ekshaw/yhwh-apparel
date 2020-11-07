@@ -3,7 +3,6 @@ import '../../styles/mobile/AboutPageMobile.css';
 import AboutPageForm from '../../components/AboutPageForm';
 import AboutVideo from '../../components/AboutVideo';
 import MobileFooter from '../../components/MobileFooter';
-import MobileFooter2 from '../../components/MobileFooter2';
 
 class AboutPageMobile extends Component {
   constructor(props) {
@@ -43,9 +42,6 @@ class AboutPageMobile extends Component {
               <h4>PLAY VIDEO</h4>
             </div>
           </div>
-          {/* <div className='mobile-about-image-container'>
-            <img src={require('../../images/about/IMG_2768.jpg')}></img>
-          </div> */}
         </div>
         <div className='mobile-vision-mission-container'>
           <div className='mobile-vision-container'>
@@ -98,8 +94,7 @@ class AboutPageMobile extends Component {
           </div>
         </div>
         <AboutPageForm />
-        <MobileFooter2 color='#eae7e1' />
-        {/* <MobileFooter color='#eae7e1' /> */}
+        <MobileFooter color='#eae7e1' />
       </div>
     );
   }

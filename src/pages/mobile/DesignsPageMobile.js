@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/mobile/DesignsPageMobile.css';
 import DesignCarouselMobile from '../../components/DesignCarouselMobile';
 import MobileFooter from '../../components/MobileFooter';
-import MobileFooter2 from '../../components/MobileFooter2';
 
 const DesignsPageMobile = (props) => {
   return (
@@ -97,8 +96,7 @@ const DesignsPageMobile = (props) => {
         </div>
       </div>
       <DesignCarouselMobile />
-      <MobileFooter2 color='#d3cec7' />
-      {/* <MobileFooter color='#d3cec7' /> */}
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };

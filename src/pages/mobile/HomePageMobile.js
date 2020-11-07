@@ -2,7 +2,6 @@ import React from 'react';
 import InstagramFeed from '../../components/InstagramFeed';
 import '../../styles/mobile/HomePageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
-import MobileFooter2 from '../../components/MobileFooter2';
 
 const HomePageMobile = (props) => {
   return (
@@ -86,8 +85,7 @@ const HomePageMobile = (props) => {
         </div>
         {/* <InstagramFeed /> */}
       </div>
-      <MobileFooter2 color='#eae7e1' />
-      {/* <MobileFooter color='#eae7e1' /> */}
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };

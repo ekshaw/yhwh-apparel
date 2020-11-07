@@ -15,7 +15,6 @@ class PartnershipsTabs extends Component {
           with what God has given us.
           <br />
           <br />
-          <br />
           Here are some friends whom we have supported who have gone or are going on short-term
           missions to share the Gospel of Jesus Christ. Join us in praying for these individuals and
           the people they come across, that their obedience to and partnership with the Holy Spirit
@@ -97,7 +96,6 @@ class PartnershipsTabs extends Component {
           <div className='partnerships-carousel-content-container'>
             <div className='partnerships-summary'>{this.state.form_summary}</div>
             {this.state.form_active_tab === 'organizations' ? (
-              // this.state.organizations_carousel
               <div className='organization-carousel-container'>
                 {Object.keys(Organizations).map(key => (
                 <PartnershipCard key={key} index={key} details={Organizations[key]} />
