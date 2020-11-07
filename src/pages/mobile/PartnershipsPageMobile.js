@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/mobile/PartnershipsPageMobile.css';
 import PartnershipTabs from '../../components/PartnershipTabs';
 import MobileFooter from '../../components/MobileFooter';
-import MobileFooter2 from '../../components/MobileFooter2';
 
 const PartnershipsPageMobile = (props) => {
   return (
@@ -51,8 +50,7 @@ const PartnershipsPageMobile = (props) => {
           </div>
         </div>
       </div>
-      <MobileFooter2 color='#eae7e1' />
-      {/* <MobileFooter color='#eae7e1' /> */}
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };

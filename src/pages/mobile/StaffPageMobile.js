@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../styles/mobile/StaffPageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
-import MobileFooter2 from '../../components/MobileFooter2';
 import Staff from '../../content/Staff';
 
 const staffArray = []
@@ -55,8 +54,7 @@ const StaffPageMobile = (props) => {
         </div>
         {staffRows}
       </div>
-      <MobileFooter2 color='#eae7e1' />
-      {/* <MobileFooter color='#eae7e1' /> */}
+      <MobileFooter color='#eae7e1' />
     </div>
   );
 };
