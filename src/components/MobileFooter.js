@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import '../styles/MobileFooter.css';
 
-const MobileFooter2 = (props) => {
+const MobileFooter = (props) => {
   const style = {
     backgroundColor: '' + props.color + '',
   };
@@ -60,4 +60,4 @@ const MobileFooter2 = (props) => {
   );
 };
 
-export default MobileFooter2;
+export default MobileFooter;
