@@ -27,11 +27,11 @@ const Staff = [
         description: (
           <div>
             <h3>
-              "Hey, I’m Peter, and I’m studying EECS. I joined YHWH my sophomore year, and being a
+              Hey, I’m Peter, and I’m studying EECS. I joined YHWH my sophomore year, and being a
               part of this team and community has been such a blessing! It’s been so amazing to see
               how we’ve been able to carry out God’s mission through our apparel, and I’m so excited
               to see how He’s going to continue to grow and work through us. Apart from YHWH, I love
-              to play basketball, go snowboarding, and play guitar."
+              to play basketball, go snowboarding, and play guitar.
             </h3>
           </div>
         ),
@@ -123,7 +123,7 @@ const Staff = [
         description: (
           <div>
             <h3>
-              "Hi, I’m Matt and I study Cognitive Science. I joined YHWH in Fall 2019 and it has
+              Hi, I’m Matt and I study Cognitive Science. I joined YHWH in Fall 2019 and it has
               been such a blessing and privilege to be apart of a team so dedicated to making a
               product that glorifies God. This team has showed me how I can use my skills and
               passions (in logistics, communication, and web design) to bring honor to God, and I am
@@ -131,7 +131,7 @@ const Staff = [
               because I felt so compelled to start conversations with my clothing and my appearance,
               and this semester has showed me how God works powerfully through the smallest things,
               whether it be a necklace or a jacket. In my free time, I love dancing, debating why
-              Twice is the queen of K-pop girl groups and not BlackPink, and exploring design."
+              Twice is the queen of K-pop girl groups and not BlackPink, and exploring design.
             </h3>
           </div>
         ),
