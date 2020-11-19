@@ -36,9 +36,13 @@
 }
 
 .mobile-scroll-image {
+  position: relative;
+  top: 0%;
   width: 100%;
+  height: 220px;
+  object-fit: contain;
   padding-top: 12px;
-  padding-bottom: 0px;
+  padding-bottom: 2px;
 }
 
 .mobile-shop-now-btn {
