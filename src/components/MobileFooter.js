@@ -40,7 +40,7 @@ const MobileFooter = (props) => {
         <div className='mobile-footer-social-container'>
           <div className='mobile-footer-blurb'>
             <h5>
-              Every design is prayed upon, biblically inpsired, and personally
+              Every design is prayed upon, biblically inspired, and personally
               experienced.
               <br />
               100% of our profits go toward Christian charities and missions.
