@@ -30,7 +30,6 @@ const HomePageDesktop = props => {
           <div className='main-blank-image-box'></div>
           <div className='main-image1-container'>
             <img
-              // src={require('../images/sample4.png')}
               src={require('../../images/home/IMG_7991.jpg')}
               alt='Home page pic 1'
               id='main-image1'
