@@ -61,6 +61,9 @@ toggle between hiding and showing the dropdown content */
         >
           <div className='menu-items-holder'>
             <div id='myDropdown' className={'menubar-text' + (this.state.hide_menu ? ' hide' : ' show')}>
+              <Link to='/' className='menubar-text' onClick={this.click}>
+                <h4>HOME</h4>
+              </Link> 
               <Link to='/about' className='menubar-text' onClick={this.click}>
                 <h4>ABOUT YHWH</h4>
               </Link>
