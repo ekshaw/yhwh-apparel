@@ -23,7 +23,7 @@ class MobileDropOverlay extends Component {
         <div className='mobile-drop-overlay'></div>
         <div className='mobile-drop-des-container'>
           <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
-            X
+            <h3>X</h3>
           </div>
           <div className='mobile-drop-header'>F/W '20 COLLECTION</div>
           <div className='mobile-drop-line'></div>
