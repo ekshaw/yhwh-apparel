@@ -1,0 +1,94 @@
+.mobile-drop-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: #1f1f1f;
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.mobile-drop-des-container {
+  position: fixed;
+  left: 50%;
+  top: 48vh;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  z-index: 10000;
+  background-image: url('../images/home/graphic.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6vw 10vw;
+  overflow: hidden;
+}
+
+.mobile-drop-overlay-exit-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #fefefe;
+  margin: 0px 0px;
+  font-weight: 200;
+  text-align: right;
+  padding-bottom: 1vh;
+}
+
+.mobile-drop-header {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 1vw 0vw;
+  text-align: center;
+  padding: 1vh 0;
+  color: #fefefe;
+}
+
+.mobile-drop-line {
+  width: 40vw;
+  border-top: 1px solid #fefefe;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-drop-title {
+  padding: 10vw 0;
+  font-family: 'meno-banner', serif;
+  font-size: 14vw;
+  text-align: center;
+  color: #fefefe;
+}
+
+.mobile-drop-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  color: #fefefe;
+  text-align: center;
+  width: 48vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-drop-btn-container {
+  padding: 16vw 0 8vw 0;
+}
+
+.mobile-drop-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-width: thin;
+  border-color: #fefefe;
+  width: 112px;
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.mobile-drop-btn h4 {
+  color: #fefefe;
+  letter-spacing: 0.4vw;
+}

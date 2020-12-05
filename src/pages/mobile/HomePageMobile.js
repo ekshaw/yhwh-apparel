@@ -2,10 +2,14 @@ import React from 'react';
 import InstagramFeed from '../../components/InstagramFeed';
 import '../../styles/mobile/HomePageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
+import MobileDropOverlay from '../../components/MobileDropOverlay';
 
 const HomePageMobile = (props) => {
   return (
     <div className='mobile-main-container'>
+      <div className='mobile-drop-overlay-container'>
+        <MobileDropOverlay />
+      </div>
       <div className='mobile-top-container'>
         <div className='mobile-caption-container'>
           <div className='mobile-caption' id='mobile-main-caption'>
