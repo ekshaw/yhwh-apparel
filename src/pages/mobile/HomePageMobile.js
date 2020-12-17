@@ -7,9 +7,9 @@ import MobileDropOverlay from '../../components/MobileDropOverlay';
 const HomePageMobile = (props) => {
   return (
     <div className='mobile-main-container'>
-      <div className='mobile-drop-overlay-container'>
+      {/* <div className='mobile-drop-overlay-container'>
         <MobileDropOverlay />
-      </div>
+      </div> */}
       <div className='mobile-top-container'>
         <div className='mobile-caption-container'>
           <div className='mobile-caption' id='mobile-main-caption'>
