@@ -109,7 +109,7 @@ const Staff = [
               Hello hello! I’m Emily and I’m an EECS major also pursing the Berkeley Certificate in
               Design Innovation. Joining YHWH has been such a blessing in showing me how my passion
               for design can be used to glorify God. My heart is so happy to see how our products
-              are used to spark conversations about Him. Apart from YHWH, I enjoy hiking, swimming,
+              are used to spark conversations about Him. Apart from YHWH, I enjoy swimming, hiking,
               and baking!
             </h3>
           </div>
