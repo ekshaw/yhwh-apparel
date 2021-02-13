@@ -5,38 +5,38 @@ const Staff = [
     team: 'Executive',
     members: [
       {
-        name: 'Nicole Lee',
+        name: 'Kristen Yee',
         role: 'CEO',
         description: (
           <div>
             <h3>
-              Hi! My name is Nicole and I'm majoring in Media Studies and minoring in Journalism. I
-              joined YHWH Apparel during my sophomore year and have had the privilege of witnessing
-              God work in and through this community ever since. It's such a gift and a treat to
-              share my faith in unique ways while doing meaningful work alongside some really cool
-              people. I'm so thankful and honored to be a part of this team!
+              Hi! I'm Kristen, a student studying English. The semester that I joined YHWH, serving
+              and giving back to the Berkeley Christian community was heavy on my heart, and I'm so
+              grateful for the ways that YHWH has helped me incorporate my academic pursuits with my
+              faith. I am a huge coffee-lover, oversleeper, and #1 fan of my amazing marketing team
+              :)
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/nicole.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/nicole.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/kristen.jpg')
       },
       {
-        name: 'Peter Thompson',
+        name: 'Emily Shaw',
         role: 'Vice President',
         description: (
           <div>
             <h3>
-              Hey, I’m Peter, and I’m studying EECS. I joined YHWH my sophomore year, and being a
-              part of this team and community has been such a blessing! It’s been so amazing to see
-              how we’ve been able to carry out God’s mission through our apparel, and I’m so excited
-              to see how He’s going to continue to grow and work through us. Apart from YHWH, I love
-              to play basketball, go snowboarding, and play guitar.
+              Hello hello! I’m Emily and I’m an EECS major also pursing the Berkeley Certificate in
+              Design Innovation. Joining YHWH has been such a blessing in showing me how my passions
+              and career pursuits can be used to glorify God. My heart is so happy to see how our
+              products are used to spark conversations about Him. Apart from YHWH, I enjoy swimming,
+              hiking, and baking!
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/peter.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/peter.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/emily.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/emily.jpg')
       }
     ]
   },
@@ -44,21 +44,19 @@ const Staff = [
     team: 'Marketing',
     members: [
       {
-        name: 'Kristen Yee',
+        name: 'Aaron Wu',
         role: 'Marketing Lead',
         description: (
           <div>
             <h3>
-              Hi! I'm Kristen, a student with intent on studying some combination of Business
-              Administration and English. The semester that I joined YHWH, serving and giving back
-              to the Berkeley Christian community was heavy on my heart, and I'm so grateful for the
-              ways that YHWH has helped me incorporate my academic pursuits with my faith. I am a
-              huge coffee-lover, oversleeper, and #1 fan of my amazing marketing team :)
+              Hi, I'm Aaron, a student studying Cognitive Science. I joined YHWH Apparel to use my
+              love for design and fashion for God's glory. I love the process of translating
+              Scripture into physical designs.
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/kristen.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/aaron.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/aaron.jpg')
       },
       {
         name: 'Sooyoung Park',
@@ -79,8 +77,53 @@ const Staff = [
         imgSrcMobile: require('../images/staff/mobile-staff/sooyoung.jpg')
       },
       {
-        name: 'Daniel Lee',
+        name: 'Persis Gan',
         role: 'Marketing Editor',
+        description: (
+          <div>
+            <h3>
+              Hi! I'm Persis, a Global Studies major and I joined YHWH Apparel because I love
+              fashion, am interested in marketing and wanted to be apart of a closer Christian
+              community on campus. I love running outdoors, going for spin class, or staying in
+              curled up with a good book and listening to music. I also absolutely love dogs, making
+              random Spotify playlists and online shopping (heh).
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/persis.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/persis.jpg')
+      }
+    ]
+  },
+  {
+    team: 'Web Development',
+    members: [
+      {
+        name: 'Christie Lum',
+        role: 'Web Developer',
+        description: (
+          <div>
+            <h3>
+              Hello! I'm Christie and am majoring in CS and data science. I joined YHWH this
+              semester as a web developer and am so excited to be able to combine my passion for
+              design, coding, and God together. As someone who loves serving, it's such a blessing
+              to be able to glorify the Lord and spread the gospel through fashion in this team. In
+              my free time, I love bullet journaling, singing with my Christian a cappella group,
+              playing TFT, and playing volleyball.
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/christie.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/christie.jpg')
+      }
+    ]
+  },
+  {
+    team: 'Product Design',
+    members: [
+      {
+        name: 'Daniel Lee',
+        role: 'Product Design Lead',
         description: (
           <div>
             <h3>
@@ -94,69 +137,6 @@ const Staff = [
         ),
         imgSrcDesktop: require('../images/staff/desktop-staff/daniel.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/daniel.jpg')
-      }
-    ]
-  },
-  {
-    team: 'Web Development',
-    members: [
-      {
-        name: 'Emily Shaw',
-        role: 'Web Developer',
-        description: (
-          <div>
-            <h3>
-              Hello hello! I’m Emily and I’m an EECS major also pursing the Berkeley Certificate in
-              Design Innovation. Joining YHWH has been such a blessing in showing me how my passion
-              for design can be used to glorify God. My heart is so happy to see how our products
-              are used to spark conversations about Him. Apart from YHWH, I enjoy swimming, hiking,
-              and baking!
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/emily.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/emily.jpg')
-      },
-      {
-        name: 'Matt Flores',
-        role: 'Web Developer',
-        description: (
-          <div>
-            <h3>
-              Hi, I’m Matt and I study Cognitive Science. I joined YHWH in Fall 2019 and it has
-              been such a blessing and privilege to be apart of a team so dedicated to making a
-              product that glorifies God. This team has showed me how I can use my skills and
-              passions (in logistics, communication, and web design) to bring honor to God, and I am
-              so grateful to have the opportunity to play a small part in His big plan. I joined
-              because I felt so compelled to start conversations with my clothing and my appearance,
-              and this semester has showed me how God works powerfully through the smallest things,
-              whether it be a necklace or a jacket. In my free time, I love dancing, debating why
-              Twice is the queen of K-pop girl groups and not BlackPink, and exploring design.
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/matt.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/matt.jpg')
-      }
-    ]
-  },
-  {
-    team: 'Product Design',
-    members: [
-      {
-        name: 'Aaron Wu',
-        role: 'Product Design Lead',
-        description: (
-          <div>
-            <h3>
-              Hi, I'm Aaron, a student studying Cognitive Science. I joined YHWH Apparel to use my
-              love for design and fashion for God's glory. I love the process of translating
-              Scripture into physical designs.
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/aaron.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/aaron.jpg')
       },
       {
         name: 'Angela Ea',
@@ -176,25 +156,6 @@ const Staff = [
         imgSrcMobile: require('../images/staff/mobile-staff/angela.jpg')
       },
       {
-        name: 'Christine Oh',
-        role: 'Product Designer',
-        description: (
-          <div>
-            <h3>
-              Heyo! I'm Christine! I'm from Tallahassee, FL and currently studying Business
-              Administration and Media Studies. I joined YHWH to put my faith into action and action
-              into purpose! Through the YHWH community and work environment, Jesus has already
-              greatly rocked my heart to teach me that He is in all things forever and always. I'm
-              way thankful to bask in the true mercy, love, and generosity of Christ alongside
-              people who do the same. I love to swim, hike, and paint, and you can probably find me
-              eating a chicken burrito in between!
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/christine.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/christine.jpg')
-      },
-      {
         name: 'Kylie Ren',
         role: 'Product Designer',
         description: (
@@ -211,6 +172,23 @@ const Staff = [
         ),
         imgSrcDesktop: require('../images/staff/desktop-staff/kylie.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/kylie.jpg')
+      },
+      {
+        name: 'Maddie Kong',
+        role: 'Product Designer',
+        description: (
+          <div>
+            <h3>
+              AnyeonghasaYO, I’m Maddie and I’m studying Cognitive Science! I joined YHWH as a
+              product designer spring 2021 because I found YHWH’s mission to be refreshingly
+              unashamed in declaring the gospel and the intentional heart posture clearly manifested
+              in the designs. Excited to witness how God moves! In my free time, I love learning new
+              instruments, watching kdramas, and spending time outside.
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/maddie.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/maddie.jpg')
       }
     ]
   },
@@ -250,6 +228,25 @@ const Staff = [
         ),
         imgSrcDesktop: require('../images/staff/desktop-staff/megan.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/megan.jpg')
+      },
+      {
+        name: 'Christine Oh',
+        role: 'Business Operations Associate',
+        description: (
+          <div>
+            <h3>
+              Heyo! I'm Christine! I'm from Tallahassee, FL and currently studying Business
+              Administration and Media Studies. I joined YHWH to put my faith into action and action
+              into purpose! Through the YHWH community and work environment, Jesus has already
+              greatly rocked my heart to teach me that He is in all things forever and always. I'm
+              way thankful to bask in the true mercy, love, and generosity of Christ alongside
+              people who do the same. I love to swim, hike, and paint, and you can probably find me
+              eating a chicken burrito in between!
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/christine.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/christine.jpg')
       }
     ]
   }
