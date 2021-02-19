@@ -6,7 +6,7 @@
 .partnerships-container {
   background-color: #eae7e1;
   width: 100vw;
-  height: 65vw;
+  height: 67vw; /*65*/
 }
 
 .partnerships-caption-container {
@@ -47,9 +47,9 @@
 
 .partnerships-image {
   position: absolute;
-  width: 40vw;
+  width: 35vw; /*40vw*/
   left: 13vw;
-  top: 35vw;
+  top: 31vw; /*35vw*/
   z-index: 3;
 }
 
