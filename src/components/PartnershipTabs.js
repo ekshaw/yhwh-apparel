@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/PartnershipTabs.css';
-import PartnershipCarouselMobile from './PartnershipCarouselMobile';
-import Organizations from '../content/Organizations'
-import PartnershipCard from '../components/PartnershipCard'
+import MissionariesCarouselMobile from './MissionariesCarouselMobile';
+import OrganizationsCarouselMobile from './OrganizationsCarouselMobile';
 
 class PartnershipsTabs extends Component {
   constructor(props) {
@@ -22,8 +21,8 @@ class PartnershipsTabs extends Component {
         </h3>
       ),
       form_active_tab: 'missionaries',
-      missionaries_carousel: <PartnershipCarouselMobile tab='missionaries' />,
-      organizations_carousel: <PartnershipCarouselMobile tab='organizations' />
+      missionaries_carousel: <MissionariesCarouselMobile tab='missionaries' />,
+      organizations_carousel: <OrganizationsCarouselMobile tab='organizations' />
     };
   }
 
@@ -43,7 +42,7 @@ class PartnershipsTabs extends Component {
             Spirit would result in salvation and worship wherever they go!
           </h3>
         ),
-        form_active_tab: 'missionaries',
+        form_active_tab: 'missionaries'
       });
     }
   };
@@ -53,21 +52,20 @@ class PartnershipsTabs extends Component {
       this.setState({
         form_summary: (
           <h3>
-            We love supporting organizations, whether local or global, big or small, as they support 
-            the community. Using our talents, time, money, and other resources, we want to show God's 
-            love and enable other organizations to do the same and keep up their efforts.
+            We love supporting organizations, whether local or global, big or small, as they support
+            the community. Using our talents, time, money, and other resources, we want to show
+            God's love and enable other organizations to do the same and keep up their efforts.
             <br />
             <br />
-            To date, we've only partnered with one organization but are always open to supporting more!
-            If you are a part of an outreach organization, please contact us. We'd love to talk and get to 
-            know you.
+            To date, we've only partnered with one organization but are always open to supporting
+            more! If you are a part of an outreach organization, please contact us. We'd love to
+            talk and get to know you.
           </h3>
         ),
-        form_active_tab: 'organizations',
+        form_active_tab: 'organizations'
       });
     }
   };
-
 
   render() {
     return (
@@ -95,15 +93,9 @@ class PartnershipsTabs extends Component {
         <div className='partnerships-carousel-container'>
           <div className='partnerships-carousel-content-container'>
             <div className='partnerships-summary'>{this.state.form_summary}</div>
-            {this.state.form_active_tab === 'organizations' ? (
-              <div className='organization-carousel-container'>
-                {Object.keys(Organizations).map(key => (
-                <PartnershipCard key={key} index={key} details={Organizations[key]} />
-                ))}
-              </div>
-            ) : (
-              this.state.missionaries_carousel
-            )}
+            {this.state.form_active_tab === 'missionaries'
+              ? this.state.missionaries_carousel
+              : this.state.organizations_carousel}
           </div>
         </div>
       </form>

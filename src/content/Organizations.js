@@ -16,6 +16,23 @@ const Organizations = [
       </div>
     ),
     imgSrc: require('../images/partnerships/laundry_love.jpg')
+  },
+  {
+    title: 'Letters of Hope',
+    location: 'HENDERSON, NEVADA',
+    date: '',
+    description: (
+      <div>
+        Letters of Hope is an initiative that strives to empower and encourage folks in prison
+        through the delivery of personally-written letters and the donation of Bibles. It's a
+        program within a larger organization called God Behind Bars that uses their resources to
+        introduce families to Christ, helping inmates grow with their loved ones in faith. They also
+        equip prisoners with the skills and knowledge to reintegrate themselves into society by
+        allocating their funds towards helping prisoners find jobs, buy homes, take advantage of
+        academic opportunities, and reconnect with their families.
+      </div>
+    ),
+    imgSrc: require('../images/partnerships/letters_of_hope.jpg')
   }
 ];
 
