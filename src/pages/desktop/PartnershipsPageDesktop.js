@@ -14,11 +14,17 @@ const PartnershipsPageDesktop = props => {
             <h3>
               More than simply producing Christian clothing, YHWH Apparel
               actively partners with the rest of the Church to carry out this
-              Great Commission.
+              Great Commission. We seek to spread the good news of Jesus Christ 
+              by representing Him and by donating all our profits.
             </h3>
           </div>
         </div>
         <div className='partnerships-blank-image-box'>
+        </div>
+        <div className='partnerships-image'>
+          <img src={require('../../images/partnerships/team.jpg')}></img>
+        </div>
+        <div className='partnerships-blank-image-box-skinny'>
           <div className='great-commission-verse'>
             <h1>
               "Go therefore and make <br />
@@ -28,9 +34,6 @@ const PartnershipsPageDesktop = props => {
           <div className='great-commission-bible-ref'>
             <h4>- MATTHEW 28:19-20</h4>
           </div>
-        </div>
-        <div className='partnerships-image'>
-          <img src={require('../../images/partnerships/team.jpg')}></img>
         </div>
       </div>
       <div className='missionaries-container'>
