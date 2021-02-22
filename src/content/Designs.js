@@ -2,6 +2,24 @@ import React from 'react';
 
 const Designs = [
   {
+    title: 'Assurance',
+    release: 'December 2020',
+    description: (
+      <div>
+        “Though the fig tree should not blossom, nor fruit be on the vines, the produce of the olive
+        fail and the fields yield no food, the flock be cut off from the fold and there be no herd
+        in the stalls, yet I will rejoice in the Lord; I will take joy in the God of my salvation.”
+        Habakkuk 3:17-18
+        <br />
+        <br />
+        Assurance is not the idea that God will make our lives better, nor does it exist to serve
+        our own purpose and enjoyment. Our assurance isn’t found in more favorable circumstances.
+        Rather, our assurance is in Jesus.
+      </div>
+    ),
+    imgSrc: require('../images/designs/assurance.jpg')
+  },
+  {
     title: 'Run With Endurance',
     release: 'December 2019',
     description: (

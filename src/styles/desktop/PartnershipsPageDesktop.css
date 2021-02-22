@@ -256,12 +256,12 @@
 
 .organizations-caption {
   position: relative;
-  left: 11.4vw;
+  left: 9vw;
 }
 
 .organizations-laundry-love {
   position: relative;
-  left: 11.4vw;
+  left: 9vw;
   display: flex;
   flex-direction: row;
 }
@@ -280,6 +280,30 @@
   position: relative;
   width: 35vw;
   left: 6vw;
+}
+
+.organizations-letters-of-hope {
+  position: relative;
+  left: 9vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.organizations-letters-of-hope-caption-container {
+  position: relative;
+  width: 40vw;
+  margin-top: 8vw;
+  left: 6vw;
+}
+
+.organizations-letters-of-hope-caption-container > * {
+  margin-bottom: 1vw;
+}
+
+.organizations-letters-of-hope-image {
+  position: relative;
+  width: 35vw;
+  margin-top: 8vw;
 }
 
 .in-touch-container {
