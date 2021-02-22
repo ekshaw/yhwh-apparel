@@ -10,7 +10,7 @@
 }
 
 .partnerships-caption-container {
-  width: 22vw;
+  width: 33vw; /*22*/
   position: relative;
   left: 7vw;
   top: 13vw;
@@ -26,31 +26,40 @@
 
 .partnerships-blank-image-box {
   position: absolute;
-  left: 35vw;
-  top: 11vw;
+  left: 54vw; /*35*/
+  top: 12vw;
   background-color: #d3cec7;
-  width: 57vw;
-  height: 30vw;
+  width: 38vw; /*57*/
+  height: 42vw; /*30*/
 }
 
 .great-commission-verse {
   position: relative;
-  top: 10vw;
-  left: 11vw;
+  top: 7vw;
+  left: 6vw;
 }
 
 .great-commission-bible-ref {
   position: relative;
-  top: 11vw;
-  left: 29vw;
+  top: 8vw;
+  left: 25vw;
 }
 
 .partnerships-image {
   position: absolute;
-  width: 40vw;
-  left: 13vw;
-  top: 35vw;
+  width: 38vw; /*40vw*/
+  left: 49vw;
+  top: 15vw; /*35vw*/
   z-index: 3;
+}
+
+.partnerships-blank-image-box-skinny {
+  position: absolute;
+  left: 0vw; /*35*/
+  top: 35vw;
+  background-color: #d3cec7;
+  width: 38vw; /*57*/
+  height: 9vw; /*30*/
 }
 
 .missionaries-container {
