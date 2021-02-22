@@ -16,7 +16,7 @@ const PartnershipsPageDesktop = props => {
               actively partners with the rest of the Church to carry out this
               Great Commission. We seek to spread the good news of Jesus Christ 
               by representing Him and by donating all our profits.
-            </h3>
+           </h3>
           </div>
         </div>
         <div className='partnerships-blank-image-box'>
@@ -43,17 +43,15 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-description'>
             <h3>
-              As you labor for the Lord, we want to partner with you and support
-              you in the specific mission God has given you! As you are faithful
-              in your part, we also want to be faithful with what God has given
-              us.
+              As you labor for the Lord, we want to partner with you and support you in the specific
+              mission God has given you! As you are faithful in your part, we also want to be
+              faithful with what God has given us.
               <br />
               <br />
               <br />
-              Here are some friends whom we have supported who have gone or are
-              going on short-term missions to share the Gospel of Jesus Christ.
-              Join us in praying for these individuals and the people they come
-              across, that their obedience to and partnership with the Holy
+              Here are some friends whom we have supported who have gone or are going on short-term
+              missions to share the Gospel of Jesus Christ. Join us in praying for these individuals
+              and the people they come across, that their obedience to and partnership with the Holy
               Spirit would result in salvation and worship wherever they go!
             </h3>
           </div>
@@ -74,14 +72,12 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-philippines-description'>
             <h3>
-              Before leaving for the trip, we prayed to God that He would show
-              us how He can work through His sons and daughters if they are
-              obedient and put full trust in Him. There were many times
-              throughout this trip where we felt like we were not equipped
-              enough to carry out a certain evangelical task (teaching
-              classrooms, jail ministry, drug/rehab center ministry), but God
-              clearly reminded us that He does not call the equipped, but He
-              equips the called.
+              Before leaving for the trip, we prayed to God that He would show us how He can work
+              through His sons and daughters if they are obedient and put full trust in Him. There
+              were many times throughout this trip where we felt like we were not equipped enough to
+              carry out a certain evangelical task (teaching classrooms, jail ministry, drug/rehab
+              center ministry), but God clearly reminded us that He does not call the equipped, but
+              He equips the called.
             </h3>
           </div>
         </div>
@@ -101,14 +97,12 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-eads-description'>
             <h3>
-              Our main ministry at San Telmo consisted of visiting a Christian
-              rehab center and putting together VBS for the children during the
-              day and an adult service for the families in the evening. Although
-              we weren’t able to personally get to know individuals due to a
-              lack of time and language barriers, it was encouraging to worship
-              together with some of the believers there, knowing that by God’s
-              amazing grace, we find ourselves united as one body through our
-              hope in Jesus Christ.
+              Our main ministry at San Telmo consisted of visiting a Christian rehab center and
+              putting together VBS for the children during the day and an adult service for the
+              families in the evening. Although we weren’t able to personally get to know
+              individuals due to a lack of time and language barriers, it was encouraging to worship
+              together with some of the believers there, knowing that by God’s amazing grace, we
+              find ourselves united as one body through our hope in Jesus Christ.
             </h3>
           </div>
         </div>
@@ -129,15 +123,13 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-david-description'>
             <h3>
-              The trip will mainly consist of serving with the local missionary
-              that has been in the tribe reservation for 18 years and also the
-              local church in the reservation.
+              The trip will mainly consist of serving with the local missionary that has been in the
+              tribe reservation for 18 years and also the local church in the reservation.
               <br />
               <br />
-              We will be helping to spread the gospel through VBS for the
-              children and also in street evangelism. We will be focusing on
-              many children that are often raised by single parents or
-              grandparents because either one or both members of their parents
+              We will be helping to spread the gospel through VBS for the children and also in
+              street evangelism. We will be focusing on many children that are often raised by
+              single parents or grandparents because either one or both members of their parents
               take government funding and spend it gambling.
             </h3>
           </div>
@@ -145,14 +137,10 @@ const PartnershipsPageDesktop = props => {
         <div className='missionaries-isabella-johannah-container'>
           <div className='missionaries-isabella-johannah-blank-image-box'></div>
           <div className='missionaries-isabella-johannah-image1'>
-            <img
-              src={require('../../images/partnerships/isabella_johannah1.jpg')}
-            ></img>
+            <img src={require('../../images/partnerships/isabella_johannah1.jpg')}></img>
           </div>
           <div className='missionaries-isabella-johannah-image2'>
-            <img
-              src={require('../../images/partnerships/isabella_johannah2.jpg')}
-            ></img>
+            <img src={require('../../images/partnerships/isabella_johannah2.jpg')}></img>
           </div>
           <div className='missionaries-isabella-johannah-title'>
             <h2>Isabella &amp; Johannah</h2>
@@ -166,16 +154,14 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-isabella-johannah-description'>
             <h3>
-              Isabella and Johannah will be sharing the gospel to Syrian
-              refugees and native university students around the Athens area as
-              well as partnering together with a local church to build an
-              integration house that houses refugee families during transition
+              Isabella and Johannah will be sharing the gospel to Syrian refugees and native
+              university students around the Athens area as well as partnering together with a local
+              church to build an integration house that houses refugee families during transition
               periods.
               <br /> <br />
-              Johannah: I want to go because I have grown to see the reality
-              that life is short and eternity is long, and the only worthy
-              investment I can make is in people and their eternities. I want to
-              share the treasure of the gospel with people in Greece, I want
+              Johannah: I want to go because I have grown to see the reality that life is short and
+              eternity is long, and the only worthy investment I can make is in people and their
+              eternities. I want to share the treasure of the gospel with people in Greece, I want
               them to experience the love of Christ.
             </h3>
           </div>
@@ -196,19 +182,17 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='missionaries-briana-description'>
             <h3>
-              In Ireland, we will be planning outreach strategies with local
-              missionaries and going out to various campuses to share the gospel
-              with fellow college students. I am so passionate about the hearts
-              of the Irish students because of an unfortunate trend in society
-              where a lot of students know facts about Christianity, but have
-              been let down by the church or have false ideas of who God is.
-              This story parallels my great grandmother's story, and I saw God
-              redeem her life, so I cannot wait to see what God will do in
-              Ireland!
+              In Ireland, we will be planning outreach strategies with local missionaries and going
+              out to various campuses to share the gospel with fellow college students. I am so
+              passionate about the hearts of the Irish students because of an unfortunate trend in
+              society where a lot of students know facts about Christianity, but have been let down
+              by the church or have false ideas of who God is. This story parallels my great
+              grandmother's story, and I saw God redeem her life, so I cannot wait to see what God
+              will do in Ireland!
               <br />
               <br />
-              Please pray that students in Ireland can be exposed to the truth
-              about God through the support of local ministries, as well as Cru.
+              Please pray that students in Ireland can be exposed to the truth about God through the
+              support of local ministries, as well as Cru.
             </h3>
           </div>
         </div>
@@ -227,20 +211,43 @@ const PartnershipsPageDesktop = props => {
             </div>
             <div className='organizations-laundry-love-description'>
               <h3>
-                Laundry Love aims to tend to the needs of the homeless in
-                Berkeley, dealing with their material and immaterial ailments.
-                We offer laundry services to alleviate the problems of sickness
-                and poverty, and return to them a sense of dignity and self
-                worth. By building these relationships of trust and care, we are
-                then able to effectively share the Gospel of Jesus. Laundry must
-                be done continuously, but grace saves a person forever. What
-                better way to evangelize than to demonstrate the love given to
-                us than by serving the least of us!
+                Laundry Love aims to tend to the needs of the homeless in Berkeley, dealing with
+                their material and immaterial ailments. We offer laundry services to alleviate the
+                problems of sickness and poverty, and return to them a sense of dignity and self
+                worth. By building these relationships of trust and care, we are then able to
+                effectively share the Gospel of Jesus. Laundry must be done continuously, but grace
+                saves a person forever. What better way to evangelize than to demonstrate the love
+                given to us than by serving the least of us!
               </h3>
             </div>
           </div>
           <div className='organizations-laundry-love-image'>
             <img src={require('../../images/partnerships/laundry_love.jpg')}></img>
+          </div>
+        </div>
+        <div className='organizations-letters-of-hope'>
+          <div className='organizations-letters-of-hope-image'>
+            <img src={require('../../images/partnerships/letters_of_hope.jpg')}></img>
+          </div>
+          <div className='organizations-letters-of-hope-caption-container'>
+            <div className='organizations-letters-of-hope-title'>
+              <h2>Letters of Hope</h2>
+            </div>
+            <div className='organizations-letters-of-hope-location'>
+              <h4>GOD BEHIND BARS, HENDERSON, NEVADA</h4>
+            </div>
+            <div className='organizations-letters-of-hope-description'>
+              <h3>
+                Letters of Hope is an initiative that strives to empower and encourage folks in
+                prison through the delivery of personally-written letters and the donation of
+                Bibles. It's a program within a larger organization called God Behind Bars that uses
+                their resources to introduce families to Christ, helping inmates grow with their
+                loved ones in faith. They also equip prisoners with the skills and knowledge to
+                reintegrate themselves into society by allocating their funds towards helping
+                prisoners find jobs, buy homes, take advantage of academic opportunities, and
+                reconnect with their families.
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -254,10 +261,8 @@ const PartnershipsPageDesktop = props => {
               If you... <br />
               1. Have questions about God, Christianity, or our company,
               <br />
-              2. Would like to receive financial support for your mission, or{' '}
-              <br />
-              3. Would like to start your own YHWH Apparel chapter on your
-              campus
+              2. Would like to receive financial support for your mission, or <br />
+              3. Would like to start your own YHWH Apparel chapter on your campus
               <br />
             </h3>
           </div>
