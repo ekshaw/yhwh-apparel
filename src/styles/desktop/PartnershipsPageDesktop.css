@@ -27,15 +27,15 @@
 .partnerships-blank-image-box {
   position: absolute;
   left: 54vw; /*35*/
-  top: 10.25vw;
+  top: 12vw;
   background-color: #d3cec7;
   width: 38vw; /*57*/
-  height: 45vw; /*30*/
+  height: 42vw; /*30*/
 }
 
 .great-commission-verse {
   position: relative;
-  top: 7vw; 
+  top: 7vw;
   left: 6vw;
 }
 
@@ -47,9 +47,9 @@
 
 .partnerships-image {
   position: absolute;
-  width: 40vw; /*40vw*/
+  width: 38vw; /*40vw*/
   left: 49vw;
-  top: 13.5vw; /*35vw*/
+  top: 15vw; /*35vw*/
   z-index: 3;
 }
 
