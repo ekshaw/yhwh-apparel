@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     padding-top: 10%;
-    background-color: white;
+    background-color: #EAE7E1;
 }
 
 .top-container {
@@ -11,6 +11,7 @@
     flex-direction: row;
     padding-left: 10%;
     z-index: 100;
+    background-color: #D3CEC7;
 }
 .top-captions {
     display: flex;
@@ -61,7 +62,7 @@
     padding-bottom: 3%;
 }
 .blank-image-box-one {
-    background-color: #EAE7E1;
+    background-color: #D3CEC7; /*#EAE7E1*/
     width: 80vw;
     height: 45vw;
     position: absolute;

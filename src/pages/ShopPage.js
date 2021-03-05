@@ -26,12 +26,12 @@ const ShopPage = props => {
             <h1>Newest Release.</h1>
           </div>
           <div className='shop-caption'>
-            <h2>Run with Endurance</h2>
+            <h2>Assurance Collection</h2>
           </div>
           <div className='shop-btn'>
-            {/* <a href='https://yhwhapparel.storenvy.com/products'> */}
+             <a href='https://yhwhapparel.storenvy.com/products'> 
             <h4>SHOP NOW</h4>
-            {/* </a> */}
+             </a> 
           </div>
         </div>
         <div className='top-image'>
