@@ -21,6 +21,12 @@ const ContactForm = props => {
           <input type='text' id='message-input' />
         </label>
       </div>
+      <div
+        className='contact_form-submit-btn'
+        // onClick={this.onContactButtonClick}
+      >
+        <h4>SUBMIT</h4>
+      </div>
     </div>
   );
 };
