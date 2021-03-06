@@ -49,8 +49,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 4%;
-    padding-left: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
     padding-bottom: 20%;
     padding-top: 18%;
     z-index: 100;
@@ -70,11 +70,20 @@
     top: 6vw;
 }
 .blank-image-box-two {
-    background-color: #D3CEC7;
-    width: 100vw;
-    height: 60vw;
+    background-color: #D3CEC7; /*D3CEC7*/
+    width: 80vw; /*100*/
+    height: 20vw; /*60*/
     position: absolute;
     z-index: 0;
     top: 60vw;
     left: 12vw;
+}
+.blank-image-box-three {
+    background-color: #D3CEC7; /*D3CEC7*/
+    width: 80vw; /*100*/
+    height: 20vw; /*60*/
+    position: absolute;
+    z-index: 0;
+    top: 99vw;
+    left: 2vw;
 }

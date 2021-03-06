@@ -40,21 +40,10 @@ const ShopPage = props => {
       </div>
       <div className='blank-image-box-one'></div>
       <div className='shopcard-container'>
-        {/* <div className="shopcard-row-one">
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          {cards}
-        </div>
-        <div className="shopcard-row-two">
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          {cards}
-        </div>  */}
         {shopCardRows}
       </div>
       <div className='blank-image-box-two'></div>
+      <div className='blank-image-box-three'></div>
       <Footer color='#white' />
     </div>
   );

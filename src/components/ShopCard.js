@@ -14,15 +14,15 @@ class ShopCard extends Component {
 
     render() {
         return (
-            <div className='product-container'>
-                <div className='product-image'>
+            <div className='shop-container'>
+                <div className='shop-image'>
                     {this.state.products[this.state.index].images[0]}
                 </div>
-                <div className='product-text'>
-                    <h2 className='product-name'>
+                <div className='shop-text'>
+                    <h2 className='shop-name'>
                         {this.state.products[this.state.index].title}
                     </h2>
-                    <h3 className='product-cost'>
+                    <h3 className='shop-cost'>
                         {this.state.products[this.state.index].price}
                     </h3>
                 </div>
