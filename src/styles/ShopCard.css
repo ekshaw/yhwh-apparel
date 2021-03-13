@@ -1,14 +1,11 @@
 .shop-container {
     width: 35%; /*28*/
-    /* height: 60%;  */
 }
 .shop-image {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    /* height: 90%;  */
     padding-bottom: 10px;
-    object-fit: cover;
 }
 .shop-text {
     padding-left: 10%;
