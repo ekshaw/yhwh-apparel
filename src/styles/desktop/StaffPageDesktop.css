@@ -1,0 +1,108 @@
+.staff-main-container {
+  position: absolute;
+  background-color: #eae7e1;
+  width: 100vw;
+  height: auto;
+}
+
+.staff-top-container {
+  position: relative;
+  width: 100vw;
+  height: 44vw;
+  padding-bottom: 4vw;
+}
+
+.staff-top-container > * {
+  position: relative;
+  top: 50%;
+  transform: translateY(-35%);
+}
+
+.staff-top-container-background-color {
+  position: relative;
+  width: 88vw;
+  height: 28vw;
+  background-color: #d3cec7;
+  left: 6vw;
+  bottom: 4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.staff-caption-container {
+  width: 36vw;
+  height: 20vw;
+  border-right: 0.1vw solid #1f1f1f;
+}
+
+.staff-caption {
+  position: absolute;
+  left: 7vw;
+  top: 11.5vw;
+}
+
+.staff-description {
+  position: absolute;
+  width: 43vw;
+  left: 40vw;
+}
+
+.staff-team-even {
+  position: relative;
+  padding: 2vw 8vw 4vw 0vw;
+  float: right;
+  text-align: right;
+}
+
+.staff-team-odd {
+  position: relative;
+  float: left;
+  padding: 2vw 0vw 4vw 8vw;
+}
+
+.staff-team-title {
+  position: relative;
+}
+
+.staff-team-background-Executive {
+  position: absolute;
+  right: 11vw;
+  top: 0.5vw;
+  width: 20vw;
+  height: 4vw;
+  background-color: #fefefe;
+}
+
+.staff-team-background-Marketing {
+  position: relative;
+  left: 3vw;
+  top: 6vw;
+  width: 36vw;
+  height: 4vw;
+  background-color: #d3cec7;
+}
+.staff-team-background-Web.Development {
+  position: relative;
+  right: 4vw;
+  top: 6vw;
+  width: 32vw;
+  height: 4vw;
+  background-color: #fefefe;
+}
+.staff-team-background-Product.Design {
+  position: relative;
+  left: 4vw;
+  top: 2.5vw;
+  width: 40vw;
+  height: 4vw;
+  background-color: #d3cec7;
+}
+.staff-team-background-Business.Operations {
+  position: relative;
+  right: 4vw;
+  top: 6vw;
+  width: 36vw;
+  height: 4vw;
+  background-color: #fefefe;
+}

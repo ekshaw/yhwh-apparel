@@ -5,32 +5,33 @@ import Products from '../content/Products';
 class ShopCard extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            index: props.index,
-            products: Products,
-            numProducts: Products.length
-        };
+        // this.state = {
+        //     index: props.index,
+        //     products: Products,
+        //     numProducts: Products.length,
+        //     prodId: Products.productId
+        // };
     }
 
-    changeLink = (link) => {
-        var linkElement = document.getElementById("shoplink");
-        linkElement.href = "http://localhost:3000/product?product="+ link
-      };
+    // onShopImageClick = () => {
+    //     var linkElement = document.getElementById("shoplink");
+    //     linkElement.href = "http://localhost:3000/product?product="+ this.state.products[this.state.index].productId;
+    //   };
 
     render() {
         return (
             <div className='shop-container'>
-                <a href="http://localhost:3000/product?product=" id="shoplink">
-                <div className='shop-image' onClick={() => this.changeLink(this.state.products[this.state.index].productId)}>
-                    {this.state.products[this.state.index].images[0]}
+                <a href={`http://localhost:3000/product?product=${Products[this.props.index].productId}`}>
+                <div className='shop-image'>
+                    {Products[this.props.index].images[0]}
                 </div>
                 </a>
                 <div className='shop-text'>
                     <h2 className='shop-name'>
-                        {this.state.products[this.state.index].title}
+                        {Products[this.props.index].title}
                     </h2>
                     <h3 className='shop-cost'>
-                        {this.state.products[this.state.index].price}
+                        {Products[this.props.index].price}
                     </h3>
                 </div>
             </div>

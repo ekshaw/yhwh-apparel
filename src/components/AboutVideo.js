@@ -8,7 +8,6 @@ const AboutVideo = props => {
   }
   return (
     <div className='about-video-container'>
-      {/* <img src={require('../images/x_button.png')}></img> */}
       <div className='about-video-overlay' onClick={props.hideVideo}></div>
       <div className='video-container'>
         <YouTube
