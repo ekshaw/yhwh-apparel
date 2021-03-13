@@ -5,12 +5,6 @@ const Loading = props => {
   return (
     <Fragment>
       <div className='loading_screen'>
-        {/* <div className='loading_background'>
-          <img
-            src={require('../images/loading_background.png')}
-            alt='loading'
-          ></img>
-        </div> */}
         <div className='loading_image'>
           <img src={require('../images/loading.png')} alt='loading'></img>
         </div>

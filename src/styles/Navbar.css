@@ -5,8 +5,6 @@
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
-  /* background-color: #eae7e1; */
-  /* background-image: linear-gradient(#eae7e1, #d3cec7); */
   padding-bottom: 2vw;
 }
 

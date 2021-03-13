@@ -8,7 +8,7 @@ class AboutForm extends Component {
     super(props);
     this.state = {
       form_title: 'Subscribe to our Newsletter.',
-      form_active_tab: 'subscribe'
+      form_active_tab: 'subscribe',
     };
   }
 
@@ -16,7 +16,7 @@ class AboutForm extends Component {
     if (this.state.form_active_tab !== 'subscribe') {
       this.setState({
         form_title: 'Subscribe to our Newsletter.',
-        form_active_tab: 'subscribe'
+        form_active_tab: 'subscribe',
       });
     }
   };
@@ -76,7 +76,7 @@ class AboutForm extends Component {
           <div className='form-container'>
             <div className='form-content-container'>
               <div className='form-title'>
-                <h1>&nbsp;{this.state.form_title}</h1>
+                <h1>{this.state.form_title}</h1>
               </div>
               {this.state.form_active_tab === 'contact' ? (
                 <ContactForm />

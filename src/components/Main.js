@@ -4,7 +4,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import '../styles/Main.css';
 
-import Navbar from './/Navbar';
+import Navbar from './Navbar';
+import MobileNav from './MobileNav';
 
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
@@ -14,11 +15,27 @@ import ShopPage from '../pages/ShopPage';
 import PartnershipsPage from '../pages/PartnershipsPage';
 import ProductPage from '../pages/ProductPage';
 import CheckoutPage from '../pages/CheckoutPage';
+import { useMediaQuery } from 'react-responsive';
 
 const Main = ({ location }) => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 480px)',
+  });
+  const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
+
   return (
     <Fragment>
-      <Navbar />
+      {isDesktopOrLaptop && (
+        <>
+          <Navbar />
+        </>
+      )}
+
+      {isMobile && (
+        <>
+          <MobileNav />
+        </>
+      )}
       <TransitionGroup className='transition-group'>
         <CSSTransition
           key={location.key}

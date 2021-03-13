@@ -1,0 +1,139 @@
+.mobile-about-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #eae7e1;
+}
+
+.mobile-about-main-container h1 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.mobile-about-main-container h3 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mobile-about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 12px;
+}
+
+.mobile-about-caption-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-about-caption-container > * {
+  position: relative;
+}
+
+.mobile-about-caption {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mobile-about-description {
+  width: 100%;
+}
+
+.mobile-video-btn {
+  border: solid;
+  border-width: thin;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 8px 0 24px;
+  letter-spacing: 2px;
+}
+
+.mobile-video-btn > * {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.mobile-video-btn:hover {
+  cursor: pointer;
+}
+
+.mobile-about-image-container {
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 50%;
+}
+
+.mobile-about-image-container > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+}
+
+.mobile-vision-mission-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: #d3cec7;
+  padding-bottom: 24px;
+}
+
+.mobile-vision-mission-container > * {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-vision-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 44px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.mobile-vision-caption,
+.mobile-mission-caption {
+  margin-bottom: 12px;
+}
+
+.mobile-mission-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.mobile-vision-mission-image2-container {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-quote {
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+}
+
+.mobile-quote h2 {
+  font-size: 6vw;
+}
+
+@media (max-width: 480px) {
+  .form-title h1 {
+    font-size: 6vw;
+  }
+}
