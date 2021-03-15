@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
 
-// var cors = require('cors');
+var cors = require('cors');
 
 const mailchimpListID = '8889cc916c';
 
@@ -16,13 +16,8 @@ mailchimp.setConfig({
 
 app.use(express.static(path.join(__dirname, 'client')));
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
-// app.use(cors());
-
-//Get Test
-app.get('/gettest', async (req, res) => {
-  res.send('is this working?');
-});
+app.use(bodyParser.json());
+app.use(cors());
 
 //Signup Route for Subcription Form
 app.post('/signup', async (req, res) => {
@@ -38,11 +33,9 @@ app.post('/signup', async (req, res) => {
         LNAME: lname
       }
     });
-    console.log('response: ', response);
-    // res.redirect('http://localhost:3000/about');
-    res.send(`I received your POST request. Here is the response from mailchimp: ${response}`);
+    res.send(res.statusCode);
   } catch (error) {
-    console.error(error);
+    res.send(error);
   }
 });
 

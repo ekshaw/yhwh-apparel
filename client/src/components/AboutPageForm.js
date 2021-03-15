@@ -27,26 +27,6 @@ class AboutForm extends Component {
     }
   };
 
-  // onSubscriptionButtonClick = () => {
-  //   fetch('https://api.mailchimp.com/3.0/lists/8889cc916c/members/', {
-  //     method: 'POST',
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: {
-  //       email_address: 'peter.thompson@berkeley.edu',
-  //       status: 'subscribed',
-  //       merge_fields: {
-  //         FNAME: 'Peter',
-  //         LNAME: 'Thompson'
-  //       }
-  //     }
-  //   });
-  //
-  //   console.log('post req sent');
-  // };
-
   render() {
     return (
       <div className='about-form'>

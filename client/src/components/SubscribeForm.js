@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FlashMessage from 'react-flash-message';
 
 class SubscribeForm extends Component {
   constructor(props) {
@@ -6,69 +7,38 @@ class SubscribeForm extends Component {
     this.state = {
       fname: '',
       lname: '',
-      email: ''
+      email: '',
+      showSuccessMessage: false,
+      showFailMessage: false
     };
   }
 
-  // onSubscriptionButtonClick = async e => {
-  //   e.preventDefault();
-  //   const { fname, lname, email } = this.state;
+  onSubscriptionButtonClick = async e => {
+    const first_name = this.state.fname;
+    const last_name = this.state.lname;
+    const email = this.state.email;
+    const { hostname: location } = window.location;
+    console.log(first_name);
+    console.log(last_name);
 
-  //   const settings = {
-  //     method: 'POST',
-  //     body: { fname, lname, email },
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json'
-  //     }
-  //   };
+    this.setState({ showSuccessMessage: false, showFailMessage: false });
+    e.preventDefault();
+    const response = await fetch(`http://${location}:5000/signup`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ first_name: first_name, last_name: last_name, email: email })
+    });
+    const body = await response.text();
+    console.log('result body: ', body);
 
-  //   const response = await fetch('/signup', settings);
-  //   // waits until the request completes...
-  //   console.log(response);
-
-  //   if (!response.ok) {
-  //     const message = `An error has occured: ${response.status}`;
-  //     throw new Error(message);
-  //   } else {
-  //     console.log('it worked!');
-  //   }
-  // };
-
-  // onSubscriptionButtonClick = async () => {
-  //   const { fname, lname, email } = this.state;
-  //   const { hostname: location } = window.location;
-  //   const settings = {
-  //     method: 'POST',
-  //     body: { fname, lname, email },
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json'
-  //     }
-  //   };
-
-  //   const response = await fetch(`http://${location}:5000/api/newsletter-subscription`, settings);
-  //   if (!response.ok) throw Error(response.message);
-
-  //   try {
-  //     const data = await response.json();
-  //     return data;
-  //   } catch (err) {
-  //     throw err;
-  //   }
-  // };
-
-  // onSubscriptionButtonClick = async e => {
-  //   e.preventDefault();
-  //   const { fname, lname, email } = this.state;
-  //   console.log(fname);
-  //   console.log(lname);
-  //   console.log(email);
-
-  //   const response = await fetch('/api/newsletter-subscription');
-  //   console.log(response);
-  //   console.log('it worked!');
-  // };
+    if (body == 'OK') {
+      this.setState({ showSuccessMessage: true, fname: '', lname: '', email: '' });
+    } else {
+      this.setState({ showFailMessage: true, fname: '', lname: '', email: '' });
+    }
+  };
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -78,7 +48,6 @@ class SubscribeForm extends Component {
 
   render() {
     return (
-      // <form action='http://localhost:5000/signup' method='POST'>
       <div className='form-input-container'>
         <div className='form-field first-name-field'>
           <h4>FIRST NAME:</h4>
@@ -119,14 +88,24 @@ class SubscribeForm extends Component {
             />
           </label>
         </div>
-        <div className='subscribe_form-submit-btn'>
+        <div className='subscribe_form-submit-btn' onClick={this.onSubscriptionButtonClick}>
           <h4>SUBMIT</h4>
         </div>
-        {/* <button type='submit' class='subscribe_form-submit-btn'>
-          <h4>SUBMIT</h4>
-        </button> */}
+        {this.state.showSuccessMessage && (
+          <div>
+            <FlashMessage duration={5000}>
+              <h4>SUBSCRIPTION SUCCESSFUL!</h4>
+            </FlashMessage>
+          </div>
+        )}
+        {this.state.showFailMessage && (
+          <div>
+            <FlashMessage duration={5000}>
+              <h4>SUBSCRIPTION FAILED.</h4>
+            </FlashMessage>
+          </div>
+        )}
       </div>
-      // </form>
     );
   }
 }
