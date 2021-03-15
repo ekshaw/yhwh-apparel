@@ -10,7 +10,7 @@ var cors = require('cors');
 const mailchimpListID = '8889cc916c';
 
 mailchimp.setConfig({
-  apiKey: '545d2dcab938ca95e99557da66a951dd-us17',
+  apiKey: 'fbaf062ffda008ba5886b71d091ec44a-us17',
   server: 'us17'
 });
 

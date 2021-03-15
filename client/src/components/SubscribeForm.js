@@ -94,14 +94,14 @@ class SubscribeForm extends Component {
         {this.state.showSuccessMessage && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>SUBSCRIPTION SUCCESSFUL!</h4>
+              <h4>Subscription succesful!</h4>
             </FlashMessage>
           </div>
         )}
         {this.state.showFailMessage && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>SUBSCRIPTION FAILED.</h4>
+              <h4>Subscription failed. You might already be subscribed!</h4>
             </FlashMessage>
           </div>
         )}
