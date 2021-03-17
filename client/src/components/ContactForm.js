@@ -8,8 +8,8 @@ class ContactForm extends Component {
       name: '',
       email: '',
       message: '',
-      showSuccessMessage: false,
-      showFailMessage: false,
+      showFlashMsg: false,
+      flashMsgTxt: '',
       buttonText: 'SUBMIT'
     };
   }
@@ -20,14 +20,14 @@ class ContactForm extends Component {
     const regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     await this.setState({
-      showSuccessMessage: false,
-      showFailMessage: false,
+      showFlashMsg: false,
       buttonText: '...sending'
     });
 
     if (!regEmail.test(email) || !name || !message) {
       this.setState({
-        showFailMessage: true,
+        flashMsgTxt: 'Please check that your inputs are valid!',
+        showFlashMsg: true,
         buttonText: 'SUBMIT'
       });
     } else {
@@ -41,9 +41,10 @@ class ContactForm extends Component {
       });
       const body = await response.text();
 
-      if (body == '{"status":"Message Sent"}') {
+      if (body === '{"status":"Message Sent"}') {
         this.setState({
-          showSuccessMessage: true,
+          flashMsgTxt: 'Message Sent!',
+          showFlashMsg: true,
           name: '',
           email: '',
           message: '',
@@ -51,7 +52,8 @@ class ContactForm extends Component {
         });
       } else {
         this.setState({
-          showFailMessage: true,
+          flashMsgTxt: 'Something went wrong!',
+          showFlashMsg: true,
           name: '',
           email: '',
           message: '',
@@ -110,17 +112,10 @@ class ContactForm extends Component {
         <div className='contact_form-submit-btn' onClick={this.onContactButtonClick}>
           <h4>{this.state.buttonText}</h4>
         </div>
-        {this.state.showSuccessMessage && (
+        {this.state.showFlashMsg && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>Message Sent!</h4>
-            </FlashMessage>
-          </div>
-        )}
-        {this.state.showFailMessage && (
-          <div>
-            <FlashMessage duration={5000}>
-              <h4>Something went wrong!</h4>
+              <h4>{this.state.flashMsgTxt}</h4>
             </FlashMessage>
           </div>
         )}

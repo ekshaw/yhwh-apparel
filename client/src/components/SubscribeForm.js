@@ -8,9 +8,8 @@ class SubscribeForm extends Component {
       fname: '',
       lname: '',
       email: '',
-      showSuccessMessage: false,
-      showFailMessage: false,
-      showAlreadySubscribedMessage: false,
+      flashMsgTxt: '',
+      showFlasgMsg: false,
       buttonText: 'SUBMIT'
     };
   }
@@ -20,15 +19,14 @@ class SubscribeForm extends Component {
     const { hostname: location } = window.location;
 
     await this.setState({
-      showSuccessMessage: false,
-      showFailMessage: false,
-      showAlreadySubscribedMessage: false,
+      showFlashMsg: false,
       buttonText: '...loading'
     });
 
-    if (!fname || !lname) {
+    if (!fname || !lname || !email) {
       this.setState({
-        showFailMessage: true,
+        flashMsgTxt: 'Please check that your inputs are valid!',
+        showFlashMsg: true,
         buttonText: 'SUBMIT'
       });
     } else {
@@ -42,9 +40,10 @@ class SubscribeForm extends Component {
       });
       const body = await response.text();
 
-      if (body == 'OK') {
+      if (body === 'OK') {
         this.setState({
-          showSuccessMessage: true,
+          flashMsgTxt: "You're subscribed!",
+          showFlashMsg: true,
           fname: '',
           lname: '',
           email: '',
@@ -52,9 +51,10 @@ class SubscribeForm extends Component {
         });
       } else {
         const bodyResponse = JSON.parse(body).title;
-        if (bodyResponse == 'Member Exists') {
+        if (bodyResponse === 'Member Exists') {
           this.setState({
-            showAlreadySubscribedMessage: true,
+            flashMsgTxt: "You're already subscribed!",
+            showFlashMsg: true,
             fname: '',
             lname: '',
             email: '',
@@ -62,10 +62,8 @@ class SubscribeForm extends Component {
           });
         } else {
           this.setState({
-            showFailMessage: true,
-            fname: '',
-            lname: '',
-            email: '',
+            flashMsgTxt: 'Something went wrong! Try again?',
+            showFlashMsg: true,
             buttonText: 'SUBMIT'
           });
         }
@@ -122,24 +120,10 @@ class SubscribeForm extends Component {
         <div className='subscribe_form-submit-btn' onClick={this.onSubscriptionButtonClick}>
           <h4>{this.state.buttonText}</h4>
         </div>
-        {this.state.showSuccessMessage && (
+        {this.state.showFlashMsg && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>You're subscribed!</h4>
-            </FlashMessage>
-          </div>
-        )}
-        {this.state.showFailMessage && (
-          <div>
-            <FlashMessage duration={5000}>
-              <h4>Something went wrong. Try again?</h4>
-            </FlashMessage>
-          </div>
-        )}
-        {this.state.showAlreadySubscribedMessage && (
-          <div>
-            <FlashMessage duration={5000}>
-              <h4>You're already subscribed!</h4>
+              <h4>{this.state.flashMsgTxt}</h4>
             </FlashMessage>
           </div>
         )}
