@@ -9,41 +9,72 @@ class SubscribeForm extends Component {
       lname: '',
       email: '',
       showSuccessMessage: false,
-      showFailMessage: false
+      showFailMessage: false,
+      showAlreadySubscribedMessage: false,
+      buttonText: 'SUBMIT'
     };
   }
 
   onSubscriptionButtonClick = async e => {
-    const first_name = this.state.fname;
-    const last_name = this.state.lname;
-    const email = this.state.email;
+    const { fname, lname, email } = this.state;
     const { hostname: location } = window.location;
-    console.log(first_name);
-    console.log(last_name);
 
-    this.setState({ showSuccessMessage: false, showFailMessage: false });
-    e.preventDefault();
-    const response = await fetch(`http://${location}:5000/signup`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ first_name: first_name, last_name: last_name, email: email })
+    await this.setState({
+      showSuccessMessage: false,
+      showFailMessage: false,
+      showAlreadySubscribedMessage: false,
+      buttonText: '...loading'
     });
-    const body = await response.text();
-    console.log('result body: ', body);
 
-    if (body == 'OK') {
-      this.setState({ showSuccessMessage: true, fname: '', lname: '', email: '' });
+    if (!fname || !lname) {
+      this.setState({
+        showFailMessage: true,
+        buttonText: 'SUBMIT'
+      });
     } else {
-      this.setState({ showFailMessage: true, fname: '', lname: '', email: '' });
+      e.preventDefault();
+      const response = await fetch(`http://${location}:5000/signup`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ first_name: fname, last_name: lname, email: email })
+      });
+      const body = await response.text();
+
+      if (body == 'OK') {
+        this.setState({
+          showSuccessMessage: true,
+          fname: '',
+          lname: '',
+          email: '',
+          buttonText: 'SUBMIT'
+        });
+      } else {
+        const bodyResponse = JSON.parse(body).title;
+        if (bodyResponse == 'Member Exists') {
+          this.setState({
+            showAlreadySubscribedMessage: true,
+            fname: '',
+            lname: '',
+            email: '',
+            buttonText: 'SUBMIT'
+          });
+        } else {
+          this.setState({
+            showFailMessage: true,
+            fname: '',
+            lname: '',
+            email: '',
+            buttonText: 'SUBMIT'
+          });
+        }
+      }
     }
   };
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.name);
-    console.log(e.target.value);
   }
 
   render() {
@@ -89,19 +120,26 @@ class SubscribeForm extends Component {
           </label>
         </div>
         <div className='subscribe_form-submit-btn' onClick={this.onSubscriptionButtonClick}>
-          <h4>SUBMIT</h4>
+          <h4>{this.state.buttonText}</h4>
         </div>
         {this.state.showSuccessMessage && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>Subscription succesful!</h4>
+              <h4>You're subscribed!</h4>
             </FlashMessage>
           </div>
         )}
         {this.state.showFailMessage && (
           <div>
             <FlashMessage duration={5000}>
-              <h4>Subscription failed. You might already be subscribed!</h4>
+              <h4>Something went wrong. Try again?</h4>
+            </FlashMessage>
+          </div>
+        )}
+        {this.state.showAlreadySubscribedMessage && (
+          <div>
+            <FlashMessage duration={5000}>
+              <h4>You're already subscribed!</h4>
             </FlashMessage>
           </div>
         )}

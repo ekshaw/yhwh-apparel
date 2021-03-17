@@ -1,16 +1,35 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mailchimp = require('@mailchimp/mailchimp_marketing');
+const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
 
 var cors = require('cors');
 
+//Email Info
+const contactEmail = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'yhwhapparel@gmail.com',
+    pass: '@RunW/3ndu4an$e1!'
+  }
+});
+
+contactEmail.verify(error => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Ready to Go!');
+  }
+});
+
+//Mailchimp Info
 const mailchimpListID = '8889cc916c';
 
 mailchimp.setConfig({
-  apiKey: 'fbaf062ffda008ba5886b71d091ec44a-us17',
+  apiKey: '7d9de18e6300a8829bef1e0c3fbfdc64-us17',
   server: 'us17'
 });
 
@@ -19,10 +38,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-//Signup Route for Subcription Form
+//Route for Subcription Form
 app.post('/signup', async (req, res) => {
   const { fname, lname, email } = req.body;
-  console.log(req.body);
 
   try {
     const response = await mailchimp.lists.addListMember(mailchimpListID, {
@@ -35,8 +53,29 @@ app.post('/signup', async (req, res) => {
     });
     res.send(res.statusCode);
   } catch (error) {
-    res.send(error);
+    res.send(error.response.text);
   }
+});
+
+//Route for Contact Form
+app.post('/contact', async (req, res) => {
+  const { name, email, message } = req.body;
+  const mail = {
+    from: name,
+    to: 'yhwhapparel@gmail.com',
+    subject: 'Contact Form Submission',
+    html: `<p>Name: ${name}</p>
+           <p>Email: ${email}</p>
+           <p>Message: ${message}</p>`
+  };
+
+  contactEmail.sendMail(mail, error => {
+    if (error) {
+      res.json({ status: 'ERROR' });
+    } else {
+      res.json({ status: 'Message Sent' });
+    }
+  });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
