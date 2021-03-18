@@ -8,7 +8,7 @@ class AboutForm extends Component {
     super(props);
     this.state = {
       form_title: 'Subscribe to our Newsletter.',
-      form_active_tab: 'subscribe',
+      form_active_tab: 'subscribe'
     };
   }
 
@@ -16,7 +16,7 @@ class AboutForm extends Component {
     if (this.state.form_active_tab !== 'subscribe') {
       this.setState({
         form_title: 'Subscribe to our Newsletter.',
-        form_active_tab: 'subscribe',
+        form_active_tab: 'subscribe'
       });
     }
   };
@@ -27,49 +27,21 @@ class AboutForm extends Component {
     }
   };
 
-  // onSubscriptionButtonClick = () => {
-  //   fetch('https://api.mailchimp.com/3.0/lists/8889cc916c/members/', {
-  //     method: 'POST',
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: {
-  //       email_address: 'peter.thompson@berkeley.edu',
-  //       status: 'subscribed',
-  //       merge_fields: {
-  //         FNAME: 'Peter',
-  //         LNAME: 'Thompson'
-  //       }
-  //     }
-  //   });
-  //
-  //   console.log('post req sent');
-  // };
-
   render() {
     return (
       <div className='about-form'>
         <form className='form'>
           <div className='form-tab-container'>
             <div
-              className={
-                'form-tab ' +
-                (this.state.form_active_tab === 'subscribe' ? 'active' : '')
-              }
+              className={'form-tab ' + (this.state.form_active_tab === 'subscribe' ? 'active' : '')}
               id='subscribe-tab'
-              onClick={this.onSubscribeTabClick}
-            >
+              onClick={this.onSubscribeTabClick}>
               <h4>SUBSCRIBE</h4>
             </div>
             <div
-              className={
-                'form-tab ' +
-                (this.state.form_active_tab === 'contact' ? 'active' : '')
-              }
+              className={'form-tab ' + (this.state.form_active_tab === 'contact' ? 'active' : '')}
               id='contact-tab'
-              onClick={this.onContactTabClick}
-            >
+              onClick={this.onContactTabClick}>
               <h4>CONTACT US</h4>
             </div>
           </div>
@@ -78,17 +50,7 @@ class AboutForm extends Component {
               <div className='form-title'>
                 <h1>{this.state.form_title}</h1>
               </div>
-              {this.state.form_active_tab === 'contact' ? (
-                <ContactForm />
-              ) : (
-                <SubscribeForm />
-              )}
-              <div
-                className='form-submit-btn'
-                // onClick={this.onSubscriptionButtonClick}
-              >
-                <h4>SUBMIT</h4>
-              </div>
+              {this.state.form_active_tab === 'contact' ? <ContactForm /> : <SubscribeForm />}
             </div>
           </div>
         </form>
