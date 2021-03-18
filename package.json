@@ -1,37 +1,43 @@
 {
-  "name": "yhwh-apparel-server",
-  "version": "1.0.0",
-  "description": "Website for YHWH Apparel",
-  "main": "index.js",
-  "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yhwhapparel/yhwh-frontend.git"
-  },
-  "author": "Peter Thompson",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yhwhapparel/yhwh-frontend/issues"
-  },
-  "homepage": "https://github.com/yhwhapparel/yhwh-frontend#readme",
+  "name": "yhwh-apparel",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@mailchimp/mailchimp_marketing": "^3.0.27",
-    "body-parser": "^1.18.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
     "concurrently": "^5.2.0",
-    "connect-flash": "^0.1.1",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "nodemailer": "^6.5.0",
-    "nodemon": "^2.0.4",
     "react": "^16.13.0",
-    "react-flash-message": "^1.0.5",
-    "react-scripts": "3.4.0"
+    "react-dom": "^16.13.0",
+    "react-instafeed": "^1.0.0",
+    "react-responsive": "^8.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-transition-group": "^4.3.0",
+    "react-youtube": "^7.9.0",
+    "react-flash-message": "^1.0.5"
   },
-  "devDependencies": {}
+  "scripts": {
+    "start-client": "react-scripts start",
+    "start-server": "cd server && npm start",
+    "build": "react-scripts build && (cd server && npm install)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

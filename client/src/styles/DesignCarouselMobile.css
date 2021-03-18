@@ -1,8 +1,0 @@
-.design-scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  width: 96%;
-  padding: 0px 28px 28px 28px;
-}
