@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
 
-//Email Info
+//Email Setup
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -23,7 +23,7 @@ contactEmail.verify(error => {
   }
 });
 
-//Mailchimp Info
+//Mailchimp Setup
 const mailchimpListID = '8889cc916c';
 
 mailchimp.setConfig({
