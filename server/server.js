@@ -36,6 +36,11 @@ app.use(express.static(buildPath));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//Route for React Routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
+
 //Route for Subcription Form
 app.post('/signup', async (req, res) => {
   const { fname, lname, email } = req.body;
