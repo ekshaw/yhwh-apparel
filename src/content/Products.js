@@ -50,8 +50,8 @@ const Products = [
     ),
     images: [
       <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/found.jpg')} />,
-      <img src={require('../images/designs/adonai.jpg')} />
+      <img src={require('../images/designs/endurance.jpg')} />,
+      <img src={require('../images/designs/endurance.jpg')} />
     ]
   },
   {
@@ -103,9 +103,9 @@ const Products = [
       </div>
     ),
     images: [
-      <img src={require('../images/designs/endurance.jpg')} />,
       <img src={require('../images/designs/found.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />
+      <img src={require('../images/designs/found.jpg')} />,
+      <img src={require('../images/designs/found.jpg')} />
     ]
   },
   {
@@ -128,9 +128,9 @@ const Products = [
       </div>
     ),
     images: [
-      <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />
+      <img src={require('../images/designs/whale.jpg')} />,
+      <img src={require('../images/designs/whale.jpg')} />,
+      <img src={require('../images/designs/whale.jpg')} />
     ]
   },
   {

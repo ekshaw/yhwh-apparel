@@ -19,31 +19,33 @@ for (var i = 0; i < Math.ceil(Products.length / 3); i++) {
 
 const ShopPage = props => {
   return (
-    <div className='main-container'>
-      <div className='top-container'>
-        <div className='top-captions'>
-          <div className='shop-title'>
-            <h1>Newest Release.</h1>
-          </div>
-          <div className='shop-caption'>
-            <h2>Assurance Collection</h2>
-          </div>
-          <div className='shop-btn'>
-             <a href='https://yhwhapparel.storenvy.com/products'> 
-            <h4>SHOP NOW</h4>
-             </a> 
+    <div className='shop-main-container'>
+      <div className='shop-top-container'>
+        <div className='shop-blank-image-box-one'>
+          <div className='shop-caption-container'>
+            <div className='shop-title'>
+              <h1>Newest Release.</h1>
+            </div>
+            <div className='shop-caption'>
+              <h2>Assurance Collection</h2>
+            </div>
+            <div className='shop-btn'>
+              <a href='https://yhwhapparel.storenvy.com/products'> 
+              <h4>SHOP NOW</h4>
+              </a> 
+            </div>
           </div>
         </div>
-        <div className='top-image'>
+        <div className='shop-top-image'>
           <img src={require('../images/designs/shop-main.jpg')} />
         </div>
       </div>
-      <div className='blank-image-box-one'></div>
       <div className='shopcard-container'>
         {shopCardRows}
+        <div className='shop-blank-image-box-two'></div>
+        <div className='shop-blank-image-box-three'></div>
+        
       </div>
-      <div className='blank-image-box-two'></div>
-      <div className='blank-image-box-three'></div>
       <Footer color='#white' />
     </div>
   );
