@@ -1,0 +1,31 @@
+{
+  "name": "yhwh-apparel-server",
+  "version": "1.0.0",
+  "description": "Website for YHWH Apparel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhwhapparel/yhwh-frontend.git"
+  },
+  "author": "Peter Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhwhapparel/yhwh-frontend/issues"
+  },
+  "homepage": "https://github.com/yhwhapparel/yhwh-frontend#readme",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.27",
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.2.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "nodemailer": "^6.5.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "devDependencies": {}
+}

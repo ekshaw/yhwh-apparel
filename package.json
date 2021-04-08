@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "query-string": "^6.13.5",
+    "concurrently": "^5.2.0",
     "react": "^16.13.0",
     "react-cookie": "^4.0.3",
     "react-dom": "^16.13.0",
@@ -16,13 +17,16 @@
     "react-scripts": "3.4.0",
     "react-transition-group": "^4.3.0",
     "react-youtube": "^7.9.0",
-    "universal-cookie": "^4.0.4"
+    "universal-cookie": "^4.0.4",
+    "react-flash-message": "^1.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-client": "react-scripts start",
+    "start-server": "cd server && npm start",
+    "build": "react-scripts build && (cd server && npm install)",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
   },
   "eslintConfig": {
     "extends": "react-app"
