@@ -6,7 +6,7 @@ const Products = [
     productId: 'endurance',
     release: 'December 2019',
     productType: 'HOODIE',
-    price: '$38.00',
+    price: 38.0,
     bibleVerse: 'HEBREWS 12:1-3',
     sizes: [
       { size: 'S', quantity: 1 },
@@ -14,8 +14,6 @@ const Products = [
       { size: 'L', quantity: 5 },
       { size: 'XL', quantity: 2 }
     ],
-    contentAndCare: 'ewww this looks (less) gross rn lol',
-    sizeAndFit: 'Model is 5\'7" and wearing a small. eek this looks cluttered.',
     description: (
       <div>
         <h3>
@@ -50,8 +48,9 @@ const Products = [
     ),
     images: [
       <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />
+      <img src={require('../images/designs/endurance_2.jpg')} />,
+      <img src={require('../images/designs/endurance_3.jpg')} />,
+      <img src={require('../images/designs/endurance_4.jpg')} />
     ]
   },
   {
@@ -59,7 +58,7 @@ const Products = [
     productId: 'found',
     release: 'November 2018',
     productType: 'TSHIRT',
-    price: '$15.00',
+    price: 15.0,
     bibleVerse: 'LUKE 15',
     sizes: [
       { size: 'S', quantity: 1 },
@@ -67,8 +66,6 @@ const Products = [
       { size: 'L', quantity: 5 },
       { size: 'XL', quantity: 2 }
     ],
-    contentAndCare: 'uhhh idk about content and care rn lol',
-    sizeAndFit: 'Model is 5\'7" and wearing a small.',
     description: (
       <div>
         <h3>
@@ -104,8 +101,9 @@ const Products = [
     ),
     images: [
       <img src={require('../images/designs/found.jpg')} />,
-      <img src={require('../images/designs/found.jpg')} />,
-      <img src={require('../images/designs/found.jpg')} />
+      <img src={require('../images/designs/found_2.jpg')} />,
+      <img src={require('../images/designs/found_3.jpg')} />,
+      <img src={require('../images/designs/found_4.jpg')} />
     ]
   },
   {
@@ -113,24 +111,41 @@ const Products = [
     productId: 'itiswhale',
     release: '',
     productType: 'PIN',
-    price: '$7.00',
-    bibleVerse: '',
-    sizes: [
-      { size: 'S', quantity: 1 },
-      { size: 'M', quantity: 0 },
-      { size: 'L', quantity: 5 }
-    ],
-    contentAndCare: 'uhhh idk about content and care rn lol',
-    sizeAndFit: 'Model is 5\'7" and wearing a small.',
+    price: 7.0,
+    bibleVerse: 'PSALM 118:24',
+    sizes: [{ size: 'OS', quantity: 1 }],
     description: (
       <div>
-        <h3></h3>
+        <h3>
+          "When peace like a river attendeth my way. When sorrows like sea billows roll. Whatever my
+          lot, Thou hast taught me to say, It is well, it is well with my soul.
+        </h3>
+        <h3>
+          Though Satan should buffet, though trials should come. Let this blest assurance control.
+          That Christ (yes, He has) has regarded my helpless estate. And has shed His own blood for
+          my soul
+        </h3>
+        <h3>
+          My sin, oh the bliss of this glorious thought (a thought). My sin, not in part, but the
+          whole (every bit, every bit, all of it). Is nailed to the cross, and I bear it no more
+          (yes!). Praise the Lord, praise the Lord, O my soul!
+        </h3>
+        <h3>
+          And Lord, haste the day when my faith shall be sight. The clouds be rolled back as a
+          scroll. The trump shall resound, and the Lord shall descend. Even so, it is well with my
+          soul!
+        </h3>
+        <h3>
+          It is well (it is well). With my soul (with my soul). It is well, it is well with my
+          soul!"
+        </h3>
       </div>
     ),
     images: [
       <img src={require('../images/designs/whale.jpg')} />,
-      <img src={require('../images/designs/whale.jpg')} />,
-      <img src={require('../images/designs/whale.jpg')} />
+      <img src={require('../images/designs/whale_2.jpg')} />,
+      <img src={require('../images/designs/whale_3.jpg')} />,
+      <img src={require('../images/designs/whale_4.jpg')} />
     ]
   },
   {
@@ -138,24 +153,47 @@ const Products = [
     productId: 'saltandlight',
     release: '',
     productType: 'STICKER',
-    price: '$1.00',
+    price: 1.0,
     bibleVerse: 'MATTHEW 5:13-16',
-    sizes: [
-      { size: 'S', quantity: 1 },
-      { size: 'M', quantity: 0 },
-      { size: 'L', quantity: 5 }
-    ],
-    contentAndCare: 'egg',
-    sizeAndFit: 'Model is 5\'7" and wearing a small.',
+    sizes: [{ size: 'OS', quantity: 1 }],
     description: (
       <div>
-        <h3>Be a salt and light to the world. Matthew 5:13-16</h3>
+        <h3>
+          “You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be
+          restored? It is no longer good for anything except to be thrown out and trampled under
+          people's feet. You are the light of the world. A city set on a hill cannot be hidden. Nor
+          do people light a lamp and put it under a basket, but on a stand, and it gives light to
+          all in the house. In the same way, let your light shine before others, so that they may
+          see your good works and give glory to your Father who is in heaven.” Matthew 5:13-16
+        </h3>
+        <h3>
+          In His Sermon on the Mount, Jesus call His disciples, including us present-day Christians,
+          the salt of the earth and the light of the world. Jesus points out that if salt loses its
+          taste, it is absolutely useless. And He also notes that a lamp is useless unless put on a
+          stand where it can shine its light visibly.
+        </h3>
+        <h3>
+          The Christian life is a life of boldness and impact. Generations of professed Christians
+          have settled for “Sunday Christianity,” but what good is it if all the lights in a city
+          only turn on once a week in the same building, and leave the rest of the world in
+          darkness? What good is it if salt stays in the shaker and leaves the rest of the world to
+          rot?
+        </h3>
+        <h3>
+          Jesus, the true light of the world (John 1:1-4), has secured for us salvation and new life
+          through His death and resurrection, and He invites us to walk transformed and
+          transformatively so that wherever we are, whether in class or at work or at home or with a
+          club, others will “see [our] good works and give glory to [our] Father who is in heaven.”
+          (Matthew 5:16) We hope you’ll use this sticker to daily remind yourself of your calling to
+          display the glory of God by emulating Christ’s character and engaging in His mission.
+        </h3>
       </div>
     ),
     images: [
-      <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />,
-      <img src={require('../images/designs/endurance.jpg')} />
+      <img src={require('../images/designs/salt_light_1.jpg')} />,
+      <img src={require('../images/designs/salt_light_2.jpg')} />,
+      <img src={require('../images/designs/salt_light_3.jpg')} />,
+      <img src={require('../images/designs/salt_light_4.jpg')} />
     ]
   }
 ];

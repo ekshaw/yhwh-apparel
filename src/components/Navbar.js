@@ -40,6 +40,13 @@ const Navbar = props => {
               <div className='navlink'>PARTNERSHIPS</div>
             </Link>
           </li>
+          <li>
+            <Link to='/checkout'>
+              <div className='bag'>
+                <div className='navlink'>BAG</div>
+              </div>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

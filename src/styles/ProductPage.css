@@ -42,7 +42,7 @@
 
 .product-description-container {
   position: relative;
-  width: 80%;
+  width: 60%;
   padding-right: 2vw;
 }
 
@@ -94,20 +94,19 @@
 .product-image-container {
   position: relative;
   bottom: 1vw;
-  width: 20vw;
+  width: 30vw;
   padding-right: 32px;
+}
+
+.product-image-carousel {
+  width: 20vw;
 }
 
 .product-bible-verse {
   position: relative;
-  bottom: 2vw;
+  bottom: 0vw;
   float: right;
+  right: 3.5vw;
   font-size: 0.8vw;
   letter-spacing: 4px;
-}
-
-.product-information {
-  margin-top: 6vw;
-  position: relative;
-  bottom: 5vw;
 }

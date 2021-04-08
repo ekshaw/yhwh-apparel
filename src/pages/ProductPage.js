@@ -55,7 +55,7 @@ class ProductPage extends Component {
                 <h1>{this.state.products[this.state.productNum].title}</h1>
               </div>
               <div className='product-price'>
-                <h4>{this.state.products[this.state.productNum].price}</h4>
+                <h4>$ {this.state.products[this.state.productNum].price}.00</h4>
               </div>
               <div className='product-description'>
                 <div className='product-description-wrapper'>
@@ -80,12 +80,6 @@ class ProductPage extends Component {
               </div>
               <div className='product-bible-verse'>
                 <div>{this.state.products[this.state.productNum].bibleVerse}</div>
-              </div>
-              <div className='product-information'>
-                <h2>Content and Care.</h2>
-                <h3>{this.state.products[this.state.productNum].contentAndCare}</h3>
-                <h2>Size and Fit.</h2>
-                <h3>{this.state.products[this.state.productNum].sizeAndFit}</h3>
               </div>
             </div>
           </div>
