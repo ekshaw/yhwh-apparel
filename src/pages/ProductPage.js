@@ -13,6 +13,7 @@ class ProductPage extends Component {
   constructor(props) {
     super(props);
     this.cookies = new Cookies();
+    this.cookieName = 'yhwhapparel_shoppingbag';
     this.state = {
       productNum: 0,
       products: Products,
@@ -46,15 +47,15 @@ class ProductPage extends Component {
       price: price,
       size: this.state.size
     };
-    let cookie = this.cookies.get('egg');
+    let cookie = this.cookies.get(this.cookieName);
     if (cookie) {
       const cart = this.objectToArray(cookie);
       cart.push(item);
-      this.cookies.set('egg', JSON.stringify(cart), {
+      this.cookies.set(this.cookieName, JSON.stringify(cart), {
         path: '/'
       });
     } else {
-      this.cookies.set('egg', JSON.stringify([item]), { path: '/' });
+      this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
     }
     // cookie = cookies.get(cookieName);
     // setCookie(cookie);

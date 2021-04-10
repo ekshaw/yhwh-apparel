@@ -5,7 +5,7 @@ import Cookies from 'universal-cookie';
 
 const Navbar = props => {
   const cookies = new Cookies();
-  const cookieName = 'egg';
+  const cookieName = 'yhwhapparel_shoppingbag';
 
   const objectToArray = object => {
     return Object.keys(object).map(key => object[key]);

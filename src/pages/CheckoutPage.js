@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 import '../styles/CheckoutPage.css';
 import Products from '../content/Products';
@@ -6,7 +6,7 @@ import Cookies from 'universal-cookie';
 
 const CheckoutPage = props => {
   const cookies = new Cookies();
-  const cookieName = 'egg';
+  const cookieName = 'yhwhapparel_shoppingbag';
 
   const [cookie, setCookie] = useState({});
   const [cartTotal, setCartTotal] = useState(0);
@@ -17,11 +17,13 @@ const CheckoutPage = props => {
 
   const total = () => {
     let totalVal = 0;
-    let cart = objectToArray(cookies.get(cookieName));
-    for (let i = 0; i < cart.length; i++) {
-      totalVal += cart[i].price;
+    if (cookies.get(cookieName)) {
+      let cart = objectToArray(cookies.get(cookieName));
+      for (let i = 0; i < cart.length; i++) {
+        totalVal += cart[i].price;
+      }
+      setCartTotal(totalVal);
     }
-    setCartTotal(totalVal);
   };
 
   const removeFromCart = index => {
