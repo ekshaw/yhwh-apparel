@@ -7,10 +7,12 @@ import { Component } from 'react';
 import SizeButtons from '../components/SizeButtons';
 import ProductDescription from '../components/ProductDescription';
 import queryString from 'query-string';
+import Cookies from 'universal-cookie';
 
 class ProductPage extends Component {
   constructor(props) {
     super(props);
+    this.cookies = new Cookies();
     this.state = {
       productNum: 0,
       products: Products,
@@ -21,7 +23,6 @@ class ProductPage extends Component {
 
   componentWillMount() {
     const query = queryString.parse(this.props.location.search);
-    console.log(query.product);
     var productIndex;
     for (let index = 0; index < Products.length; index++) {
       if (query.product == Products[index].productId) {
@@ -34,8 +35,37 @@ class ProductPage extends Component {
   }
 
   onReadMoreClick = () => {
-    console.log('egg');
     this.setState({ productdescription_hidden: !this.state.productdescription_hidden });
+  };
+
+  addToCart = el => {
+    console.log('crying');
+    const { title, price } = el;
+    const item = {
+      title: title,
+      price: price,
+      size: this.state.size
+    };
+    let cookie = this.cookies.get('egg');
+    if (cookie) {
+      const cart = this.objectToArray(cookie);
+      cart.push(item);
+      this.cookies.set('egg', JSON.stringify(cart), {
+        path: '/'
+      });
+    } else {
+      this.cookies.set('egg', JSON.stringify([item]), { path: '/' });
+    }
+    // cookie = cookies.get(cookieName);
+    // setCookie(cookie);
+  };
+
+  objectToArray = object => {
+    return Object.keys(object).map(key => object[key]);
+  };
+
+  setSize = size => {
+    this.setState({ size: size });
   };
 
   render() {
@@ -66,12 +96,15 @@ class ProductPage extends Component {
                 <h3>Read More...</h3>
               </div>
               <div className='size-btn'>
-                <SizeButtons sizeList={this.state.products[this.state.productNum].sizes} />
+                <SizeButtons
+                  sizeList={this.state.products[this.state.productNum].sizes}
+                  setSizeProp={this.setSize}
+                />
               </div>
-              <div className='add-to-cart-btn'>
-                <a href='https://yhwhapparel.storenvy.com/products'>
-                  <h4>ADD TO CART</h4>
-                </a>
+              <div
+                className='add-to-cart-btn'
+                onClick={() => this.addToCart(this.state.products[this.state.productNum])}>
+                <h4>ADD TO CART</h4>
               </div>
             </div>
             <div className='product-image-container'>

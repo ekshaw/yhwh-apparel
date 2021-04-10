@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/SizeButtons.css';
+import ProductDescription from './ProductDescription';
 
 const SizeButtons = props => {
   return (
@@ -7,7 +8,9 @@ const SizeButtons = props => {
       <ul>
         {props.sizeList.map(item => (
           <li key>
-            <button className={'size-button ' + (item.quantity == 0 ? 'disabled' : 'enabled')}>
+            <button
+              className={'size-button ' + (item.quantity == 0 ? 'disabled' : 'enabled')}
+              onClick={() => props.setSizeProp(item.size)}>
               {item.size}
             </button>
           </li>

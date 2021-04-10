@@ -80,9 +80,8 @@
   padding: 0.4vw 4vw;
   text-align: center;
 }
-.add-to-cart-btn > a > * {
-  letter-spacing: 1vh;
-  font-size: 2.2vh;
+.add-to-cart-btn:hover {
+  cursor: pointer;
 }
 
 .size-btn {

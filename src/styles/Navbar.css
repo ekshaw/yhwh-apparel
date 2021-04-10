@@ -22,7 +22,7 @@
   position: absolute;
   right: 0;
   width: 53vw;
-  margin-right: 7.5vw;
+  margin-right: 10vw;
 }
 
 ul {
@@ -74,4 +74,23 @@ li > a:hover:after {
 
 .navlink:hover {
   cursor: pointer;
+}
+
+.bag {
+  width: 4vw;
+  margin-right: 3vw;
+  margin-top: 1vw;
+}
+
+.bag-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bag-num {
+  z-index: 100;
+  position: absolute;
+  top: 2.75vw;
+  right: 4.75vw;
 }

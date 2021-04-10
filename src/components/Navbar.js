@@ -1,8 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import Cookies from 'universal-cookie';
 
 const Navbar = props => {
+  const cookies = new Cookies();
+  const cookieName = 'egg';
+
+  const objectToArray = object => {
+    return Object.keys(object).map(key => object[key]);
+  };
+
+  const bagNum = cookies.get(cookieName) ? objectToArray(cookies.get(cookieName)).length : 0;
+
   return (
     <div className='navbar-container'>
       <div className='logo'>
@@ -40,14 +50,15 @@ const Navbar = props => {
               <div className='navlink'>PARTNERSHIPS</div>
             </Link>
           </li>
-          <li>
-            <Link to='/checkout'>
-              <div className='bag'>
-                <div className='navlink'>BAG</div>
-              </div>
-            </Link>
-          </li>
         </ul>
+      </div>
+      <div className='bag'>
+        <Link to='/checkout'>
+          <div className='bag-image'>
+            <img src={require('../images/shop/shopping_bag.png')} />
+          </div>
+          <div className='bag-num'>{bagNum}</div>
+        </Link>
       </div>
     </div>
   );
