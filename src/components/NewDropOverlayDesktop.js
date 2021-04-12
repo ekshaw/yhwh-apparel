@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FlashMessage from 'react-flash-message'
+// import FlashMessage from 'react-flash-message'
 import '../styles/NewDropOverlayDesktop.css';
 
 class NewDropOverlayDesktop extends Component {
@@ -157,13 +157,6 @@ class NewDropOverlayDesktop extends Component {
           <div className='new-drop-overlay-order-btn' onClick={this.onSubscriptionButtonClick}>
             <h4>SUBSCRIBE NOW</h4>
           </div>
-          {this.state.showFlashMsg && (
-              <div>
-                <FlashMessage duration={5000}>
-                  <h4>{this.state.flashMsgTxt}</h4>
-                </FlashMessage>
-              </div>
-            )}
         </div>
       </div>
     );
