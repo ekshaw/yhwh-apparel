@@ -96,6 +96,37 @@
   color: #fefefe;
 }
 
+.new-drop-overlay-form-title {
+  position: absolute;
+  top: 29%;
+  left: 70.5%;
+  font-family: 'meno-banner', serif;
+  font-size: 1.75vw;
+  margin: 0px 0px;
+  font-weight: 450;
+  transform: translateY(-85%);
+  color: #fefefe;
+}
+
+.new-drop-overlay-form {
+  position: absolute;
+  z-index:500;
+  left: 62%;
+}
+
+.new-drop-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.new-drop-overlay-input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
+
 .new-drop-overlay-exit-btn {
   position: absolute;
   top: 11%;
@@ -115,10 +146,11 @@
 
 .new-drop-overlay-order-btn {
   position: absolute;
-  top: 56%;
+  top: 70%;
+  left: 67%;
   border: solid;
   border-width: thin;
-  width: 11vw;
+  width: 13vw;
   padding: 0.2vw 0.5vw;
   text-align: center;
   color: #fefefe;
