@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/MobileDropOverlay.css';
+import SubscribeFormOverlay from './SubscribeFormOverlay';
 
 class MobileDropOverlay extends Component {
   constructor(props) {
@@ -10,7 +11,6 @@ class MobileDropOverlay extends Component {
   }
 
   onXClick = () => {
-    console.log('stardew');
     this.setState({ overlay_hidden: true });
   };
 
@@ -19,28 +19,20 @@ class MobileDropOverlay extends Component {
       return <div></div>;
     }
     return (
-      <div className='mobile-drop-container' onClick={this.onXClick}>
-        <div className='mobile-drop-overlay'></div>
-        <div className='mobile-drop-des-container'>
-          <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
+      <div className='mobile-newsletter-overlay-container'>
+        <div className='mobile-newsletter-overlay' onClick={this.onXClick}></div>
+        <div className='mobile-newsletter-overlay-des-container'>
+          <div className='mobile-newsletter-overlay-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
-          <div className='mobile-drop-header'>F/W '20 COLLECTION</div>
-          <div className='mobile-drop-line'></div>
-          <div className='mobile-drop-title'>Assurance.</div>
-          <div className='mobile-drop-description'>
-            He is doing a work in our days that we wouldn't believe if told <br />
-            Habakkuk 1:5 <br />
-            <br />
-            Shop our latest drop now!
+          <div className='mobile-newsletter-overlay-header'>YHWH APPAREL</div>
+          <div className='mobile-newsletter-overlay-line'></div>
+          <div className='mobile-newsletter-overlay-title'>Subscribe to Us.</div>
+          <div className='mobile-newsletter-overlay-description'>
+            We'd love to stay in touch with you!
           </div>
-          <div className='mobile-drop-btn-container'>
-            <div className='mobile-drop-btn'>
-              <a href='https://tinyurl.com/yhwhassurance'>
-                <h4>ORDER NOW</h4>
-              </a>
-            </div>
-          </div>
+          <div className='mobile-newsletter-overlay-form'>{<SubscribeFormOverlay />}</div>
+          <div className='mobile-newsletter-overlay-btn-container'></div>
         </div>
       </div>
     );

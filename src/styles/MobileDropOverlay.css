@@ -1,4 +1,4 @@
-.mobile-drop-overlay {
+.mobile-newsletter-overlay {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -9,21 +9,22 @@
   transition: 1s;
 }
 
-.mobile-drop-des-container {
+.mobile-newsletter-overlay-des-container {
   position: fixed;
   left: 50%;
   top: 48vh;
   transform: translate(-50%, -50%);
   height: fit-content;
   z-index: 10000;
-  background-image: url('../images/home/graphic.jpg');
+  background-image: url('../images/home/newsletter_mobile.jpg');
   background-size: cover;
   background-position: center;
-  padding: 6vw 10vw;
+  padding: 6vw 4vw;
   overflow: hidden;
+  width: 72vw;
 }
 
-.mobile-drop-overlay-exit-btn {
+.mobile-newsletter-overlay-overlay-exit-btn {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #fefefe;
@@ -31,9 +32,14 @@
   font-weight: 200;
   text-align: right;
   padding-bottom: 1vh;
+  margin: 0 2vw;
 }
 
-.mobile-drop-header {
+.mobile-newsletter-overlay-overlay-exit-btn h3 {
+  margin: 0;
+}
+
+.mobile-newsletter-overlay-header {
   font-size: 12px;
   letter-spacing: 3px;
   margin: 1vw 0vw;
@@ -42,7 +48,7 @@
   color: #fefefe;
 }
 
-.mobile-drop-line {
+.mobile-newsletter-overlay-line {
   width: 40vw;
   border-top: 1px solid #fefefe;
   display: block;
@@ -50,15 +56,15 @@
   margin-right: auto;
 }
 
-.mobile-drop-title {
-  padding: 10vw 0;
+.mobile-newsletter-overlay-title {
+  padding: 12vw 0 4vw;
   font-family: 'meno-banner', serif;
-  font-size: 14vw;
+  font-size: 10vw;
   text-align: center;
   color: #fefefe;
 }
 
-.mobile-drop-description {
+.mobile-newsletter-overlay-description {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -66,29 +72,49 @@
   line-height: 200%;
   color: #fefefe;
   text-align: center;
-  width: 48vw;
+  width: 56vw;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4vw auto;
 }
 
-.mobile-drop-btn-container {
-  padding: 16vw 0 8vw 0;
+.mobile-newsletter-overlay-form {
+  width: 56vw;
+  margin: auto;
+  z-index: 100000;
 }
 
-.mobile-drop-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.overlay-form-input-container {
+  width: 100%;
+}
+
+input[type='text'] {
+  color: #1f1f1f;
+  padding: 2vw;
+  margin: 2vw 0vw;
+  outline: none;
+  font-size: 3vw;
+}
+
+.subscribe-form-overlay-submit-btn {
+  color: #fefefe;
   border: solid;
   border-width: thin;
-  border-color: #fefefe;
-  width: 112px;
-  padding: 2px 6px;
+  width: 36vw;
+  padding: 0.75vw 1.5vw;
+  text-align: center;
+  margin: 12vw auto;
+}
+
+.subscribe-form-overlay-submit-btn h4 {
+  letter-spacing: 0.3vw;
+}
+
+.subscribe-form-overlay-flash-msg {
+  align-self: center;
   text-align: center;
 }
 
-.mobile-drop-btn h4 {
+.subscribe-form-overlay-flash-msg h4 {
+  font-size: 10px;
   color: #fefefe;
-  letter-spacing: 0.4vw;
 }

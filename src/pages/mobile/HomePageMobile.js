@@ -4,12 +4,12 @@ import '../../styles/mobile/HomePageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
 import MobileDropOverlay from '../../components/MobileDropOverlay';
 
-const HomePageMobile = (props) => {
+const HomePageMobile = props => {
   return (
     <div className='mobile-main-container'>
-      {/* <div className='mobile-drop-overlay-container'>
+      <div className='mobile-drop-overlay-container'>
         <MobileDropOverlay />
-      </div> */}
+      </div>
       <div className='mobile-top-container'>
         <div className='mobile-caption-container'>
           <div className='mobile-caption' id='mobile-main-caption'>
@@ -19,10 +19,7 @@ const HomePageMobile = (props) => {
             </h1>
           </div>
           <div className='mobile-description' id='mobile-company-description'>
-            <h3>
-              YHWH Apparel is a Christian apparel company based in Berkeley,
-              California.
-            </h3>
+            <h3>YHWH Apparel is a Christian apparel company based in Berkeley, California.</h3>
           </div>
         </div>
         <div className='mobile-image-container'>
@@ -61,9 +58,8 @@ const HomePageMobile = (props) => {
           <div className='mobile-description-container'>
             <div className='mobile-description' id='mobile-subscription-description'>
               <h3>
-                Stay up to date on our latest products, sales, and partnerships!
-                Follow our journey to make the name and character of God known
-                here in Berkeley and abroad!
+                Stay up to date on our latest products, sales, and partnerships! Follow our journey
+                to make the name and character of God known here in Berkeley and abroad!
               </h3>
             </div>
             <div className='mobile-subscription-btn'>
@@ -75,16 +71,10 @@ const HomePageMobile = (props) => {
         </div>
         <div className='mobile-subscription-image-container'>
           <div className='mobile-subscription-image1-container'>
-            <img
-              src={require('../../images/home/IMG_8125.jpg')}
-              id='subscription-image1'
-            ></img>
+            <img src={require('../../images/home/IMG_8125.jpg')} id='subscription-image1'></img>
           </div>
           <div className='mobile-subscription-image2-container'>
-            <img
-              src={require('../../images/home/DSC08941.jpg')}
-              id='subscription-image2'
-            ></img>
+            <img src={require('../../images/home/DSC08941.jpg')} id='subscription-image2'></img>
           </div>
         </div>
         {/* <InstagramFeed /> */}
