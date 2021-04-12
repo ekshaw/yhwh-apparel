@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Cookies from 'universal-cookie';
+import { EventEmitter } from '../utils/EventEmitter';
 
-const Navbar = props => {
+const Navbar = (props) => {
   const cookies = new Cookies();
   const cookieName = 'yhwhapparel_shoppingbag';
 
-  const objectToArray = object => {
-    return Object.keys(object).map(key => object[key]);
+  const objectToArray = (object) => {
+    return Object.keys(object).map((key) => object[key]);
   };
 
-  const bagNum = cookies.get(cookieName) ? objectToArray(cookies.get(cookieName)).length : 0;
+  let bagNum = cookies.get(cookieName)
+    ? objectToArray(cookies.get(cookieName)).length
+    : 0;
+
+  const [cartSize, setCartSize] = useState(bagNum);
+
+  const updateCart = (event) => {
+    bagNum = cookies.get(cookieName)
+      ? objectToArray(cookies.get(cookieName)).length
+      : 0;
+    setCartSize(bagNum);
+  };
+
+  EventEmitter.subscribe('updateCart', (event) => updateCart(event));
 
   return (
     <div className='navbar-container'>
@@ -57,7 +71,7 @@ const Navbar = props => {
           <div className='bag-image'>
             <img src={require('../images/shop/shopping_bag.png')} />
           </div>
-          <div className='bag-num'>{bagNum}</div>
+          <div className='bag-num'>{cartSize}</div>
         </Link>
       </div>
     </div>

@@ -3,8 +3,9 @@ import Footer from '../components/Footer';
 import '../styles/CheckoutPage.css';
 import Products from '../content/Products';
 import Cookies from 'universal-cookie';
+import { EventEmitter } from '../utils/EventEmitter';
 
-const CheckoutPage = props => {
+const CheckoutPage = (props) => {
   const cookies = new Cookies();
   const cookieName = 'yhwhapparel_shoppingbag';
 
@@ -26,18 +27,19 @@ const CheckoutPage = props => {
     }
   };
 
-  const removeFromCart = index => {
+  const removeFromCart = (index) => {
     let hardCopy = [...cookies.get(cookieName)];
     hardCopy.splice(index, 1);
     cookies.set(cookieName, JSON.stringify(hardCopy));
     setCookie(cookies.get(cookieName));
+    EventEmitter.dispatch('updateCart', {});
   };
 
-  const objectToArray = object => {
-    return Object.keys(object).map(key => object[key]);
+  const objectToArray = (object) => {
+    return Object.keys(object).map((key) => object[key]);
   };
 
-  const getProductImage = title => {
+  const getProductImage = (title) => {
     for (let i = 0; i < Products.length; i++) {
       if (title === Products[i].title) {
         return Products[i].images[0];
@@ -64,7 +66,8 @@ const CheckoutPage = props => {
             <div className='checkout-item-delete'>
               <img
                 src={require('../images/shop/x-button.png')}
-                onClick={() => removeFromCart(index)}></img>
+                onClick={() => removeFromCart(index)}
+              ></img>
             </div>
           </div>
         </div>

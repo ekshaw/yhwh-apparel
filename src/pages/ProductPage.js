@@ -8,6 +8,7 @@ import SizeButtons from '../components/SizeButtons';
 import ProductDescription from '../components/ProductDescription';
 import queryString from 'query-string';
 import Cookies from 'universal-cookie';
+import { EventEmitter } from '../utils/EventEmitter';
 
 class ProductPage extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class ProductPage extends Component {
       productNum: 0,
       products: Products,
       numProducts: Products.length,
-      productdescription_hidden: true
+      productDescriptionHidden: true,
     };
   }
 
@@ -26,46 +27,48 @@ class ProductPage extends Component {
     const query = queryString.parse(this.props.location.search);
     var productIndex;
     for (let index = 0; index < Products.length; index++) {
-      if (query.product == Products[index].productId) {
+      if (query.product === Products[index].productId) {
         productIndex = index;
       }
     }
     this.setState({
-      productNum: productIndex
+      productNum: productIndex,
+      size: Products[productIndex].sizes[0].size,
     });
   }
 
   onReadMoreClick = () => {
-    this.setState({ productdescription_hidden: !this.state.productdescription_hidden });
+    this.setState({
+      productDescriptionHidden: !this.state.productDescriptionHidden,
+    });
   };
 
-  addToCart = el => {
+  addToCart = (el) => {
     console.log('crying');
     const { title, price } = el;
     const item = {
       title: title,
       price: price,
-      size: this.state.size
+      size: this.state.size,
     };
     let cookie = this.cookies.get(this.cookieName);
     if (cookie) {
       const cart = this.objectToArray(cookie);
       cart.push(item);
       this.cookies.set(this.cookieName, JSON.stringify(cart), {
-        path: '/'
+        path: '/',
       });
     } else {
       this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
     }
-    // cookie = cookies.get(cookieName);
-    // setCookie(cookie);
+    EventEmitter.dispatch('updateCart', {});
   };
 
-  objectToArray = object => {
-    return Object.keys(object).map(key => object[key]);
+  objectToArray = (object) => {
+    return Object.keys(object).map((key) => object[key]);
   };
 
-  setSize = size => {
+  setSize = (size) => {
     this.setState({ size: size });
   };
 
@@ -76,7 +79,7 @@ class ProductPage extends Component {
           title={this.state.products[this.state.productNum].title}
           verse={this.state.products[this.state.productNum].bibleVerse}
           description={this.state.products[this.state.productNum].description}
-          hidden={this.state.productdescription_hidden}
+          hidden={this.state.productDescriptionHidden}
           hideProductDescription={this.onReadMoreClick}
         />
         <div className='product-container'>
@@ -104,16 +107,23 @@ class ProductPage extends Component {
               </div>
               <div
                 className='add-to-cart-btn'
-                onClick={() => this.addToCart(this.state.products[this.state.productNum])}>
+                onClick={() =>
+                  this.addToCart(this.state.products[this.state.productNum])
+                }
+              >
                 <h4>ADD TO CART</h4>
               </div>
             </div>
             <div className='product-image-container'>
               <div className='product-image-carousel'>
-                <ProductImageCarousel images={this.state.products[this.state.productNum].images} />
+                <ProductImageCarousel
+                  images={this.state.products[this.state.productNum].images}
+                />
               </div>
               <div className='product-bible-verse'>
-                <div>{this.state.products[this.state.productNum].bibleVerse}</div>
+                <div>
+                  {this.state.products[this.state.productNum].bibleVerse}
+                </div>
               </div>
             </div>
           </div>
