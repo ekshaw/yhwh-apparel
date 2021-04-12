@@ -69,14 +69,31 @@
 
 .new-drop-overlay-title {
   position: absolute;
-  top: 50%;
+  top: 38%;
+  left: 6%;
+  font-family: 'meno-banner', serif;
+  font-size: 4.5vw;
+  margin: 0px 0px;
+  font-weight: 450;
   transform: translateY(-65%);
-  text-align: center;
+  /* text-align: center; */
   color: #fefefe;
 }
 
 .new-drop-overlay-title > h1 {
   font-size: 6vw;
+}
+
+.new-drop-overlay-subtitle {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  font-family: 'meno-banner', serif;
+  font-size: 1.5vw;
+  margin: 0px 0px;
+  font-weight: 450;
+  transform: translateY(-85%);
+  color: #fefefe;
 }
 
 .new-drop-overlay-exit-btn {
