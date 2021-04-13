@@ -1,6 +1,9 @@
 import React from 'react';
 import HomePageDesktop from './desktop/HomePageDesktop';
 import NewDropOverlayDesktop from '../components/NewDropOverlayDesktop';
+import NewsletterOverlay from '../components/NewsletterOverlay';
+import MobileNewsletterOverlay from '../components/MobileNewsletterOverlay';
+import MobileDropOverlay from '../components/MobileDropOverlay';
 import HomePageMobile from './mobile/HomePageMobile';
 import { useMediaQuery } from 'react-responsive';
 
@@ -12,13 +15,14 @@ const HomePage = props => {
     <div>
       {isDesktopOrLaptop && (
         <>
-          {/* <NewDropOverlayDesktop /> */}
+          <NewsletterOverlay />
           <HomePageDesktop />
         </>
       )}
 
       {isMobile && (
         <>
+          <MobileNewsletterOverlay />
           <HomePageMobile />
         </>
       )}

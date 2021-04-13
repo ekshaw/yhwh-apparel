@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FlashMessage from 'react-flash-message';
+import '../styles/SubscribeFormOverlay.css';
 
 class SubscribeFormOverlay extends Component {
   constructor(props) {

@@ -1,0 +1,115 @@
+.newsletter-overlay-container {
+  position: absolute;
+  z-index: 400;
+}
+
+.newsletter-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 200;
+  background-color: #1f1f1f;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.newsletter-overlay-container > * {
+  z-index: 200;
+}
+
+.newsletter-overlay-img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.newsletter-overlay-content-container {
+  position: fixed;
+  width: 60vw;
+  height: 40vw;
+  /* height: 70vh; */
+  left: 50%;
+  top: 50vh;
+  z-index: 250;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-overlay-left-container {
+  text-align: center;
+  position: relative;
+  right: 12vw;
+  width: 40vw;
+}
+
+.newsletter-overlay-header {
+  color: #fefefe;
+}
+
+.newsletter-overlay-header > h3 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0.2vw 0vw;
+  color: #fefefe;
+}
+
+.newsletter-overlay-header-underline {
+  position: absolute;
+  left: 14vw;
+  width: 12vw;
+  height: 1px;
+  background-color: #fefefe;
+}
+
+.newsletter-overlay-title {
+  margin-top: 2vw;
+}
+
+.newsletter-overlay-title > h1 {
+  color: #fefefe;
+  font-size: 4vw;
+}
+
+.newsletter-overlay-subtitle {
+  color: #fefefe;
+}
+
+.newsletter-overlay-form-title {
+  position: absolute;
+  top: 22%;
+  left: 39.4vw;
+  color: #fefefe;
+}
+
+.newsletter-overlay-form {
+  position: absolute;
+  z-index: 500;
+  left: 38.7vw;
+  top: 14vw;
+}
+
+.newsletter-overlay-exit-btn {
+  position: absolute;
+  top: 11%;
+  right: 4%;
+  color: #fefefe;
+}
+
+.newsletter-overlay-exit-btn > h3 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.newsletter-overlay-exit-btn:hover {
+  cursor: pointer;
+}
