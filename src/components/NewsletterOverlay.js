@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/NewsletterOverlay.css';
 import SubscribeFormOverlay from './SubscribeFormOverlay';
 
-class NewDropOverlayDesktop extends Component {
+class NewsletterOverlay extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,14 +38,11 @@ class NewDropOverlayDesktop extends Component {
               <h3>We'd love to stay in touch with you!</h3>
             </div>
           </div>
-          <div className='newsletter-overlay-form-title'>
-            <h2>Our Newsletter</h2>
-          </div>
-          <div className='newsletter-overlay-form-container'>
+          <div className='newsletter-overlay-right-container'> 
+            <div className='newsletter-overlay-form-title'>
+              <h2>Our Newsletter</h2>
+            </div>
             <div className='newsletter-overlay-form'>{<SubscribeFormOverlay />}</div>
-          </div>
-          <div className='newsletter-overlay-order-btn' onClick={this.onSubscriptionButtonClick}>
-            <h4>SUBSCRIBE NOW</h4>
           </div>
         </div>
       </div>
@@ -53,4 +50,4 @@ class NewDropOverlayDesktop extends Component {
   }
 }
 
-export default NewDropOverlayDesktop;
+export default NewsletterOverlay;

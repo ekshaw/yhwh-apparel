@@ -11,24 +11,30 @@
   color: #fefefe;
   border: solid;
   border-width: thin;
+  position: relative;
   width: 12vw;
   padding: 0.4vw 1vw;
+  margin: 0vw;
   text-align: center;
-  margin: 1vw auto;
+  left: 14%;
+  top: 1vw;
 }
 
 .subscribe-form-overlay-submit-btn h4 {
-  font-size: 16px;
+  font-size: 1vw;
   letter-spacing: 0.2vw;
 }
 
 .subscribe-form-overlay-flash-msg {
-  align-self: center;
   text-align: center;
+  position: relative;
+  width: 15vw;
+  top: 2vw;
+  left: 2.5vw;
 }
 
 .subscribe-form-overlay-flash-msg h4 {
-  font-size: 10px;
+  font-size: 0.75vw;
   color: #fefefe;
 }
 
@@ -57,7 +63,8 @@
     width: 36vw;
     padding: 0.75vw 1.5vw;
     text-align: center;
-    margin: 12vw auto;
+    margin: 8vw;
+    left: 0vw;
   }
 
   .subscribe-form-overlay-submit-btn h4 {
@@ -68,6 +75,11 @@
   .subscribe-form-overlay-flash-msg {
     align-self: center;
     text-align: center;
+    position: relative;
+    width: 60vw;
+    top: -5vw;
+    left: -2vw;
+    overflow-wrap: break-word;
   }
 
   .subscribe-form-overlay-flash-msg h4 {
