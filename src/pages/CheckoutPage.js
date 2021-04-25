@@ -5,7 +5,7 @@ import Products from '../content/Products';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../utils/EventEmitter';
 
-const CheckoutPage = (props) => {
+const CheckoutPage = props => {
   const cookies = new Cookies();
   const cookieName = 'yhwhapparel_shoppingbag';
 
@@ -27,7 +27,19 @@ const CheckoutPage = (props) => {
     }
   };
 
-  const removeFromCart = (index) => {
+  const totalAndShip = shipping => {
+    let totalVal = 0;
+    if (cookies.get(cookieName)) {
+      let cart = objectToArray(cookies.get(cookieName));
+      for (let i = 0; i < cart.length; i++) {
+        totalVal += cart[i].price;
+      }
+      totalVal += shipping;
+      setCartTotal(totalVal);
+    }
+  };
+
+  const removeFromCart = index => {
     let hardCopy = [...cookies.get(cookieName)];
     hardCopy.splice(index, 1);
     cookies.set(cookieName, JSON.stringify(hardCopy));
@@ -35,11 +47,11 @@ const CheckoutPage = (props) => {
     EventEmitter.dispatch('updateCart', {});
   };
 
-  const objectToArray = (object) => {
-    return Object.keys(object).map((key) => object[key]);
+  const objectToArray = object => {
+    return Object.keys(object).map(key => object[key]);
   };
 
-  const getProductImage = (title) => {
+  const getProductImage = title => {
     for (let i = 0; i < Products.length; i++) {
       if (title === Products[i].title) {
         return Products[i].images[0];
@@ -66,8 +78,7 @@ const CheckoutPage = (props) => {
             <div className='checkout-item-delete'>
               <img
                 src={require('../images/shop/x-button.png')}
-                onClick={() => removeFromCart(index)}
-              ></img>
+                onClick={() => removeFromCart(index)}></img>
             </div>
           </div>
         </div>
@@ -97,10 +108,47 @@ const CheckoutPage = (props) => {
                 <textarea />
               </div>
             </div>
+
+            <div className='checkout-shipping-info-container'>
+              <h4>SHIPPING METHOD</h4>
+              <div className='checkout-shipping-options'>
+                <div className='checkout-shipping-option'>
+                  <input
+                    type='radio'
+                    name='shipping-option'
+                    value='0'
+                    className='shipping-option'
+                    onClick={() => totalAndShip(0)}
+                    autofocus='true'
+                  />
+                  <h3>PICK UP (BERKELEY) - $0.00</h3>
+                </div>
+                <div className='checkout-shipping-option'>
+                  <input
+                    type='radio'
+                    name='shipping-option'
+                    value='5'
+                    className='shipping-option'
+                    onClick={() => totalAndShip(0)}
+                  />
+                  <h3>STICKER SHIPPING (WITHIN THE UNITED STATES) - $0.00</h3>
+                </div>
+                <div className='checkout-shipping-option'>
+                  <input
+                    type='radio'
+                    name='shipping-option'
+                    value='10'
+                    className='shipping-option'
+                    onClick={() => totalAndShip(5)}
+                  />
+                  <h3>OTHER PRODUCTS (WITHIN THE UNITED STATES) - $5.00</h3>
+                </div>
+              </div>
+            </div>
+
             <div className='checkout-summary-subtotal'>
               <h4>SUBTOTAL:</h4>
-              <h3>${cartTotal}</h3>
-              <h5>Shipping and tax calculated at checkout.</h5>
+              <h3>${cartTotal}.00</h3>
             </div>
             <div className='checkout-summary-button'>
               <h4>PROCEED TO CHECKOUT</h4>
