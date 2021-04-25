@@ -9,6 +9,7 @@ import ProductDescription from '../components/ProductDescription';
 import queryString from 'query-string';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../utils/EventEmitter';
+import CartPopUp from '../components/CartPopUp';
 
 class ProductPage extends Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class ProductPage extends Component {
       products: Products,
       numProducts: Products.length,
       productDescriptionHidden: true,
+      popUpHidden: true
     };
   }
 
@@ -43,7 +45,17 @@ class ProductPage extends Component {
     });
   };
 
+  onAddCartClick = () => {
+    this.setState({
+      popUpHidden: !this.state.popUpHidden,
+    });
+  }
+
   addToCart = (el) => {
+    this.setState({
+      popUpHidden: !this.state.popUpHidden,
+    });
+
     console.log('crying');
     const { title, price } = el;
     const item = {
@@ -81,6 +93,10 @@ class ProductPage extends Component {
           description={this.state.products[this.state.productNum].description}
           hidden={this.state.productDescriptionHidden}
           hideProductDescription={this.onReadMoreClick}
+        />
+        <CartPopUp 
+          hidden={this.state.popUpHidden}
+          hidePopUp={this.onAddCartClick}
         />
         <div className='product-container'>
           <div className='product-item'>
