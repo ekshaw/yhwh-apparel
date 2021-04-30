@@ -50,32 +50,34 @@ import { EventEmitter } from '../utils/EventEmitter';
     }
     };
 
-    const cartItem = cookies.get(cookieName)
-    ? objectToArray(cookies.get(cookieName)).map((el, index) => (
-        <div key={index}>
-            <div className='cart-pop-up-item'>
-                <div className='cart-pop-up-item-img'>{getProductImage(el.title)}</div>
-                <div className='cart-pop-up-item-description'>
-                    <div className='cart-pop-up-item-title'>
-                    {`${el.title}`}
-                    </div>
-                    <div className='cart-pop-up-item-price'>
-                    UNIT PRICE: {`$${el.price}`}
-                    </div>
-                    <div className='cart-pop-up-item-size'>
-                    SIZE: {`${el.size}`}
-                    </div>
-                </div>
-                <div className='cart-pop-up-item-delete'>
-                    <img
-                    src={require('../images/shop/x-button.png')}
-                    onClick={() => removeFromCart(index)}
-                    ></img>
-                </div>
-            </div>
-        </div>
-        ))
-    : null;
+    let cart = objectToArray(cookies.get(cookieName));
+
+    // const cartItem = cookies.get(cookieName)
+    // ? objectToArray(cookies.get(cookieName)).map((el, index) => (
+    //     <div key={index}>
+    //         <div className='cart-pop-up-item'>
+    //             <div className='cart-pop-up-item-img'>{getProductImage(el.title)}</div>
+    //             <div className='cart-pop-up-item-description'>
+    //                 <div className='cart-pop-up-item-title'>
+    //                 {`${el.title}`}
+    //                 </div>
+    //                 <div className='cart-pop-up-item-price'>
+    //                 UNIT PRICE: {`$${el.price}`}
+    //                 </div>
+    //                 <div className='cart-pop-up-item-size'>
+    //                 SIZE: {`${el.size}`}
+    //                 </div>
+    //             </div>
+    //             <div className='cart-pop-up-item-delete'>
+    //                 <img
+    //                 src={require('../images/shop/x-button.png')}
+    //                 onClick={() => removeFromCart(index)}
+    //                 ></img>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     ))
+    // : null;
 
     if (props.hidden) {
         console.log('legit');
@@ -90,7 +92,35 @@ import { EventEmitter } from '../utils/EventEmitter';
             </div>
             <div className='cart-pop-up-overlay-header'>ADDED TO BAG</div>
             <div className='cart-pop-up-overlay-header-underline'></div>
-            <div className='cart-pop-up-current-item'>{cartItem}</div>
+            <div className='cart-pop-up-current-item'>
+                {/* {cartItem} */}
+                {/* <div key={index}> */}
+                    <div className='cart-pop-up-item'>
+                        {/*el.title */}
+                        <div className='cart-pop-up-item-img'>{getProductImage(cart[bagNum-1].title)}</div> 
+                        <div className='cart-pop-up-item-description'>
+                            <div className='cart-pop-up-item-title'>
+                                {/*el.title */}
+                            {`${cart[bagNum-1].title}`}
+                            </div>
+                            <div className='cart-pop-up-item-price'>
+                                {/*el.price */}
+                            UNIT PRICE: {`$${cart[bagNum-1].price}`}
+                            </div>
+                            <div className='cart-pop-up-item-size'>
+                                {/*el.size */}
+                            SIZE: {`${cart[bagNum-1].size}`}
+                            </div>
+                        </div>
+                        {/* <div className='cart-pop-up-item-delete'>
+                            <img
+                            src={require('../images/shop/x-button.png')}
+                            onClick={() => removeFromCart(index)}
+                            ></img>
+                        </div> */}
+                    </div>
+                </div>
+                {/* </div> */}
             <div className='cart-pop-up-overlay-bag-btn'>
                 <a href='http://localhost:3000/checkout'><h4>VIEW BAG ({bagNum})</h4></a>
             </div>
