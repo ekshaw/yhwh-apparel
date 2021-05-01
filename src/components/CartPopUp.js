@@ -122,7 +122,7 @@ import { EventEmitter } from '../utils/EventEmitter';
                 </div>
                 {/* </div> */}
             <div className='cart-pop-up-overlay-bag-btn'>
-                <a href='http://localhost:3000/checkout'><h4>VIEW BAG ({bagNum})</h4></a>
+                <a href='http://localhost:3000/checkout'>VIEW BAG ({bagNum})</a>
             </div>
             </div>
       </div>
