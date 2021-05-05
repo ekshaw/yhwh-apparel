@@ -52,9 +52,7 @@ class ProductPage extends Component {
   }
 
   addToCart = (el) => {
-    this.setState({
-      popUpHidden: !this.state.popUpHidden,
-    });
+    this.onAddCartClick();
 
     console.log('crying');
     const { title, price } = el;
@@ -94,10 +92,12 @@ class ProductPage extends Component {
           hidden={this.state.productDescriptionHidden}
           hideProductDescription={this.onReadMoreClick}
         />
-        <CartPopUp 
-          hidden={this.state.popUpHidden}
-          hidePopUp={this.onAddCartClick}
-        />
+        <div className="product-popup">
+          <CartPopUp
+            hidden={this.state.popUpHidden}
+            hidePopUp={this.onAddCartClick}
+          />
+        </div>
         <div className='product-container'>
           <div className='product-item'>
             <div className='product-description-container'>

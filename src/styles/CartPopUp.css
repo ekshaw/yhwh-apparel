@@ -6,6 +6,15 @@
     right: 0;
     background-color: #D3CEC7;
   } */
+
+  .fade-in {
+    transition: opacity 1s ease;
+  }
+  
+  .fade-out {
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
   
   .cart-pop-up-overlay {
     position: fixed;
