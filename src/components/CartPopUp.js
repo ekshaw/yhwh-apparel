@@ -111,43 +111,43 @@ const CartPopUp = props => {
             <div className='cart-pop-up-container'>
                 <div className='cart-pop-up-overlay' onClick={props.hidePopUp}></div>
                 <div className='cart-pop-up-content-container'>
-                <div className='cart-pop-up-overlay-exit-btn' onClick={props.hidePopUp}>
-                    X
-                </div>
-                <div className='cart-pop-up-overlay-header'>ADDED TO BAG</div>
-                <div className='cart-pop-up-overlay-header-underline'></div>
-                <div className='cart-pop-up-current-item'>
-                    {/* {cartItem} */}
-                    {/* <div key={index}> */}
-                        <div className='cart-pop-up-item'>
-                            {/*el.title */}
-                            <div className='cart-pop-up-item-img'>{getProductImage(cart[bagNum-1].title)}</div> 
-                            <div className='cart-pop-up-item-description'>
-                                <div className='cart-pop-up-item-title'>
-                                    {/*el.title */}
-                                {`${cart[bagNum-1].title}`}
-                                </div>
-                                <div className='cart-pop-up-item-price'>
-                                    {/*el.price */}
-                                UNIT PRICE: {`$${cart[bagNum-1].price}`}
-                                </div>
-                                <div className='cart-pop-up-item-size'>
-                                    {/*el.size */}
-                                SIZE: {`${cart[bagNum-1].size}`}
-                                </div>
-                            </div>
-                            {/* <div className='cart-pop-up-item-delete'>
-                                <img
-                                src={require('../images/shop/x-button.png')}
-                                onClick={() => removeFromCart(index)}
-                                ></img>
-                            </div> */}
-                        </div>
+                    <div className='cart-pop-up-overlay-exit-btn' onClick={props.hidePopUp}>
+                        X
                     </div>
+                    <div className='cart-pop-up-overlay-header'>ADDED TO BAG</div>
+                    <div className='cart-pop-up-overlay-header-underline'></div>
+                    <div className='cart-pop-up-current-item'>
+                        {/* {cartItem} */}
+                        {/* <div key={index}> */}
+                            <div className='cart-pop-up-item'>
+                                {/*el.title */}
+                                <div className='cart-pop-up-item-img'>{getProductImage(cart[bagNum-1].title)}</div> 
+                                <div className='cart-pop-up-item-description'>
+                                    <div className='cart-pop-up-item-title'>
+                                        {/*el.title */}
+                                    {`${cart[bagNum-1].title}`}
+                                    </div>
+                                    <div className='cart-pop-up-item-price'>
+                                        {/*el.price */}
+                                    UNIT PRICE: {`$${cart[bagNum-1].price}`}
+                                    </div>
+                                    <div className='cart-pop-up-item-size'>
+                                        {/*el.size */}
+                                    SIZE: {`${cart[bagNum-1].size}`}
+                                    </div>
+                                </div>
+                                {/* <div className='cart-pop-up-item-delete'>
+                                    <img
+                                    src={require('../images/shop/x-button.png')}
+                                    onClick={() => removeFromCart(index)}
+                                    ></img>
+                                </div> */}
+                            </div>
+                        </div>
                     {/* </div> */}
-                <div className='cart-pop-up-overlay-bag-btn'>
-                    <a href='http://localhost:3000/checkout'>VIEW BAG ({bagNum})</a>
-                </div>
+                    <div className='cart-pop-up-overlay-bag-btn'>
+                        <a href='http://localhost:3000/checkout'>VIEW BAG ({bagNum})</a>
+                    </div>
                 </div>
         </div>
         </Fade>
