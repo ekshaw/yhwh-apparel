@@ -1,19 +1,29 @@
-.shop-container {
-    width: 35%; /*28*/
+.shop-card-container {
+  margin-bottom: 8vw;
+  width: 33.3%;
 }
-.shop-image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding-bottom: 10px;
+.shop-card-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 24vw;
+  padding-bottom: 10px;
 }
-.shop-text {
-    padding-left: 10%;
+
+.shop-card-text {
+  width: 24vw;
+  margin: auto;
 }
-.shop-name {
-    /* font-size: 30px; */
-}
-.shop-cost {
-    /* font-size: 20px; */
-    margin: 4px;
+
+@media (max-width: 480px) {
+  .shop-card-container {
+    margin-bottom: 8vw;
+    width: 50%;
+  }
+
+  .shop-card-image {
+    width: 40vw;
+  }
+  .shop-card-text {
+    width: 40vw;
+  }
 }

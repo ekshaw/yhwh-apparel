@@ -90,6 +90,11 @@
   text-align: center;
 }
 
+.select-size-error > h4 {
+  font-size: 1vw;
+  margin-top: 1vw;
+}
+
 .product-image-container {
   position: relative;
   bottom: 1vw;

@@ -5,7 +5,7 @@ class ShopButton extends Component {
   render() {
     return (
       <button className='mobile-shop-now-btn'>
-        <a href='https://yhwhapparel.storenvy.com/products'>
+        <a href='/shop'>
           <h4>SHOP NOW</h4>
         </a>
       </button>

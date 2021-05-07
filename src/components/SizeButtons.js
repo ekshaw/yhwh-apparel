@@ -6,7 +6,7 @@ const SizeButtons = props => {
   return (
     <div id='size-btn-list'>
       <ul>
-        {props.sizeList.map(item => (
+        {props.sizeList.map((item, index) => (
           <li key>
             <button
               className={'size-button ' + (item.quantity == 0 ? 'disabled' : 'enabled')}

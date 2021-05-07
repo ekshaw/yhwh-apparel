@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
+import MobileFooter from '../components/MobileFooter';
+
 import '../styles/CheckoutPage.css';
 import Products from '../content/Products';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../utils/EventEmitter';
+import { useMediaQuery } from 'react-responsive';
 
 const CheckoutPage = props => {
   const cookies = new Cookies();
@@ -11,10 +14,24 @@ const CheckoutPage = props => {
 
   const [cookie, setCookie] = useState({});
   const [cartTotal, setCartTotal] = useState(0);
+  const [promoCode, setPromoCode] = useState('');
+  const [shipCost, setShipCost] = useState(0);
+
+  const onPromoChangeHandler = event => {
+    setPromoCode(event.target.value);
+  };
+
+  const onShipChange = ship => {
+    setShipCost(ship);
+  };
 
   useEffect(() => {
     total();
   }, [cookie]);
+
+  useEffect(() => {
+    totalAndShipAndPromo();
+  }, [shipCost]);
 
   const total = () => {
     let totalVal = 0;
@@ -27,14 +44,18 @@ const CheckoutPage = props => {
     }
   };
 
-  const totalAndShip = shipping => {
+  const totalAndShipAndPromo = () => {
+    console.log(shipCost);
     let totalVal = 0;
     if (cookies.get(cookieName)) {
       let cart = objectToArray(cookies.get(cookieName));
       for (let i = 0; i < cart.length; i++) {
         totalVal += cart[i].price;
       }
-      totalVal += shipping;
+      totalVal += shipCost;
+      if (promoCode == 'egg') {
+        totalVal -= 5;
+      }
       setCartTotal(totalVal);
     }
   };
@@ -97,7 +118,7 @@ const CheckoutPage = props => {
             <div className='checkout-summary-title'>
               <h2>Cart Total</h2>
             </div>
-            <div className='checkout-summary-note'>
+            {/* <div className='checkout-summary-note'>
               <div className='checkout-summary-note-title'>
                 <h4>NOTE FOR YHWH</h4>
               </div>
@@ -107,8 +128,7 @@ const CheckoutPage = props => {
               <div className='checkout-summary-note-textbox'>
                 <textarea />
               </div>
-            </div>
-
+            </div> */}
             <div className='checkout-shipping-info-container'>
               <h4>SHIPPING METHOD</h4>
               <div className='checkout-shipping-options'>
@@ -116,9 +136,9 @@ const CheckoutPage = props => {
                   <input
                     type='radio'
                     name='shipping-option'
-                    value='0'
+                    value={shipCost}
                     className='shipping-option'
-                    onClick={() => totalAndShip(0)}
+                    onClick={() => onShipChange(0)}
                     autofocus='true'
                   />
                   <h3>PICK UP (BERKELEY) - $0.00</h3>
@@ -127,9 +147,9 @@ const CheckoutPage = props => {
                   <input
                     type='radio'
                     name='shipping-option'
-                    value='5'
+                    value={shipCost}
                     className='shipping-option'
-                    onClick={() => totalAndShip(0)}
+                    onClick={() => onShipChange(0)}
                   />
                   <h3>STICKER SHIPPING (WITHIN THE UNITED STATES) - $0.00</h3>
                 </div>
@@ -137,11 +157,28 @@ const CheckoutPage = props => {
                   <input
                     type='radio'
                     name='shipping-option'
-                    value='10'
+                    value={shipCost}
                     className='shipping-option'
-                    onClick={() => totalAndShip(5)}
+                    onClick={() => onShipChange(5)}
                   />
                   <h3>OTHER PRODUCTS (WITHIN THE UNITED STATES) - $5.00</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className='checkout-summary-promo'>
+              <div className='checkout-summary-promo-title'>
+                <h4>PROMO CODE</h4>
+              </div>
+              <div className='checkout-summary-promo-description'>
+                <h5>Enter your promo code:</h5>
+              </div>
+              <div className='checkout-summary-promo-container'>
+                <div className='checkout-summary-promo-textbox'>
+                  <textarea onChange={onPromoChangeHandler} value={promoCode} />
+                </div>
+                <div className='checkout-summary-promo-btn' onClick={totalAndShipAndPromo}>
+                  <h4>ADD</h4>
                 </div>
               </div>
             </div>
@@ -156,8 +193,21 @@ const CheckoutPage = props => {
           </div>
         </div>
       </div>
+      <div>
+        {useMediaQuery({
+          query: '(min-device-width: 481px)'
+        }) && (
+          <>
+            <Footer color='#eae7e1' />
+          </>
+        )}
 
-      <Footer color='#eae7e1' />
+        {useMediaQuery({ query: '(max-width: 480px)' }) && (
+          <>
+            <MobileFooter color='#eae7e1' />
+          </>
+        )}
+      </div>
     </div>
   );
 };

@@ -77,9 +77,9 @@ li > a:hover:after {
 }
 
 .bag {
-  width: 4vw;
-  margin-right: 3vw;
-  margin-top: 1vw;
+  width: 3vw;
+  margin-right: 4vw;
+  margin-top: 1.75vw;
 }
 
 .bag-img {
@@ -88,9 +88,28 @@ li > a:hover:after {
   top: 0;
 }
 
+.bag-num-background {
+  position: absolute;
+  right: 3.8vw;
+  top: 3.75vw;
+  width: 1.4vw;
+  height: 1.4vw;
+  border-radius: 50%;
+}
+
+.empty {
+  background-color: transparent;
+}
+
+.items {
+  background-color: #fefefe;
+}
+
 .bag-num {
   z-index: 100;
-  position: absolute;
-  top: 2.75vw;
-  right: 4.75vw;
+  font-size: 0.8vw;
+  color: #1f1f1f;
+  text-align: center;
+  position: relative;
+  top: 0.2vw;
 }
