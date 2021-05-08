@@ -51,8 +51,22 @@ class ProductPage extends Component {
     });
   }
 
+  // onTimerSet = () => {
+  //   let timer = setTimeout = (() => {
+  //     this.setState({
+  //       popUpHidden: !this.state.popUpHidden,
+  //     });
+  //   }, 3000);
+  // }
+  
   addToCart = (el) => {
     this.onAddCartClick();
+    // this.onTimerSet();
+    setTimeout(() => {
+          this.setState({
+            popUpHidden: !this.state.popUpHidden,
+          });
+        }, 3000);
 
     console.log('crying');
     const { title, price } = el;
@@ -93,6 +107,7 @@ class ProductPage extends Component {
           hideProductDescription={this.onReadMoreClick}
         />
         <div className="product-popup">
+        {/* <div className={"product-popup"+ (this.state.popUpHidden ? ' cart-hide' : ' cart-show')}> */}
           <CartPopUp
             hidden={this.state.popUpHidden}
             hidePopUp={this.onAddCartClick}
