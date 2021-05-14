@@ -208,7 +208,6 @@
   letter-spacing: 0.15vw;
   padding: 0.15vw 0vw;
   margin-top: 2vw;
-  background-color: #fefefe;
 }
 
 .checkout-summary-button:hover {
@@ -249,7 +248,7 @@
   }
 
   .checkout-summary {
-    padding: 3vw 6vw 4vw;
+    padding: 3vw 6vw 6vw;
     width: 72vw;
     height: 96vw;
     margin: 8vw auto;
@@ -298,8 +297,7 @@
     bottom: 2vw;
     border-width: thin;
     letter-spacing: 0.15vw;
-    padding: 0.15vw 0vw;
+    padding: 0.2vw 0vw;
     margin-top: 2vw;
-    background-color: #fefefe;
   }
 }

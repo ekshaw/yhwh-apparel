@@ -38,8 +38,8 @@
 .shop-top-image {
   /* display: flex; */
   position: absolute;
-  top: 6%;
-  width: 62.5%;
+  top: 5%;
+  width: 56%;
   right: 0%;
   z-index: 100;
 }
@@ -79,7 +79,6 @@
 .shopcard-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 0vw 4vw;
   z-index: 100;
 }

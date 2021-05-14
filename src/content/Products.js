@@ -2,6 +2,70 @@ import React from 'react';
 
 const Products = [
   {
+    title: 'Deliverance Hat',
+    productId: 'deliverance_hat',
+    release: 'May 2021',
+    productType: 'HAT',
+    price: 25.0,
+    bibleVerse: 'PSALM 23:4',
+    sizes: [{ size: 'OS', quantity: 55 }],
+    description: (
+      <div>
+        <h3>
+          In the most difficult moments of our lives, darkness is always easier to focus on than the
+          promise of deliverance. In moments of trial, it’s difficult to cling to the light, to the
+          promises and goodness of God. But we remind ourselves that the darkness is only dark as
+          God is bright and glorious. As believers of Christ, we hold fast to fact that the threat
+          of death in these dark valleys we traverse has already been vanquished by Jesus’ death on
+          the cross--now, only the “shadow of death” (v4) remains.
+        </h3>
+        <h3>
+          Let us rejoice in the character of God, brothers and sisters. For He doesn’t just make
+          promises; He keeps them. He doesn’t just ask for our trust; He asks that we believe. And
+          through all of that, He delivers us to the light.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/deliverance_hat_1.jpg')} />,
+      <img src={require('../images/designs/deliverance_hat_2.jpg')} />,
+      <img src={require('../images/designs/deliverance.jpg')} />,
+      <img src={require('../images/designs/deliverance_4.jpg')} />
+    ]
+  },
+  {
+    title: 'Deliverance Sticker',
+    productId: 'deliverance_sticker',
+    release: 'May 2021',
+    productType: 'STICKER',
+    price: 2.0,
+    bibleVerse: 'PSALM 34:4',
+    sizes: [{ size: 'OS', quantity: 70 }],
+    description: (
+      <div>
+        <h3>“I sought the Lord, and he answered me </h3>
+        <h3>and delivered me from all my fears.” Psalm 34:4</h3>
+        <h3>
+          As Christians, we praise the Lord that we can find joy even in times of difficulty, pain,
+          and anxiety. We rejoice that the Lord is willing to lean into us in our times of hurt and
+          brokenness and that His promises never diminish no matter the distance we may feel from
+          Him. If we only choose to seek the Lord and are faithful to His will, we trust that He
+          will unwaveringly deliver us from our trials.
+        </h3>
+        <h3>
+          May you feel God’s gentle, caring hands carry you through the darkness. For God “is near
+          to the brokenhearted” (v18) and His promises are new every day.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/deliverance_sticker_1.jpg')} />,
+      <img src={require('../images/designs/deliverance_sticker_2.jpg')} />,
+      <img src={require('../images/designs/deliverance.jpg')} />,
+      <img src={require('../images/designs/deliverance_4.jpg')} />
+    ]
+  },
+  {
     title: 'Run With Endurance',
     productId: 'endurance',
     release: 'December 2019',

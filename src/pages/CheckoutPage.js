@@ -8,6 +8,8 @@ import Cookies from 'universal-cookie';
 import { EventEmitter } from '../utils/EventEmitter';
 import { useMediaQuery } from 'react-responsive';
 
+import { PayPalScriptProvider, PayPalButtons, FUNDING } from '@paypal/react-paypal-js';
+
 const CheckoutPage = props => {
   const cookies = new Cookies();
   const cookieName = 'yhwhapparel_shoppingbag';
@@ -16,6 +18,28 @@ const CheckoutPage = props => {
   const [cartTotal, setCartTotal] = useState(0);
   const [promoCode, setPromoCode] = useState('');
   const [shipCost, setShipCost] = useState(0);
+
+  // test start
+  const [orderID, setOrderID] = useState(false);
+
+  function createOrder(data, actions) {
+    return actions.order
+      .create({
+        purchase_units: [
+          {
+            amount: {
+              value: cartTotal
+            }
+          }
+        ]
+      })
+      .then(orderID => {
+        setOrderID(orderID);
+        return orderID;
+      });
+  }
+
+  // test end
 
   const onPromoChangeHandler = event => {
     setPromoCode(event.target.value);
@@ -188,7 +212,18 @@ const CheckoutPage = props => {
               <h3>${cartTotal}.00</h3>
             </div>
             <div className='checkout-summary-button'>
-              <h4>PROCEED TO CHECKOUT</h4>
+              <PayPalScriptProvider
+                options={{
+                  'client-id':
+                    'AWwmVffctp4aHr2gRBGWxDtHzF5Trw6HM_DF9_WmWKHb7hm_hYSUrg-diWc_Nd4QMDRG6BWukdhgLEFF'
+                }}>
+                <PayPalButtons
+                  fundingSource={FUNDING.PAYPAL}
+                  style={{ size: 'responsive' }}
+                  createOrder={createOrder}
+                  forceReRender={[cartTotal]}
+                />
+              </PayPalScriptProvider>
             </div>
           </div>
         </div>
