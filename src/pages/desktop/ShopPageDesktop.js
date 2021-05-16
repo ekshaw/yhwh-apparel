@@ -33,7 +33,7 @@ const ShopPageDesktop = props => {
                 34:4
               </h3>
               <h3>
-                Shop the <b>Assurance Collection</b>.
+                Shop the <b>Deliverance Collection</b>.
               </h3>
             </div>
             <div className='shop-btn'>

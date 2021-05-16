@@ -14,22 +14,37 @@ const CheckoutPage = props => {
   const cookies = new Cookies();
   const cookieName = 'yhwhapparel_shoppingbag';
 
+  const [promoCodeList, setPromoCodeList] = useState([
+    'AnFt6r5EcB',
+    'CLDJoFT7Cv',
+    'PJcZsfN3hT',
+    'KwPcuwe3cU',
+    'M6nCVQAn48',
+    'COSF2CLbMK'
+  ]);
   const [cookie, setCookie] = useState({});
   const [cartTotal, setCartTotal] = useState(0);
   const [promoCode, setPromoCode] = useState('');
   const [shipCost, setShipCost] = useState(0);
-
-  // test start
+  const [isDisabled, setIsDisabled] = useState(true);
   const [orderID, setOrderID] = useState(false);
 
+  // paypal order
   function createOrder(data, actions) {
     return actions.order
       .create({
         purchase_units: [
           {
+            description: objectToString(cookies.get(cookieName)),
             amount: {
-              value: cartTotal
-            }
+              value: cartTotal,
+              details: {
+                subtotal: cartTotal - shipCost,
+                tax: '0.00',
+                shipping: shipCost
+              }
+            },
+            note_to_payer: 'Contact us for any questions on your order at yhwhapparel@gmail.com.'
           }
         ]
       })
@@ -39,24 +54,40 @@ const CheckoutPage = props => {
       });
   }
 
-  // test end
+  // on paypal order approval
+  function onApproveHandler(data, actions) {
+    return actions.order.capture().then(function (details) {
+      alert(
+        'Transaction completed by ' +
+          details.payer.name.given_name +
+          '! A Paypal confirmation receipt will be sent to your email.'
+      );
+      window.location = '/';
+    });
+  }
 
+  // on paypal order error
+  function onErrorHandler(err) {
+    alert('Something went wrong! Try again?');
+  }
+
+  // updates promo code value
   const onPromoChangeHandler = event => {
     setPromoCode(event.target.value);
   };
 
+  // sets shipping cost and enables paypal btn
   const onShipChange = ship => {
+    setIsDisabled(false);
     setShipCost(ship);
   };
 
+  // recalculates total when shipping option changes or when when item is added/removed
   useEffect(() => {
     total();
-  }, [cookie]);
+  }, [shipCost, cookie]);
 
-  useEffect(() => {
-    totalAndShipAndPromo();
-  }, [shipCost]);
-
+  //calculates subtotal, ship, and promo code
   const total = () => {
     let totalVal = 0;
     if (cookies.get(cookieName)) {
@@ -64,26 +95,19 @@ const CheckoutPage = props => {
       for (let i = 0; i < cart.length; i++) {
         totalVal += cart[i].price;
       }
-      setCartTotal(totalVal);
-    }
-  };
-
-  const totalAndShipAndPromo = () => {
-    console.log(shipCost);
-    let totalVal = 0;
-    if (cookies.get(cookieName)) {
-      let cart = objectToArray(cookies.get(cookieName));
-      for (let i = 0; i < cart.length; i++) {
-        totalVal += cart[i].price;
-      }
       totalVal += shipCost;
-      if (promoCode == 'egg') {
-        totalVal -= 5;
+      if (promoCodeList.includes(promoCode)) {
+        if (totalVal <= 5) {
+          totalVal = 0;
+        } else {
+          totalVal -= 5;
+        }
       }
       setCartTotal(totalVal);
     }
   };
 
+  // removes item from cart
   const removeFromCart = index => {
     let hardCopy = [...cookies.get(cookieName)];
     hardCopy.splice(index, 1);
@@ -96,6 +120,18 @@ const CheckoutPage = props => {
     return Object.keys(object).map(key => object[key]);
   };
 
+  const objectToString = object => {
+    let totalItems = '';
+    let cart = objectToArray(cookies.get(cookieName));
+    for (let i = 0; i < cart.length; i++) {
+      totalItems += cart[i].title + ': size ' + cart[i].size + '. ';
+    }
+    if (promoCodeList.includes(promoCode)) {
+      totalItems += 'Promo code used: ' + promoCode + '.';
+    }
+    return totalItems;
+  };
+
   const getProductImage = title => {
     for (let i = 0; i < Products.length; i++) {
       if (title === Products[i].title) {
@@ -104,11 +140,21 @@ const CheckoutPage = props => {
     }
   };
 
+  const getProductId = title => {
+    for (let i = 0; i < Products.length; i++) {
+      if (title === Products[i].title) {
+        return Products[i].productId;
+      }
+    }
+  };
+
   const cartItems = cookies.get(cookieName)
     ? objectToArray(cookies.get(cookieName)).map((el, index) => (
         <div key={index}>
           <div className='checkout-item'>
-            <div className='checkout-item-img'>{getProductImage(el.title)}</div>
+            <a href={`/product?product=${getProductId(el.title)}`} className='checkout-img-link'>
+              <div className='checkout-item-img'>{getProductImage(el.title)}</div>
+            </a>
             <div className='checkout-item-description'>
               <div className='checkout-item-title'>
                 <h4>{`${el.title}`}</h4>
@@ -163,17 +209,6 @@ const CheckoutPage = props => {
                     value={shipCost}
                     className='shipping-option'
                     onClick={() => onShipChange(0)}
-                    autofocus='true'
-                  />
-                  <h3>PICK UP (BERKELEY) - $0.00</h3>
-                </div>
-                <div className='checkout-shipping-option'>
-                  <input
-                    type='radio'
-                    name='shipping-option'
-                    value={shipCost}
-                    className='shipping-option'
-                    onClick={() => onShipChange(0)}
                   />
                   <h3>STICKER SHIPPING (WITHIN THE UNITED STATES) - $0.00</h3>
                 </div>
@@ -201,7 +236,7 @@ const CheckoutPage = props => {
                 <div className='checkout-summary-promo-textbox'>
                   <textarea onChange={onPromoChangeHandler} value={promoCode} />
                 </div>
-                <div className='checkout-summary-promo-btn' onClick={totalAndShipAndPromo}>
+                <div className='checkout-summary-promo-btn' onClick={total}>
                   <h4>ADD</h4>
                 </div>
               </div>
@@ -222,6 +257,9 @@ const CheckoutPage = props => {
                   style={{ size: 'responsive' }}
                   createOrder={createOrder}
                   forceReRender={[cartTotal]}
+                  disabled={isDisabled}
+                  onApprove={onApproveHandler}
+                  onError={onErrorHandler}
                 />
               </PayPalScriptProvider>
             </div>

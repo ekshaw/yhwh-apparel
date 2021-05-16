@@ -21,7 +21,7 @@ class ShopCard extends Component {
   render() {
     return (
       <div className='shop-card-container'>
-        <a href={`http://localhost:3000/product?product=${Products[this.props.index].productId}`}>
+        <a href={`/product?product=${Products[this.props.index].productId}`}>
           <div className='shop-card-image'>{Products[this.props.index].images[0]}</div>
         </a>
         <div className='shop-card-text'>

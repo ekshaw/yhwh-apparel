@@ -73,10 +73,10 @@ const Products = [
     price: 38.0,
     bibleVerse: 'HEBREWS 12:1-3',
     sizes: [
-      { size: 'S', quantity: 1 },
-      { size: 'M', quantity: 0 },
-      { size: 'L', quantity: 5 },
-      { size: 'XL', quantity: 2 }
+      { size: 'S', quantity: 7 },
+      { size: 'M', quantity: 3 },
+      { size: 'L', quantity: 0 },
+      { size: 'XL', quantity: 0 }
     ],
     description: (
       <div>
@@ -125,10 +125,10 @@ const Products = [
     price: 15.0,
     bibleVerse: 'LUKE 15',
     sizes: [
-      { size: 'S', quantity: 1 },
-      { size: 'M', quantity: 0 },
-      { size: 'L', quantity: 5 },
-      { size: 'XL', quantity: 2 }
+      { size: 'S', quantity: 35 },
+      { size: 'M', quantity: 22 },
+      { size: 'L', quantity: 16 },
+      { size: 'XL', quantity: 0 }
     ],
     description: (
       <div>
@@ -177,7 +177,7 @@ const Products = [
     productType: 'PIN',
     price: 7.0,
     bibleVerse: 'PSALM 118:24',
-    sizes: [{ size: 'OS', quantity: 1 }],
+    sizes: [{ size: 'OS', quantity: 8 }],
     description: (
       <div>
         <h3>
@@ -219,7 +219,7 @@ const Products = [
     productType: 'STICKER',
     price: 1.0,
     bibleVerse: 'MATTHEW 5:13-16',
-    sizes: [{ size: 'OS', quantity: 1 }],
+    sizes: [{ size: 'OS', quantity: 25 }],
     description: (
       <div>
         <h3>
