@@ -4,9 +4,7 @@ import ShopPageMobile from './mobile/ShopPageMobile';
 import { useMediaQuery } from 'react-responsive';
 
 const ShopPage = props => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-device-width: 481px)'
-  });
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-device-width: 480px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
 
   return (

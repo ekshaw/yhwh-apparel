@@ -69,7 +69,7 @@
 
 .new-drop-overlay-title {
   position: absolute;
-  top: 44%;
+  top: 50%;
   transform: translateY(-65%);
   text-align: center;
   color: #fefefe;
@@ -79,20 +79,9 @@
   font-size: 6vw;
 }
 
-.new-drop-overlay-description {
-  position: absolute;
-  width: 32vw;
-  text-align: center;
-  top: 48%;
-}
-
-.new-drop-overlay-description h3 {
-  color: #fefefe;
-}
-
 .new-drop-overlay-exit-btn {
   position: absolute;
-  top: 4%;
+  top: 11%;
   right: 4%;
   color: #fefefe;
 }
@@ -109,7 +98,7 @@
 
 .new-drop-overlay-order-btn {
   position: absolute;
-  top: 72%;
+  top: 56%;
   border: solid;
   border-width: thin;
   width: 11vw;
