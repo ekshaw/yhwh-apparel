@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import { Component } from 'react';
 import SizeButtons from '../../components/SizeButtons';
 import ProductDescription from '../../components/ProductDescription';
+import CartPopUp from '../../components/CartPopUp';
 import queryString from 'query-string';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../../utils/EventEmitter';
@@ -22,7 +23,8 @@ class ProductPageDesktop extends Component {
       productDescriptionHidden: true,
       size: '',
       showFlashMsg: false,
-      flashMsgTxt: 'Please select a size!'
+      flashMsgTxt: 'Please select a size!',
+      hideCart: false
     };
   }
 
@@ -46,6 +48,9 @@ class ProductPageDesktop extends Component {
   };
 
   addToCart = el => {
+    this.setState({
+      hideCart: false
+    });
     const { title, price, productType } = el;
     const item = {
       title: title,
@@ -68,6 +73,7 @@ class ProductPageDesktop extends Component {
       } else {
         this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
       }
+      this.onHideCartClick();
       EventEmitter.dispatch('updateCart', {});
     }
   };
@@ -83,6 +89,12 @@ class ProductPageDesktop extends Component {
     });
   };
 
+  onHideCartClick = () => {
+    this.setState({
+      hideCart: !this.state.hideCart
+    });
+  };
+
   render() {
     return (
       <div className='product-main-container'>
@@ -93,6 +105,19 @@ class ProductPageDesktop extends Component {
           hidden={this.state.productDescriptionHidden}
           hideProductDescription={this.onReadMoreClick}
         />
+        <div className={this.state.hideCart ? 'cart-pop-up-hide' : 'cart-pop-up-show'}>
+          <div
+            className={
+              this.state.hideCart ? 'product-cart-pop-up-hide' : 'product-cart-pop-up-show'
+            }>
+            <CartPopUp
+              title={this.state.products[this.state.productNum].title}
+              size={this.state.size}
+              hideCart={this.state.hideCart}
+              hideCartClick={this.onHideCartClick}
+            />
+          </div>
+        </div>
         <div className='product-container'>
           <div className='product-item'>
             <div className='product-description-container'>
