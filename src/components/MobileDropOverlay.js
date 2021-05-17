@@ -10,6 +10,7 @@ class MobileDropOverlay extends Component {
   }
 
   onXClick = () => {
+    console.log('stardew');
     this.setState({ overlay_hidden: true });
   };
 
@@ -24,18 +25,18 @@ class MobileDropOverlay extends Component {
           <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
-          <div className='mobile-drop-header'>S/S '20 COLLECTION</div>
+          <div className='mobile-drop-header'>F/W '20 COLLECTION</div>
           <div className='mobile-drop-line'></div>
-          <div className='mobile-drop-title'>Deliverance.</div>
+          <div className='mobile-drop-title'>Assurance.</div>
           <div className='mobile-drop-description'>
-            “I sought the Lord, and he answered me and delivered me from all my fears.” Psalm 34:4
-            <br />
+            He is doing a work in our days that we wouldn't believe if told <br />
+            Habakkuk 1:5 <br />
             <br />
             Shop our latest drop now!
           </div>
           <div className='mobile-drop-btn-container'>
             <div className='mobile-drop-btn'>
-              <a href='/product?product=deliverance_hat'>
+              <a href='https://tinyurl.com/yhwhassurance'>
                 <h4>ORDER NOW</h4>
               </a>
             </div>

@@ -3,22 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@paypal/react-paypal-js": "^6.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "concurrently": "^5.2.0",
-    "query-string": "^6.13.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-flash-message": "^1.0.5",
     "react-instafeed": "^1.0.0",
     "react-responsive": "^8.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-transition-group": "^4.3.0",
     "react-youtube": "^7.9.0",
-    "universal-cookie": "^4.0.4"
+    "react-flash-message": "^1.0.5"
   },
   "scripts": {
     "start-client": "react-scripts start",

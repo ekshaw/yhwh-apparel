@@ -15,10 +15,13 @@ const HomePageDesktop = props => {
             </h1>
           </div>
           <div className='description' id='company-description'>
-            <h3>YHWH Apparel is a Christian apparel company based in Berkeley, California.</h3>
+            <h3>
+              YHWH Apparel is a Christian apparel company based in Berkeley,
+              California.
+            </h3>
           </div>
           <div className='shop-btn'>
-            <a href='/shop'>
+            <a href='https://yhwhapparel.storenvy.com/products'>
               <h4>SHOP NOW</h4>
             </a>
           </div>
@@ -49,8 +52,9 @@ const HomePageDesktop = props => {
           <div className='description-container'>
             <div className='description' id='subscription-description'>
               <h3>
-                Stay up to date on our latest products, sales, and partnerships! Follow our journey
-                to make the name and character of God known here in Berkeley and abroad!
+                Stay up to date on our latest products, sales, and partnerships!
+                Follow our journey to make the name and character of God known
+                here in Berkeley and abroad!
               </h3>
             </div>
             <div className='subscription-btn'>
@@ -62,10 +66,16 @@ const HomePageDesktop = props => {
         </div>
         <div className='subscription-image-container'>
           <div className='subscription-image1-container'>
-            <img src={require('../../images/home/IMG_8125.jpg')} id='subscription-image1'></img>
+            <img
+              src={require('../../images/home/IMG_8125.jpg')}
+              id='subscription-image1'
+            ></img>
           </div>
           <div className='subscription-image2-container'>
-            <img src={require('../../images/home/DSC08941.jpg')} id='subscription-image2'></img>
+            <img
+              src={require('../../images/home/DSC08941.jpg')}
+              id='subscription-image2'
+            ></img>
           </div>
         </div>
         {/* <InstagramFeed /> */}
