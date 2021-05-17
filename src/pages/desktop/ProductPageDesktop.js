@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import '../../styles/desktop/ProductPageDesktop.css';
 import Products from '../../content/Products';
 import ProductImageCarousel from '../../components/ProductImageCarousel';
+import CartPopUp from '../../components/CartPopUp';
 import Footer from '../../components/Footer';
 import { Component } from 'react';
 import SizeButtons from '../../components/SizeButtons';
@@ -22,6 +23,7 @@ class ProductPageDesktop extends Component {
       productDescriptionHidden: true,
       size: '',
       showFlashMsg: false,
+      showCartPopUp: true,
       flashMsgTxt: 'Please select a size!'
     };
   }
@@ -69,6 +71,9 @@ class ProductPageDesktop extends Component {
         this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
       }
       EventEmitter.dispatch('updateCart', {});
+      this.setState({
+        showCartPopUp: true
+      });
     }
   };
 
@@ -86,6 +91,7 @@ class ProductPageDesktop extends Component {
   render() {
     return (
       <div className='product-main-container'>
+        {this.state.showCartPopUp && <CartPopUp />}
         <ProductDescription
           title={this.state.products[this.state.productNum].title}
           verse={this.state.products[this.state.productNum].bibleVerse}
