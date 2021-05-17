@@ -25,7 +25,7 @@
     opacity: 0;
   }
 
-  /* .cart-show {
+  .cart-show {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transition: transform 1s cubic-bezier(0.3, 0.54, 0.22, 1.09);
@@ -37,7 +37,7 @@
     transform-origin: 0% 0%;
     transition: transform 2.5s cubic-bezier(0.22, 1.09, 0.3, 0.54);
     transform: translateX(50%);
-  } */
+  }
   
   .cart-pop-up-content-container {
     position: fixed;

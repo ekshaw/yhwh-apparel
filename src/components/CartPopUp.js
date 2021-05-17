@@ -3,6 +3,7 @@ import '../styles/CartPopUp.css';
 import Cookies from 'universal-cookie';
 import Products from '../content/Products';
 import { useMediaQuery } from 'react-responsive';
+import { Fade } from '@material-ui/core';
 
 const CartPopUp = props => {
     const cookies = new Cookies();
@@ -36,10 +37,6 @@ const CartPopUp = props => {
     }
     };
 
-    const [fadeProp, setFadeProp] = useState({
-        fade: 'fade-in',
-    });
-
     const getProductImage = (title) => {
     for (let i = 0; i < Products.length; i++) {
         if (title === Products[i].title) {
@@ -55,7 +52,7 @@ const CartPopUp = props => {
     }
     return (
         // + (props.hidden ? ' cart-hide' : ' cart-show')}
-            <div className='cart-pop-up-container'>
+            <div className={'cart-pop-up-container'}>
                 <div className='cart-pop-up-overlay' onClick={props.hidePopUp}></div>
                 <div className='cart-pop-up-content-container'>
                     <div className='cart-pop-up-overlay-exit-btn' onClick={props.hidePopUp}>
@@ -80,7 +77,7 @@ const CartPopUp = props => {
                             </div>
                         </div>
                     <div className='cart-pop-up-overlay-bag-btn'>
-                        <a href='http://localhost:3000/checkout'>VIEW BAG ({bagNum})</a>
+                        <a href='/checkout'>VIEW BAG ({bagNum})</a>
                     </div>
                 </div>
             </div>
