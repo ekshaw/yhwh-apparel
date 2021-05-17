@@ -6,9 +6,9 @@ const Products = [
     productId: 'deliverance_hat',
     release: 'May 2021',
     productType: 'HAT',
-    price: 25.0,
+    price: 22.0,
     bibleVerse: 'PSALM 23:4',
-    sizes: [{ size: 'OS', quantity: 55 }],
+    sizes: [{ size: 'OS', quantity: 60 }],
     description: (
       <div>
         <h3>
@@ -40,7 +40,7 @@ const Products = [
     productType: 'STICKER',
     price: 2.0,
     bibleVerse: 'PSALM 34:4',
-    sizes: [{ size: 'OS', quantity: 70 }],
+    sizes: [{ size: 'OS', quantity: 75 }],
     description: (
       <div>
         <h3>“I sought the Lord, and he answered me </h3>
@@ -177,7 +177,7 @@ const Products = [
     productType: 'PIN',
     price: 7.0,
     bibleVerse: 'PSALM 118:24',
-    sizes: [{ size: 'OS', quantity: 8 }],
+    sizes: [{ size: 'OS', quantity: 10 }],
     description: (
       <div>
         <h3>
@@ -217,9 +217,9 @@ const Products = [
     productId: 'saltandlight',
     release: '',
     productType: 'STICKER',
-    price: 1.0,
+    price: 2.0,
     bibleVerse: 'MATTHEW 5:13-16',
-    sizes: [{ size: 'OS', quantity: 25 }],
+    sizes: [{ size: 'OS', quantity: 19 }],
     description: (
       <div>
         <h3>

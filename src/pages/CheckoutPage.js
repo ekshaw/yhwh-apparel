@@ -61,6 +61,7 @@ const CheckoutPage = props => {
           details.payer.name.given_name +
           '! A Paypal confirmation receipt will be sent to your email.'
       );
+      cookies.set(cookieName, []);
       window.location = '/';
     });
   }
