@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import { Component } from 'react';
 import SizeButtons from '../../components/SizeButtons';
 import ProductDescription from '../../components/ProductDescription';
+import CartPopUp from '../../components/CartPopUp';
 import queryString from 'query-string';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../../utils/EventEmitter';
@@ -22,7 +23,8 @@ class ProductPageDesktop extends Component {
       productDescriptionHidden: true,
       size: '',
       showFlashMsg: false,
-      flashMsgTxt: 'Please select a size!'
+      flashMsgTxt: 'Please select a size!',
+      hideCart: true
     };
   }
 
@@ -68,6 +70,7 @@ class ProductPageDesktop extends Component {
       } else {
         this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
       }
+      this.onCartPopUpAppear();
       EventEmitter.dispatch('updateCart', {});
     }
   };
@@ -83,6 +86,24 @@ class ProductPageDesktop extends Component {
     });
   };
 
+  onCartPopUpAppear = async () => {
+    this.setState({
+      hideCart: false
+    });
+    let delay = ms => new Promise(res => setTimeout(res, ms));
+    await delay(3000);
+    console.log('Waited 5s');
+    this.setState({
+      hideCart: true
+    });
+  };
+
+  onHideCartClick = () => {
+    this.setState({
+      hideCart: true
+    });
+  };
+
   render() {
     return (
       <div className='product-main-container'>
@@ -93,6 +114,16 @@ class ProductPageDesktop extends Component {
           hidden={this.state.productDescriptionHidden}
           hideProductDescription={this.onReadMoreClick}
         />
+        {!this.state.hideCart && (
+          <div className='product-cart-pop-up'>
+            <CartPopUp
+              title={this.state.products[this.state.productNum].title}
+              size={this.state.size}
+              hideCart={this.state.hideCart}
+              hideCartClick={this.onHideCartClick}
+            />
+          </div>
+        )}
         <div className='product-container'>
           <div className='product-item'>
             <div className='product-description-container'>

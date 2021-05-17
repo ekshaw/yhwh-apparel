@@ -69,6 +69,7 @@ class ProductPageMobile extends Component {
         this.cookies.set(this.cookieName, JSON.stringify([item]), { path: '/' });
       }
       EventEmitter.dispatch('updateCart', {});
+      alert('Added to Cart: ' + item.title + '. Size ' + item.size);
     }
   };
 
