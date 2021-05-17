@@ -1,0 +1,33 @@
+div#size-btn-list li {
+  display: inline;
+  padding: 0px 4vw 0px 0px;
+}
+
+.size-button {
+  background-color: transparent;
+  border: 0.5px solid #1f1f1f;
+  color: #1f1f1f;
+  width: 8vh;
+  height: 8vh;
+  font-size: 2.2vh;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: transparent;
+  border-style: dotted;
+  border-color: #1f1f1f;
+  color: #1f1f1f;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.enabled:hover {
+  background-color: #eae7e1;
+  color: #1f1f1f;
+}
+
+.enabled:focus {
+  background-color: #eae7e1;
+  outline: none;
+}

@@ -40,7 +40,7 @@ class DesignCarousel extends Component {
               <h3>{this.state.designs[this.state.slideNum].description}</h3>
             </div>
             <div className='shop-now-btn'>
-              <a href='https://yhwhapparel.storenvy.com/products'>
+              <a href='/shop'>
                 <h4>SHOP NOW</h4>
               </a>
             </div>

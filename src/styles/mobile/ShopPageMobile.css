@@ -1,0 +1,104 @@
+.mobile-shop-main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vw;
+  background-color: #eae7e1;
+}
+
+.mobile-shop-top-container {
+  height: 64vw;
+  position: relative;
+  z-index: 100;
+}
+
+.mobile-shop-top-image {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+
+.mobile-shop-caption-background {
+  position: absolute;
+  width: 76vw;
+  height: 48vw;
+  background-color: #d3cec7;
+  opacity: 80%;
+  left: 12vw;
+  top: 8vw;
+  z-index: -10;
+}
+
+.mobile-shop-caption-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 8%;
+  padding-left: 8%;
+  padding-top: 12%;
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+}
+
+.mobile-shop-title h1 {
+  color: #fefefe;
+  font-size: 8vw;
+}
+.mobile-shop-caption h3 {
+  color: #fefefe;
+  z-index: 1;
+  line-height: 1.5;
+  font-size: 3vw;
+}
+
+.mobile-new-release-btn {
+  color: #fefefe;
+  border: solid;
+  border-width: thin;
+  width: 32vw;
+  padding: 0.5vw 1.2vw;
+  text-align: center;
+  z-index: 10;
+  margin: 2vw auto;
+}
+
+.mobile-new-release-btn h4 {
+  font-size: 2vw;
+  letter-spacing: 1vw;
+  color: #fefefe;
+}
+
+.mobile-shopcard-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 0vw;
+  z-index: 100;
+}
+
+.mobile-shop-blank-image-box-two {
+  background-color: #d3cec7; /*D3CEC7*/
+  width: 80vw; /*100*/
+  height: 20vw; /*60*/
+  position: absolute;
+  z-index: -10;
+  top: 37%;
+  right: 0;
+}
+.mobile-shop-blank-image-box-three {
+  background-color: #d3cec7; /*D3CEC7*/
+  width: 80vw; /*100*/
+  height: 20vw; /*60*/
+  position: absolute;
+  z-index: -10;
+  top: 66%;
+  left: 0%;
+}
+
+.mobile-shopcard-row {
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  justify-content: space-evenly;
+  padding: 4vw 4vw;
+}
