@@ -7,7 +7,6 @@ import Products from '../content/Products';
 import Cookies from 'universal-cookie';
 import { EventEmitter } from '../utils/EventEmitter';
 import { useMediaQuery } from 'react-responsive';
-
 import { PayPalScriptProvider, PayPalButtons, FUNDING } from '@paypal/react-paypal-js';
 
 const CheckoutPage = props => {
@@ -25,7 +24,7 @@ const CheckoutPage = props => {
   const [cookie, setCookie] = useState({});
   const [cartTotal, setCartTotal] = useState(0);
   const [promoCode, setPromoCode] = useState('');
-  const [shipCost, setShipCost] = useState(0);
+  const [shipCost, setShipCost] = useState(-1);
   const [isDisabled, setIsDisabled] = useState(true);
   const [orderID, setOrderID] = useState(false);
 
@@ -76,15 +75,26 @@ const CheckoutPage = props => {
     setPromoCode(event.target.value);
   };
 
-  // sets shipping cost and enables paypal btn
+  // sets shipping cost
   const onShipChange = ship => {
-    setIsDisabled(false);
     setShipCost(ship);
+  };
+
+  // disables and enables paypal btn
+  const onTotalChange = () => {
+    if (shipCost > 0) {
+      setIsDisabled(false);
+    } else if (shipCost == 0) {
+      checkBagItems();
+    } else {
+      setIsDisabled(true);
+    }
   };
 
   // recalculates total when shipping option changes or when when item is added/removed
   useEffect(() => {
     total();
+    onTotalChange();
   }, [shipCost, cookie]);
 
   //calculates subtotal, ship, and promo code
@@ -95,15 +105,33 @@ const CheckoutPage = props => {
       for (let i = 0; i < cart.length; i++) {
         totalVal += cart[i].price;
       }
+    }
+    if (shipCost >= 0) {
       totalVal += shipCost;
-      if (promoCodeList.includes(promoCode)) {
-        if (totalVal <= 5) {
-          totalVal = 0;
+    }
+    if (promoCodeList.includes(promoCode)) {
+      if (totalVal <= 5) {
+        totalVal = 0;
+      } else {
+        totalVal -= 5;
+      }
+    }
+    setCartTotal(totalVal);
+  };
+
+  // checks if only stickers/pins if choosing free shippping
+  const checkBagItems = () => {
+    if (cookies.get(cookieName)) {
+      let cart = objectToArray(cookies.get(cookieName));
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i].productType == 'PIN' || cart[i].productType == 'STICKER') {
+          continue;
         } else {
-          totalVal -= 5;
+          setIsDisabled(true);
+          return;
         }
       }
-      setCartTotal(totalVal);
+      setIsDisabled(false);
     }
   };
 
@@ -201,6 +229,10 @@ const CheckoutPage = props => {
             </div> */}
             <div className='checkout-shipping-info-container'>
               <h4>SHIPPING METHOD</h4>
+              <div className='checkout-shipping-info-description'>
+                <h5>Choose your shipping method:</h5>
+                <h5>*Processing Time: 3-5 business days. Shipping Time: 7-10 business days.</h5>
+              </div>
               <div className='checkout-shipping-options'>
                 <div className='checkout-shipping-option'>
                   <input
@@ -210,7 +242,7 @@ const CheckoutPage = props => {
                     className='shipping-option'
                     onClick={() => onShipChange(0)}
                   />
-                  <h3>STICKER SHIPPING (WITHIN THE UNITED STATES) - $0.00</h3>
+                  <h3>STICKER/PIN SHIPPING ONLY (WITHIN THE US) - $0.00</h3>
                 </div>
                 <div className='checkout-shipping-option'>
                   <input
@@ -220,7 +252,7 @@ const CheckoutPage = props => {
                     className='shipping-option'
                     onClick={() => onShipChange(5)}
                   />
-                  <h3>OTHER PRODUCTS (WITHIN THE UNITED STATES) - $5.00</h3>
+                  <h3>OTHER PRODUCTS (WITHIN THE US) - $5.00</h3>
                 </div>
               </div>
             </div>
@@ -256,7 +288,7 @@ const CheckoutPage = props => {
                   fundingSource={FUNDING.PAYPAL}
                   style={{ size: 'responsive' }}
                   createOrder={createOrder}
-                  forceReRender={[cartTotal]}
+                  forceReRender={[cartTotal, shipCost, isDisabled]}
                   disabled={isDisabled}
                   onApprove={onApproveHandler}
                   onError={onErrorHandler}

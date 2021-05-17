@@ -46,10 +46,11 @@ class ProductPageMobile extends Component {
   };
 
   addToCart = el => {
-    const { title, price } = el;
+    const { title, price, productType } = el;
     const item = {
       title: title,
       price: price,
+      productType: productType,
       size: this.state.size
     };
     if (item.size == '') {

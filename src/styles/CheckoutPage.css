@@ -72,7 +72,7 @@
   padding: 3vw 3vw 4vw;
   width: 32vw;
   background-color: #d3cec7;
-  height: 34vw;
+  height: 34.5vw;
   margin-left: 4vw;
   position: sticky;
   top: 3vw;
@@ -118,20 +118,21 @@
   box-shadow: none !important;
 } */
 
-.checkout-shipping-info-container h4 {
-  padding-bottom: 1.2vw;
-}
-
 .checkout-shipping-option > h3 {
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0;
 }
 
 .checkout-shipping-info-container {
   margin-top: 1vw;
   width: 100%;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
   border-bottom: 0.1vw solid #1f1f1f;
+}
+
+.checkout-shipping-info-description {
+  margin-bottom: 1vw;
+  margin-top: 0;
 }
 
 .checkout-shipping-option {
@@ -142,8 +143,8 @@
 }
 
 .shipping-option {
-  height: 28px;
-  width: 16px;
+  height: 1.8vw;
+  width: 1vw;
   background-color: #eae7e1;
   border: solid;
   border-width: thin;
@@ -164,7 +165,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
 }
 
 .checkout-summary-promo-textbox {
@@ -174,7 +175,7 @@
 .checkout-summary-promo-textbox > textarea {
   padding: 0;
   width: 90%;
-  font-size: 24px;
+  font-size: 2vw;
   border: none;
   height: 2.5vw;
   resize: none;
@@ -190,12 +191,11 @@
 
 .checkout-summary-promo-btn {
   width: 8vw;
-  height: 2vw;
+  height: 2.4vw;
   background-color: #fefefe;
   border-width: thin;
   text-align: center;
   letter-spacing: 0.15vw;
-  padding-bottom: 0.5vw;
 }
 
 .checkout-summary-promo-btn:hover {
@@ -209,12 +209,6 @@
 }
 
 .checkout-summary-button {
-  width: 100%;
-  text-align: center;
-  bottom: 2vw;
-  border-width: thin;
-  letter-spacing: 0.15vw;
-  padding: 0.15vw 0vw;
   margin-top: 2vw;
 }
 
@@ -275,7 +269,7 @@
   .checkout-summary {
     padding: 3vw 6vw 6vw;
     width: 72vw;
-    height: 96vw;
+    height: 100vw;
     margin: 8vw auto;
   }
 
