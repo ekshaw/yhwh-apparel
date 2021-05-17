@@ -52,7 +52,8 @@ const CartPopUp = props => {
     }
     return (
         // + (props.hidden ? ' cart-hide' : ' cart-show')}
-            <div className={'cart-pop-up-container'}>
+        // <div className={'cart-pop-up-container' + (props.hidden ? ' cart-hide' : ' cart-show')}>
+             <div className='cart-pop-up-container'> 
                 <div className='cart-pop-up-overlay' onClick={props.hidePopUp}></div>
                 <div className='cart-pop-up-content-container'>
                     <div className='cart-pop-up-overlay-exit-btn' onClick={props.hidePopUp}>
