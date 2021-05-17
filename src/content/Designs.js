@@ -2,6 +2,23 @@ import React from 'react';
 
 const Designs = [
   {
+    title: 'Deliverance',
+    release: 'May 2021',
+    description: (
+      <div>
+        “Even though I walk through the valley of the shadow of death, I will fear no evil, for you
+        are with me; your rod and your staff, they comfort me.” Psalm 23:4
+        <br />
+        <br />
+        The deliverances of God are constant. In the darkest depths of our lows, the highest of our
+        highs, and even in the seemingly mundane moments of our everyday lives, the Lord continues
+        to deliver us from the grips of sin. As long as we place our assurance in Him, we praise Him
+        that there is no trial, no strife, and no pain which the Lord cannot deliver us from.
+      </div>
+    ),
+    imgSrc: require('../images/designs/deliverance.jpg')
+  },
+  {
     title: 'Assurance',
     release: 'December 2020',
     description: (
