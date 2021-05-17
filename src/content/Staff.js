@@ -23,7 +23,7 @@ const Staff = [
       },
       {
         name: 'Emily Shaw',
-        role: 'Vice President',
+        role: 'Vice President, Web Development Lead',
         description: (
           <div>
             <h3>
