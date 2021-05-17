@@ -1,0 +1,129 @@
+.mobile-product-main-container {
+  width: 100%;
+  background-color: #d3cec7;
+  height: 100vh;
+}
+
+.mobile-product-main-container h1 {
+  font-size: 5vh;
+}
+
+.mobile-product-main-container h4 {
+  font-size: 2.5vh;
+}
+.mobile-product-main-container h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.mobile-product-main-container h2 {
+  font-size: 3vh;
+}
+
+.mobile-product-container {
+  background-color: #d3cec7;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vw;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mobile-product-item {
+  padding: 8vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-product-description-container {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-product-caption {
+  width: 90%;
+  margin: auto;
+}
+
+.mobile-product-price {
+  width: 90%;
+  margin: auto;
+}
+
+.mobile-product-image-container {
+  position: relative;
+  bottom: 1vw;
+  width: 100%;
+}
+
+.mobile-product-image-carousel {
+  width: 100%;
+}
+
+.mobile-product-bible-verse {
+  position: relative;
+  bottom: -1vw;
+  float: right;
+  right: 15vw;
+  font-size: 3vw;
+  letter-spacing: 4px;
+}
+
+.mobile-product-description {
+  width: 80vw;
+  margin: auto;
+  overflow: hidden;
+  height: 42vh;
+  text-align: left;
+  padding: 0 4vw;
+}
+
+.mobile-product-description-wrapper {
+  width: 100%;
+  max-height: 42vh;
+}
+
+.mobile-read-more-btn {
+  position: relative;
+  width: 40vw;
+  color: #eae7e1;
+  margin: auto;
+  text-align: center;
+}
+
+.mobile-read-more-btn:hover {
+  cursor: pointer;
+  color: #fefefe;
+}
+
+.mobile-size-btn {
+  width: 75vw;
+  padding: 1vw 0.5vw;
+  text-align: center;
+  margin: 1vw 14vw;
+}
+
+.mobile-add-to-cart-btn {
+  background-color: #eae7e1;
+  width: fit-content;
+  padding: 1vw 12vw;
+  text-align: center;
+  margin: 4vw auto;
+}
+.mobile-add-to-cart-btn h4 {
+  font-size: 4vw;
+  letter-spacing: 1vw;
+}
+.mobile-add-to-cart-btn:hover {
+  cursor: pointer;
+}
+
+.mobile-select-size-error h4 {
+  font-size: 4vw;
+  margin: 0 auto;
+  text-align: center;
+}

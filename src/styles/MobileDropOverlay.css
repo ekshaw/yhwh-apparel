@@ -12,11 +12,11 @@
 .mobile-drop-des-container {
   position: fixed;
   left: 50%;
-  top: 48vh;
+  top: 40vh;
   transform: translate(-50%, -50%);
   height: fit-content;
   z-index: 10000;
-  background-image: url('../images/home/graphic.jpg');
+  background-image: url('../images/designs/deliverance_4.jpg');
   background-size: cover;
   background-position: center;
   padding: 6vw 10vw;
@@ -90,5 +90,6 @@
 
 .mobile-drop-btn h4 {
   color: #fefefe;
-  letter-spacing: 0.4vw;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
