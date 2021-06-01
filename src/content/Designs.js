@@ -7,7 +7,7 @@ const Designs = [
     description: (
       <div>
         “Even though I walk through the valley of the shadow of death, I will fear no evil, for you
-        are with me; your rod and your staff, they comfort me.” Psalm 23:4
+        are with me...” Psalm 23:4
         <br />
         <br />
         The deliverances of God are constant. In the darkest depths of our lows, the highest of our
