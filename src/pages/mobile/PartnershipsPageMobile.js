@@ -3,7 +3,7 @@ import '../../styles/mobile/PartnershipsPageMobile.css';
 import PartnershipTabs from '../../components/PartnershipTabs';
 import MobileFooter from '../../components/MobileFooter';
 
-const PartnershipsPageMobile = (props) => {
+const PartnershipsPageMobile = props => {
   return (
     <div className='mobile-partnerships-main-container'>
       <div className='mobile-partnerships-container'>
@@ -13,14 +13,13 @@ const PartnershipsPageMobile = (props) => {
           </div>
           <div className='mobile-partnerships-description'>
             <h3>
-              More than simply producing Christian clothing, YHWH Apparel
-              actively partners with the rest of the Church to carry out this
-              Great Commission.
+              More than simply producing Christian clothing, YHWH Apparel actively partners with the
+              rest of the Church to carry out this Great Commission.
             </h3>
           </div>
         </div>
         <div className='mobile-partnerships-image'>
-          <img src={require('../../images/partnerships/team.jpg')}></img>
+          <img src={require('../../images/partnerships/team.png')}></img>
         </div>
       </div>
       <div className='mobile-tab-container'>
@@ -36,10 +35,8 @@ const PartnershipsPageMobile = (props) => {
               If you... <br />
               1. Have questions about God, Christianity, or our company,
               <br />
-              2. Would like to receive financial support for your mission, or{' '}
-              <br />
-              3. Would like to start your own YHWH Apparel chapter on your
-              campus
+              2. Would like to receive financial support for your mission, or <br />
+              3. Would like to start your own YHWH Apparel chapter on your campus
               <br />
             </h3>
           </div>
