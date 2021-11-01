@@ -12,17 +12,15 @@ const PartnershipsPageDesktop = props => {
           </div>
           <div className='partnerships-description'>
             <h3>
-              More than simply producing Christian clothing, YHWH Apparel
-              actively partners with the rest of the Church to carry out this
-              Great Commission. We seek to spread the good news of Jesus Christ 
-              by representing Him and by donating all our profits.
-           </h3>
+              More than simply producing Christian clothing, YHWH Apparel actively partners with the
+              rest of the Church to carry out this Great Commission. We seek to spread the good news
+              of Jesus Christ by representing Him and by donating all our profits.
+            </h3>
           </div>
         </div>
-        <div className='partnerships-blank-image-box'>
-        </div>
+        <div className='partnerships-blank-image-box'></div>
         <div className='partnerships-image'>
-          <img src={require('../../images/partnerships/team.jpg')}></img>
+          <img src={require('../../images/partnerships/team.png')}></img>
         </div>
         <div className='partnerships-blank-image-box-skinny'>
           <div className='great-commission-verse'>

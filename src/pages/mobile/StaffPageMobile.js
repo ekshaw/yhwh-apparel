@@ -3,32 +3,34 @@ import '../../styles/mobile/StaffPageMobile.css';
 import MobileFooter from '../../components/MobileFooter';
 import Staff from '../../content/Staff';
 
-const staffArray = []
+const staffArray = [];
 for (var i = 0; i < Staff.length; i++) {
   for (var j = 0; j < Staff[i].members.length; j++) {
-    const staffName = Staff[i].members[j].name.split(' ');
-    const staffCard = (<div className='mobile-staff-image'>
-      <img src={Staff[i].members[j].imgSrcMobile} />
-      <div className='mobile-staff-name'>
-        <h1>
-          {staffName[0]} <br /> {staffName[1]}
-        </h1>
+    const staffName = Staff[i].members[j].name;
+    const staffCard = (
+      <div className='mobile-staff-image'>
+        <img src={Staff[i].members[j].imgSrcMobile} />
+        <div className='mobile-staff-name'>
+          <h1>{staffName}</h1>
+        </div>
       </div>
-    </div>)
+    );
     staffArray.push(staffCard);
   }
 }
 
-const staffRows = []
+const staffRows = [];
 for (var i = 0; i < Math.ceil(staffArray.length / 3); i++) {
-  staffRows.push(<div className="mobile-staff-row">
-    {(3 * i < staffArray.length) ? (staffArray[3 * i]) : null}
-    {(3 * i + 1 < staffArray.length) ? (staffArray[3 * i + 1]) : null}
-    {(3 * i + 2 < staffArray.length) ? (staffArray[3 * i + 2]) : null}
-  </div>)
+  staffRows.push(
+    <div className='mobile-staff-row'>
+      {3 * i < staffArray.length ? staffArray[3 * i] : null}
+      {3 * i + 1 < staffArray.length ? staffArray[3 * i + 1] : null}
+      {3 * i + 2 < staffArray.length ? staffArray[3 * i + 2] : null}
+    </div>
+  );
 }
 
-const StaffPageMobile = (props) => {
+const StaffPageMobile = props => {
   return (
     <div className='mobile-staff-main-container'>
       <div className='mobile-staff-top-container'>
@@ -39,12 +41,11 @@ const StaffPageMobile = (props) => {
         </div>
         <div className='mobile-staff-description'>
           <h3>
-            Hebrews 10: 24-25 tells us to "spur one another toward love and good
-            deeds, meet up together, and encourage one another". As a team, we
-            strive to inspire ourselves and others to serve God and carry out
-            His mission. <br /> <br />
-            We want to be open and personal with you. Meet the team members who
-            help make YHWH such an awesome team!
+            Hebrews 10: 24-25 tells us to "spur one another toward love and good deeds, meet up
+            together, and encourage one another". As a team, we strive to inspire ourselves and
+            others to serve God and carry out His mission. <br /> <br />
+            We want to be open and personal with you. Meet the team members who help make YHWH such
+            an awesome team!
           </h3>
         </div>
       </div>
