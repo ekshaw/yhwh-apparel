@@ -2,6 +2,22 @@ import React from 'react';
 
 const Designs = [
   {
+    title: 'Reset',
+    release: 'November 2021',
+    description: (
+      <div>
+        YHWH Apparel was built on the a love made known, a need that was seen, and a call that was
+        heard. Before we are a clothing company, we are followers of God—a family of brothers and
+        sisters united in Christ.
+        <br />
+        <br />
+        There is nothing we do that isn’t built on the love of God, and we remind ourselves that it
+        is in Christ alone that we find our purpose and mission. We exalt Him; we rely on Him alone.
+      </div>
+    ),
+    imgSrc: require('../images/designs/reset.png')
+  },
+  {
     title: 'Deliverance',
     release: 'May 2021',
     description: (
