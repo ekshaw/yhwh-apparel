@@ -21,27 +21,25 @@ class NewDropOverlayDesktop extends Component {
       <div className='new-drop-container'>
         <div className='new-drop-overlay' onClick={this.onXClick}></div>
         <div className='new-drop-content-container'>
-          <img
-            className='new-drop-overlay-img'
-            src={require('../images/home/deliverance_drop.jpg')}
-          />
+          <img className='new-drop-overlay-img' src={require('../images/home/reset_drop.png')} />
           <div className='new-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
           <div className='new-drop-overlay-header'>
-            <h3>S/S '21 COLLECTION</h3>
+            <h3>F/W '21 COLLECTION</h3>
           </div>
           <div className='new-drop-overlay-header-underline'></div>
           <div className='new-drop-overlay-title'>
-            <h1>Deliverance.</h1>
+            <h1>Reset.</h1>
           </div>
           <div className='new-drop-overlay-description'>
             <h3>
-              “I sought the Lord, and he answered me and delivered me from all my fears.” Psalm 34:4
+              "So that at the name of Jesus every knee should bow... and every tongue confess that
+              Jesus Christ is Lord" Philippians 2:10
             </h3>
           </div>
           <div className='new-drop-overlay-order-btn'>
-            <a href='/product?product=deliverance_hat'>
+            <a href='https://tinyurl.com/resetorders'>
               <h4>ORDER NOW</h4>
             </a>
           </div>

@@ -29,22 +29,22 @@ const ShopPageDesktop = props => {
             <div className='shop-caption'>
               {/* <h2>Assurance Collection</h2> */}
               <h3>
-                “I sought the Lord, and he answered me and delivered me from all my fears.” Psalm
-                34:4
+                "So that at the name of Jesus every knee should bow... and every tongue confess that
+                Jesus Christ is Lord" Philippians 2:10
               </h3>
               <h3>
-                Shop the <b>Deliverance Collection</b>.
+                Shop the <b>Reset Collection</b>.
               </h3>
             </div>
             <div className='shop-btn'>
-              <a href='/product?product=deliverance_hat'>
-                <h4>SHOP NOW</h4>
+              <a href='https://tinyurl.com/resetorders'>
+                <h4>ORDER NOW</h4>
               </a>
             </div>
           </div>
         </div>
         <div className='shop-top-image'>
-          <img src={require('../../images/designs/shop_main.jpg')} />
+          <img src={require('../../images/designs/shop_main.png')} />
         </div>
       </div>
       <div className='shopcard-container'>

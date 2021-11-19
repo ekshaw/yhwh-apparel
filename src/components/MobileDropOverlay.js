@@ -24,18 +24,19 @@ class MobileDropOverlay extends Component {
           <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
-          <div className='mobile-drop-header'>S/S '20 COLLECTION</div>
+          <div className='mobile-drop-header'>F/W '20 COLLECTION</div>
           <div className='mobile-drop-line'></div>
-          <div className='mobile-drop-title'>Deliverance.</div>
+          <div className='mobile-drop-title'>Reset.</div>
           <div className='mobile-drop-description'>
-            “I sought the Lord, and he answered me and delivered me from all my fears.” Psalm 34:4
+            "So that at the name of Jesus every knee should bow... and every tongue confess that
+            Jesus Christ is Lord" Philippians 2:10
             <br />
             <br />
             Shop our latest drop now!
           </div>
           <div className='mobile-drop-btn-container'>
             <div className='mobile-drop-btn'>
-              <a href='/product?product=deliverance_hat'>
+              <a href='https://tinyurl.com/resetorders'>
                 <h4>ORDER NOW</h4>
               </a>
             </div>
