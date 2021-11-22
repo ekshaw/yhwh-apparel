@@ -14,52 +14,67 @@ class InstagramFeed extends Component {
         sortBy: 'most-recent',
         target: 'instafeed',
         userId: '2189584280',
-        accessToken: '2189584280.1677ed0.cf0a6d5a22d24fa7b54114142f5f10a3'
+        accessToken: 'IGQVJYa0U3TElnMDE1S0JxSXh2aVdwV2hmY3NLVDVBNDBMVjRJYWtQNUhBLTR2S01WMTdvVDFWQVBBY1VWTkN6UVBQQ2N4REROY2hFZA1ludnBUZAkdXY3p6U3JMZADQ1azZAWZAkotREZAB'
       }
     };
   }
 
   componentDidMount() {
-    Instafeed(this.state.instafeedSettings).then(response =>
-      this.setState({ data: response.data })
-    );
+    let url = `https://graph.instagram.com/me/media?fields=media_count,media_type,permalink,media_url&&access_token=${this.state.instafeedSettings.accessToken}`;
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then(data => {
+          if(data.hasOwnProperty('error')){
+            this.setState({
+                isLoaded: true,
+                isError:true,
+              });
+
+          }else{
+            this.setState({
+                isLoaded: true,
+                data: data.data,
+                isError:false,
+              });
+          }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        this.setState({
+            isLoaded: true,
+            isError:true,
+            error
+          });
+      });
   }
 
   render() {
     const data = this.state.data;
-    const imageRow1 =
+
+    if (data == null) {
+      return <></>;
+    }
+
+    const images =
       data &&
-      data.map(({ images, link }, index) => {
-        const image = images[this.state.instafeedSettings.resolution];
-        if (index < 4) {
+      data.map((post, index) => {
+        const image = post.media_url;
+        const link = post.permalink;
           return (
             <div className='instagram-image' key={index}>
-              <a href={link}>
-                <img src={image.url} width='100%' />
+              <a href={link} target="_blank">
+                <img src={image} width='100%' />
               </a>
             </div>
           );
-        }
-      });
-    const imageRow2 =
-      data &&
-      data.map(({ images, link }, index) => {
-        const image = images[this.state.instafeedSettings.resolution];
-        if (index >= 4) {
-          return (
-            <div className='instagram-image' key={index}>
-              <a href={link}>
-                <img src={image.url} width='100%' />
-              </a>
-            </div>
-          );
-        }
       });
 
     const instagramImages = (
       <div className='instagram-feed'>
-        <div className='instagram-image-row'>{imageRow1}</div>
-        <div className='instagram-image-row'>{imageRow2}</div>
+        <div className='instagram-image-row'>{images.slice(0, 4)}</div>
+        <div className='instagram-image-row'>{images.slice(4, 8)}</div>
       </div>
     );
 

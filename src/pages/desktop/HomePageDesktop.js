@@ -68,7 +68,7 @@ const HomePageDesktop = props => {
             <img src={require('../../images/home/DSC08941.jpg')} id='subscription-image2'></img>
           </div>
         </div>
-        {/* <InstagramFeed /> */}
+        { <InstagramFeed /> }
       </div>
       <Footer color='#d3cec7' />
     </div>
