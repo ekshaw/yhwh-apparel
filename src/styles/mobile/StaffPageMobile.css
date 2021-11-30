@@ -70,24 +70,30 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 225px;
-  padding-right: 8px;
+  height: 30vh;
+  /* margin-right: 4%;
+  margin-left: 4%; */
 }
 
 .mobile-staff-image img {
-  width: 104px;
-  height: 156px;
+  width: 115px;
+  height: 115px;
+  border-radius: 57.5px;
+  object-fit: cover;
+  justify-content: center;
 }
 
 .mobile-staff-image {
-  width: 100px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-bottom: 28px;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: auto;
+  justify-content: center;
 }
 
 .mobile-staff-name h1 {
   font-size: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: center;
 }
 

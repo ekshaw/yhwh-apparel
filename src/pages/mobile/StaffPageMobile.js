@@ -20,12 +20,12 @@ for (var i = 0; i < Staff.length; i++) {
 }
 
 const staffRows = [];
-for (var i = 0; i < Math.ceil(staffArray.length / 3); i++) {
+for (var i = 0; i < Math.ceil(staffArray.length / 2); i++) {
   staffRows.push(
     <div className='mobile-staff-row'>
-      {3 * i < staffArray.length ? staffArray[3 * i] : null}
-      {3 * i + 1 < staffArray.length ? staffArray[3 * i + 1] : null}
-      {3 * i + 2 < staffArray.length ? staffArray[3 * i + 2] : null}
+      {2 * i < staffArray.length ? staffArray[2 * i] : null}
+      {2 * i + 1 < staffArray.length ? staffArray[2 * i + 1] : null}
+      {/* {2 * i + 2 < staffArray.length ? staffArray[2 * i + 2] : null} */}
     </div>
   );
 }
