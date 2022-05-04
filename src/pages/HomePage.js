@@ -13,14 +13,14 @@ const HomePage = props => {
     <div>
       {isDesktopOrLaptop && (
         <>
-          <NewDropOverlayDesktop />
+          {/* <NewDropOverlayDesktop /> */}
           <HomePageDesktop />
         </>
       )}
 
       {isMobile && (
         <>
-          <MobileDropOverlay />
+          {/* <MobileDropOverlay /> */}
           <HomePageMobile />
         </>
       )}

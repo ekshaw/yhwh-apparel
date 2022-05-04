@@ -5,51 +5,92 @@ const Staff = [
     team: 'Executive',
     members: [
       {
-        name: 'Kristen Yee',
+        name: 'Maddie Kong',
         role: 'CEO',
         description: (
           <div>
             <h3>
-              Hi! I'm Kristen, a student studying English. The semester that I joined YHWH, serving
-              and giving back to the Berkeley Christian community was heavy on my heart, and I'm so
-              grateful for the ways that YHWH has helped me incorporate my academic pursuits with my
-              faith. I am a huge coffee-lover, oversleeper, and #1 fan of my amazing marketing team
-              :)
+              Hola! I’m Maddie, a child of God (hehe), and I’m a student studying Cognitive Science!
+              As a product designer, I have been challenged to intentionally create with the purpose
+              of proclaiming the gospel. It is a joy to lead this team of broken but God-loving
+              people. Outside of YHWH Apparel, I spend my time playing keys on praise team, dancing
+              on ABBA Modern, and spending quality time with friends.
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/kristen.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/maddie.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/maddie.png')
       },
       {
-        name: 'Emily Shaw',
-        role: 'Vice President, Web Development',
+        name: 'Megan Lui',
+        role: 'Vice President',
         description: (
           <div>
             <h3>
-              Hello hello! I’m Emily and I’m an EECS major also pursing the Berkeley Certificate in
-              Design Innovation. Joining YHWH has been such a blessing in showing me how my passions
-              and career pursuits can be used to glorify God. My heart is so happy to see how our
-              products are used to spark conversations about Him. Apart from YHWH, I enjoy swimming,
-              hiking, and baking!
+              Hello, hello! I’m Megan, a student studying Cognitive Science and MCB-Neurobiology. I
+              joined YHWH Fall ‘20 with an intent to empower Christians in our mission to glorify
+              God. It has been an absolute joy and blessing to serve with this incredible team. I am
+              so excited to share our passions through our apparel and partnerships. Apart from
+              YHWH, you can find me watching C/K-dramas, playing tennis, dancing, and attempting
+              volleyball.
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/emily.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/emily.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/megan.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/megan.png')
+      }
+    ]
+  },
+  {
+    team: 'Marketing',
+    members: [
+      {
+        name: 'Hannah Park',
+        role: 'Marketing Associate',
+        description: (
+          <div>
+            <h3>
+              Hi! I'm Hannah and I'm studying Psychology and Data Science at Cal. As part of the
+              marketing team, I take on the responsibility of spreading the purpose and mission of
+              YHWH to the public. I am very blessed to be a part of this team and be able contribute
+              to spreading the glory of God through methods of apparel production! I generally enjoy
+              reading, listening to music, watching kdramas, and journaling/creative writing.
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/hannah.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/hannah.png')
       }
     ]
   },
   // {
-  //   team: 'Marketing',
+  //   team: 'Web Development',
   //   members: [
   //     {
   //       name: '',
-  //       role: '',
+  //       role: 'Web Developer',
   //       description: (
   //         <div>
   //           <h3>
-  //
+
+  //           </h3>
+  //         </div>
+  //       ),
+  //       imgSrcDesktop: require(''),
+  //       imgSrcMobile: require('')
+  //     }
+  //   ]
+  // },
+  // {
+  //   team: 'Product Design',
+  //   members: [
+  //     {
+  //       name: '',
+  //       role: 'Product Designer',
+  //       description: (
+  //         <div>
+  //           <h3>
+
   //           </h3>
   //         </div>
   //       ),
@@ -59,102 +100,54 @@ const Staff = [
   //   ]
   // },
   {
-    team: 'Web Development',
-    members: [
-      {
-        name: 'Christie Lum',
-        role: 'Web Developer',
-        description: (
-          <div>
-            <h3>
-              Hello! I'm Christie and am majoring in CS and data science. I joined YHWH this
-              semester as a web developer and am so excited to be able to combine my passion for
-              design, coding, and God together. As someone who loves serving, it's such a blessing
-              to be able to glorify the Lord and spread the gospel through fashion in this team. In
-              my free time, I love bullet journaling, singing with my Christian a cappella group,
-              playing TFT, and playing volleyball.
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/christie.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/christie.png')
-      },
-      {
-        name: 'Su Min Kim',
-        role: 'Web Developer',
-        description: (
-          <div>
-            <h3>
-              Hello, I'm Su Min! I'm a senior studying Computer Science and minoring in Cal Teach. I
-              joined YHWH during Fall 2021. I was drawn to YHWH because of our mission to start
-              conversations about the wonderful name of our Lord. I'm grateful that this community
-              is drawing me closer to students from all different fellowships!
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/sumin.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/sumin.png')
-      }
-    ]
-  },
-  {
-    team: 'Product Design',
-    members: [
-      {
-        name: 'Maddie Kong',
-        role: 'Product Designer',
-        description: (
-          <div>
-            <h3>
-              AnyeonghasaYO, I’m Maddie and I’m studying Cognitive Science! I joined YHWH as a
-              product designer spring 2021 because I found YHWH’s mission to be refreshingly
-              unashamed in declaring the gospel and the intentional heart posture clearly manifested
-              in the designs. Excited to witness how God moves! In my free time, I love learning new
-              instruments, watching kdramas, and spending time outside.
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/maddie.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/maddie.png')
-      }
-    ]
-  },
-  {
     team: 'Business Operations',
     members: [
       {
-        name: 'Rachel Miller',
+        name: 'Daniel Xiao',
         role: 'Business Operations',
         description: (
           <div>
             <h3>
-              Hi, I’m Rachel and I’m serving as YHWH’s Business Operations lead. Since joining the
-              team, YHWH has helped me see the way God can use our passions, uncertainties, busy
-              schedules, professional skills, and many shortcomings to create relationships and
-              products that reflect His glory! In my spare time, you can catch me thrift shopping,
-              hanging out at the beach, or playing soccer.
+              HELLO! I am Daniel, a student studying Economics and Data Science. I joined YHWH as a
+              way to serve God outside of church and in the Berkeley community. I can't wait to
+              glorify God through the products that YHWH puts out! You can find me yoyo-ing and
+              struggling to play guitar in my free time.
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/rachel.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/rachel.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/daniel.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/daniel.png')
       },
       {
-        name: 'Megan Lui',
+        name: 'Seowoo Wang',
         role: 'Business Operations',
         description: (
           <div>
             <h3>
-              Hi, I’m Megan! I’m at Cal studying Cognitive Science and MCB-Neurobiology. I joined
-              YHWH’s business operations team because I wanted to empower Christians in our mission
-              to glorify God. I’m so excited to see how we can impact communities around campus
-              through our apparel and donations. In my spare time, I enjoy watching K-dramas,
-              playing tennis, and exploring cafes.
+              Hi! I'm Seowoo, a student studying Integrative Biology at Cal. Joining YHWH has helped
+              me to spread the gospel and create products that reflect God’s glory. I can’t wait to
+              make a positive impact in our community through our apparel! In my spare time, I enjoy
+              playing Go, tennis, watching kdrama, and studying at cafes!
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/megan.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/megan.png')
+        imgSrcDesktop: require('../images/staff/desktop-staff/seowoo.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/seowoo.png')
+      },
+      {
+        name: 'Nathaniel Davila',
+        role: 'Business Operations',
+        description: (
+          <div>
+            <h3>
+              Hello! My name is Nathaniel, I am majoring in Public Health and minoring in Data
+              Science. In my off time you can catch me in the gym, taking lots of pictures, or with
+              my friends.
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/nathaniel.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/nathaniel.png')
       }
     ]
   }
