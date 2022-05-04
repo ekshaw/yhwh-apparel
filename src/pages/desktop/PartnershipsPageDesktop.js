@@ -20,7 +20,7 @@ const PartnershipsPageDesktop = props => {
         </div>
         <div className='partnerships-blank-image-box'></div>
         <div className='partnerships-image'>
-          <img src={require('../../images/partnerships/team.png')}></img>
+          <img src={require('../../images/partnerships/team.jpg')}></img>
         </div>
         <div className='partnerships-blank-image-box-skinny'>
           <div className='great-commission-verse'>
