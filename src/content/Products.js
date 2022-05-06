@@ -2,13 +2,111 @@ import React from 'react';
 
 const Products = [
   {
+    title: 'Hidden Treasure Tote',
+    productId: 'treasure_tote',
+    release: 'May 2022',
+    productType: 'TOTE',
+    price: 23.0,
+    bibleVerse: 'MATTHEW 6:19-21',
+    sizes: [{ size: 'OS', quantity: 50 }],
+    description: (
+      <div>
+        <h3>Details: canvas cream tote 15 x 16 inches with 10 x 12 inches print</h3>
+        <h3>
+          19 “Do not lay up for yourselves treasures on earth, where moth and rust destroy and where
+          thieves break in and steal, 20 but lay up for yourselves treasures in heaven, where
+          neither moth nor rust destroys and where thieves do not break in and steal. 21 For where
+          your treasure is, there your heart will be also.” Matthew 6:19-21
+        </h3>
+        <h3>
+          What does it mean to treasure the gospel? How can we live with eternity in our hearts
+          instead of blindly following the temptations and idols of the world? As we evaluate our
+          hearts, we must constantly remind ourselves and each other that it is all about Christ.
+          Child-like faith must be rooted in Christ.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/treasure_tote_1.jpg')} />,
+      <img src={require('../images/designs/treasure_tote_2.jpg')} />,
+      <img src={require('../images/designs/treasure_tote_3.jpg')} />,
+      <img src={require('../images/designs/treasure.jpg')} />
+    ]
+  },
+  {
+    title: 'Remembrance Pin',
+    productId: 'remembrance_pin',
+    release: 'May 2022',
+    productType: 'PIN',
+    price: 6.0,
+    bibleVerse: 'MATTHEW 6:19-21',
+    sizes: [
+      { size: 'Blue', quantity: 50 },
+      { size: 'Green', quantity: 50 }
+    ],
+    description: (
+      <div>
+        <h3>Details: soft enamel, gold metal plating, 1.25 inches</h3>
+        <h3>
+          Everyone runs the marathon of life with the goal of the “prize” in the end. But for
+          believers, the prize is to be in the presence of God our Father for all of eternity. The
+          good news is that this previously unattainable prize has been given to us through the work
+          of Jesus Christ. He has finished the work and He is the prize so we can unashamedly boast
+          in Him with this identity of being children of God. Let us always remember and celebrate
+          our identity!
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/remembrance_pin_1.jpg')} />,
+      <img src={require('../images/designs/remembrance_pin_2.jpg')} />,
+      <img src={require('../images/designs/remembrance_pin_3.jpg')} />,
+      <img src={require('../images/designs/treasure.jpg')} />
+    ]
+  },
+  {
+    title: 'Reset Hoodie',
+    productId: 'reset_hoodie',
+    release: 'December 2021',
+    productType: 'HOODIE',
+    price: 38.0,
+    bibleVerse: '',
+    sizes: [
+      { size: 'S', quantity: 0 },
+      { size: 'M', quantity: 0 },
+      { size: 'L', quantity: 0 },
+      { size: 'XL', quantity: 0 }
+    ],
+    description: (
+      <div>
+        <h3>
+          YHWH Apparel was built on the a love made known, a need that was seen, and a call that was
+          heard. Before we are a clothing company, we are followers of God—a family of brothers and
+          sisters united in Christ.
+        </h3>
+        <h3>
+          There is nothing we do that isn’t built on the love of God, and we remind ourselves that
+          it is in Christ alone that we find our purpose and mission. We constantly need to reset
+          and recenter our hearts to intentionally and purposefully live, serve, and love in a
+          Christ-centered way. We exalt Him; we rely on Him alone.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/reset_1.jpg')} />,
+      <img src={require('../images/designs/reset_2.jpeg')} />,
+      <img src={require('../images/designs/reset.png')} />,
+      <img src={require('../images/designs/reset_3.jpeg')} />
+    ]
+  },
+  {
     title: 'Deliverance Hat',
     productId: 'deliverance_hat',
     release: 'May 2021',
     productType: 'HAT',
     price: 22.0,
     bibleVerse: 'PSALM 23:4',
-    sizes: [{ size: 'OS', quantity: 60 }],
+    sizes: [{ size: 'OS', quantity: 30 }],
     description: (
       <div>
         <h3>
@@ -40,7 +138,7 @@ const Products = [
     productType: 'STICKER',
     price: 2.0,
     bibleVerse: 'PSALM 34:4',
-    sizes: [{ size: 'OS', quantity: 75 }],
+    sizes: [{ size: 'OS', quantity: 50 }],
     description: (
       <div>
         <h3>“I sought the Lord, and he answered me </h3>
@@ -66,6 +164,71 @@ const Products = [
     ]
   },
   {
+    title: 'Assurance Long Sleeve',
+    productId: 'assurance_shirt',
+    release: 'December 2020',
+    productType: 'SHIRT',
+    price: 33.0,
+    bibleVerse: 'HABAKKUK 3:17',
+    sizes: [
+      { size: 'S', quantity: 0 },
+      { size: 'M', quantity: 0 },
+      { size: 'L', quantity: 0 },
+      { size: 'XL', quantity: 0 }
+    ],
+    description: (
+      <div>
+        <h3>
+          “Though the fig tree should not blossom, nor fruit be on the vines, the produce of the
+          olive fail and the fields yield no food, the flock be cut off from the fold and there be
+          no herd in the stalls, yet I will rejoice in the Lord; I will take joy in the God of my
+          salvation.” Habakkuk 3:17-18
+        </h3>
+        <h3>
+          Assurance is not the idea that God will make our lives better, nor does it exist to serve
+          our own purpose and enjoyment. Our assurance isn’t found in more favorable circumstances.
+          Rather, our assurance is in Jesus.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/assurance_shirt_1.jpg')} />,
+      <img src={require('../images/designs/assurance_shirt_2.jpg')} />,
+      <img src={require('../images/designs/assurance_shirt_3.jpg')} />,
+      <img src={require('../images/designs/assurance.jpg')} />
+    ]
+  },
+  {
+    title: 'Assurance Tote',
+    productId: 'assurance_tote',
+    release: 'December 2020',
+    productType: 'TOTE',
+    price: 25.0,
+    bibleVerse: 'HABAKKUK 3:17',
+    sizes: [{ size: 'OS', quantity: 0 }],
+    description: (
+      <div>
+        <h3>
+          “Though the fig tree should not blossom, nor fruit be on the vines, the produce of the
+          olive fail and the fields yield no food, the flock be cut off from the fold and there be
+          no herd in the stalls, yet I will rejoice in the Lord; I will take joy in the God of my
+          salvation.” Habakkuk 3:17-18
+        </h3>
+        <h3>
+          Assurance is not the idea that God will make our lives better, nor does it exist to serve
+          our own purpose and enjoyment. Our assurance isn’t found in more favorable circumstances.
+          Rather, our assurance is in Jesus.
+        </h3>
+      </div>
+    ),
+    images: [
+      <img src={require('../images/designs/assurance_tote_1.png')} />,
+      <img src={require('../images/designs/assurance_tote_2.jpg')} />,
+      <img src={require('../images/designs/assurance_tote_3.png')} />,
+      <img src={require('../images/designs/assurance.jpg')} />
+    ]
+  },
+  {
     title: 'Run With Endurance',
     productId: 'endurance',
     release: 'December 2019',
@@ -73,8 +236,8 @@ const Products = [
     price: 38.0,
     bibleVerse: 'HEBREWS 12:1-3',
     sizes: [
-      { size: 'S', quantity: 7 },
-      { size: 'M', quantity: 3 },
+      { size: 'S', quantity: 0 },
+      { size: 'M', quantity: 0 },
       { size: 'L', quantity: 0 },
       { size: 'XL', quantity: 0 }
     ],
@@ -177,7 +340,7 @@ const Products = [
     productType: 'PIN',
     price: 7.0,
     bibleVerse: 'PSALM 118:24',
-    sizes: [{ size: 'OS', quantity: 10 }],
+    sizes: [{ size: 'OS', quantity: 0 }],
     description: (
       <div>
         <h3>
