@@ -16,7 +16,7 @@
   transform: translate(-50%, -50%);
   height: fit-content;
   z-index: 10000;
-  background-image: url('../images/home/reset_drop_mobile.png');
+  background-image: url('../images/home/mobile_drop.jpg');
   background-size: cover;
   background-position: center;
   padding: 6vw 10vw;
@@ -26,9 +26,9 @@
 .mobile-drop-overlay-exit-btn {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #fefefe;
+  color: #1f1f1f;
   margin: 0px 0px;
-  font-weight: 200;
+  font-weight: 600;
   text-align: right;
   padding-bottom: 1vh;
 }
@@ -39,12 +39,12 @@
   margin: 1vw 0vw;
   text-align: center;
   padding: 1vh 0;
-  color: #fefefe;
+  color: #1f1f1f;
 }
 
 .mobile-drop-line {
   width: 40vw;
-  border-top: 1px solid #fefefe;
+  border-top: 1px solid #1f1f1f;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -55,7 +55,7 @@
   font-family: 'meno-banner', serif;
   font-size: 14vw;
   text-align: center;
-  color: #fefefe;
+  color: #1f1f1f;
 }
 
 .mobile-drop-description {
@@ -64,7 +64,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 200%;
-  color: #fefefe;
+  color: #1f1f1f;
   text-align: center;
   width: 48vw;
   display: block;
@@ -82,14 +82,14 @@
   margin-right: auto;
   border: solid;
   border-width: thin;
-  border-color: #fefefe;
+  border-color: #1f1f1f;
   width: 112px;
   padding: 2px 6px;
   text-align: center;
 }
 
 .mobile-drop-btn h4 {
-  color: #fefefe;
+  color: #1f1f1f;
   letter-spacing: 2px;
   font-size: 12px;
 }

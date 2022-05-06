@@ -24,19 +24,19 @@ class MobileDropOverlay extends Component {
           <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
-          <div className='mobile-drop-header'>F/W '20 COLLECTION</div>
+          <div className='mobile-drop-header'>S/S '22 COLLECTION</div>
           <div className='mobile-drop-line'></div>
-          <div className='mobile-drop-title'>Reset.</div>
+          <div className='mobile-drop-title'>Treasure.</div>
           <div className='mobile-drop-description'>
-            "So that at the name of Jesus every knee should bow... and every tongue confess that
-            Jesus Christ is Lord" Philippians 2:10
+            “The kingdom of heaven is like a treasure hidden in a field, which a man found and
+            covered up...” Matthew 13:44
             <br />
             <br />
             Shop our latest drop now!
           </div>
           <div className='mobile-drop-btn-container'>
             <div className='mobile-drop-btn'>
-              <a href='https://tinyurl.com/resetorders'>
+              <a href='https://forms.gle/VPqHdSnNAVPdeacb7'>
                 <h4>ORDER NOW</h4>
               </a>
             </div>
