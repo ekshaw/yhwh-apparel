@@ -20,6 +20,9 @@
     "react-youtube": "^7.9.0",
     "universal-cookie": "^4.0.4"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start-client": "react-scripts start",
     "start-server": "cd server && npm start",
