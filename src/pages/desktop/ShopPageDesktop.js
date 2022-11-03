@@ -36,6 +36,11 @@ const ShopPageDesktop = props => {
                 Shop the <b>Treasure Collection</b>.
               </h3>
             </div>
+            <div className='shop-btn'>
+              <a href='https://forms.gle/VPqHdSnNAVPdeacb7'>
+                <h4>ORDER NOW</h4>
+              </a>
+            </div>
           </div>
         </div>
         <div className='shop-top-image'>

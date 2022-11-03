@@ -17,7 +17,7 @@ const Designs = [
         life-giving the gospel is and to hold it as our identity first and foremost.
       </div>
     ),
-    imgSrc: require('../images/designs/treasure_designs_page.jpg')
+    imgSrc: require('../images/designs/treasure.jpg')
   },
   {
     title: 'Reset',
