@@ -33,7 +33,7 @@ class AboutPageDesktop extends Component {
                 YHWH Apparel was created out of a love made known, a need that
                 was seen, and a call that was heard. (Psalm 107) <br />
                 "YHWH" is the tetragrammaton of the name of the God of the
-                Bible, often read as "Yahweh" (Exodus 3:14) <br />
+                Bible, often read as "Yahweh". (Exodus 3:14) <br />
                 It was (and still is, by certain groups) regarded too holy to be
                 spoken.
               </h3>
