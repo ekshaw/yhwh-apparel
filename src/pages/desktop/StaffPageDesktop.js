@@ -19,7 +19,7 @@ const StaffPageDesktop = ({ teams = Staff }) => {
               Hebrews 10: 24-25 tells us to "spur one another toward love and good deeds, meet up
               together, and encourage one another". As a team, we strive to inspire ourselves and
               others to serve God and carry out His mission. <br /> <br />
-              We want to be open and personal with you. Meet the team members who help make YHWH
+              We want to be open and personal with you! Meet the team members who help make YHWH
               such an awesome team!
             </h3>
           </div>
