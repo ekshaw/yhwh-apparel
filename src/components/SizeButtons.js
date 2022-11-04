@@ -7,7 +7,7 @@ const SizeButtons = props => {
     <div id='size-btn-list'>
       <ul>
         {props.sizeList.map((item, index) => (
-          <li key>
+          <li key={true}>
             <button
               className={'size-button ' + (item.quantity == 0 ? 'disabled' : 'enabled')}
               onClick={() => props.setSizeProp(item.size)}>
