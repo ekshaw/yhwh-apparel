@@ -38,11 +38,6 @@ const ShopPageMobile = props => {
               Shop the <b>Treasure Collection</b>.
             </h3>
           </div>
-          <div className='mobile-new-release-btn'>
-            <a href='https://forms.gle/VPqHdSnNAVPdeacb7'>
-              <h4>ORDER NOW</h4>
-            </a>
-          </div>
         </div>
       </div>
       <div className='mobile-shopcard-container'>
