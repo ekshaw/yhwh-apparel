@@ -19,7 +19,7 @@ const PartnershipsPageMobile = props => {
           </div>
         </div>
         <div className='mobile-partnerships-image'>
-          <img src={require('../../images/partnerships/team.jpg')}></img>
+          <img src={require('../../images/partnerships/group.jpg')}></img>
         </div>
       </div>
       <div className='mobile-tab-container'>
