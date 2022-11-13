@@ -81,7 +81,7 @@ const Staff = [
           </div>
         ),
         imgSrcDesktop: require('../images/staff/desktop-staff/wilson.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/hannah.jpg')
+        imgSrcMobile: require('../images/staff/mobile-staff/wilson.jpg')
       },
       {
         name: 'Kristen Chang',
