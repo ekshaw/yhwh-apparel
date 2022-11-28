@@ -21,7 +21,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/maddie.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/maddie.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/maddie.jpg')
       },
       {
@@ -40,7 +40,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/megan.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/megan.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/megan.jpg')
       }
     ]
@@ -62,7 +62,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/hannah.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/hannah.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/hannah.jpg')
       }, 
       {
@@ -80,7 +80,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/wilson.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/wilson.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/wilson.jpg')
       },
       {
@@ -103,7 +103,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/kristen.jpg')
       },
       {
@@ -122,7 +122,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/kristin.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/kristin.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/kristin.jpg')
       }
     ]
@@ -144,8 +144,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/madison.jpg'),
-        imgSrcMobile: require('../images/staff/desktop-staff/madison.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/madison.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/madison.jpg')
       }
     ]
   },
@@ -166,7 +166,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/daniel.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/daniel.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/daniel.jpg')
       },
       {
@@ -183,7 +183,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/seowoo.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/seowoo.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/seowoo.jpg')
       }
     ]
@@ -205,7 +205,7 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/hyowon.jpg'),
+        imgSrcDesktop: require('../images/staff/desktop-staff/hyowon.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/hyowon.jpg')
       }
     ]
