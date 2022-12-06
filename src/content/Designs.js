@@ -202,7 +202,7 @@ const Designs = [
         </h3> */}
       </div>
     ),
-    imgSrc: require('../images/designs/found.jpg')
+    imgSrc: require('../images/designs/found_4.jpg')
   },
   {
     title: 'Set Apart',
