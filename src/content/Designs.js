@@ -17,7 +17,7 @@ const Designs = [
         life-giving the gospel is and to hold it as our identity first and foremost.
       </div>
     ),
-    imgSrc: require('../images/designs/treasuretote1.jpg')
+    imgSrc: require('../images/designs/treasure_designs.jpg')
   },
   {
     title: 'Reset',
@@ -50,7 +50,7 @@ const Designs = [
         that there is no trial, no strife, and no pain which the Lord cannot deliver us from.
       </div>
     ),
-    imgSrc: require('../images/designs/deliverance.jpg')
+    imgSrc: require('../images/designs/deliverance_design.jpg')
   },
   {
     title: 'Assurance',
