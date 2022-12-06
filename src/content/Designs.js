@@ -10,10 +10,9 @@ const Designs = [
         up. Then in his joy he goes and sells all that he has and buys that field” Matthew 13:44
         <br />
         <br />
-        How do we hold fast to the treasure of knowing Jesus in our hearts? We treasure our jobs,
-        grades, money, vanity, reputations, relationships, intelligence, etc. but what does it mean
-        to live with eternity in mind? How do all these compare with the treasure of experiencing
-        the amazing love of Christ? To fight our spiritual amnesia is to remember how precious and
+        We treasure our jobs,grades, money, vanity, reputations, relationships, intelligence, etc. 
+        but what does it mean to live with eternity in mind? How do all these compare with the treasure 
+        of experiencing the amazing love of Christ? To fight our spiritual amnesia is to remember how precious and
         life-giving the gospel is and to hold it as our identity first and foremost.
       </div>
     ),
