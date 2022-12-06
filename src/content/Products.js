@@ -59,9 +59,7 @@ const Products = [
     ),
     images: [
       <img src={require('../images/designs/remembrance_pin_1.jpg')} />,
-      <img src={require('../images/designs/remembrance_pin_2.jpg')} />,
-      <img src={require('../images/designs/remembrance_pin_3.jpg')} />,
-      <img src={require('../images/designs/treasure.jpg')} />
+      <img src={require('../images/designs/remembrance_pin_2.jpg')} />
     ]
   },
   {
@@ -94,9 +92,9 @@ const Products = [
     ),
     images: [
       <img src={require('../images/designs/reset_1.jpg')} />,
-      <img src={require('../images/designs/reset_2.jpeg')} />,
-      <img src={require('../images/designs/reset.png')} />,
-      <img src={require('../images/designs/reset_3.jpeg')} />
+      <img src={require('../images/designs/reset_2.jpg')} />,
+      <img src={require('../images/designs/reset.jpg')} />,
+      <img src={require('../images/designs/reset_3.jpg')} />
     ]
   },
   {
@@ -128,7 +126,7 @@ const Products = [
       <img src={require('../images/designs/deliverance_hat_1.jpg')} />,
       <img src={require('../images/designs/deliverance_hat_2.jpg')} />,
       <img src={require('../images/designs/deliverance.jpg')} />,
-      <img src={require('../images/designs/deliverance_4.jpg')} />
+      <img src={require('../images/designs/deliverance_hat_4.jpg')} />
     ]
   },
   {
