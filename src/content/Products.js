@@ -27,10 +27,10 @@ const Products = [
       </div>
     ),
     images: [
-      <img src={require('../images/designs/treasure_tote_1.jpg')} />,
-      <img src={require('../images/designs/treasure_tote_2.jpg')} />,
-      <img src={require('../images/designs/treasure_tote_3.jpg')} />,
-      <img src={require('../images/designs/treasure.jpg')} />
+      <img src={require('../images/designs/treasuretote1.jpg')} />,
+      <img src={require('../images/designs/treasuretote2.jpg')} />,
+      <img src={require('../images/designs/treasuretote3.jpg')} />,
+      <img src={require('../images/designs/treasuretote4.jpg')} />
     ]
   },
   {
