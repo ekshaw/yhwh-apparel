@@ -53,7 +53,7 @@ const MobileFooter = (props) => {
           </div>
         </div>
         <div className='mobile-bottom-border'>
-          <img src={require('../images/bottom.svg')} />
+          <img src={require('../images/bottom.svg').default} alt="bottom-design" />
         </div>
       </div>
     </Fragment>
