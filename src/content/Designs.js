@@ -17,7 +17,7 @@ const Designs = [
         life-giving the gospel is and to hold it as our identity first and foremost.
       </div>
     ),
-    imgSrc: require('../images/designs/treasure.jpg')
+    imgSrc: require('../images/designs/treasuretote1.jpg')
   },
   {
     title: 'Reset',
@@ -33,7 +33,7 @@ const Designs = [
         is in Christ alone that we find our purpose and mission. We exalt Him; we rely on Him alone.
       </div>
     ),
-    imgSrc: require('../images/designs/reset.png')
+    imgSrc: require('../images/designs/reset_double.jpg')
   },
   {
     title: 'Deliverance',
