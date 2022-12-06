@@ -10,10 +10,10 @@ const Designs = [
         up. Then in his joy he goes and sells all that he has and buys that field” Matthew 13:44
         <br />
         <br />
-        We treasure our jobs,grades, money, vanity, reputations, relationships, intelligence, etc. 
+        We treasure our jobs, grades, money, reputations, relationships, etc. 
         but what does it mean to live with eternity in mind? How do all these compare with the treasure 
-        of experiencing the amazing love of Christ? To fight our spiritual amnesia is to remember how precious and
-        life-giving the gospel is and to hold it as our identity first and foremost.
+        of experiencing the amazing love of Christ? To fight our spiritual amnesia is to remember how 
+        precious the gospel is and to hold it as our identity first and foremost.
       </div>
     ),
     imgSrc: require('../images/designs/treasure_designs.jpg')
