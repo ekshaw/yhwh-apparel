@@ -26,11 +26,11 @@ class NewDropOverlayDesktop extends Component {
             <h3>X</h3>
           </div>
           <div className='new-drop-overlay-header'>
-            <h3>S/S '22 COLLECTION</h3>
+            <h3>FA '22 COLLECTION</h3>
           </div>
           <div className='new-drop-overlay-header-underline'></div>
           <div className='new-drop-overlay-title'>
-            <h1>Treasure.</h1>
+            <h1>Waiting.</h1>
           </div>
           <div className='new-drop-overlay-description'>
             <h3>
