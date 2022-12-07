@@ -29,17 +29,23 @@ const ShopPageDesktop = props => {
             <div className='shop-caption'>
               {/* <h2>Assurance Collection</h2> */}
               <h3>
-                “The kingdom of heaven is like a treasure hidden in a field, which a man found and
-                covered up...” Matthew 13:44
+                “But those who hope in the Lord
+                will renew their strength..."
+                Isaiah 40:31 
               </h3>
               <h3>
-                Shop the <b>Treasure Collection</b>.
+                Shop our <b>In the Waiting</b> line.
               </h3>
+            </div>
+            <div className='shop-btn'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSfop0khJw2rFOZj_WqYhpVFj0sr3dXfD8zqMqnbUiKFpbOEdg/viewform'>
+                <h4>ORDER NOW</h4>
+              </a>
             </div>
           </div>
         </div>
         <div className='shop-top-image'>
-          <img src={require('../../images/designs/shop_main.jpg')} />
+          <img src={require('../../images/designs/fa22popup.png')} />
         </div>
       </div>
       <div className='shopcard-container'>

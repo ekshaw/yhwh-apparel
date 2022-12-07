@@ -13,7 +13,7 @@ const HomePage = props => {
     <div>
       {isDesktopOrLaptop && (
         <>
-          {/* <NewDropOverlayDesktop /> */}
+          <NewDropOverlayDesktop />
           <HomePageDesktop />
         </>
       )}
