@@ -21,7 +21,7 @@ class NewDropOverlayDesktop extends Component {
       <div className='new-drop-container'>
         <div className='new-drop-overlay' onClick={this.onXClick}></div>
         <div className='new-drop-content-container'>
-          <img className='new-drop-overlay-img' src={require('../images/designs/shop_main.jpg')} />
+          <img className='new-drop-overlay-img' src={require('../images/designs/fa22popup.png')} />
           <div className='new-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
@@ -30,16 +30,17 @@ class NewDropOverlayDesktop extends Component {
           </div>
           <div className='new-drop-overlay-header-underline'></div>
           <div className='new-drop-overlay-title'>
-            <h1>Waiting.</h1>
+            <h1>In the Waiting.</h1>
           </div>
           <div className='new-drop-overlay-description'>
             <h3>
-              “The kingdom of heaven is like a treasure hidden in a field, which a man found and
-              covered up...” Matthew 13:44
+              “But those who hope in the Lord <br></br>
+              will renew their strength..." <br></br> 
+              Isaiah 40:31 
             </h3>
           </div>
           <div className='new-drop-overlay-order-btn'>
-            <a href='https://forms.gle/VPqHdSnNAVPdeacb7'>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfop0khJw2rFOZj_WqYhpVFj0sr3dXfD8zqMqnbUiKFpbOEdg/viewform'>
               <h4>ORDER NOW</h4>
             </a>
           </div>

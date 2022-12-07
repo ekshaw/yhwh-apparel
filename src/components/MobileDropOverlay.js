@@ -24,15 +24,13 @@ class MobileDropOverlay extends Component {
           <div className='mobile-drop-overlay-exit-btn' onClick={this.onXClick}>
             <h3>X</h3>
           </div>
-          <div className='mobile-drop-header'>S/S '22 COLLECTION</div>
+          <div className='mobile-drop-header'>FA '22 COLLECTION</div>
           <div className='mobile-drop-line'></div>
-          <div className='mobile-drop-title'>Treasure.</div>
+          <div className='mobile-drop-title'>In the Waiting.</div>
           <div className='mobile-drop-description'>
-            “The kingdom of heaven is like a treasure hidden in a field, which a man found and
-            covered up...” Matthew 13:44
-            <br />
-            <br />
-            Shop our latest drop now!
+            “But those who hope in the Lord <br></br>
+            will renew their strength..." <br></br>
+            Isaiah 40:31 
           </div>
           <div className='mobile-drop-btn-container'>
             <div className='mobile-drop-btn'>

@@ -41,18 +41,18 @@
 }
 
 .mobile-shop-title h1 {
-  color: #fefefe;
+  color: #000000;
   font-size: 8vw;
 }
 .mobile-shop-caption h3 {
-  color: #fefefe;
+  color: #000000;
   z-index: 1;
   line-height: 1.5;
   font-size: 3vw;
 }
 
 .mobile-new-release-btn {
-  color: #fefefe;
+  color: #1f1f1f;
   border: solid;
   border-width: thin;
   width: 32vw;
@@ -65,7 +65,7 @@
 .mobile-new-release-btn h4 {
   font-size: 2vw;
   letter-spacing: 1vw;
-  color: #fefefe;
+  color: #000000;
 }
 
 .mobile-shopcard-container {
