@@ -16,7 +16,7 @@ const StaffPageDesktop = ({ teams = Staff }) => {
           </div>
           <div className='staff-description'>
             <h3>
-              Hebrews 10: 24-25 tells us to "spur one another toward love and good deeds, meet up
+              Hebrews 10:24-25 tells us to "spur one another toward love and good deeds, meet up
               together, and encourage one another". As a team, we strive to inspire ourselves and
               others to serve God and carry out His mission. <br /> <br />
               We want to be open and personal with you. Meet the team members who help make YHWH
