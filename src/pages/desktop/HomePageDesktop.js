@@ -10,7 +10,7 @@ const HomePageDesktop = props => {
         <div className='caption-container'>
           <div className='caption' id='main-caption'>
             <h1>
-              A love made known. Hello.<br />
+              A love made known.<br />
               A need that was seen. <br />A call that was heard.
             </h1>
           </div>
