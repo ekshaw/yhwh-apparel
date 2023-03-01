@@ -17,6 +17,14 @@ a {
   justify-content: space-between;
 }
 
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .caption-container,
 .image-container {
   position: relative;

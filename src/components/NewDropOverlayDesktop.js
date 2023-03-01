@@ -5,7 +5,7 @@ class NewDropOverlayDesktop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dropOverlayHidden: false
+      dropOverlayHidden: true
     };
   }
 
