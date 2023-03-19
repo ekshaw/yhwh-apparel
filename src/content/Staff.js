@@ -5,19 +5,12 @@ const Staff = [
     team: 'Executive',
     members: [
       {
-        name: 'Maddie Kong',
+        name: 'Hannah Park',
         role: 'CEO',
         description: (
           <div>
             <h3>
-              Hi, I’m Maddie and I’m a senior studying Cognitive Science serving in YHWH Apparel’s 
-              product design team! But first and foremost, my goal is to live out my identity as a 
-              child of God in my everyday. My time in YHWH Apparel has challenged me to reflect on
-              the Word and intentionally create to glorify God. I am grateful for the people God has
-              clearly placed in this team and I only exist as a vessel (ignore the CEO title 
-              formality) to remind us that we are centered on Christ. Outside of YHWH Apparel, 
-              I enjoy playing keys on praise team, dancing on ABBA Modern, sleeping (in class),
-              and spending quality time with friends!
+              
             </h3>
           </div>
         ),
@@ -30,13 +23,7 @@ const Staff = [
         description: (
           <div>
             <h3>
-              Hello, hello! I’m Megan, a third-year at UC Berkeley studying Cognitive Science and 
-              MCB-Neurobiology. YHWH Apparel has been my family for the past 4 semesters, and I 
-              have been so blessed to proudly (and loudly) proclaim God’s love with this amazing 
-              team. As a part of business operations, I have the opportunity to converse with many 
-              people throughout campus as well as nonprofit organizations about YHWH’s mission and 
-              our faith. When I’m not napping, I love to cafe hop, watch C/K-dramas, play tennis, 
-              dance, and teach little kids how to play piano!
+              
             </h3>
           </div>
         ),
@@ -49,16 +36,17 @@ const Staff = [
     team: 'Marketing',
     members: [
       {
-        name: 'Hannah Park',
-        role: 'Marketing Associate',
+        name: 'Kristin Joe',
+        role: 'Marketing Lead',
         description: (
           <div>
             <h3>
-              Hi! I'm Hannah and I'm studying Psychology and Data Science at Cal. As part of the
-              marketing team, I take on the responsibility of spreading the purpose and mission of
-              YHWH to the public. I am very blessed to be a part of this team and be able contribute
-              to spreading the glory of God through methods of apparel production! I generally enjoy
-              reading, listening to music, watching kdramas, and journaling/creative writing.
+              Hi! I’m Kristin :) A little bit about me: I’m a first year prospectively majoring in
+              Data Science and Cognitive Science. I’m a INFP on the Myers Briggs scale—an introvert
+              who thrives on one-on-one conversations, going out with friends, and her quiet time
+              (reading, exploring new music, etc.). I joined YHWH last semester after falling in love
+              with its mission of living out a bold faith, and I hope our products continue to capture
+              unconventional aesthetics that can spark conversations and appeal to all audiences.
             </h3>
           </div>
         ),
@@ -66,17 +54,20 @@ const Staff = [
         imgSrcMobile: require('../images/staff/mobile-staff/hannah.jpg')
       }, 
       {
-        name: 'Wilson Fung',
+        name: 'Enoch Mun',
         role: 'Marketing Associate',
         description: (
           <div>
             <h3>
-              Hi! I’m Wilson, a second year studying Data Science, and I’m on YHWH Apparel’s marketing 
-              team! This is my first semester on YHWH but it’s already been so much fun working and 
-              learning with this team to create something to spread His Word and His Glory. It really 
-              is a blessing to be able to be a part of YHWH’s marketing and use the gifts God has 
-              given me to glorify Him. In my free time, I enjoy photography, vibing with friends, 
-              finding new study spots whether it be a cafe or library, and fashion!
+              Hello, I’m Enoch, a first year who is part of YHWH apparel’s marketing team and is
+              currently studying statistics. I was first called to YHWH by the In The Waiting
+              collection as I really liked the design of the hoodie and saw how YHWH seeked to
+              proclaim God’s message continually through articles of clothing. I too wished to be
+              part of something that worked to proclaim God’s wonders, and since joining YHWH, can
+              confidently say I have no regrets as it is such a joy to be able to serve Him and
+              connect with my fellow brothers and sisters. My passions including sports (baseball
+              fan), lifting, and playing videogames. I enjoy meeting new people as well so always
+              feel welcome to come and talk to me about anything.
             </h3>
           </div>
         ),
@@ -84,46 +75,17 @@ const Staff = [
         imgSrcMobile: require('../images/staff/mobile-staff/wilson.jpg')
       },
       {
-        name: 'Kristen Chang',
+        name: 'Jaemin Shin',
         role: 'Marketing Associate',
         description: (
           <div>
             <h3>
-              Hi I’m Kristen! I am a junior studying Nutritional Science (physiology & metabolism), 
-              on the pre-medical track. I am on the marketing team for YHWH apparel, and am so 
-              excited to be able to share the gospel through this apparel brand. My goal is to 
-              glorify God in everything that I do, so to be able to express my love for fashion 
-              and honor Him through it, is such a privilege. My life motto is: “seek first His 
-              kingdom”, and so everything I do is because I want to serve and seek Him first. 
-              I am compelled to love and serve others because He has loved me first. Some fun 
-              facts about me: I LOVE coffee, going on spontaneous adventures, playing soccer, 
-              taking fit & food pics, and talking about Jesus! I am excited for this next year 
-              to come & if you ever want to hear more about Jesus or just grab coffee, 
-              I will always be down!!
+              
             </h3>
           </div>
         ),
         imgSrcDesktop: require('../images/staff/desktop-staff/kristen.png'),
         imgSrcMobile: require('../images/staff/mobile-staff/kristen.jpg')
-      },
-      {
-        name: 'Kristin Joe',
-        role: 'Marketing Associate',
-        description: (
-          <div>
-            <h3>
-              Hi, I’m Kristin! I’m one of the Marketing Associates for YHWH this year!! Coming 
-              to a totally new environment, I joined YHWH as a means of making new friends and 
-              growing with a Christian community as well as taking on God’s call for boldness 
-              in faith. I’m reallyy excited for you all to boldly wear these pieces and see the 
-              heart that God has poured into them. Some little snippets about me: I’m a freshman 
-              majoring in Cognitive Science. I’m also an INFP on the Myers Briggs scale. During 
-              my free time, I love to go out with friends, play guitar, and curate Spotify playlists.
-            </h3>
-          </div>
-        ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/kristin.png'),
-        imgSrcMobile: require('../images/staff/mobile-staff/kristin.jpg')
       }
     ]
   },
@@ -132,15 +94,24 @@ const Staff = [
     members: [
       {
         name: 'Madison Kwon',
+        role: 'Product Design Lead',
+        description: (
+          <div>
+            <h3>
+              
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/madison.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/madison.jpg')
+      },
+      {
+        name: 'Julia Hwang',
         role: 'Product Designer',
         description: (
           <div>
             <h3>
-              Hey! I’m Madison and I’m a student studying Sustainable Environmental Design. 
-              As a part of the product design team, my goal is to glorify God through design. 
-              It has been a joy creating physical products that are intentional in proclaiming 
-              the gospel. Apart from YHWH Apparel, I enjoy baking, playing the drums, hiking, 
-              and spending time with friends.
+              
             </h3>
           </div>
         ),
@@ -154,15 +125,11 @@ const Staff = [
     members: [
       {
         name: 'Daniel Xiao',
-        role: 'Business Operations',
+        role: 'Business Operations Lead',
         description: (
           <div>
             <h3>
-              HEeY! I am Daniel, a Berkeley student studying Data Science and Economics serving in 
-              YHWH Apparels’ business operations team! As a Christian we are called to do everything 
-              for the glory of God. Although I am far from it, being a part of YHWH Apparel and serving 
-              God outside of church gives me a way to better center my life on Christ and spread the 
-              good news. You can catch me (outside) playing guitar or yo-yoing in my free time.
+              
             </h3>
           </div>
         ),
@@ -170,16 +137,38 @@ const Staff = [
         imgSrcMobile: require('../images/staff/mobile-staff/daniel.jpg')
       },
       {
-        name: 'Seowoo Wang',
-        role: 'Business Operations',
+        name: 'Ashley Kwon',
+        role: 'Business Operations Associate',
         description: (
           <div>
             <h3>
-              Hi! I'm Seowoo, a student studying Integrative Biology at Cal. Joining YHWH last Spring 
-              has helped me to spread the gospel and create products that reflect God’s glory. I am 
-              looking forward to this year’s launch and can’t wait to seek and serve Him through our 
-              apparels! In my spare time, I enjoy playing Go, tennis, watching kdrama, and studying 
-              at cafes!
+            Hi! I’m Ashley, a third-year studying Economics, and I’m on YHWH Apparel’s Business
+            Operations team. This is my first semester in YHWH but I have already had a lot of fun
+            getting to know the team because everyone has been very welcoming! :) I joined YHWH
+            because I believed that this club’s mission was something different and more special, as
+            everything that goes on in the organization is solely for the purpose of glorifying our
+            Father God. Through YHWH, I wish to spread His word and help people experience the love
+            that I received from God. In my spare time, I enjoy film photography, traveling, getting
+            an iced matcha latte at Strada, and spending time with friends!
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/seowoo.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/seowoo.jpg')
+      },
+      {
+        name: 'Wilson Fung',
+        role: 'Business Operations Associate',
+        description: (
+          <div>
+            <h3>
+              Hi! I’m Wilson, a second year studying Data Science, and I’m on YHWH Apparel’s business
+              operations team! This is my second semester on YHWH but it’s already been so much fun
+              working and learning with this team to create something to spread His Word and His Glory.
+              I really liked YHWH Apparel’s mission of sparking conversation through clothing and decided
+              to join to utilize the gifts God has given me! In my free time, I enjoy photography,
+              vlogging, singing, vibing with friends, and finding new study spots whether it be a cafe
+              or library!
             </h3>
           </div>
         ),
@@ -192,16 +181,34 @@ const Staff = [
     team: 'Web Development',
     members: [
       {
-        name: 'Hyo Won Jeong',
+        name: 'Elisabeth Shin',
         role: 'Web Developer',
         description: (
           <div>
             <h3>
-              Hello! My name is Hyo Won and I am fourth year studying EECS at UC Berkeley, and I’m
-              excited to be a part of YHWH as a web developer. Being in YHWH has challenged me to
-              center my life on the Gospel and contribute to God’s kingdom in interesting and
-              creative ways. On most days, you can catch me at the gym, playing volleyball,
-              or bouldering.
+              hey!!👋 i’m elisabeth, a first year studying cog sci and i’m on the web development team
+              working on the ui/ux side of things. i joined yhwh because i love their hoodies and members,
+              but i was also drawn to the club’s heart to be a light in berkeley and share the gospel
+              through creativity and design. when i’m not scouring bookstores or stalking people on spotify 👀,
+              you can find me at sodoi (my second 🏡) drinking a cold brew and hanging out with friends!
+            </h3>
+          </div>
+        ),
+        imgSrcDesktop: require('../images/staff/desktop-staff/hyowon.png'),
+        imgSrcMobile: require('../images/staff/mobile-staff/hyowon.jpg')
+      },
+      {
+        name: 'Eric Choi',
+        role: 'Web Developer',
+        description: (
+          <div>
+            <h3>
+              Hey! I’m Eric, a first year studying EECS and I’m part of YHWH Apparel’s web development
+              team! YHWH’s mission to spread His Word through clothing was very appealing, and I felt
+              inspired by members’ hearts to share the gospel in creative ways. Plus, I didn’t want to
+              pass on an amazing opportunity to use my skills for His kingdom! When I’m not studying, I
+              love to edit videos, produce music, hang out with friends, and discover the latest k
+              r&b/hiphop artists!
             </h3>
           </div>
         ),
