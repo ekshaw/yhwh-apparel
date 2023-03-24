@@ -50,8 +50,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Kristin.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Kristin.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/kristin.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/kristin.jpg')
       }, 
       {
         name: 'Enoch Mun',
@@ -71,8 +71,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Enoch.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Enoch.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/enoch.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/enoch.jpg')
       },
       {
         name: 'Jaemin Shin',
@@ -84,8 +84,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Jaemin.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Jaemin.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/jaemin.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/jaemin.jpg')
       }
     ]
   },
@@ -111,12 +111,19 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+            heyyyy 😏 
+            my name’s julia and i’m a second year studying psychology on the pre-med track! i’m on the product
+            design team working to create a fire product for this spring’s launch. SO HYPE!! i joined yhwh
+            apparel because i wanted to surround myself with a community that is genuinely seeking after Christ
+            and i personally wanted to create something meaningful that is rooted in and glorifying the Lord.
+            in my free time, i absolutely LOVE watching the newest and hottest kdramas or creating the ultimate
+            outfits pinterest board of my dreams. disclaimer, i don’t drink caffeine and am a BIG talker, so when
+            i’m not doing the things above, you can find me sipping a nice matcha and talking for DAYS with friends.
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Julia.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Julia.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/julia.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/julia.jpg')
       }
     ]
   },
@@ -129,7 +136,13 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+              Hello! My name is Daniel and I am a junior majoring in Economics and Data Science. I am
+              currently on the business operations team at YHWH Apparel! It has been a true joy serving
+              God through YHWH Apparel over the past few semesters. I first joined the business operations
+              team in the spring semester of my sophomore year looking for a way to serve God outside of
+              my local Church. Since then, my peers in YHWH Apparel have been a great source of encouragement
+              through our Bible studies and the care that we place into our product designs. I cannot way
+              to continue our mission to share the good news through our products and partnerships!
             </h3>
           </div>
         ),
@@ -153,8 +166,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Ashley.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Ashley.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/ashley.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/ashley.jpg')
       },
       {
         name: 'Wilson Fung',
@@ -172,8 +185,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Wilson.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Wilson.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/wilson.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/wilson.jpg')
       }
     ]
   }, 
@@ -194,8 +207,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Elisabeth.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Elisabeth.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/elisabeth.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/elisabeth.jpg')
       },
       {
         name: 'Eric Choi',
@@ -212,8 +225,8 @@ const Staff = [
             </h3>
           </div>
         ),
-        imgSrcDesktop: require('../images/staff/desktop-staff/Eric.jpg'),
-        imgSrcMobile: require('../images/staff/mobile-staff/Eric.jpg')
+        imgSrcDesktop: require('../images/staff/desktop-staff/eric.jpg'),
+        imgSrcMobile: require('../images/staff/mobile-staff/eric.jpg')
       }
     ]
   }
