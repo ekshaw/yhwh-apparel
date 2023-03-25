@@ -80,7 +80,12 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+            Hey, I’m Jaemin, a first year student majoring in psychology. I joined YHWH in hopes to
+            be able to spread the love of God through a medium of apparel. Fashion has been a huge
+            interest of mine, and YHWH was perfect opportunity to be able to combine the two of my
+            passions together. Being a part of YHWH has been amazing, there is so much joy in serving
+            God and his people. My hobbies include volleyball, playing games, and watching movies. I
+            love hanging out with people and getting to know my brothers and sisters, so hit me up anytime.
             </h3>
           </div>
         ),
@@ -98,7 +103,12 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+            Hi!! I’m Madison and I’m a 2nd year studying sustainable environmental design. This is my
+            second semester on the product design team for YHWH apparel! I’ve learned a lot about how
+            to design with intention and glorify God with the creativity He has blessed me with. It is
+            so clear that God is working through this team and our mission. I have loved creating these
+            inter-fellowship connections, which has reaffirmed to me that God’s presence is right here
+            in Berkeley and His goodness is pursuing all of us.
             </h3>
           </div>
         ),
