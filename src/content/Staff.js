@@ -10,7 +10,12 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+              Hey! I’m Hannah, currently studying cognitive science and exploring into computer science
+              as well. I originally joined YHWH because the idea of being able to spread the gospel through
+              design and apparel was really creative and different to me. Fashion is an active choice
+              that we make to display to the public as an expression of ourselves and there is no other
+              identity that I wish to express more than being a sister in Christ. I am very grateful for this
+              opportunity to praise the Lord while partaking in a hobby of mine simultaneously!
             </h3>
           </div>
         ),
@@ -23,7 +28,11 @@ const Staff = [
         description: (
           <div>
             <h3>
-              
+              Hello! I’m Megan, a third year studying MCB-Neurobiology, Cognitive Science, and Data Science.
+              I joined YHWH Fall of 2020 with a heart to empower Christians in our mission to glorify God
+              boldly. It has been an absolute honor to serve with this incredible team and I’m so excited
+              to share our passions through our apparel and partnership. Apart from YHWH, you can find me
+              playing tennis and volleyball, dancing, watching c/k dramas, and testing the limits of my indecision.
             </h3>
           </div>
         ),
