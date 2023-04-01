@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import '../styles/Main.css';
 
-import HomePage from '../pages/HomePage';
+import VideoHomePage from '../pages/VideoHomePage';
 import { useMediaQuery } from 'react-responsive';
 
 const Main = ({ location }) => {
@@ -30,7 +30,7 @@ const Main = ({ location }) => {
         <CSSTransition key={location.key} timeout={{ enter: 300, exit: 300 }} classNames={'fade'}>
           <section className='route-section'>
             <Switch location={location}>
-              <Route exact path='/' component={HomePage} />
+              <Route exact path='/' component={VideoHomePage} />
             </Switch>
           </section>
         </CSSTransition>

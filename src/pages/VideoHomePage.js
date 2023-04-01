@@ -1,11 +1,9 @@
 import React from 'react';
-import HomePageDesktop from './desktop/HomePageDesktop';
-import NewDropOverlayDesktop from '../components/NewDropOverlayDesktop';
-import MobileDropOverlay from '../components/MobileDropOverlay';
-import HomePageMobile from './mobile/HomePageMobile';
+import VideoHomePageDesktop from './desktop/VideoHomePageDesktop';
+import VideoHomePageMobile from './mobile/VideoHomePageMobile';
 import { useMediaQuery } from 'react-responsive';
 
-const HomePage = props => {
+const VideoHomePage = props => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-device-width: 481px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
 
@@ -14,18 +12,18 @@ const HomePage = props => {
       {isDesktopOrLaptop && (
         <>
           {/*<NewDropOverlayDesktop />*/}
-          <HomePageDesktop />
+          <VideoHomePageDesktop />
         </>
       )}
 
       {isMobile && (
         <>
           {/* <MobileDropOverlay /> */}
-          <HomePageMobile />
+          <VideoHomePageMobile />
         </>
       )}
     </div>
   );
 };
 
-export default HomePage;
+export default VideoHomePage;
