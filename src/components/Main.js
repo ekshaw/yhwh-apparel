@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import '../styles/Main.css';
 
 import VideoHomePage from '../pages/VideoHomePage';
+import HomePage from '../pages/HomePage';
 import { useMediaQuery } from 'react-responsive';
 
 const Main = ({ location }) => {
@@ -31,6 +32,7 @@ const Main = ({ location }) => {
           <section className='route-section'>
             <Switch location={location}>
               <Route exact path='/' component={VideoHomePage} />
+              <Route exact path='/home' component={HomePage} />
             </Switch>
           </section>
         </CSSTransition>
