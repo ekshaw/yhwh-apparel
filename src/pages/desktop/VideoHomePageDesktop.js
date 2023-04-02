@@ -1,9 +1,23 @@
-import React from 'react';
+import React from 'react'
+import { useHistory } from "react-router-dom";
 import '../../styles/desktop/VideoHomePageDesktop.css';
 
 const VideoHomePageDesktop = props => {
+  let history = useHistory();
+
+  const handleScroll = (event) => {
+    const bottom = event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight;
+    if (bottom) {
+      history.push('/home');
+    }
+  };
+
+  const handleClick = () => {
+    history.push('/home');
+  };
+
   return (
-    <div className='videoContainer'>
+    <div className='videoContainer' onScroll={handleScroll}>
       <video className="backgroundVideo" muted autoPlay loop playsInline>
         <source src={require('../../images/home/Raindrops_Videvo.mp4')} type="video/mp4" />
         Your browser does not support the video tag.
@@ -15,7 +29,7 @@ const VideoHomePageDesktop = props => {
         <h1>scroll</h1>
         <br></br>
         <br></br>
-        <div class="arrow">
+        <div class="arrow" onClick={handleClick}>
           <span></span>
           <span></span>
           <span></span>
