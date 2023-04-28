@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import '../../styles/desktop/VideoHomePageDesktop.css';
 
 const VideoHomePageDesktop = props => {
-  let history = useHistory();
+  const history = useHistory();
 
   const handleScroll = (event) => {
     const bottom = event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight;

@@ -25,6 +25,11 @@
   letter-spacing: 2.5em;
   word-spacing: 0.5em;
   width: 100vw;
+  height:70vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border: 5px solid white;
 }
 
 .videoText h1 {
