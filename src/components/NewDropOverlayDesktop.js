@@ -26,21 +26,21 @@ class NewDropOverlayDesktop extends Component {
             <h3>X</h3>
           </div>
           <div className='new-drop-overlay-header'>
-            <h3>FA '22 COLLECTION</h3>
+            <h3>SP '23 COLLECTION</h3>
           </div>
           <div className='new-drop-overlay-header-underline'></div>
           <div className='new-drop-overlay-title'>
-            <h1>In the Waiting.</h1>
+            <h1>Jubilation.</h1>
           </div>
           <div className='new-drop-overlay-description'>
             <h3>
-              “But those who hope in the Lord <br></br>
-              will renew their strength..." <br></br> 
-              Isaiah 40:31 
+              “Count it all joy, my brothers, <br></br>
+              when you meet trials of various kinds..." <br></br> 
+              James 1:2-4 
             </h3>
           </div>
           <div className='new-drop-overlay-order-btn'>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfop0khJw2rFOZj_WqYhpVFj0sr3dXfD8zqMqnbUiKFpbOEdg/viewform'>
+            <a href='https://l.instagram.com/?u=https%3A%2F%2Fforms.gle%2FqwBkVikp9TwjfMNi6&e=AT2RgeXsaQCtYDRWDVCRZAPx_jjyrt0-_r-Fb0K3zcAhtsSoaXbbVitg6TY_HvJxLMzfgWX1gfwDx575FznQ8I3K-hlqfAeVUhpEpw'>
               <h4>ORDER NOW</h4>
             </a>
           </div>
