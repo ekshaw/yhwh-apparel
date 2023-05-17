@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import '../styles/Main.css';
 
 import VideoHomePage from '../pages/VideoHomePage';
-import HomePage from '../pages/HomePage';
 import { useMediaQuery } from 'react-responsive';
 
-const Main = ({ location }) => {
+const Main = () => {
+  const location = useLocation();
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-device-width: 481px)'
   });
@@ -30,10 +30,9 @@ const Main = ({ location }) => {
       <TransitionGroup className='transition-group'>
         <CSSTransition key={location.key} timeout={{ enter: 300, exit: 300 }} classNames={'fade'}>
           <section className='route-section'>
-            <Switch location={location}>
-              <Route exact path='/' component={VideoHomePage} />
-              <Route exact path='/home' component={HomePage} />
-            </Switch>
+            <Routes location={location}>
+              <Route path='/' element={<VideoHomePage />} />
+            </Routes>
           </section>
         </CSSTransition>
       </TransitionGroup>
@@ -41,4 +40,4 @@ const Main = ({ location }) => {
   );
 };
 
-export default withRouter(Main);
+export default Main;

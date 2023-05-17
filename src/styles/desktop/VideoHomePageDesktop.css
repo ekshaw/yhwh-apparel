@@ -1,17 +1,40 @@
-.videoContainer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.backgroundVideo {
+.container {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+}
+
+.videoBox {
+  flex: 1;
+  overflow-y: scroll;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  position: relative;
+}
+
+.videoBox video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.flexbox2 {
+  flex: 1;
+  background-color: blue;
+  overflow-y: scroll;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .videoText {
